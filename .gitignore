@@ -1,0 +1,10 @@
+.R*
+analyses/
+data/
+document/
+packrat/
+.DS_Store*
+nostoc.Rproj
+*.RData
+config.R
+databases/
