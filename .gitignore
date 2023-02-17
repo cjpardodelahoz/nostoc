@@ -1,4 +1,5 @@
 .R*
+!.Rprofile
 analyses/
 data/
 document/
@@ -8,3 +9,5 @@ nostoc.Rproj
 *.RData
 config.R
 databases/
+renv/
+.Rproj.user
