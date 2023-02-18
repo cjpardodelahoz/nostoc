@@ -6,7 +6,7 @@ library(data.table)
 library(ape)
 source("scripts/r_functions.R")
 
-#### Explore plasx results ####
+#### EXPLORE PLASX RESULTS ####
 
 # List of paths to plasx scores
 scores_paths <- list.files(path = "analyses/plasmid_detection/set103" , 
@@ -51,7 +51,7 @@ plasx_df <- header_key %>%
   # join plasx scores
   dplyr::left_join(scores, by = c("contig_code" = "contig", "genome_id")) %>% 
   # Classify contigs into plasmids and chromosomes with plasx score > 0.5
-  dplyr::mutate(contig_origin =
+  dplyr::mutate(plasx_class =
            dplyr::if_else(score > 0.1, 
                           true = "plasmid", false = "chromosome"))
 # Distribution of plasx scores
@@ -59,13 +59,45 @@ hist_plasx_scores <- plasx_df %>%
   dplyr::pull(score) %>%
   hist(main = "Distribution of plasx scores",
        xlab = "plasx score", 
-       xlim = c(0, 0.2), breaks = 200)
+       xlim = c(0, 1), breaks = 200)
 # Check out which contig lengths don't get scored by plasx
 hist_unscored_length <- plasx_df %>% 
   dplyr::filter(is.na(score)) %>%
   dplyr::pull(contig_length) %>%
   hist(breaks = 100, main = "Size distribution of unscored contigs", 
        xlab = "contig length (bp)")
+
+#### EXPLORE DEEPLASMID RESULTS ####
+
+# List of paths to deeplasmid predictions and scores
+predictions_paths <- list.files(path = "analyses/plasmid_detection/set103" , 
+                           pattern = "predictions.txt", full.names = T, recursive = T)
+# Load deeplasmid predictions and scores
+deeplasmid_df <- readr::read_delim(file = predictions_paths, delim = ",", 
+                            col_names = T, id = "predictions_path") %>%
+  # Remove the +/- from the deeplasmid scores
+  dplyr::mutate(deeplasmid_score = 
+                  as.numeric(str_remove(conf, " .*"))) %>%
+  # Get the genome id of the contigs
+  dplyr::mutate(genome_id = 
+                  str_remove(predictions_path, "analyses/plasmid_detection/set103/")) %>%
+  dplyr::mutate(genome_id =
+                  str_remove(genome_id, "/outPR.*"))
+# Distribution of deeplasmid scores
+hist_deeplasmid_scores <- deeplasmid_df %>%
+  dplyr::pull(deeplasmid_score) %>%
+  hist(main = "Distribution of deeplasmid scores",
+       xlab = "deeplasmid score", 
+       xlim = c(0, 1), breaks = 200) 
+
+#### CONTIG CLASSIFICATION WITH DEEPLASMID AND PLASX ####
+
+# Join the plasx_df with the deeplasmid results
+contig_class <- left_join(plasx_df, deeplasmid_df, 
+                          by = c("contig_code" = "name", "genome_id" = "genome_id")) %>%
+  select(contig_code, contig_label, genome_id, contig_length, contig_kmer_coverage, 
+         score, deeplasmid_score, plasx_class, pred)
+
 
 #### How much sequence length per genome is plasmid? ####
 

@@ -638,7 +638,7 @@ sbatch scripts/plasx_detect_set103.sh
 # Predict plasmids with deeplasmid (locally on FRANK)
 scripts/deeplasmid_set103.sh
 #
-process_plasx_output_set103.R
+sort_plasmids_set103.R
 
 
 
