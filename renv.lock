@@ -562,22 +562,20 @@
     },
     "ggplot2": {
       "Package": "ggplot2",
-      "Version": "3.4.1",
+      "Version": "3.3.5",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "d494daf77c4aa7f084dbbe6ca5dcaca7",
+      "Hash": "d7566c471c7b17e095dd023b9ef155ad",
       "Requirements": [
         "MASS",
-        "cli",
+        "digest",
         "glue",
         "gtable",
         "isoband",
-        "lifecycle",
         "mgcv",
         "rlang",
         "scales",
         "tibble",
-        "vctrs",
         "withr"
       ]
     },
