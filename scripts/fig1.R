@@ -11,20 +11,20 @@ source("scripts/r_functions.R")
 
 ##### CONFLICT PIE CHARTS #####
 
-# Load and root the astral tree
+# Load and root the dated tree (wASTRAL topology)
 #astral_tree <- read.tree("analyses/phylogenetics/set103/trees/astral/astral.tree")
-astral_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
+dated_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
 #astral_tree$edge.length[is.na(astral_tree$edge.length)] <- 1
-#astral_tree <- astral_tree %>%
-#  treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
-#                            "Anabaena_cylindrica_PCC_7122.fa",
-#                            "Cylindrospermum_stagnale_PCC_7417.fa"), 
-#               resolve.root = T)
+dated_tree <- dated_tree %>%
+  treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
+                            "Anabaena_cylindrica_PCC_7122.fa",
+                            "Cylindrospermum_stagnale_PCC_7417.fa"), 
+               resolve.root = T)
 # Get the number of taxa in the tree
-ntaxa <- astral_tree$tip.label %>%
+ntaxa <- dated_tree$tip.label %>%
   length()
-# Load the Astral vs gene trees Discovista result
-discov_out <- read_csv("analyses/phylogenetics/set103/conflict/single_vs_astral/discovista_out/single.metatable.results.csv")
+# Load the wAstral vs gene trees Discovista result
+discov_out <- read_csv("analyses/phylogenetics/set103/conflict/single_vs_wastral/discovista_out/single.metatable.results.csv")
 # Sumarize discov output per bipartition and modify the node column (bipart+ntaxa)
 discov_df_top <- condense_discov_out_weak(discov_out) %>%
   select(bipart, percent_concordant:percent_weak_support) %>%
@@ -52,11 +52,11 @@ conflict_pies <- discov_df_list %>%
         scale_fill_manual(values = pie_colors) +
         theme_void() +
         theme(legend.position = "none"))
-# Plot the astral tree with the piecharts
-astral_plot <- ggtree(astral_tree, right = T)
-astral_pies <- astral_plot +
+# Plot the dated tree with the piecharts
+tree_plot <- ggtree(dated_tree, right = T)
+tree_pies <- tree_plot +
   geom_inset(conflict_pies, width = 0.02, height = 0.02, x = "node")
-ggsave(plot = astral_pies, "document/plots/dated_tree_pies.pdf",
+ggsave(plot = tree_pies, "document/plots/dated_tree_pies.pdf",
        units = "cm", width = 15, height = 27,device = "pdf")
 
 ##### SIMPLEX PLOTS #####

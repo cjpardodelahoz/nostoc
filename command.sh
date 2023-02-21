@@ -490,7 +490,7 @@ scripts/get_clade_def.sh analyses/phylogenetics/set103/trees/astral/wastral.tree
 # Run Discovista
 cp -r analyses/phylogenetics/set103/conflict/single_vs_wastral ~/
 cd ~
-docker run -v /Users/lutzonilab/single_vs_astral10:/data esayyari/discovista discoVista.py -m 0 -k 1 \
+docker run -v /Users/lutzonilab/single_vs_wastral:/data esayyari/discovista discoVista.py -m 0 -k 1 \
  -c ./clade_def \
  -p ./discovista_in/ \
  -t 95 -o ./discovista_out
