@@ -4,7 +4,7 @@
 library(tidyverse)
 library(ggtree)
 library(tidytree)
-library(ggplot2)
+library(treeio)
 library(labdsv)
 library(MSCquartets)
 source("scripts/r_functions.R")
@@ -12,13 +12,14 @@ source("scripts/r_functions.R")
 ##### CONFLICT PIE CHARTS #####
 
 # Load and root the astral tree
-astral_tree <- read.tree("analyses/phylogenetics/set103/trees/astral/astral.tree")
-astral_tree$edge.length[is.na(astral_tree$edge.length)] <- 1
-astral_tree <- astral_tree %>%
-  treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
-                            "Anabaena_cylindrica_PCC_7122.fa",
-                            "Cylindrospermum_stagnale_PCC_7417.fa"), 
-               resolve.root = T)
+#astral_tree <- read.tree("analyses/phylogenetics/set103/trees/astral/astral.tree")
+astral_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
+#astral_tree$edge.length[is.na(astral_tree$edge.length)] <- 1
+#astral_tree <- astral_tree %>%
+#  treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
+#                            "Anabaena_cylindrica_PCC_7122.fa",
+#                            "Cylindrospermum_stagnale_PCC_7417.fa"), 
+#               resolve.root = T)
 # Get the number of taxa in the tree
 ntaxa <- astral_tree$tip.label %>%
   length()
@@ -52,11 +53,11 @@ conflict_pies <- discov_df_list %>%
         theme_void() +
         theme(legend.position = "none"))
 # Plot the astral tree with the piecharts
-astral_plot <- ggtree(astral_tree)
+astral_plot <- ggtree(astral_tree, right = T)
 astral_pies <- astral_plot +
-  geom_inset(conflict_pies, width = 0.03, height = 0.03, x = "node")
-ggsave(plot = astral_pies, "analyses/phylogenetics/set103/conflict/single_vs_astral/astral_pies.pdf",
-       device = "pdf")
+  geom_inset(conflict_pies, width = 0.02, height = 0.02, x = "node")
+ggsave(plot = astral_pies, "document/plots/dated_tree_pies.pdf",
+       units = "cm", width = 15, height = 27,device = "pdf")
 
 ##### SIMPLEX PLOTS #####
 
