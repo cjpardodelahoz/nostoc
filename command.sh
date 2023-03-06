@@ -638,6 +638,12 @@ sbatch scripts/plasx_detect_set103.sh
 # Predict plasmids with deeplasmid (locally on FRANK)
 scripts/deeplasmid_set103.sh
 #
+mkdir analyses/plasmid_detection/set103/depths
+for genome in $(cat misc_files/genome_ids_set103) ; do 
+ cp analyses/assemblies/${genome%_bin_*}/${genome%_bin_*}_assembly_depths.txt \
+  analyses/plasmid_detection/set103/depths/${genome}_depths.txt
+done
+#
 sort_plasmids_set103.R
 
 

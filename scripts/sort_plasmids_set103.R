@@ -14,6 +14,9 @@ scores_paths <- list.files(path = "analyses/plasmid_detection/set103" ,
 header_key_paths <- list.files(path = "analyses/plasmid_detection/set103", 
                                pattern = "header_key.txt", full.names = T, 
                                recursive = T)
+depths_paths <- list.files(path = "analyses/plasmid_detection/set103/depths", 
+                               pattern = "depths.txt", full.names = T, 
+                               recursive = T)
 # Load plasx scores and header keys
 # Note that plasx did not score all contigs, so the header_key files have more 
 # entries than the scores files
@@ -92,12 +95,41 @@ hist_deeplasmid_scores <- deeplasmid_df %>%
 
 #### CONTIG CLASSIFICATION WITH DEEPLASMID AND PLASX ####
 
-# Join the plasx_df with the deeplasmid results
+# Read and bind the depth tables
+depth_tables <- list()
+for (i in 1:length(depths_paths)) {
+  depth_tables[[depths_paths[i]]] <- read_delim(file = depths_paths[i], 
+                                                delim = "\t", col_names = T) %>%
+    select(1:3)
+}
+depths <- bind_rows(depth_tables, .id = "depth_path") %>%
+  mutate(genome_id =
+           stringr::str_remove(depth_path, "analyses/plasmid_detection/set103/depths/")) %>%
+  mutate(genome_id =
+           stringr::str_remove(genome_id, "_depths.txt")) %>%
+  select(2:5)
+# Join the plasx_df with the deeplasmid results and the contig depths for
+# classification
 contig_class <- left_join(plasx_df, deeplasmid_df, 
                           by = c("contig_code" = "name", "genome_id" = "genome_id")) %>%
+  left_join(depths, by = c("genome_id" = "genome_id", "contig_label" = "contigName")) %>%
   select(contig_code, contig_label, genome_id, contig_length, contig_kmer_coverage, 
-         score, deeplasmid_score, plasx_class, pred)
-
+         totalAvgDepth, score, deeplasmid_score, plasx_class, pred)
+# Get table with summary of median contig depth per genome
+depth_sum <- contig_class %>% 
+  group_by(genome_id) %>%
+  filter(plasx_class == "chromosome") %>%
+  summarise(median_depth = median(totalAvgDepth, na.rm = T))
+# Classify contigs using results from both plasx and deeplasmid. For contigs
+# Deeplasmid identified as plasmid but plasx didn't, we'll only consider them
+# as plasmid if they have aberrant coverage, defined as deviating by >20X from the
+# median coverage of chromosome contigs according to plasx
+contig_class_consensus <- contig_class %>%
+  left_join(depth_sum, by = "genome_id") %>%
+  mutate(contig_class = 
+           if_else(condition = plasx_class == "chromosome" & pred == "PLASMID" &
+                     abs(totalAvgDepth - median_depth) > 20, 
+                   true = "plasmid", false = plasx_class))
 
 #### How much sequence length per genome is plasmid? ####
 
