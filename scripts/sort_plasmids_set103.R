@@ -107,11 +107,15 @@ depths <- bind_rows(depth_tables, .id = "depth_path") %>%
            stringr::str_remove(depth_path, "analyses/plasmid_detection/set103/depths/")) %>%
   mutate(genome_id =
            stringr::str_remove(genome_id, "_depths.txt")) %>%
+  mutate(contigName = 
+           str_remove(contigName, "_cov.*")) %>%
   select(2:5)
 # Join the plasx_df with the deeplasmid results and the contig depths for
 # classification
 contig_class <- left_join(plasx_df, deeplasmid_df, 
                           by = c("contig_code" = "name", "genome_id" = "genome_id")) %>%
+  mutate(contig_label = 
+           str_remove(contig_label, "_cov.*")) %>%
   left_join(depths, by = c("genome_id" = "genome_id", "contig_label" = "contigName")) %>%
   select(contig_code, contig_label, genome_id, contig_length, contig_kmer_coverage, 
          totalAvgDepth, score, deeplasmid_score, plasx_class, pred)
