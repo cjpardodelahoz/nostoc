@@ -133,24 +133,23 @@ contig_class_consensus <- contig_class %>%
   mutate(contig_class = 
            if_else(condition = plasx_class == "chromosome" & pred == "PLASMID" &
                      abs(totalAvgDepth - median_depth) > 20, 
-                   true = "plasmid", false = plasx_class))
+                   true = "plasmid", false = plasx_class, missing = "chromosome"))
+
 
 #### How much sequence length per genome is plasmid? ####
 
-# Summarise contig origin length
-contig_origin_summary <- plasx_df %>%
-  tidyr::pivot_wider(names_from = contig_origin, 
-                     values_from = contig_length) %>%
-  dplyr::rename(unassigned = "NA") %>%
-  dplyr::group_by(genome_id) %>%
-  dplyr::summarise(chromosome_length = sum(chromosome, na.rm = T), 
-            plasmid_length = sum(plasmid, na.rm = T), 
-            unassigned_length = sum(unassigned, na.rm = T))
-
-plasx_df %>%
-  filter(genome_id == "JL33_bin_16.fa" & contig_origin == "chromosome") %>%
-  pull(contig_kmer_coverage) %>%
-  hist(breaks = 40)
+#
+genome_sum <- contig_class_consensus %>%
+  group_by(genome_id, contig_class) %>%
+  summarise(total_length = sum(contig_length)) %>%
+  filter(!is.na(total_length)) %>%
+  mutate(contig_class = 
+           replace_na(contig_class, "unassigned"))
+#
+genome_sum %>%
+  filter()
+ggplot(aes(x = total_length)) +
+  geom_histogram(aes(fill = factor(contig_class)))
 
 #### Sort contig names by origin for genome refinement ####
 
