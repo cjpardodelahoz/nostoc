@@ -114,9 +114,9 @@ depths <- bind_rows(depth_tables, .id = "depth_path") %>%
 # classification
 contig_class <- left_join(plasx_df, deeplasmid_df, 
                           by = c("contig_code" = "name", "genome_id" = "genome_id")) %>%
-  mutate(contig_label = 
+  mutate(contig_label_trimmed = 
            str_remove(contig_label, "_cov.*")) %>%
-  left_join(depths, by = c("genome_id" = "genome_id", "contig_label" = "contigName")) %>%
+  left_join(depths, by = c("genome_id" = "genome_id", "contig_label_trimmed" = "contigName")) %>%
   select(contig_code, contig_label, genome_id, contig_length, contig_kmer_coverage, 
          totalAvgDepth, score, deeplasmid_score, plasx_class, pred)
 # Get table with summary of median contig depth per genome
@@ -155,8 +155,8 @@ plasx_df %>%
 #### Sort contig names by origin for genome refinement ####
 
 # Get df for plasmid and chromosome contig sorting
-contig_origin_df <- plasx_df %>%
-  select(contig_label, contig_origin, genome_id) %>%
+contig_class_sum <- contig_class_consensus %>%
+  select(contig_label, contig_class, genome_id) %>%
   mutate(genome_id = 
            stringr::str_remove(genome_id, ".fa"))
 # Vector with contig paths. I used the files with the original contig names to
@@ -164,12 +164,12 @@ contig_origin_df <- plasx_df %>%
 contig_paths <- list.files(path = "analyses/cyano_genomes/set103", 
                            pattern = ".fa", recursive = T, full.names = T)
 # Vector with genome ids for sorting (without ".fa")
-genome_ids <- contig_origin_df %>%
+genome_ids <- contig_class_sum %>%
   pull(genome_id) %>%
   unique()
 # Sort contigs
 bin_from_df_v2(sample_id = genome_ids, 
                contigs_file = contig_paths, 
-               bin_df = contig_origin_df, 
+               bin_df = contig_class_sum, 
                out_dir = "analyses/plasmid_detection/set103",
                out_suffix_1 = ".fa")
