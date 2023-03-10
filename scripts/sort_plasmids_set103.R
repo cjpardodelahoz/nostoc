@@ -134,24 +134,34 @@ contig_class_consensus <- contig_class %>%
            if_else(condition = plasx_class == "chromosome" & pred == "PLASMID" &
                      abs(totalAvgDepth - median_depth) > 20, 
                    true = "plasmid", false = plasx_class, missing = "chromosome"))
+# Save table with contig classification df
+write_csv(contig_class_consensus, 
+          file = "document/tables/contig_class_consensus.csv")
 
+#### DISTRIBUTION OF PLASMID AND CHROMOSOME LENGTHS ####
 
-#### How much sequence length per genome is plasmid? ####
-
-#
+# Get df summarizing total lenght of chromosome and plasmids per genome
+# This is for the newly assembled genomes only
 genome_sum <- contig_class_consensus %>%
   group_by(genome_id, contig_class) %>%
   summarise(total_length = sum(contig_length)) %>%
   filter(!is.na(total_length)) %>%
   mutate(contig_class = 
            replace_na(contig_class, "unassigned"))
-#
-genome_sum %>%
-  filter()
-ggplot(aes(x = total_length)) +
-  geom_histogram(aes(fill = factor(contig_class)))
+# Plot histograms of length distribution
+contig_class_histogram <- genome_sum %>%
+  filter(contig_class != "unassigned") %>%
+  ggplot(aes(x = total_length)) +
+  geom_histogram(aes(fill = factor(contig_class))) +
+  scale_x_continuous(n.breaks = 20, limits = c(0, 9000000)) +
+  theme(
+    panel.background = NULL,
+    panel.border = element_rect(linewidth = 1, color = "black", fill = "transparent")
+  )
+ggsave(plot = contig_class_histogram, 
+       filename = "document/plots/contig_class_hist.pdf")
 
-#### Sort contig names by origin for genome refinement ####
+#### SORT CONTIGS BY CLASS ####
 
 # Get df for plasmid and chromosome contig sorting
 contig_class_sum <- contig_class_consensus %>%

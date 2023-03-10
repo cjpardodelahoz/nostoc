@@ -31,7 +31,7 @@ install.packages("BiocManager")
 BiocManager::install("remotes")
 BiocManager::install("YuLab-SMU/treedataverse")
 install.packages("labdsv")
-packageurl <- "https://cran.r-project.org/src/contrib/Archive/ggplot2/ggplot2_3.3.5.tar.gz"
+packageurl <- "https://cran.r-project.org/src/contrib/Archive/ggplot2/ggplot2_3.4.0.tar.gz"
 install.packages(packageurl, repos=NULL, type="source")
 install.packages("ggimage")
 install.packages("MSCquartets")
@@ -194,13 +194,19 @@ go build gophy/bp/bp.go
 
 -set8: *Nostoc* II bins from all newly generated metagenomes after refinement with graphbin2
 
--set73: *Nostoc* II bins from sets 7 and 0 for preliminary phylogenetic analyses
+-set73: *Nostoc* II bins from sets 7 and 3 for preliminary phylogenetic analyses
 
 -set9: *Nostoc* II bins from all newly generated metagenomesexported from anvio after visual curation.
 
 -set10: *Nostoc* II bins from all newly generated metagenomes curated and with the extra contigs from the assembly graph.
 
 -set103: set10 plus set3. For phylogenetic analyses.
+
+-set103a: set10 plus set3. After sorting plasmids and chromosomes
+
+-set103c: set10 plus set3. Putative chromosomes only
+
+-set103p: set10 plus set3. Putative plasmids only
 
 -set200: *Nostoc* genomes from subset 0 in Pardo-De la Hoz et al, but also including JL33. Used for dating.
 

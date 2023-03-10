@@ -637,16 +637,29 @@ sbatch scripts/plasx_anvi_annotate_set103.sh
 sbatch scripts/plasx_detect_set103.sh
 # Predict plasmids with deeplasmid (locally on FRANK)
 scripts/deeplasmid_set103.sh
-#
+# Compile depth files to use for contig classification
 mkdir analyses/plasmid_detection/set103/depths
 for genome in $(cat misc_files/genome_ids_set103) ; do 
  cp analyses/assemblies/${genome%_bin_*}/${genome%_bin_*}_assembly_depths.txt \
   analyses/plasmid_detection/set103/depths/${genome}_depths.txt
 done
-#
+# Summarize plasmid detection results and sort contigs by class for each genome
 sort_plasmids_set103.R
-
-
+# Sort genomes into three new sets: 
+# set103a (all 103 including plasmids and chromosomes)
+# set103c (chromosomes only)
+# set103p (plasmids only)
+mkdir -p analyses/cyano_genomes/set103a
+mkdir -p analyses/cyano_genomes/set103c
+mkdir -p analyses/cyano_genomes/set103p
+for genome in $(cat misc_files/genome_ids_set103) ; do
+ cp analyses/plasmid_detection/set103/${genome}/${genome%.fa}*.fa \
+  analyses/cyano_genomes/set103a/
+ cp analyses/plasmid_detection/set103/${genome}/${genome%.fa}_chromosome.fa \
+  analyses/cyano_genomes/set103c/
+ cp analyses/plasmid_detection/set103/${genome}/${genome%.fa}_plasmid.fa \
+  analyses/cyano_genomes/set103p/
+done
 
 ################################################################################
 # SPECIES DELIMITATION
