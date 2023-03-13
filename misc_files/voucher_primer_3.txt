@@ -1,207 +1,207 @@
-sample_id	taxon_name	host_family	host_genus	substrate	country	voucher
-3	Peltigera_ponojensis_monticola_9	peltigeraceae	peltigera	terricolous		
-8274	Peltigera_scabrosa_2	peltigeraceae	peltigera			
-8277	Peltigera_aubertii	peltigeraceae	peltigera			
-Cylindrospermum_stagnale_PCC_7417	Cylindrospermum_stagnale_PCC_7417	NA	NA			
-JL23	Peltigera_aphthosa_JL23	peltigeraceae	peltigera			
-JL31	Peltigera_extenuata_JL31	peltigeraceae	peltigera			
-JL33	Peltigera_malacea_JL33	peltigeraceae	peltigera			
-JL34	Peltigera_evansiana_JL34	peltigeraceae	peltigera			
-Nmoss2	Pleurozium_schreberi_Nmoss2	hylocomiaceae	pleurozium			
-Nmoss3	Pleurozium_schreberi_Nmoss3	hylocomiaceae	pleurozium			
-Nmoss4	Pleurozium_schreberi_Nmoss4	hylocomiaceae	pleurozium			
-NMS1	Peltigera_hydrothyria_NMS1	peltigeraceae	peltigera			
-NMS2	Peltigera_hydrothyria_NMS2	peltigeraceae	peltigera			
-NMS4	Peltigera_venosa_NMS4	peltigeraceae	peltigera			
-NMS7	Solorina_crocea_NMS7	peltigeraceae	solorina			
-NMS8	Peltigera_dolichorhiza_NMS8	peltigeraceae	peltigera			
-NMS9	Peltigera_phyllidiosa_NMS9	peltigeraceae	peltigera			
-NOS	Peltigera_aphthosa_NOS	peltigeraceae	peltigera			
-Nostoc_calcicola_FACHB_389	Nostoc_calcicola_FACHB389	NA	NA			
-Nostoc_commune_NIES_4072	Nostoc_commune_NIES_4072	NA	NA			
-Nostoc_flagelliforme_CCNUN1	Nostoc_flagelliforme_CCNUN1	NA	NA			
-Nostoc_KVJ10	Blasia_pusilla_KVJ10	blasiaceae	blasia			
-Nostoc_KVJ2	Blasia_pusilla_KVJ2	blasiaceae	blasia			
-Nostoc_KVS11	Blasia_pusilla_KVS11	blasiaceae	blasia			
-Nostoc_linckia_NIES_25	Nostoc_linckia_NIES_25	NA	NA			
-Nostoc_linckia_z4	Nostoc_linckia_z4	NA	NA			
-Nostoc_punctiforme_PCC_73102	Nostoc_punctiforme_PCC_73102	NA	NA			
-Nostoc_sp_ATCC_53789_v2	Nostoc_sp_ATCC_53789_v2	NA	NA			
-Nostoc_sp_B_2019	Nostoc_sp_B_2019	NA	NA			
-Nostoc_sp_JC1668	Zamia_pseudoparasitica_JC1668	zamiaceae	zamia			
-Nostoc_sp_KVJ20	Blasia_pusilla_KVJ20	blasiaceae	blasia			
-Nostoc_sp_Lobaria_pulmonaria_5183	Lobaria_pulmonaria_5183	lobariaceae	lobaria			
-Nostoc_sp_Peltigera_malacea_cyanobiont_DB3992	Peltigera_malacea_cyanobiont_DB3992	peltigeraceae	peltigera			
-Nostoc_sp_Peltigera_membranacea_cyanobiont_210A	Peltigera_membranacea_cyanobiont_210A	peltigeraceae	peltigera			
-Nostoc_sp_Peltigera_membranacea_cyanobiont_213	Peltigera_membranacea_cyanobiont_213	peltigeraceae	peltigera			
-Nostoc_sp_Peltigera_membranacea_cyanobiont_232	Peltigera_membranacea_cyanobiont_232	peltigeraceae	peltigera			
-Nostoc_sp_Peltigera_membranacea_cyanobiont_N6	Peltigera_membranacea_cyanobiont_N6	peltigeraceae	peltigera			
-Nostoc_sp_UIC_10630	Nostoc_sp_UIC_10630	NA	NA			
-Nostoc_sphaeroides_CCNUC1	Nostoc_sphaeroides_CCNUC1	NA	NA			
-Nostoc_sphaeroides_Kutzing	Nostoc_sphaeroides_Kutzing	NA	NA			
-P10073	Nephroma_resupinatum	nephromataceae	nephroma			
-P10160	Peltigera_aphthosa_5	peltigeraceae	peltigera			
-P10246	Protopannaria_pezizoides	pannariaceae	protopannaria			
-P10247	Leptogium	collemataceae	leptogium			
-P10264	Leptogium_saturninum	collemataceae	leptogium			
-P1030	Peltigera_retifoveata	peltigeraceae	peltigera			
-P10324	Peltigera_britannica_2	peltigeraceae	peltigera			
-P10894	Peltigera_malacea_2	peltigeraceae	peltigera			
-P11060	Leptogium_saturninum	collemataceae	leptogium			
-P11388	Peltigera_neckeri	peltigeraceae	peltigera			
-P11425	Peltigera_aff_neorufescens	peltigeraceae	peltigera			
-P1229	Peltigera_hymenina	peltigeraceae	peltigera			
-P12502	Sticta_sp	lobariaceae	sticta			
-P12521	Lobaria_sp	lobariaceae	lobaria			
-P12523	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria			
-P12537	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria			
-P12545	Pannariaceae_sp	pannariaceae	pannariaceae			
-P12559	Pseudocyphellaria_guillemini	lobariaceae	pseudocyphellaria			
-P12560	Pseudocyphellaria_berberina	lobariaceae	pseudocyphellaria			
-P12564	Pseudocyphellaria_corifolia	lobariaceae	pseudocyphellaria			
-P12567	Sticta_hypochra	lobariaceae	sticta			
-P12569	Sticta_caulescens	lobariaceae	sticta			
-P12570	Sticta_hypochra	lobariaceae	sticta			
-P12573	Nephroma_antarcticum	nephromataceae	nephroma			
-P12578	Collema_sp	collemataceae	collema			
-P12584	Pseudocyphellaria_meyenii	lobariaceae	pseudocyphellaria			
-P12588	Leptogium_sp	collemataceae	leptogium			
-P12591	Collema_sp	collemataceae	collema			
-P12639	Leptogium_sp	collemataceae	leptogium			
-P12641	Leptogium_sp	collemataceae	leptogium			
-P12642	Leptogium_sp	collemataceae	leptogium			
-P12646	Leptogium_sp	collemataceae	leptogium			
-P12649	Leptogium_sp	collemataceae	leptogium			
-P12650	Leptogium_sp	collemataceae	leptogium			
-P14213	Lobaria_retigera	lobariaceae	lobaria			
-P14264	Leptogium_sp	collemataceae	leptogium			
-P14269	Leptogium_sp	collemataceae	leptogium			
-P14318	Sticta_sp	lobariaceae	sticta			
-P14321	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria			
-P1574	Peltigera_dolichorhiza	peltigeraceae	peltigera			
-P2037	Peltigera_aubertii	peltigeraceae	peltigera			
-P2039	Peltigera_sp_14	peltigeraceae	peltigera			
-P2081	Peltigera_canina_2	peltigeraceae	peltigera			
-P2083	Peltigera_rufescens_1	peltigeraceae	peltigera			
-P2090	Peltigera_canina_2	peltigeraceae	peltigera			
-P2115	Peltigera_vainioi	peltigeraceae	peltigera			
-P2123	Peltigera_canina_1	peltigeraceae	peltigera			
-P2152	Peltigera_soredians	peltigeraceae	peltigera			
-P2162	Peltigera_erioderma_1	peltigeraceae	peltigera			
-P2164	Peltigera_sp_17	peltigeraceae	peltigera			
-P2170	Peltigera_degenii	peltigeraceae	peltigera			
-P2180	Peltigera_ponojensis_monticola_1a	peltigeraceae	peltigera			
-P2213	Peltigera_canina_1	peltigeraceae	peltigera			
-P2224	Peltigera_neocanina_3	peltigeraceae	peltigera			
-P3034	Peltigera_occidentalis	peltigeraceae	peltigera			
-P3068	Peltigera_neopolydactyla_5	peltigeraceae	peltigera			
-P330	Peltigera_truculenta	peltigeraceae	peltigera			
-P5023	Peltigera_scabrosa	peltigeraceae	peltigera			
-P539	Peltigera_hymenina	peltigeraceae	peltigera			
-P607	Peltigera_sp_3	peltigeraceae	peltigera			
-P6447	Peltigera_collina	peltigeraceae	peltigera			
-P6465	Peltigera_neopolydactyla_1	peltigeraceae	peltigera			
-P6524	Peltigera_praetextata	peltigeraceae	peltigera			
-P6600	Peltigera_canina_2	peltigeraceae	peltigera			
-P6602	Peltigera_scabrosa_1_	peltigeraceae	peltigera			
-P6620	Peltigera_neopolydactyla_	peltigeraceae	peltigera			
-P6636	Peltigera_horizontalis	peltigeraceae	peltigera			
-P6963	Peltigera_sp	peltigeraceae	peltigera			
-P6970	Peltigera_sp_11	peltigeraceae	peltigera			
-P8202	Peltigera_latiloba	peltigeraceae	peltigera		canada	
-P8219	Peltigera_islandica	peltigeraceae	peltigera		canada	
-P8231	Peltigera_ponojensis_monticola_1a	peltigeraceae	peltigera		canada	
-P8256	Peltigera_didactyla_3	peltigeraceae	peltigera		canada	
-P8569	Peltigera_elisabethae	peltigeraceae	peltigera		canada	
-P8570	Peltigera_canina_1	peltigeraceae	peltigera		canada	
-P8571	Peltigera_praetextata	peltigeraceae	peltigera		canada	
-P8575	Peltigera_neckeri	peltigeraceae	peltigera		canada	
-P8577	Peltigera_aphthosa_5	peltigeraceae	peltigera		canada	
-P8580	Peltigera_neckeri	peltigeraceae	peltigera		canada	
-P8690	Peltigera_malacea_3	peltigeraceae	peltigera		canada	
-P8768	Peltigera_aff_didactyla	peltigeraceae	peltigera		canada	
-P8840	Peltigera_leucophlebia_1	peltigeraceae	peltigera		canada	
-P8857	Peltigera_scabrosa_1	peltigeraceae	peltigera		canada	
-P8926	Peltigera_malacea_2	peltigeraceae	peltigera		canada	
-P9119	Peltigera_frippii	peltigeraceae	peltigera		canada	
-P9121	Peltigera_neopolydactyla_1	peltigeraceae	peltigera		canada	
-P943	Peltigera_extenuata_2	peltigeraceae	peltigera			
-P9639	Fuscopannaria_sp	pannariaceae	fuscopannaria			
-P9728	Peltigera_malacea_2	peltigeraceae	peltigera		canada	
-P9820	Peltigera_canina_2	peltigeraceae	peltigera		canada	
-P9822	Peltigera_malacea_2	peltigeraceae	peltigera		canada	
-P9895	Nephroma_resupinatum	nephromataceae	nephroma			
-S1	Pannariaceae	pannariaceae	pannariaceae			
-S10	Fuscopannaria	pannariaceae	fuscopannaria			
-S11	Fuscopannaria	pannariaceae	fuscopannaria			
-S12	Kroswia	pannariaceae	kroswia			
-S13	Kroswia	pannariaceae	kroswia			
-S14	Peltigera_pacifica	peltigeraceae	peltigera			
-S15	Peltigera_pacifica	peltigeraceae	peltigera			
-S16	Peltigera_pacifica	peltigeraceae	peltigera			
-S17	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S18	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S19	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S2	Pannariaceae	pannariaceae	pannariaceae			
-S20	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S21	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S22	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S23	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S24	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S25	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S26	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S27	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S29	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S3	Pannariaceae	pannariaceae	pannariaceae			
-S30	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S31	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S32	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S33	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S34	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S35	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S37	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S38	Peltigera_vitikainenii	peltigeraceae	peltigera			
-S39	Peltigera_appalachensis	peltigeraceae	peltigera			
-S40	Peltigera_appalachensis	peltigeraceae	peltigera			
-S41	Peltigera_appalachensis	peltigeraceae	peltigera			
-S42	S42	peltigeraceae	peltigera			
-S43	Peltigera_appalachensis	peltigeraceae	peltigera			
-S44	Peltigera_appalachensis	peltigeraceae	peltigera			
-S45	Peltigera_appalachensis	peltigeraceae	peltigera			
-S46	Peltigera_appalachensis	peltigeraceae	peltigera			
-S47	Peltigera_appalachensis	peltigeraceae	peltigera			
-S48	Peltigera_appalachensis	peltigeraceae	peltigera			
-S49	Peltigera_appalachensis	peltigeraceae	peltigera			
-S4	Lepidocollema_sp	pannariaceae	lepidocollema			
-S5	Physma_sp	pannariaceae	physma			
-S51	Peltigera_appalachensis	peltigeraceae	peltigera			
-S52	Peltigera_appalachensis	peltigeraceae	peltigera			
-S53	Peltigera_appalachensis	peltigeraceae	peltigera			
-S54	Peltigera_appalachensis	peltigeraceae	peltigera			
-S55	Peltigera_appalachensis	peltigeraceae	peltigera			
-S56	Peltigera_appalachensis	peltigeraceae	peltigera			
-S57	Peltigera_appalachensis	peltigeraceae	peltigera			
-S58	Peltigera_appalachensis	peltigeraceae	peltigera			
-S6	Lepidocollema_sp	pannariaceae	lepidocollema			
-S60	Peltigera_appalachensis	peltigeraceae	peltigera			
-S61	Peltigera_asiatica	peltigeraceae	peltigera			
-S62	Peltigera_asiatica	peltigeraceae	peltigera			
-S63	Peltigera_asiatica	peltigeraceae	peltigera			
-S64	Peltigera_mikado	peltigeraceae	peltigera			
-S66	Peltigera_mikado	peltigeraceae	peltigera			
-S67	Peltigera_gayae	peltigeraceae	peltigera			
-S68	Peltigera_gayae	peltigeraceae	peltigera			
-S8	Physma_sp	pannariaceae	physma			
-S82	Peltigera_pulverulenta_3	peltigeraceae	peltigera			
-S83	Peltigera_pulverulenta_3	peltigeraceae	peltigera			
-S85	Peltigera_dolichorhiza	peltigeraceae	peltigera			
-S86	Peltigera_pulverulenta	peltigeraceae	peltigera			
-S88	Peltigera_pulverulenta_2	peltigeraceae	peltigera			
-S9	Physma_sp	pannariaceae	physma			
-S90	Peltigera_sp_6	peltigeraceae	peltigera			
-S91	Peltigera_appalachensis	peltigeraceae	peltigera			
-S92	Peltigera_sp_1	peltigeraceae	peltigera			
-S93	Peltigera_appalachensis	peltigeraceae	peltigera			
-S94	Peltigera_dolichorhiza_2	peltigeraceae	peltigera			
-S95	Peltigera_sp_2b	peltigeraceae	peltigera			
-X2	Peltigera_aff_neorufescens	peltigeraceae	peltigera			
+sample_id	taxon_name	host_family	host_genus	substrate_type	lifestyle	country	locality	voucher	accession	reference	substrate
+3	Peltigera_ponojensis_monticola_9	peltigeraceae	peltigera	terricolous	symbiotic						
+8274	Peltigera_scabrosa_2	peltigeraceae	peltigera	terricolous	symbiotic						
+8277	Peltigera_aubertii	peltigeraceae	peltigera	terricolous	symbiotic						
+Cylindrospermum_stagnale_PCC_7417	Cylindrospermum_stagnale_PCC_7417	NA	NA	terricolous	Free-living	Sweden	Stockholm	NA	NC_019757.1	Shih et al. 2013	Soil in greenhouse
+JL23	Peltigera_aphthosa_JL23	peltigeraceae	peltigera	terricolous	symbiotic	Canada	Alberta	NA		Cornet et al. 2021	
+JL31	Peltigera_extenuata_JL31	peltigeraceae	peltigera	terricolous	symbiotic	Canada	Alberta	NA		Cornet et al. 2021	
+JL33	Peltigera_malacea_JL33	peltigeraceae	peltigera	terricolous	symbiotic	Canada	Alberta	NA		Cornet et al. 2021	
+JL34	Peltigera_evansiana_JL34	peltigeraceae	peltigera	terricolous	symbiotic	United States of America	Michigan	NA		Cornet et al. 2021	
+Nmoss2	Pleurozium_schreberi_Nmoss2	hylocomiaceae	pleurozium	terricolous	symbiotic	Sweden	"_Ruttjeheden, Reivo forest, Northern Sweden (65?800N–19?100E)"	NA	JGI 1042295	Warshan et al. 2018	
+Nmoss3	Pleurozium_schreberi_Nmoss3	hylocomiaceae	pleurozium	terricolous	symbiotic	Sweden	"_Ruttjeheden, Reivo forest, Northern Sweden (65?800N–19?100E)"	NA	JGI 1042307	Warshan et al. 2018	
+Nmoss4	Pleurozium_schreberi_Nmoss4	hylocomiaceae	pleurozium	terricolous	symbiotic	Sweden	"_Ruttjeheden, Reivo forest, Northern Sweden (65?800N–19?100E)"	NA	NA	Warshan et al. 2018	
+NMS1	Peltigera_hydrothyria_NMS1	peltigeraceae	peltigera	aquatic	symbiotic	Canada	Nova Scotia	NA		Cornet et al. 2021	
+NMS2	Peltigera_hydrothyria_NMS2	peltigeraceae	peltigera	aquatic	symbiotic	Canada	Nova Scotia	NA		Cornet et al. 2021	
+NMS4	Peltigera_venosa_NMS4	peltigeraceae	peltigera	terricolous	symbiotic	Finland		NA		Cornet et al. 2021	
+NMS7	Solorina_crocea_NMS7	peltigeraceae	solorina								
+NMS8	Peltigera_dolichorhiza_NMS8	peltigeraceae	peltigera	terricolous	symbiotic	Panama		NA		Cornet et al. 2021	
+NMS9	Peltigera_phyllidiosa_NMS9	peltigeraceae	peltigera	terricolous	symbiotic	United States of America	North Carolina	NA		Cornet et al. 2021	
+NOS	Peltigera_aphthosa_NOS	peltigeraceae	peltigera	terricolous	symbiotic	Sweden		NA		Cornet et al. 2021	
+Nostoc_calcicola_FACHB_389	Nostoc_calcicola_FACHB389	NA	NA	terricolous	Free-living	Netherlands	Utrecht	NA	NZ_MRBZ01000000	Zhu et al. 2017	Soil
+Nostoc_commune_NIES_4072	Nostoc_commune_NIES_4072	NA	NA					NA	NZ_BDUD01000000	Hirose et al. 2017. Unpublished	
+Nostoc_flagelliforme_CCNUN1	Nostoc_flagelliforme_CCNUN1	NA	NA	terricolous	Free-living	China	"Sunitezuoqi, Inner Mongolia"	NA	NZ_CP024785.1	Shang et al. 2019	dry desert steppes and bare lands
+Nostoc_KVJ10	Blasia_pusilla_KVJ10	blasiaceae	blasia	terricolous	symbiotic	Norway	_Kvaløya island (69.64?N 18.73?E)	NA	NA	Warshan et al. 2018	
+Nostoc_KVJ2	Blasia_pusilla_KVJ2	blasiaceae	blasia	terricolous	symbiotic	Norway	_Kvaløya island (69.64?N 18.73?E)	NA	NA	Warshan et al. 2018	
+Nostoc_KVS11	Blasia_pusilla_KVS11	blasiaceae	blasia	terricolous	symbiotic	Norway	_Kvaløya island (69.64?N 18.73?E)	NA	NA	Warshan et al. 2018	
+Nostoc_linckia_NIES_25	Nostoc_linckia_NIES_25	NA	NA	terricolous	Free-living	Japan	Kagoshima Kagoshima	NA	NZ_AP018222	Hirose et al. 2017. Unpublished	
+Nostoc_linckia_z4	Nostoc_linckia_z4	NA	NA	terricolous	Free-living	Israel		NA	NZ_LAHA01000000	Zhou 2015. Unpublished	
+Nostoc_punctiforme_PCC_73102	Nostoc_punctiforme_PCC_73102	NA	NA	terricolous	symbiotic	Australia		NA	NC_010628.1	Shih et al. 2013	Root section of Macrozamia sp.
+Nostoc_sp_ATCC_53789_v2	Nostoc_sp_ATCC_53789_v2	NA	NA	terricolous	NA	United Kingdom	"Scotland, Arron Island"	NA	NZ_LWSY01000000	Tabuxhi Yagui 2016. Unpublished	Lichen
+Nostoc_sp_B_2019	Nostoc_sp_B_2019	NA	NA	terricolous	Free-living	Portugal	Old Cathedral of Coimbra	NA	NZ_WVID01000000	Tiago et al. 2019 (unpublished)	limestone walls
+Nostoc_sp_JC1668	Zamia_pseudoparasitica_JC1668	zamiaceae	zamia	terricolous	symbiotic	Panama	"_Omar Torrijos National Park, Provincia de Coclé"	NA	NZ_SZNH01000000	Bell-Doyon et al. 2020	Zamia pseudoparasitica
+Nostoc_sp_KVJ20	Blasia_pusilla_KVJ20	blasiaceae	blasia	terricolous	symbiotic	Norway	"Troms, Kvaloya island"	NA	NZ_LSSA01000000	Halsør et al. 2019	Blasia pusilla
+Nostoc_sp_Lobaria_pulmonaria_5183	Lobaria_pulmonaria_5183	lobariaceae	lobaria	epiphytic	symbiotic	canada	"British columbia, _Cedar Road, Vancouver Island"	NA	NZ_CP026692.1	Gagunashvili and Andresson 2018	Lobaria pulmonaria on _Acer macrophyllum trunk 
+Nostoc_sp_Peltigera_malacea_cyanobiont_DB3992	Peltigera_malacea_cyanobiont_DB3992	peltigeraceae	peltigera	terricolous	symbiotic	Canada	"Little Fort, British Co-"	NA		Xavier et al. 2012	
+Nostoc_sp_Peltigera_membranacea_cyanobiont_210A	Peltigera_membranacea_cyanobiont_210A	peltigeraceae	peltigera	terricolous	symbiotic	Iceland	"lumbia (51 37.50 N, 120 90 W"	NA		Gagunashvili and Andrésson 2018	
+Nostoc_sp_Peltigera_membranacea_cyanobiont_213	Peltigera_membranacea_cyanobiont_213	peltigeraceae	peltigera	terricolous	symbiotic	Iceland	"_Keldur, Reykjavik"	NA		Gagunashvili and Andrésson 2018	
+Nostoc_sp_Peltigera_membranacea_cyanobiont_232	Peltigera_membranacea_cyanobiont_232	peltigeraceae	peltigera	terricolous	symbiotic	Iceland	"_Keldur, Reykjavik"	NA		Gagunashvili and Andrésson 2018	
+Nostoc_sp_Peltigera_membranacea_cyanobiont_N6	Peltigera_membranacea_cyanobiont_N6	peltigeraceae	peltigera	terricolous	symbiotic	Iceland	"_Keldur, Reykjavik"	NA		Gagunashvili and Andrésson 2018	
+Nostoc_sp_UIC_10630	Nostoc_sp_UIC_10630	NA	NA	terricolous	Free-living	United States of America	"Downers Grove, Illinois"	NA	NZ_JAAGOG010000000	May et al. 2020	Soil
+Nostoc_sphaeroides_CCNUC1	Nostoc_sphaeroides_CCNUC1	NA	NA	aquatic	Free-living	China	"Zouma, Hefeng County in Hubei Province"	NA	NZ_CP045226	Chen et al 2021	Rice paddy field
+Nostoc_sphaeroides_Kutzing	Nostoc_sphaeroides_Kutzing	NA	NA	aquatic	Free-living	China	Enshi	NA	NZ_CP031941	Cheng et al. 2018. Unpublished	Water
+P10073	Nephroma_resupinatum	nephromataceae	nephroma		symbiotic	canada	ABMI site 875	ABMI ID 241800		This study	log/stump
+P10160	Peltigera_aphthosa_5	peltigeraceae	peltigera		symbiotic	Canada	ABMI site 963	ABMI ID 288992		This study	Tree/Other
+P10246	Protopannaria_pezizoides	pannariaceae	protopannaria		symbiotic	canada	ABMI site 1425	ABMI ID 1269260		This study	log/stump
+P10247	Leptogium	collemataceae	leptogium	terricolous	symbiotic	canada	ABMI site 1447	ABMI 1263667		This study	upland
+P10264	Leptogium_saturninum	collemataceae	leptogium	epiphytic	symbiotic	canada	ABMI site 930	ABMI 1521014		This study	Tree/Other
+P1030	Peltigera_retifoveata	peltigeraceae	peltigera	terricolous	symbiotic	Norway				This study	
+P10324	Peltigera_britannica_2	peltigeraceae	peltigera	terricolous	symbiotic	Canada	ABMI site 1232	ABMI ID 295052		This study	log/stump
+P10894	Peltigera_malacea_2	peltigeraceae	peltigera	terricolous	symbiotic	Canada	ABMI site 292	ABMI ID 374039		This study	Wetland
+P11060	Leptogium_saturninum	collemataceae	leptogium		symbiotic	canada	ABMI site 1510	ABMI 682872		This study	Tree/Other
+P11388	Peltigera_neckeri	peltigeraceae	peltigera	terricolous	symbiotic	Canada	ABMI site 746 	ABMI ID 500616		This study	log/stump
+P11425	Peltigera_aff_neorufescens	peltigeraceae	peltigera	terricolous	symbiotic	Canada	ABMI site 1408	ABMI ID 3611		This study	upland
+P1229	Peltigera_hymenina	peltigeraceae	peltigera	terricolous	symbiotic	United States of America	Oregon	B. McCune 30448; McCune Private Coll.		This study; Magain et al. 2017	
+P12502	Sticta_sp	lobariaceae	sticta	epiphytic	symbiotic	malaysia				This study	Tree
+P12521	Lobaria_sp	lobariaceae	lobaria	terricolous	symbiotic	malaysia				This study	
+P12523	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	symbiotic	malaysia				This study	Tree
+P12537	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	symbiotic	malaysia				This study	Tree
+P12545	Pannariaceae_sp	pannariaceae	pannariaceae	epiphytic	symbiotic	malaysia				This study	Tree
+P12559	Pseudocyphellaria_guillemini	lobariaceae	pseudocyphellaria	epiphytic	symbiotic	chile				This study	Tree
+P12560	Pseudocyphellaria_berberina	lobariaceae	pseudocyphellaria	epiphytic	symbiotic	chile				This study	Tree
+P12564	Pseudocyphellaria_corifolia	lobariaceae	pseudocyphellaria	epiphytic	symbiotic	chile				This study	Tree
+P12567	Sticta_hypochra	lobariaceae	sticta	epiphytic	symbiotic	chile				This study	Tree
+P12569	Sticta_caulescens	lobariaceae	sticta	terricolous	symbiotic	chile				This study	
+P12570	Sticta_hypochra	lobariaceae	sticta	terricolous	symbiotic	chile				This study	
+P12573	Nephroma_antarcticum	nephromataceae	nephroma	epiphytic	symbiotic	chile				This study	Tree
+P12578	Collema_sp	collemataceae	collema	terricolous	symbiotic	chile				This study	
+P12584	Pseudocyphellaria_meyenii	lobariaceae	pseudocyphellaria	terricolous	symbiotic	chile				This study	
+P12588	Leptogium_sp	collemataceae	leptogium	terricolous	symbiotic	chile				This study	
+P12591	Collema_sp	collemataceae	collema		symbiotic	malaysia				This study	
+P12639	Leptogium_sp	collemataceae	leptogium	epiphytic	symbiotic	panama				This study	
+P12641	Leptogium_sp	collemataceae	leptogium	terricolous	symbiotic	Panama				This study	
+P12642	Leptogium_sp	collemataceae	leptogium	epiphytic	symbiotic	Panama				This study	
+P12646	Leptogium_sp	collemataceae	leptogium	epiphytic	symbiotic	Panama				This study	
+P12649	Leptogium_sp	collemataceae	leptogium	terricolous	symbiotic	Panama				This study	
+P12650	Leptogium_sp	collemataceae	leptogium	epiphytic	symbiotic	Panama				This study	
+P14213	Lobaria_retigera	lobariaceae	lobaria	terricolous	symbiotic	South Africa				This study	
+P14264	Leptogium_sp	collemataceae	leptogium	epiphytic	symbiotic	South Africa				This study	
+P14269	Leptogium_sp	collemataceae	leptogium	terricolous	symbiotic	South Africa				This study	
+P14318	Sticta_sp	lobariaceae	sticta	terricolous	symbiotic	South Africa				This study	
+P14321	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	terricolous	symbiotic	South Africa				This study	
+P1574	Peltigera_dolichorhiza	peltigeraceae	peltigera	terricolous	symbiotic	Brazil	Minas gerais	J. Miadlikowska et al. s.n.; CGMS-34450		This study; Magain et al. 2017	
+P2037	Peltigera_aubertii	peltigeraceae	peltigera		symbiotic	Chile	Region XII	_Goffinet 10559 (CONN)		This study; Magain et al 2018	
+P2039	Peltigera_sp_14	peltigeraceae	peltigera	terricolous	symbiotic	Chile	Region XII	_Shaw 17848 (DUKE 0401861)		This study; Magain et al 2018	
+P2081	Peltigera_canina_2	peltigeraceae	peltigera		symbiotic						
+P2083	Peltigera_rufescens_1	peltigeraceae	peltigera		symbiotic						
+P2090	Peltigera_canina_2	peltigeraceae	peltigera		symbiotic						
+P2115	Peltigera_vainioi	peltigeraceae	peltigera		symbiotic						
+P2123	Peltigera_canina_1	peltigeraceae	peltigera		symbiotic						
+P2152	Peltigera_soredians	peltigeraceae	peltigera		symbiotic						
+P2162	Peltigera_erioderma_1	peltigeraceae	peltigera		symbiotic						
+P2164	Peltigera_sp_17	peltigeraceae	peltigera		symbiotic						
+P2170	Peltigera_degenii	peltigeraceae	peltigera		symbiotic						
+P2180	Peltigera_ponojensis_monticola_1a	peltigeraceae	peltigera		symbiotic						
+P2213	Peltigera_canina_1	peltigeraceae	peltigera		symbiotic						
+P2224	Peltigera_neocanina_3	peltigeraceae	peltigera		symbiotic						
+P3034	Peltigera_occidentalis	peltigeraceae	peltigera		symbiotic						
+P3068	Peltigera_neopolydactyla_5	peltigeraceae	peltigera		symbiotic						
+P330	Peltigera_truculenta	peltigeraceae	peltigera		symbiotic						
+P5023	Peltigera_scabrosa	peltigeraceae	peltigera		symbiotic						
+P539	Peltigera_hymenina	peltigeraceae	peltigera		symbiotic						
+P607	Peltigera_sp_3	peltigeraceae	peltigera		symbiotic						
+P6447	Peltigera_collina	peltigeraceae	peltigera		symbiotic						
+P6465	Peltigera_neopolydactyla_1	peltigeraceae	peltigera		symbiotic						
+P6524	Peltigera_praetextata	peltigeraceae	peltigera		symbiotic						
+P6600	Peltigera_canina_2	peltigeraceae	peltigera		symbiotic						
+P6602	Peltigera_scabrosa_1_	peltigeraceae	peltigera		symbiotic						
+P6620	Peltigera_neopolydactyla_	peltigeraceae	peltigera		symbiotic						
+P6636	Peltigera_horizontalis	peltigeraceae	peltigera		symbiotic						
+P6963	Peltigera_sp	peltigeraceae	peltigera		symbiotic						
+P6970	Peltigera_sp_11	peltigeraceae	peltigera		symbiotic						
+P8202	Peltigera_latiloba	peltigeraceae	peltigera		symbiotic	canada					
+P8219	Peltigera_islandica	peltigeraceae	peltigera		symbiotic	canada					
+P8231	Peltigera_ponojensis_monticola_1a	peltigeraceae	peltigera		symbiotic	canada					
+P8256	Peltigera_didactyla_3	peltigeraceae	peltigera		symbiotic	canada					
+P8569	Peltigera_elisabethae	peltigeraceae	peltigera		symbiotic	canada					
+P8570	Peltigera_canina_1	peltigeraceae	peltigera		symbiotic	canada					
+P8571	Peltigera_praetextata	peltigeraceae	peltigera		symbiotic	canada					
+P8575	Peltigera_neckeri	peltigeraceae	peltigera		symbiotic	canada					
+P8577	Peltigera_aphthosa_5	peltigeraceae	peltigera		symbiotic	canada					
+P8580	Peltigera_neckeri	peltigeraceae	peltigera		symbiotic	canada					
+P8690	Peltigera_malacea_3	peltigeraceae	peltigera		symbiotic	canada					
+P8768	Peltigera_aff_didactyla	peltigeraceae	peltigera		symbiotic	canada					
+P8840	Peltigera_leucophlebia_1	peltigeraceae	peltigera		symbiotic	canada					
+P8857	Peltigera_scabrosa_1	peltigeraceae	peltigera		symbiotic	canada					
+P8926	Peltigera_malacea_2	peltigeraceae	peltigera		symbiotic	canada					
+P9119	Peltigera_frippii	peltigeraceae	peltigera		symbiotic	canada					
+P9121	Peltigera_neopolydactyla_1	peltigeraceae	peltigera		symbiotic	canada					
+P943	Peltigera_extenuata_2	peltigeraceae	peltigera		symbiotic						
+P9639	Fuscopannaria_sp	pannariaceae	fuscopannaria	terricolous	symbiotic	canada	ABMI site 37	ABMI ID 1260051		This study	
+P9728	Peltigera_malacea_2	peltigeraceae	peltigera		symbiotic	canada					
+P9820	Peltigera_canina_2	peltigeraceae	peltigera		symbiotic	canada					
+P9822	Peltigera_malacea_2	peltigeraceae	peltigera		symbiotic	canada					
+P9895	Nephroma_resupinatum	nephromataceae	nephroma		symbiotic	canada	ABMI site 930	ABMI ID 1388226		This study	log/stump
+S1	Pannariaceae	pannariaceae	pannariaceae		symbiotic						
+S10	Fuscopannaria	pannariaceae	fuscopannaria		symbiotic						
+S11	Fuscopannaria	pannariaceae	fuscopannaria		symbiotic						
+S12	Kroswia	pannariaceae	kroswia		symbiotic						
+S13	Kroswia	pannariaceae	kroswia		symbiotic						
+S14	Peltigera_pacifica	peltigeraceae	peltigera		symbiotic						
+S15	Peltigera_pacifica	peltigeraceae	peltigera		symbiotic						
+S16	Peltigera_pacifica	peltigeraceae	peltigera		symbiotic						
+S17	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S18	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S19	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S2	Pannariaceae	pannariaceae	pannariaceae		symbiotic						
+S20	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S21	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S22	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S23	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S24	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S25	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S26	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S27	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S29	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S3	Pannariaceae	pannariaceae	pannariaceae		symbiotic						
+S30	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S31	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S32	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S33	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S34	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S35	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S37	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S38	Peltigera_vitikainenii	peltigeraceae	peltigera		symbiotic						
+S39	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S40	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S41	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S42	S42	peltigeraceae	peltigera		symbiotic						
+S43	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S44	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S45	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S46	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S47	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S48	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S49	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S4	Lepidocollema_sp	pannariaceae	lepidocollema		symbiotic						
+S5	Physma_sp	pannariaceae	physma		symbiotic						
+S51	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S52	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S53	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S54	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S55	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S56	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S57	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S58	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S6	Lepidocollema_sp	pannariaceae	lepidocollema		symbiotic						
+S60	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S61	Peltigera_asiatica	peltigeraceae	peltigera		symbiotic						
+S62	Peltigera_asiatica	peltigeraceae	peltigera		symbiotic						
+S63	Peltigera_asiatica	peltigeraceae	peltigera		symbiotic						
+S64	Peltigera_mikado	peltigeraceae	peltigera		symbiotic						
+S66	Peltigera_mikado	peltigeraceae	peltigera		symbiotic						
+S67	Peltigera_gayae	peltigeraceae	peltigera		symbiotic						
+S68	Peltigera_gayae	peltigeraceae	peltigera		symbiotic						
+S8	Physma_sp	pannariaceae	physma		symbiotic						
+S82	Peltigera_pulverulenta_3	peltigeraceae	peltigera		symbiotic						
+S83	Peltigera_pulverulenta_3	peltigeraceae	peltigera		symbiotic						
+S85	Peltigera_dolichorhiza	peltigeraceae	peltigera		symbiotic						
+S86	Peltigera_pulverulenta	peltigeraceae	peltigera		symbiotic						
+S88	Peltigera_pulverulenta_2	peltigeraceae	peltigera		symbiotic						
+S9	Physma_sp	pannariaceae	physma		symbiotic						
+S90	Peltigera_sp_6	peltigeraceae	peltigera		symbiotic						
+S91	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S92	Peltigera_sp_1	peltigeraceae	peltigera		symbiotic						
+S93	Peltigera_appalachensis	peltigeraceae	peltigera		symbiotic						
+S94	Peltigera_dolichorhiza_2	peltigeraceae	peltigera		symbiotic						
+S95	Peltigera_sp_2b	peltigeraceae	peltigera		symbiotic						
+X2	Peltigera_aff_neorufescens	peltigeraceae	peltigera		symbiotic						
