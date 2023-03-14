@@ -669,23 +669,12 @@ done
 mkdir -p analyses/species_delimitation/fastani/set103
 sbatch scripts/fastani_set103.sh
 
+################################################################################
+# VOUCHER TABLE
+################################################################################
 
-
-
-
-# Initialize git repo here
-git init
-# Stage files
-git add .
-# Commit changes to repo
-git commit -m "First commit of the project scripts at the taxon sampling curation stage"
-# Connect repo to GitHub
-git remote add origin https://github.com/cjpardodelahoz/nostoc.git
-# Change name of master branch to main
-git branch -M main
-# Push 
-git push -u origin main
-
+#
+Rscript scripts/report_voucher.R
 
 
 
