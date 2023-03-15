@@ -679,6 +679,22 @@ ls analyses/cyano_genomes/set10/ > misc_files/genome_ids_set10
 # Run NCBI Foreign Contamination Screen pipeline to clean set103c and set103p
 sbatch scripts/ncbi_fcs_set103c.sh
 sbatch scripts/ncbi_fcs_set103p.sh
+# Set11c with newy generated genomes, chromosomes only
+mkdir analyses/cyano_genomes/set11c
+for genome in $(cat misc_files/genome_ids_set10) ; do
+ cp analyses/genome_qc/set103c/fcs/${genome%.fa}_chromosome.fa/cleaned_sequences/${genome%.fa}_chromosome.fa \
+  analyses/cyano_genomes/set11c/${genome%.fa}_chromosome.fa
+ sed -i".bak" "s|lcl\|||" analyses/cyano_genomes/set11c/${genome%.fa}_chromosome.fa
+done
+rm analyses/cyano_genomes/set11c/*.bak
+# Set11p with newy generated genomes, plasmids only
+mkdir analyses/cyano_genomes/set11p
+for genome in $(cat misc_files/genome_ids_set10) ; do
+ cp analyses/genome_qc/set103p/fcs/${genome%.fa}_plasmid.fa/cleaned_sequences/${genome%.fa}_plasmid.fa \
+  analyses/cyano_genomes/set11p/${genome%.fa}_plasmid.fa
+ sed -i".bak" "s|lcl\|||" analyses/cyano_genomes/set11p/${genome%.fa}_plasmid.fa
+done
+rm analyses/cyano_genomes/set11p/*.bak
 #
 Rscript scripts/report_voucher.R
 
