@@ -14,5 +14,5 @@ mkdir -p analyses/genome_qc/set12c/gunc
 # Run GUNC
 gunc run --input_dir analyses/cyano_genomes/set12c/ \
  -r databases/gunc_db/gunc_db_progenomes2.1.dmnd --use_species_level \
- --out_dir analyses/genome_qc/set12/gunc \
+ --out_dir analyses/genome_qc/set12c/gunc \
  --temp_dir /work/cjp47 \
