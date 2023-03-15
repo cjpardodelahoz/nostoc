@@ -695,7 +695,7 @@ for genome in $(cat misc_files/genome_ids_set10) ; do
  sed -i".bak" "s|lcl\|||" analyses/cyano_genomes/set11p/${genome%.fa}_plasmid.fa
 done
 rm analyses/cyano_genomes/set11p/*.bak
-# set12c set12p with set11cp and plasmid sorted plublic genomes from set103
+# set12c set12p with set11cp and plasmid-sorted plublic genomes from set103
 mkdir -p analyses/cyano_genomes/set12c
 mkdir -p analyses/cyano_genomes/set12p
 cp analyses/cyano_genomes/set11c/* analyses/cyano_genomes/set12c
@@ -707,6 +707,12 @@ for genome in $(cat misc_files/genome_ids_set3) ; do
  cp analyses/cyano_genomes/set103p/${genome%.fa}_plasmid.fa \
   analyses/cyano_genomes/set12p
 done
+# set12c genome file list
+ls analyses/cyano_genomes/set12c > misc_files/genome_ids_set12c
+# Run Busco, GUNC and Quast on set12c
+sbatch scripts/busco_set12c.sh
+sbatch scripts/quast_set12c.sh
+sbatch scripts/gunc_set12c.sh
 #
 Rscript scripts/report_voucher.R
 
