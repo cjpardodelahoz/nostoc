@@ -673,10 +673,12 @@ sbatch scripts/fastani_set103.sh
 # VOUCHER TABLE
 ################################################################################
 
-#
-analyses/cyano_genomes/set103c/ > misc_files/genome_ids_set103c
-analyses/cyano_genomes/set103p/ > misc_files/genome_ids_set103p
-# Run NCBI FCS pipeline to clean set103a
+# Get list of genomes curated and generated in this study to clean
+# Remobe P8840_bin_nostoc.fa from the list
+ls analyses/cyano_genomes/set10/ > misc_files/genome_ids_set10
+# Run NCBI Foreign Contamination Screen pipeline to clean set103c and set103p
+sbatch scripts/ncbi_fcs_set103c.sh
+sbatch scripts/ncbi_fcs_set103p.sh
 #
 Rscript scripts/report_voucher.R
 
