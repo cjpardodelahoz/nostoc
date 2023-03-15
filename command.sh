@@ -674,6 +674,10 @@ sbatch scripts/fastani_set103.sh
 ################################################################################
 
 #
+analyses/cyano_genomes/set103c/ > misc_files/genome_ids_set103c
+analyses/cyano_genomes/set103p/ > misc_files/genome_ids_set103p
+# Run NCBI FCS pipeline to clean set103a
+#
 Rscript scripts/report_voucher.R
 
 
