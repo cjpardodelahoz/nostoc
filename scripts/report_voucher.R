@@ -4,22 +4,25 @@ source("scripts/r_functions.R")
 library(tidyverse)
 library(ape)
 
-# Load genome ids for set 103a and make a df with sample (specimen) ids
-genome_ids <- scan("misc_files/genome_ids_set103", what = "character") 
+# Load genome ids for set 12c and 12p and make a df with sample (specimen) ids
+genome_ids <- scan("misc_files/genome_ids_set12c", what = "character")
+plasmid_ids <- scan("misc_files/genome_ids_set12p", what = "character") %>%
+  as_tibble() %>%
+  mutate(genome_id = 
+           str_remove(value, pattern = "_plasmid.fa")) %>%
+  rename(plasmid_filename = value)
 genome_ids_df <- genome_ids %>%
   as_tibble() %>%
-  rename(genome_id = value) %>%
+  rename(chromosome_filename = value) %>%
+  mutate(genome_id = 
+           str_remove(chromosome_filename, pattern = "_chromosome.fa")) %>%
+  left_join(plasmid_ids, by = "genome_id") %>%
   mutate(sample_id = 
-           str_remove(genome_id, pattern = ".fa")) %>%
-  mutate(sample_id = 
-           str_remove(sample_id, pattern = "_bin.*")) %>%
-  mutate(chromosome_filename = 
-           str_replace(genome_id, ".fa", "_chromosome.fa")) %>%
-  mutate(plasmid_filename = 
-           str_replace(genome_id, ".fa", "_plasmid.fa"))
+           str_remove(genome_id, "_bin.*")) 
 # Load voucher primer table and merge with genome ids for set 103a
 voucher_df <- read_delim("misc_files/voucher_primer_3.txt", delim = "\t") %>%
-  left_join(genome_ids_df, by = "sample_id")
+  left_join(genome_ids_df, by = "sample_id") %>%
+  relocate(sample_id, genome_id)
 write_csv(voucher_df, file = "document/tables/voucher_v1.csv")
 
 

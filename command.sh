@@ -707,8 +707,9 @@ for genome in $(cat misc_files/genome_ids_set3) ; do
  cp analyses/cyano_genomes/set103p/${genome%.fa}_plasmid.fa \
   analyses/cyano_genomes/set12p
 done
-# set12c genome file list
+# set12c and set12p genome file list
 ls analyses/cyano_genomes/set12c > misc_files/genome_ids_set12c
+ls analyses/cyano_genomes/set12p > misc_files/genome_ids_set12p
 # Run Busco, GUNC and Quast on set12c
 sbatch scripts/busco_set12c.sh
 sbatch scripts/quast_set12c.sh
