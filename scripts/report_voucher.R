@@ -26,7 +26,31 @@ voucher_df <- read_delim("misc_files/voucher_primer_3.txt", delim = "\t") %>%
 write_csv(voucher_df, file = "document/tables/voucher_v1.csv")
 
 
+tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
+tree_key <-  voucher_df %>%
+  filter(!is.na(genome_id)) %>%
+  mutate(tree_tip = 
+           paste(genome_id, ".fa", sep = "")) %>%
+  mutate(taxon_name = 
+           ifelse(genome_id == sample_id, 
+                  yes = taxon_name, 
+                  no = paste(genome_id, taxon_name, sep = "_"))) %>%
+  select(tree_tip, taxon_name)
+tree_new <- rename_taxa(tree, tree_key)
+write.tree(tree_new, file = "document/sharing/dated_tree.tree")  
 
+perrin_voucher <-  voucher_df %>%
+  filter(!is.na(genome_id)) %>%
+  mutate(tree_tip = 
+           paste(genome_id, ".fa", sep = "")) %>%
+  mutate(taxon_name = 
+           ifelse(genome_id == sample_id, 
+                  yes = taxon_name, 
+                  no = paste(genome_id, taxon_name, sep = "_"))) %>%
+  select(taxon_name, host_family, host_genus, substrate_type, lifestyle,
+         country,  locality, voucher, substrate_notes, reference)
+write_csv(perrin_voucher, 
+          file = "document/tables/nostoc_metadata_for_perrin_v1.csv")
 
 
 
