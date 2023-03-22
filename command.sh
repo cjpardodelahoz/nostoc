@@ -666,8 +666,8 @@ done
 ################################################################################
 
 # Run all-by-all comparison of set103 with Fastani
-mkdir -p analyses/species_delimitation/fastani/set103
-sbatch scripts/fastani_set103.sh
+mkdir -p analyses/species_delimitation/fastani/set12c
+sbatch scripts/fastani_set12c.sh
 
 ################################################################################
 # VOUCHER TABLE
