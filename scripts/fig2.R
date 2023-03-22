@@ -1,34 +1,29 @@
 #!/usr/bin/env Rscript
 
 # Load required packages and functions
-library(tidyverse)
+library(tidyverse) 
 library(ggtree)
 library(tidytree)
 library(ggplot2)
 library(labdsv)
 source("scripts/r_functions.R")
 
-##### CONFLICT ANALYSES #####
-
-
-
 ##### ANI MATRIX ####
 
-# Load the astral tree
-astral_tree <- read.tree("analyses/phylogenetics/set103/trees/astral/astral.tree")
-astral_tree$edge.length[is.na(astral_tree$edge.length)] <- 1
-astral_tree <- astral_tree %>%
+# Load and root the dated tree (wASTRAL topology)
+dated_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
+dated_tree <- dated_tree %>%
   treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
                             "Anabaena_cylindrica_PCC_7122.fa",
                             "Cylindrospermum_stagnale_PCC_7417.fa"), 
                resolve.root = T)
 # Load FastANI output
-fastani_df <- read_delim(file = "analyses/species_delimitation/fastani/set103/fastani_set103_ql_out", 
+fastani_df <- read_delim(file = "analyses/species_delimitation/fastani/set12c/fastani_set12c_ql_out", 
                          col_names = FALSE) %>%
   mutate(X1 = 
-           str_remove(X1, "analyses/cyano_genomes/set103/")) %>%
+           str_remove(X1, "analyses/cyano_genomes/set12c/")) %>%
   mutate(X2 = 
-           str_remove(X2, "analyses/cyano_genomes/set103/"))
+           str_remove(X2, "analyses/cyano_genomes/set12c/"))
 # Converta ANI data to matrix
 ani_matrix <- fastani_df %>%
   select(1:3) %>% 
