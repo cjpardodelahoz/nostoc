@@ -11,5 +11,5 @@ module load FastANI/1.31
 # Create query list file with path to genome bins
 ls -d analyses/cyano_genomes/set12c/* > misc_files/fastani_set12c_ql
 # Run FastANI with an all-by-all comparison
-fastANI -t 12 --ql misc_files/fastani_set12c_ql --rl scripts/fastani_set12c_ql \
+fastANI -t 12 --ql misc_files/fastani_set12c_ql --rl misc_files/fastani_set12c_ql \
  --matrix -o analyses/species_delimitation/fastani/set12c/fastani_set12c_ql_out
