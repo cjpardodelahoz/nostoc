@@ -665,7 +665,7 @@ done
 # SPECIES DELIMITATION
 ################################################################################
 
-# Run all-by-all comparison of set103 with Fastani
+# Run all-by-all comparison of set12c with Fastani
 mkdir -p analyses/species_delimitation/fastani/set12c
 sbatch scripts/fastani_set12c.sh
 
