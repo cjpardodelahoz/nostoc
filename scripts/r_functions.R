@@ -174,18 +174,18 @@ sort_busco_seqs <- function(sample_ids, busco_out_dir, busco_db, out_file_name,
 # with the funciton read_busc()
 sum_busco <- function(busco_df) {
   busco_df %>% group_by(sample_id) %>%
-    distinct(busco_id, .keep_all = T) %>%
-    count(status) %>% 
-    pivot_wider(names_from = status, values_from = n) %>%
-    mutate(n_busco = 
+    dplyr::distinct(busco_id, .keep_all = T) %>%
+    dplyr::count(status) %>% 
+    tidyr::pivot_wider(names_from = status, values_from = n) %>%
+    dplyr::mutate(n_busco = 
              sum(Complete, Duplicated, Fragmented, Missing, na.rm = T)) %>%
-    mutate(percent_complete =
+    dplyr::mutate(percent_complete =
              (Complete/n_busco)*100) %>%
-    mutate(percent_duplicated =
+    dplyr::mutate(percent_duplicated =
              (Duplicated/n_busco)*100) %>%
-    mutate(percent_fragmented =
+    dplyr::mutate(percent_fragmented =
              (Fragmented/n_busco)*100) %>%
-    mutate(percent_missing =
+    dplyr::mutate(percent_missing =
              (Missing/n_busco)*100)
 }
 
