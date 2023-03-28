@@ -7,19 +7,13 @@ library(tidytree)
 library(ggplot2)
 library(labdsv)
 library(data.table)
+library(ggalt)
+library(ggpubr)
 source("scripts/r_functions.R")
 
-`%nin%` = Negate(`%in%`)
+##### SUMMARIZE FASTANI RESULTS #####
 
-##### ANI MATRIX ####
-
-# Load and root the dated tree (wASTRAL topology)
-dated_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
-dated_tree <- dated_tree %>%
-  treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
-                            "Anabaena_cylindrica_PCC_7122.fa",
-                            "Cylindrospermum_stagnale_PCC_7417.fa"), 
-               resolve.root = T)
+# Outgroup taxa
 outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
              "Anabaena_cylindrica_PCC_7122.fa",
              "Cylindrospermum_stagnale_PCC_7417.fa")
@@ -47,105 +41,116 @@ fastani_df <- read_delim(file = "analyses/species_delimitation/fastani/set12c/fa
   select(!c(X1, X2, X4, X5)) %>%
   rename(ani = X3) %>%
   relocate(genome1, genome2)
-#
-gap <- function(fastani_df, low_lim, hi_lim) {
-  genomes <- fastani_df %>% dplyr::pull(1) %>%
-    base::unique()
-  gap <- numeric()
-  gap_low_lim <- numeric()
-  gap_hi_lim <- numeric()
-  for (i in 1:length(genomes)) {
-    genome <- genomes[i]
-    anis <- fastani_df %>% dplyr::filter(genome1 == genome | 
-                                              genome2 == genome) %>% 
-      pull(ani) %>% 
-      base::subset(. > low_lim & . <= hi_lim) %>%
-      sort()
-    diffs <- diff(anis)
-    gap[i] <- max(diffs)
-    if (is.finite(gap[i])) {
-      gap_low_lim_index <- which(diffs == gap[i]) %>%
-        unique()
-      gap_low_lim[i] <- anis[gap_low_lim_index]
-      gap_hi_lim[i] <- anis[gap_low_lim_index+1]
-    } else {
-      gap_low_lim[i] <- NA
-      gap_hi_lim[i] <- NA
-    }
-  }
-  out <- dplyr::bind_cols(genomes, gap, gap_low_lim, gap_hi_lim) %>%
-    mutate(`...2` =
-             ifelse(gap == -Inf, NA, gap))
-  colnames(out) <- c("genomes", "gap",  "gap_low_lim", "gap_hi_lim")
-  out
-}
+# Calculate ANI gap
+gap_df <- gap(fastani_df, low_lim = 88, hi_lim = 98)
 
-gap_df <- gap(fastani_df, low_lim = 88, hi_lim = 100)
+# Plots
 
-anis <- fastani_df %>% filter(genome1 == "P8231_bin_15.fa" | 
-                                genome2 == "P8231_bin_15.fa") %>% 
-  pull(ani) %>% 
-  base::subset(. > 88) %>%
-  sort() %>%
-  diff() %>%
-  max()
-
-
-
-# Converta ANI data to matrix
-ani_matrix <- fastani_df %>%
-  select(1:3) %>% 
-  as.matrix() %>%
-  matrify() %>%
-  mutate_if(is.character, as.numeric)
-ani_matrix[ani_matrix == 0] <- NA
-
-
-#
+# Histogram of pairwise ANIS
 ani_hist <- ggplot(data = fastani_df, aes(x = ani)) +
   geom_histogram(fill = "gray40") +
-  labs(x = "ANI", y = "frequency") +
+  labs(x = "ANI", y = "Frequency") +
   scale_x_continuous(n.breaks = 13) +
+  geom_vline(xintercept = 95, linetype = "dashed", color = "gray40") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
-        axis.text = element_text(size = 12))
-#
+        axis.text = element_text(size = 12, color = "black"))
+# ANI vs alignment fraction
 ani_vs_aln <- ggplot(data = fastani_df, aes(x = ani, y = alignment_fraction)) +
   geom_point(size = 0.5, alpha = 0.5) +
   labs(x = "ANI", y = "Alignment fraction") +
   scale_x_continuous(n.breaks = 13) +
+  geom_vline(xintercept = 95, linetype = "dashed", color = "gray40") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
-        axis.text = element_text(size = 12))
+        axis.text = element_text(size = 12, color = "black"))
+# Distribution of ANI gaps
+ani_gap_all <- ggplot(gap_df, aes(y = reorder(genomes, gap_low_lim), 
+                                  x = gap_low_lim, 
+                                  xend = gap_hi_lim)) +
+  geom_dumbbell(size_x = 0.2, size_xend = 0.2, size = 0.2) +
+  geom_vline(xintercept = 95, linetype = "dashed", color = "gray40") +
+  labs(x = "ANI gap span", y = "Genomes") +
+  scale_x_continuous(n.breaks = 10) +
+  theme(panel.background = NULL,
+        panel.border = element_rect(fill = "transparent", linewidth = 0.75),
+        axis.text = element_text(size = 12, color = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank())
+# Arrange Fig
+ani_sum_fig <- ggarrange(ncol = 3, nrow = 1, 
+                         ani_hist, ani_vs_aln, ani_gap_all)
+# Save plots
+ggsave(ani_sum_fig, filename = "document/plots/ani_sum_fig.pdf", 
+       width = 11.5, height = 4)
 
 
+##### CLUSTER GENOMES USING ANI #####
 
-
-
-
-ani_matrix <- ani_matrix %>%
-  select(all_of(ordered_tips)) %>%
-  as.data.frame()
-rownames(ani_matrix) <- ordered_tips
-# Plot tree with matrix
-astral_tree_plot <- ggtree(astral_tree)
-gheatmap(astral_tree_plot, ani_matrix, colnames=F) +
-  scale_fill_continuous(type = "viridis")
-ggsave(h, filename = "test.pdf", device = "pdf")
+# Load and root the dated tree (wASTRAL topology)
+dated_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
+dated_tree <- dated_tree %>%
+  treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
+                            "Anabaena_cylindrica_PCC_7122.fa",
+                            "Cylindrospermum_stagnale_PCC_7417.fa"), 
+               resolve.root = F)
+# Converta ANI data to matrix
+ani_matrix <- read_delim(file = "analyses/species_delimitation/fastani/set12c/fastani_set12c_ql_out", 
+                         col_names = FALSE) %>%
+  mutate(X1 = 
+           str_remove(X1, "analyses/cyano_genomes/set12c/")) %>%
+  mutate(X1 = 
+           str_remove(X1, "_chromosome")) %>%
+  mutate(X2 = 
+           str_remove(X2, "analyses/cyano_genomes/set12c/")) %>%
+  mutate(X2 = 
+           str_remove(X2, "_chromosome")) %>%
+  select(1:3) %>% 
+  as.matrix() %>%
+  matrify() %>%
+  mutate_if(is.character, as.numeric)
+ani_matrix[ani_matrix == 0] <- 60
+# Make sure that the matrix is symmetric by equating upper and lower triangle
+ani_matrix[lower.tri(ani_matrix)] <- ani_matrix[upper.tri(ani_matrix)]
+# cluster the genomes using 95% ANI
+ani_95_clusters <- abs(100-ani_matrix) %>%
+  as.matrix() %>%
+  as.dist() %>%
+  hclust() %>%
+  cutree(h = 5) %>%
+  enframe(name = "genome", value = "ani_95_cluster") %>%
+  arrange(ani_95_cluster) %>%
+  mutate(ani_95_cluster = 
+           paste("c", ani_95_cluster, sep = ""))
 #
+plot_ani_clusters <- function(tree, ani_cluster_df) {
+  # Getting tree df
+  tree <- dated_tree
+  ani_cluster_df <- ani_95_clusters
+  tree_df <- dated_tree %>%
+    tidytree::as.treedata() %>%
+    tidytree::as_tibble()
+  # Tree plot 
+  tree_plot <- ggtree(tree)
+  # Clusters
+  clusters <- ani_cluster_df %>%
+    dplyr::pull(ani_95_cluster) %>%
+    unique()
+  n_clusters <-  length(clusters)
+  #
+  for (i in 1:n_clusters) {
+    cluster_genomes <- ani_cluster_df %>%
+      dplyr::filter(ani_95_cluster == clusters[i]) %>%
+      dplyr::pull(genome)
+    node_number <- tidytree::MRCA(tree_df, cluster_genomes) %>%
+      dplyr::pull(node)
+    tree_plot <- tree_plot +
+      geom_cladelab(node = node_number, label = clusters[i],
+                    barsize = 4, lineheight = 4)
+  }
+  
+}
 
-tree <- read.tree(text = "(((A,B),(C,D)),E);")
-tree2 <- ladderize(tree, right = FALSE)
-tree$tip.label
-#> [1] "A" "B" "C" "D" "E"
-tree2$tip.label
-#> [1] "A" "B" "C" "D" "E"
-plot(tree2)
-nodelabels()
-tiplabels()
-
-astral_tree1 <- ladderize(astral_tree, right = F)
-is_tip <- astral_tree1$edge[,2] <= length(astral_tree1$tip.label)
-ordered_tips <- astral_tree1$edge[is_tip, 2]
-ordered_tips <- astral_tree1$tip.label[ordered_tips] %>% rev()
+ggtree(dated_tree) + 
+  geom_cladelab(node=153, label="", lineheight = 2, barsize = 4)
 
