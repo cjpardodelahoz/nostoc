@@ -1,5 +1,8 @@
 #!/usr/bin/env Rscript
 
+# Operators
+`%nin%` = Negate(`%in%`) # not in
+
 # Function to read the checkm output from a single genome in a run
 read_checkm <- function(sample_id, checkm_out_dir, out_file_name) {
   checkm_out_file <- paste(checkm_out_dir, sample_id, out_file_name, sep = "/")
@@ -346,4 +349,39 @@ replace_empty_ufboot <- function(treefiles) {
 }
 
 
+# Function to calculate ANI GAP (Greatest Average nucleotide Identity gaP)
+# fastani_df  Data frame where the first two columns have the genome names (must be named geonme1 and genome2), and the third column (named ani) has the ANI between genome1 and genome 2.
+# low_lim     ANI lower limit to consider to calculate GAP
+# hi_lim      ANI upper limit to consider to calculate GAP
+gap <- function(fastani_df, low_lim, hi_lim) {
+  genomes <- fastani_df %>% dplyr::pull(1) %>%
+    base::unique()
+  gap <- numeric()
+  gap_low_lim <- numeric()
+  gap_hi_lim <- numeric()
+  for (i in 1:length(genomes)) {
+    genome <- genomes[i]
+    anis <- fastani_df %>% dplyr::filter(genome1 == genome | 
+                                           genome2 == genome) %>% 
+      dplyr::pull(ani) %>% 
+      base::subset(. > low_lim & . <= hi_lim) %>%
+      sort()
+    diffs <- diff(anis)
+    gap[i] <- max(diffs)
+    if (is.finite(gap[i])) {
+      gap_low_lim_index <- which(diffs == gap[i]) %>%
+        base::unique()
+      gap_low_lim[i] <- anis[gap_low_lim_index]
+      gap_hi_lim[i] <- anis[gap_low_lim_index+1]
+    } else {
+      gap_low_lim[i] <- NA
+      gap_hi_lim[i] <- NA
+    }
+  }
+  out <- dplyr::bind_cols(genomes, gap, gap_low_lim, gap_hi_lim) %>%
+    dplyr::mutate(`...2` =
+                    dplyr::if_else(gap == -Inf, NA, gap))
+  colnames(out) <- c("genomes", "gap",  "gap_low_lim", "gap_hi_lim")
+  out
+}
 
