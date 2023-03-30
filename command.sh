@@ -668,6 +668,10 @@ done
 # Run all-by-all comparison of set12c with Fastani
 mkdir -p analyses/species_delimitation/fastani/set12c
 sbatch scripts/fastani_set12c.sh
+# Summarize ANI results
+# This will generate the plots summarizing the distribution of pairwise ANI,
+# the correlation of ANI with alignment fraction, and the ANI gap
+Rscript scripts/sum_ani_results.R
 
 ################################################################################
 # VOUCHER TABLE
