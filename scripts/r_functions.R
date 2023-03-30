@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # Operators
-`%nin%` = Negate(data.table::`%in%`) # not in
+`%nin%` = Negate(`%in%`) # not in
 
 # Function to read the checkm output from a single genome in a run
 read_checkm <- function(sample_id, checkm_out_dir, out_file_name) {
