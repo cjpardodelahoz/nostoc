@@ -111,6 +111,16 @@
       "Hash": "e749cae40fa9ef469b6050959517453c",
       "Requirements": []
     },
+    "RcppArmadillo": {
+      "Package": "RcppArmadillo",
+      "Version": "0.12.0.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "dee7cfd76b4c78bab84e09b74b6d471f",
+      "Requirements": [
+        "Rcpp"
+      ]
+    },
     "RcppEigen": {
       "Package": "RcppEigen",
       "Version": "0.3.3.9.3",
@@ -168,12 +178,13 @@
     },
     "ape": {
       "Package": "ape",
-      "Version": "5.6-2",
+      "Version": "5.7-1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "894108412a7ec23d5de85cdcce871c8b",
+      "Hash": "10705eec964349f270504754d8fe8ef1",
       "Requirements": [
         "Rcpp",
+        "digest",
         "lattice",
         "nlme"
       ]
@@ -252,6 +263,14 @@
         "bit"
       ]
     },
+    "bitops": {
+      "Package": "bitops",
+      "Version": "1.0-7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b7d8d8ee39869c18d8846a184dd8a1af",
+      "Requirements": []
+    },
     "blob": {
       "Package": "blob",
       "Version": "1.2.3",
@@ -314,6 +333,16 @@
         "mime",
         "rlang",
         "sass"
+      ]
+    },
+    "caTools": {
+      "Package": "caTools",
+      "Version": "1.18.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "34d90fa5845004236b9eacafc51d07b2",
+      "Requirements": [
+        "bitops"
       ]
     },
     "cachem": {
@@ -400,6 +429,26 @@
       "Hash": "5edbbabab6ce0bf7900a74fd4358628e",
       "Requirements": []
     },
+    "clusterGeneration": {
+      "Package": "clusterGeneration",
+      "Version": "1.3.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "bd5a27acbb72cdb7e01714fe29470675",
+      "Requirements": [
+        "MASS"
+      ]
+    },
+    "coda": {
+      "Package": "coda",
+      "Version": "0.19-4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "24b6d006b8b2343876cf230687546932",
+      "Requirements": [
+        "lattice"
+      ]
+    },
     "codetools": {
       "Package": "codetools",
       "Version": "0.2-19",
@@ -414,6 +463,14 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "f20c47fd52fae58b4e377c37bb8c335b",
+      "Requirements": []
+    },
+    "combinat": {
+      "Package": "combinat",
+      "Version": "0.0-8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f0acb9dcb71a9cd9d5ae233c5035b1c5",
       "Requirements": []
     },
     "corrplot": {
@@ -605,6 +662,16 @@
       "Hash": "4b68aa51edd89a0e044a66e75ae3cc6c",
       "Requirements": []
     },
+    "expm": {
+      "Package": "expm",
+      "Version": "0.999-7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "af0c5d9f9ece61d4723904c7b2b49b4d",
+      "Requirements": [
+        "Matrix"
+      ]
+    },
     "extrafont": {
       "Package": "extrafont",
       "Version": "0.19",
@@ -638,6 +705,39 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "8106d78941f34855c440ddb946b8f7a5",
+      "Requirements": []
+    },
+    "fastbaps": {
+      "Package": "fastbaps",
+      "Version": "1.0.8",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "fastbaps",
+      "RemoteUsername": "gtonkinhill",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "1c322182eab509c647a0584e9d55df7d50c21823",
+      "Hash": "224b67672048a4a722e20e4bdfbc00fe",
+      "Requirements": [
+        "Matrix",
+        "Rcpp",
+        "RcppArmadillo",
+        "ape",
+        "fastcluster",
+        "genie",
+        "gplots",
+        "irlba",
+        "optparse",
+        "phangorn",
+        "phytools"
+      ]
+    },
+    "fastcluster": {
+      "Package": "fastcluster",
+      "Version": "1.2.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f032f97ae2ab52d5c0fc51a1b3b2b91d",
       "Requirements": []
     },
     "fastmap": {
@@ -716,6 +816,35 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "15e9634c0fcd294799e9b2e929ed1b86",
+      "Requirements": []
+    },
+    "genie": {
+      "Package": "genie",
+      "Version": "1.0.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e303942eb645b804cd5dd2712a7cb987",
+      "Requirements": [
+        "Rcpp",
+        "genieclust"
+      ]
+    },
+    "genieclust": {
+      "Package": "genieclust",
+      "Version": "1.1.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "25322f988d1ec26de1a33ec6983bc54f",
+      "Requirements": [
+        "Rcpp"
+      ]
+    },
+    "getopt": {
+      "Package": "getopt",
+      "Version": "1.20.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ad68e3263f0bc9269aab8c2039440117",
       "Requirements": []
     },
     "ggalt": {
@@ -954,6 +1083,18 @@
         "vctrs"
       ]
     },
+    "gplots": {
+      "Package": "gplots",
+      "Version": "3.1.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "75437dd4c43599f6e9418ea249495fda",
+      "Requirements": [
+        "KernSmooth",
+        "caTools",
+        "gtools"
+      ]
+    },
     "gridExtra": {
       "Package": "gridExtra",
       "Version": "2.3",
@@ -978,6 +1119,14 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "36b4265fb818f6a342bed217549cd896",
+      "Requirements": []
+    },
+    "gtools": {
+      "Package": "gtools",
+      "Version": "3.9.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "88bb96eaf7140cdf29e374ef74182220",
       "Requirements": []
     },
     "haven": {
@@ -1087,6 +1236,16 @@
         "magrittr",
         "pkgconfig",
         "rlang"
+      ]
+    },
+    "irlba": {
+      "Package": "irlba",
+      "Version": "2.3.5.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "acb06a47b732c6251afd16e19c3201ff",
+      "Requirements": [
+        "Matrix"
       ]
     },
     "isoband": {
@@ -1281,6 +1440,14 @@
         "Rcpp"
       ]
     },
+    "mnormt": {
+      "Package": "mnormt",
+      "Version": "2.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c83992ef63553d1e4b97162a4a753470",
+      "Requirements": []
+    },
     "modelr": {
       "Package": "modelr",
       "Version": "0.1.10",
@@ -1354,6 +1521,24 @@
         "askpass"
       ]
     },
+    "optimParallel": {
+      "Package": "optimParallel",
+      "Version": "1.0-2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "5a15e068f0bd9bac4252f8f9e11dc79f",
+      "Requirements": []
+    },
+    "optparse": {
+      "Package": "optparse",
+      "Version": "1.7.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "aa4a7717b5760a769c7fd3d34614f2a2",
+      "Requirements": [
+        "getopt"
+      ]
+    },
     "patchwork": {
       "Package": "patchwork",
       "Version": "1.1.2",
@@ -1405,6 +1590,31 @@
       "Hash": "380ebe4fef7e2d48ab430b97108ac8fb",
       "Requirements": [
         "ape"
+      ]
+    },
+    "phytools": {
+      "Package": "phytools",
+      "Version": "1.5-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "146f2f37a89e417614475a2308fcfc98",
+      "Requirements": [
+        "MASS",
+        "ape",
+        "clusterGeneration",
+        "coda",
+        "combinat",
+        "doParallel",
+        "expm",
+        "foreach",
+        "maps",
+        "mnormt",
+        "nlme",
+        "numDeriv",
+        "optimParallel",
+        "phangorn",
+        "plotrix",
+        "scatterplot3d"
       ]
     },
     "pillar": {
@@ -1477,6 +1687,14 @@
         "vctrs",
         "viridisLite"
       ]
+    },
+    "plotrix": {
+      "Package": "plotrix",
+      "Version": "3.8-2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "2ebe8c2ec200da649738b0fc35a9b1a1",
+      "Requirements": []
     },
     "polynom": {
       "Package": "polynom",
@@ -1689,10 +1907,10 @@
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "1.0.6",
+      "Version": "1.1.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "4ed1f8336c8d52c3e750adcdc57228a7",
+      "Hash": "dc079ccd156cde8647360f473c1fa718",
       "Requirements": []
     },
     "rmarkdown": {
@@ -1799,6 +2017,14 @@
         "rlang",
         "viridisLite"
       ]
+    },
+    "scatterplot3d": {
+      "Package": "scatterplot3d",
+      "Version": "0.3-43",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "4a5715fedeeb7e01ced6b238a03811c4",
+      "Requirements": []
     },
     "selectr": {
       "Package": "selectr",
