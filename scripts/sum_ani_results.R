@@ -122,7 +122,14 @@ ani_95_clusters <- abs(100-ani_matrix) %>%
   arrange(ani_95_cluster) %>%
   mutate(ani_95_cluster = 
            paste("c", ani_95_cluster, sep = ""))
-#
+# Save ANI cluster results
+write_csv(ani_95_clusters, 
+          file = "analyses/species_delimitation/fastani/set12c/ani_95_clusters.csv")
+
+
+
+
+
 plot_ani_clusters <- function(tree, ani_cluster_df) {
   # Getting tree df
   tree <- dated_tree
