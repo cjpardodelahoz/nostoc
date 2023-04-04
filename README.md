@@ -94,6 +94,11 @@ plasx setup \
     --de-novo-families 'https://zenodo.org/record/5819401/files/PlasX_mmseqs_profiles.tar.gz' \
     --coefficients 'https://zenodo.org/record/5819401/files/PlasX_coefficients_and_gene_enrichments.txt.gz'
 
+# PopCOGenT
+git clone https://github.com/philarevalo/PopCOGenT.git
+cd PopCOGenT/
+conda config --set restore_free_channel true
+mamba env create -f PopCOGenT.yml
 ```
 
 -To build from source:
