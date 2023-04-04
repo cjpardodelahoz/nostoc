@@ -30,10 +30,18 @@ plot.df2 <- data.frame(id = dated_tree$tip.label, fastbaps = best_partition_tree
                       stringsAsFactors = FALSE)
 
 #
+ani_95_clusters <- read_csv(file = "analyses/species_delimitation/fastani/set12c/ani_95_clusters.csv") %>%
+  mutate(ani_95_cluster = 
+           str_remove(ani_95_cluster, "c")) %>%
+  mutate(ani_95_cluster = 
+           as.integer(ani_95_cluster))
+#
 gg <- ggtree(dated_tree)
 
 f2 <- facet_plot(gg, panel = "fastbaps", data = plot.df, geom = geom_tile, aes(x = fastbaps), 
                  color = "blue")
 f3 <- facet_plot(f2, panel = "fastbaps level 2", data = plot.df2, geom = geom_tile, 
                  aes(x = fastbaps), color = "green")
+f4 <- facet_plot(gg, panel = "ANI 95%", data = ani_95_clusters, geom = geom_tile, 
+                 aes(x = ani_95_cluster), color = "brown")
 
