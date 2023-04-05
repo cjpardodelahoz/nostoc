@@ -99,6 +99,17 @@ git clone https://github.com/philarevalo/PopCOGenT.git
 cd PopCOGenT/
 conda config --set restore_free_channel true
 mamba env create -f PopCOGenT.yml
+conda activate PopCOGenT
+# Install required version of Infomap, distributed with popcogent
+cd Infomap/
+make
+# Install mugsy
+cd ../../../
+wget https://sourceforge.net/projects/mugsy/files/mugsy_x86-64-v1r2.3.tgz/download
+mv download mugsy_x86-64-v1r2.3.tgz
+tar xvzf mugsy_x86-64-v1r2.3.tgz 
+cd mugsy_x86-64-v1r2.2/
+# in mugsyenv.sh modify MUGSY_INSTALL
 ```
 
 -To build from source:
