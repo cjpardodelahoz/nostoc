@@ -623,6 +623,8 @@ sbatch scripts/hessian_set103.sh
 sbatch scripts/mcmctree_sampling_1_part_set103.sh
 sbatch scripts/mcmctree_sampling_4_part_set103.sh
 
+#
+Rscript scripts/fig1.R
 
 ################################################################################
 # PLASMID DETECTION
@@ -672,6 +674,10 @@ sbatch scripts/fastani_set12c.sh
 # This will generate the plots summarizing the distribution of pairwise ANI,
 # the correlation of ANI with alignment fraction, and the ANI gap
 Rscript scripts/sum_ani_results.R
+#
+Rscript scripts/fastbaps_cluster.R
+# PopCOGenT
+sbatch scripts/popcogent_set12c
 
 ################################################################################
 # VOUCHER TABLE
