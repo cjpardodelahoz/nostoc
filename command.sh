@@ -677,7 +677,7 @@ Rscript scripts/sum_ani_results.R
 #
 Rscript scripts/fastbaps_cluster.R
 # PopCOGenT
-sbatch scripts/popcogent_set12c
+sbatch scripts/popcogent_set12c.sh
 
 ################################################################################
 # VOUCHER TABLE

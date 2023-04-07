@@ -8,6 +8,6 @@
 
 # Load PopCOGenT conda environment
 source $(conda info --base)/etc/profile.d/conda.sh
-conda activate quast
+conda activate PopCOGenT
 # Run the PopCOGenT script
 sh scripts/run_popcogent_set12c.sh
