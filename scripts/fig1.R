@@ -3,6 +3,8 @@
 # Load required packages and functions
 library(tidyverse)
 library(ggtree)
+library(ggimage)
+library(ggpubr)
 library(tidytree)
 library(treeio)
 library(labdsv)
@@ -12,9 +14,7 @@ source("scripts/r_functions.R")
 ##### CONFLICT PIE CHARTS #####
 
 # Load and root the dated tree (wASTRAL topology)
-#astral_tree <- read.tree("analyses/phylogenetics/set103/trees/astral/astral.tree")
 dated_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
-#astral_tree$edge.length[is.na(astral_tree$edge.length)] <- 1
 dated_tree <- dated_tree %>%
   treeio::root(outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
                             "Anabaena_cylindrica_PCC_7122.fa",
@@ -58,6 +58,58 @@ tree_pies <- tree_plot +
   geom_inset(conflict_pies, width = 0.02, height = 0.02, x = "node")
 ggsave(plot = tree_pies, "document/plots/dated_tree_pies.pdf",
        units = "cm", width = 15, height = 27,device = "pdf")
+
+##### CONFLICT VS TIME #####
+
+# Join dfs with branch lengths and conflict info from discovista
+tree_df <- as_tibble(dated_tree) %>%
+  left_join(discov_df_top, by = "node") %>%
+  filter(!is.na(bipart)) %>%
+  mutate(branch.length =
+           branch.length*1000)
+# Plot support classes vs internode lengths
+discordant_vs_time <- tree_df %>%
+  filter(support == "percent_discordant") %>%
+  ggplot(aes(x = branch.length, y = percent)) +
+  geom_point(color = "#ea4753") +
+  labs(x = "Internode length (Myr)", y = "Percent of discordant trees") +
+  theme(panel.background = NULL, 
+        panel.border = element_rect(fill = "transparent", linewidth = 0.75),
+        axis.text = element_text(size = 12, color = "black"))
+concordant_vs_time <- tree_df %>%
+  filter(support == "percent_concordant") %>%
+  ggplot(aes(x = branch.length, y = percent)) +
+  geom_point(color = "#40549f") +
+  labs(x = "Internode length (Myr)", y = "Percent of concordant trees") +
+  theme(panel.background = NULL, 
+        panel.border = element_rect(fill = "transparent", linewidth = 0.75),
+        axis.text = element_text(size = 12, color = "black"))
+weak_support_vs_time <- tree_df %>%
+  filter(support == "percent_weak_support") %>%
+  ggplot(aes(x = branch.length, y = percent)) +
+  geom_point(color = "#4599ad") +
+  labs(x = "Internode length (Myr)", y = "Percent of weakly concordant trees") +
+  theme(panel.background = NULL, 
+        panel.border = element_rect(fill = "transparent", linewidth = 0.75),
+        axis.text = element_text(size = 12, color = "black"))
+weak_reject_vs_time <- tree_df %>%
+  filter(support == "percent_weak_reject") %>%
+  ggplot(aes(x = branch.length, y = percent)) +
+  geom_point(color = "#e8db7e") +
+  labs(x = "Internode length (Myr)", y = "Percent of weakly discordant trees") +
+  theme(panel.background = NULL, 
+        panel.border = element_rect(fill = "transparent", linewidth = 0.75),
+        axis.text = element_text(size = 12, color = "black"))
+# Arrange plots
+strong_plots <- ggarrange(ncol = 1, nrow = 2, 
+                          concordant_vs_time, discordant_vs_time)
+weak_plots <- ggarrange(ncol = 2, nrow = 1, 
+                        weak_support_vs_time, weak_reject_vs_time)
+# Save pdfs
+ggsave(strong_plots, filename = "document/plots/conflict_vs_time_strong.pdf", 
+       height = 6, width = 3)
+ggsave(weak_plots, filename = "document/plots/conflict_vs_time_weak.pdf", 
+       height = 3, width = 6)
 
 ##### SIMPLEX PLOTS #####
 
