@@ -880,6 +880,23 @@
         "rlang"
       ]
     },
+    "ggimage": {
+      "Package": "ggimage",
+      "Version": "0.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "624c4de6f05d232d2c4bab9d98d5fa8c",
+      "Requirements": [
+        "ggfun",
+        "ggplot2",
+        "ggplotify",
+        "jsonlite",
+        "magick",
+        "scales",
+        "tibble",
+        "withr"
+      ]
+    },
     "ggnewscale": {
       "Package": "ggnewscale",
       "Version": "0.4.8",
@@ -1382,6 +1399,18 @@
       "Requirements": [
         "generics",
         "timechange"
+      ]
+    },
+    "magick": {
+      "Package": "magick",
+      "Version": "2.7.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "92dd08195d2270e188dcac8d4b219e84",
+      "Requirements": [
+        "Rcpp",
+        "curl",
+        "magrittr"
       ]
     },
     "magrittr": {
