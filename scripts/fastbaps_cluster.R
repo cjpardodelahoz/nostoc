@@ -36,6 +36,14 @@ ani_95_clusters <- read_csv(file = "analyses/species_delimitation/fastani/set12c
   mutate(ani_95_cluster = 
            as.integer(ani_95_cluster))
 #
+popcogent_clusters <- read_delim(file = "analyses/species_delimitation/popcogent/set12c/set12c_0.000355362.txt.cluster.tab.txt",
+                                 delim = "\t") %>%
+  select(Strain, Main_cluster) %>%
+  mutate(Main_cluster =
+           Main_cluster + 1) %>%
+  mutate(Strain = 
+           str_replace(Strain, "_chromosome", ".fa"))
+#
 gg <- ggtree(dated_tree)
 
 f2 <- facet_plot(gg, panel = "fastbaps", data = plot.df, geom = geom_tile, aes(x = fastbaps), 
@@ -44,4 +52,11 @@ f3 <- facet_plot(f2, panel = "fastbaps level 2", data = plot.df2, geom = geom_ti
                  aes(x = fastbaps), color = "green")
 f4 <- facet_plot(gg, panel = "ANI 95%", data = ani_95_clusters, geom = geom_tile, 
                  aes(x = ani_95_cluster), color = "brown")
+f5 <- facet_plot(gg, panel = "popcogent", data = popcogent_clusters, geom = geom_tile, 
+                 aes(x = Main_cluster), color = "brown")
 
+
+  
+  
+  
+  
