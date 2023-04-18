@@ -53,11 +53,11 @@ P11060	Leptogium_saturninum	collemataceae	leptogium	no		symbiotic	Canada	ABMI 15
 P11388	Peltigera_neckeri	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 746 	ABMI ID 500616		This study	log/stump
 P11425	Peltigera_aff_neorufescens	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1408	ABMI ID 3611		This study	upland
 P1229	Peltigera_hymenina	peltigeraceae	peltigera	no	terricolous	symbiotic	United States of America	Oregon	B. McCune 30448; McCune Private Coll.		This study; Magain et al. 2017	
-P12502	Sticta_sp	lobariaceae	sticta	yes	epiphytic	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-3-C2-P1	Malaysia;Kinabalu Park;Jolanta Miadlikowska;DUKE		This study	
+P12502	Pseudocyphellaria havaiiensis	lobariaceae	pseudocyphellaria	yes	epiphytic	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-3-C2-P1	Malaysia;Kinabalu Park;Jolanta Miadlikowska;DUKE		This study	
 P12521	Lobaria_sp	lobariaceae	lobaria	yes	epiphytic	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-3-C1-P1	Malaysia;Kinabalu Park;Jolanta Miadlikowska;none		This study	
 P12523	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	yes	epiphytic	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-1-C2-P1	Malaysia;Kinabalu Park;Nicolas Magain;DUKE		This study	
 P12537	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	no	epiphytic	symbiotic	Malaysia	Golife Malaysia-Kinabalu-3-C2-P1	Malaysia;Crocker Range Park;DUKE		This study	
-P12545	Pannariaceae_sp	pannariaceae	pannariaceae	yes	epiphytic	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-2-C1-P1	Malaysia;Kinabalu Park;Jolanta Miadlikowska;none		This study	
+P12545	Pannaria_rubiginosa	pannariaceae	pannaria	yes	epiphytic	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-2-C1-P1	Malaysia;Kinabalu Park;Jolanta Miadlikowska;none		This study	
 P12559	Pseudocyphellaria_guillemini	lobariaceae	pseudocyphellaria	yes	epiphytic	symbiotic	Chile	GoLife Chile-Mocho-1-C1-P1	Chile;Reserva Nacional Mocho-Choshuenco;Lutzoni et al.;None		This study	
 P12560	Pseudocyphellaria_berberina	lobariaceae	pseudocyphellaria	no	epiphytic	symbiotic	Chile	GoLife Chile-Puyehue-1-C2-P1	Chile;Parque Nacional Puyehue;Lutzoni et al.;None		This study	
 P12564	Pseudocyphellaria_corifolia	lobariaceae	pseudocyphellaria	yes	epiphytic	symbiotic	Chile	GoLife Chile-Malalca-1-C2-P1	"Chile;Reserva Nacional Malalcahuello;Lutzoni et al.;AZ, Chile"		This study	epiphytic/at the base of Araucaria
@@ -65,7 +65,7 @@ P12567	Sticta_hypochra	lobariaceae	sticta	no	epiphytic	symbiotic	Chile	GoLife Ch
 P12569	Sticta_caulescens	lobariaceae	sticta	no	terricolous	symbiotic	Chile	GoLife Chile-Crater-2-C1-P1	Chile;Parque Nacional Puyehue;Lutzoni et al.;Chile		This study	
 P12570	Sticta_hypochra	lobariaceae	sticta	no	terricolous	symbiotic	Chile	GoLife Chile-Mocho-2-C2-P1	Chile;Reserva Nacional Mocho-Choshuenco;Lutzoni et al.;Chile		This study	
 P12573	Nephroma_antarcticum	nephromataceae	nephroma	yes	epiphytic	symbiotic	Chile	GoLife Chile-Mocho-1-C1-P1	Chile;Reserva Nacional Mocho-Choshuenco;Lutzoni et al.;AZ		This study	
-P12578	Collema_sp	collemataceae	collema	no	terricolous	symbiotic	Chile	GoLife Chile-Angol-1-C1-P1	Chile;Parque Nacional Nahuelbuta;Lutzoni et al.;Chile		This study	epiphytic/at the base of Araucaria
+P12578	Gabura fascicularis	arctomiaceae	Gabura	no	terricolous	symbiotic	Chile	GoLife Chile-Angol-1-C1-P1	Chile;Parque Nacional Nahuelbuta;Lutzoni et al.;Chile		This study	epiphytic/at the base of Araucaria
 P12584	Pseudocyphellaria_meyenii	lobariaceae	pseudocyphellaria	no	epiphytic	symbiotic	Chile	GoLife Chile-Puyehue-1-C1-P1	"Chile;Parque Nacional Puyehue;Lutzoni et al.;AZ, Chile"		This study	
 P12588	Leptogium_sp	collemataceae	leptogium	no	terricolous	symbiotic	Chile	GoLife Chile-Angol-1-C1-P1	"Chile;Parque Nacional Nahuelbuta;Lutzoni et al.;AZ, Chile"		This study	terricolous/on moss on a boulder
 P12591	Collema_sp	collemataceae	collema	no	epiphytic	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-1-C1-P1	Malaysia;Kinabalu Park		This study	
@@ -75,9 +75,9 @@ P12642	Leptogium_sp	collemataceae	leptogium	no	epiphytic	symbiotic	Panama	GoLife
 P12646	Leptogium_sp	collemataceae	leptogium	no	epiphytic	symbiotic	Panama	GoLife Panama-Baru-1-C5-P1	Panama;Parque Nacional Volcan Baru;Nicolas Magain;Panama		This study	
 P12649	Leptogium_sp	collemataceae	leptogium	no	terricolous	symbiotic	Panama	GoLife Panama-Copete-1-C1-P1	Panama;Parque Nacional Volcan Baru;Lutzoni et al.;Panama		This study	
 P12650	Leptogium_sp	collemataceae	leptogium	no	epiphytic	symbiotic	Panama	GoLife Panama-Swampo-1-C1-P1	Panama;Parque Nacional Isla Bastimentos;Nicolas Magain;Panama		This study	
-P14213	Lobaria_retigera	lobariaceae	lobaria	yes	epiphytic	symbiotic	South Africa	GoLife SouthAfrica-Buffelskloof-1-P1-C2	South Africa;Buffelskloof;Jolanta Miadlikowska		This study	terricolous/on moss on a log
-P14264	Leptogium_sp	collemataceae	leptogium	yes	epiphytic	symbiotic	South Africa	GoLife SouthAfrica-Salt River-1-P1-C1	South Africa;Salt River;GoLife		This study	
-P14269	Leptogium_sp	collemataceae	leptogium	yes	terricolous	symbiotic	South Africa	GoLife SouthAfrica-Buffelskloof-7-P1-C3	South Africa;Buffelskloof;GoLife		This study	terricolous/on a rock with little mosses
+P14213	Lobaria_sp.	lobariaceae	lobaria	yes	epiphytic	symbiotic	South Africa	GoLife SouthAfrica-Buffelskloof-1-P1-C2	South Africa;Buffelskloof;Jolanta Miadlikowska		This study	terricolous/on moss on a log
+P14264	Pseudocyphellaria sp.	lobariaceae	pseudocyphellaria	yes	epiphytic	symbiotic	South Africa	GoLife SouthAfrica-Salt River-1-P1-C1	South Africa;Salt River;GoLife		This study	
+P14269	Sticta sp.	lobariaceae	sticta	yes	terricolous	symbiotic	South Africa	GoLife SouthAfrica-Buffelskloof-7-P1-C3	South Africa;Buffelskloof;GoLife		This study	terricolous/on a rock with little mosses
 P14318	Sticta_sp	lobariaceae	sticta	yes	terricolous	symbiotic	South Africa	GoLife SouthAfrica-Table-1-P1-C1	South Africa;Table;GoLife		This study	terricolous/on a rock with little mosses
 P14321	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	no	terricolous	symbiotic	South Africa	GoLife SouthAfrica-Table-1-P1-C1	South Africa;Table;GoLife		This study	terricolous/on a rock with little mosses
 P1574	Peltigera_dolichorhiza	peltigeraceae	peltigera	no	terricolous	symbiotic	Brazil	Minas gerais	J. Miadlikowska et al. s.n.; CGMS-34450		This study; Magain et al. 2017	
@@ -107,9 +107,9 @@ P6524	Peltigera_praetextata	peltigeraceae	peltigera	no		symbiotic	Canada	ABMI 87
 P6600	Peltigera_canina_2	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	Québec			This study; Darnajoux et al. 2019	
 P6602	Peltigera_scabrosa_1	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	Québec			This study; Darnajoux et al. 2019	
 P6620	Peltigera_neopolydactyla_	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	Québec			This study; Darnajoux et al. 2019	
-P6636	Peltigera_horizontalis	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	Québec			This study; Darnajoux et al. 2019	
-P6963	Peltigera_sp	peltigeraceae	peltigera	no	terricolous	symbiotic	Malaysia	GoLife Malaysia-KinabaluHQ-1-C1-P1	N. Magain Malaysia-KinabaluHQ-1-C1-P1-L1 (DUKE)		This study	on mosses on soil
-P6970	Peltigera_sp_11	peltigeraceae	peltigera	no	terricolous	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-3-C3-P1	N. Magain Malaysia-Kinabalu-3-C3-P1-L6 (DUKE)		This study	on mossy slope
+P6636	Peltigera	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	Québec			This study; Darnajoux et al. 2019	
+P6963	Peltigera_nana	peltigeraceae	peltigera	no	terricolous	symbiotic	Malaysia	GoLife Malaysia-KinabaluHQ-1-C1-P1	N. Magain Malaysia-KinabaluHQ-1-C1-P1-L1 (DUKE)		This study	on mosses on soil
+P6970	Peltigera_serusiauxii	peltigeraceae	peltigera	no	terricolous	symbiotic	Malaysia	GoLife Malaysia-Kinabalu-3-C3-P1	N. Magain Malaysia-Kinabalu-3-C3-P1-L6 (DUKE)		This study	on mossy slope
 P8202	Peltigera_latiloba	peltigeraceae	peltigera	no		symbiotic	Canada	ABMI 499	ABMI ID 1276480		This study	Tree/Other
 P8219	Peltigera_islandica	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI OG-ABMI-477-21	ABMI ID 616803		This study	Wetland
 P8231	Peltigera_ponojensis_monticola_1a	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1285	ABMI ID 802891 		This study	Rock
@@ -119,7 +119,7 @@ P8570	Peltigera_canina_1	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada
 P8571	Peltigera_praetextata	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1293	ABMI ID 1269801		This study	Upland
 P8575	Peltigera_neckeri	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1293	ABMI ID 1269817		This study	Upland
 P8577	Peltigera_aphthosa_5	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1293	ABMI ID 1270086		This study	log/stump
-P8580	Peltigera_neckeri	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1293	ABMI ID 1269794		This study	Upland
+P8580	Peltigera_canina_1	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1293	ABMI ID 1269794		This study	Upland
 P8690	Peltigera_malacea_3	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1030	ABMI ID 292089		This study	Upland
 P8768	Peltigera_aff_didactyla	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI OG-ABMI-1368-1	ABMI ID 159071		This study	Upland
 P8840	Peltigera_leucophlebia_1	peltigeraceae	peltigera	no	terricolous	symbiotic	Canada	ABMI 1070	ABMI ID 391119		This study	UH
@@ -168,7 +168,7 @@ S40	Peltigera_appalachensis	peltigeraceae	peltigera	no	terricolous	symbiotic
 S41	Peltigera_appalachensis	peltigeraceae	peltigera	no	terricolous	symbiotic						
 S42	S42	peltigeraceae	peltigera	no	terricolous	symbiotic						
 S43	Peltigera_appalachensis	peltigeraceae	peltigera	no	terricolous	symbiotic						
-S44	Peltigera_appalachensis	peltigeraceae	peltigera	no	terricolous	symbiotic						
+S44	Peltigera	peltigeraceae	peltigera	no	terricolous	symbiotic						
 S45	Peltigera_appalachensis	peltigeraceae	peltigera	no	terricolous	symbiotic						
 S46	Peltigera_appalachensis	peltigeraceae	peltigera	no	terricolous	symbiotic						
 S47	Peltigera_appalachensis	peltigeraceae	peltigera	no	terricolous	symbiotic						
