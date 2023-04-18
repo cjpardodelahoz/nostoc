@@ -696,12 +696,12 @@ cat analyses/species_delimitation/cooccurrence/seqs/rbclx_set103.fna \
  analyses/species_delimitation/cooccurrence/seqs/rbclx_abmi_all.fna > \
  analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi.fna
 # Align all the rbcLX
-# I edited this alignment in Mesquite to exclude the universal tags and
+# I edited this alignment in Mesquite to exclude the universal tags, primers and
 # ambiguous regions
+# Removed P11480
 sbatch scripts/mafft_rbclx_placement.sh
 # Place the rbclx
-raxmlHPC-PTHREADS-SSE3 -f v -s rbclx_concat.fna-out.phy -t backbone.tree -m GTRCAT -n test
-
+sbatch scripts/rbclx_abmi_epa_placement.sh
 
 
 
