@@ -697,11 +697,16 @@ cat analyses/species_delimitation/cooccurrence/seqs/rbclx_set103.fna \
  analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi.fna
 # Align all the rbcLX
 # I edited this alignment in Mesquite to exclude the universal tags, primers and
-# ambiguous regions
-# Removed P11480
+# ambiguous regions. I also generated a new version of the ABMI rbcLX seqs
+# in the correct orientation and clean names, and removed P11480 because it was
+# weird (rbcLX_abmi_edited_all.fna)
 sbatch scripts/mafft_rbclx_placement.sh
 # Place the rbclx
 sbatch scripts/rbclx_abmi_epa_placement.sh
+# Sort rbclx seqs into focal groups
+Rscript scripts/sort_rbclx_placements.R
+# Align rbcLX focal groups
+sbatch scripts/mafft_rbclx_focal_groups.sh
 
 
 
