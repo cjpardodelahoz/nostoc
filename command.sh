@@ -700,7 +700,7 @@ cat analyses/species_delimitation/cooccurrence/seqs/rbclx_set103.fna \
 # ambiguous regions
 sbatch scripts/mafft_rbclx_placement.sh
 # Place the rbclx
-
+raxmlHPC-PTHREADS-SSE3 -f v -s rbclx_concat.fna-out.phy -t backbone.tree -m GTRCAT -n test
 
 
 
