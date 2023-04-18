@@ -674,10 +674,41 @@ sbatch scripts/fastani_set12c.sh
 # This will generate the plots summarizing the distribution of pairwise ANI,
 # the correlation of ANI with alignment fraction, and the ANI gap
 Rscript scripts/sum_ani_results.R
-#
-Rscript scripts/fastbaps_cluster.R
-# PopCOGenT
+# PopCOGenT on chromosomes to test recombination
 sbatch scripts/popcogent_set12c.sh
+
+# Testing differation in co-occurrence in three lineage case studies with rbcLX
+
+# Make directory structure
+mkdir -p analyses/species_delimitation/cooccurrence/seqs
+mkdir -p analyses/species_delimitation/cooccurrence/alignments
+mkdir -p analyses/species_delimitation/cooccurrence/trees/placement
+# Copy rbcL (2400at1161) and rbcX sequences (14372at1161) from set103 taxa
+# I also made a copy of the rbcLX seqs from ABMI sites under seqs/
+cp analyses/phylogenetics/set103/seqs/2400at1161.fna \
+ analyses/species_delimitation/cooccurrence/seqs/rbcl_set103.fna
+cp analyses/phylogenetics/set103/seqs/14372at1161.fna \
+ analyses/species_delimitation/cooccurrence/seqs/rbcx_set103.fna
+# Concatenate rbcl and rbcx from set103
+sbatch scripts/concatenate_rbclx.sh
+# Add the ABMI seqs to set103
+cat analyses/species_delimitation/cooccurrence/seqs/rbclx_set103.fna \
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_abmi_all.fna > \
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi.fna
+# Align all the rbcLX
+# I edited this alignment in Mesquite to exclude the universal tags and
+# ambiguous regions
+sbatch scripts/mafft_rbclx_placement.sh
+# Place the rbclx
+
+
+
+
+
+
+# 
+Rscript scripts/fastbaps_cluster.R
+
 
 ################################################################################
 # VOUCHER TABLE
