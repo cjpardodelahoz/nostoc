@@ -10,5 +10,5 @@
 export PATH=/hpc/home/cjp47/mafft-7.475-with-extensions/bin:${PATH}
 # Align Phylogroup V and allies seqs
 mafft --retree 1 --maxiterate 0 --adjustdirection \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_abmi_v.fna > \
- analyses/species_delimitation/cooccurrence/alignments/rbclx_abmi_v_aln.fna
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_global_abmi_v.fna > \
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_global_abmi_v_aln.fna

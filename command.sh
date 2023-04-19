@@ -708,6 +708,10 @@ sbatch scripts/rbclx_abmi_epa_placement.sh
 Rscript scripts/sort_rbclx_placements.R
 # Align rbcLX focal groups
 sbatch scripts/mafft_rbclx_focal_groups.sh
+# Infer ML trees for focal groups
+sbatch scripts/ml_rbclx_focal_groups.sh
+# Plot trees for focal groups
+Rscript scripts/plot_focal_trees.R
 
 
 

@@ -13,7 +13,7 @@ module load RAxML/8.2.12
 wd="/hpc/group/bio1/carlos/nostoc"
 # Run placement
 raxmlHPC-PTHREADS-SSE3 -f v \
- -s analyses/species_delimitation/cooccurrence/alignments/rbclx_set103_abmi_edited_aln.phy \
+ -s analyses/species_delimitation/cooccurrence/alignments/rbclx_set103_abmi_global_aln.phy \
  -t analyses/species_delimitation/cooccurrence/trees/placement/backbone.tree \
  -w ${wd}/analyses/species_delimitation/cooccurrence/trees/placement \
- -m GTRCAT -n test -T 4
+ -m GTRCAT -n epa_result -T 4
