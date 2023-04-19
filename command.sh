@@ -691,15 +691,16 @@ cp analyses/phylogenetics/set103/seqs/14372at1161.fna \
  analyses/species_delimitation/cooccurrence/seqs/rbcx_set103.fna
 # Concatenate rbcl and rbcx from set103
 sbatch scripts/concatenate_rbclx.sh
-# Add the ABMI seqs to set103
+# Add the ABMI  and global rbclx seqs to set103
+# I edited the ABMI seqs to exclude the universal tags and primers and removed
+# P11480, and put them all in the right orientation (rbclx_abmi_edited_all.fna)
 cat analyses/species_delimitation/cooccurrence/seqs/rbclx_set103.fna \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_abmi_all.fna > \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi.fna
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_abmi_edited_all.fna \
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_global_v.fna \
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_global_xxxix.fna> \
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi_global.fna
 # Align all the rbcLX
-# I edited this alignment in Mesquite to exclude the universal tags, primers and
-# ambiguous regions. I also generated a new version of the ABMI rbcLX seqs
-# in the correct orientation and clean names, and removed P11480 because it was
-# weird (rbcLX_abmi_edited_all.fna)
+# I edited this alignment in Mesquite  and exluded ambiguous regions
 sbatch scripts/mafft_rbclx_placement.sh
 # Place the rbclx
 sbatch scripts/rbclx_abmi_epa_placement.sh

@@ -10,5 +10,5 @@ export PATH=/hpc/home/cjp47/mafft-7.475-with-extensions/bin:${PATH}
 
 
 mafft --retree 1 --maxiterate 0 --adjustdirection \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi.fna > \
- analyses/species_delimitation/cooccurrence/alignments/rbclx_set103_abmi_aln.fna
+ analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi_global.fna > \
+ analyses/species_delimitation/cooccurrence/alignments/rbclx_set103_abmi_global_aln.fna
