@@ -91,3 +91,19 @@ ggsave(tree_v_cooccurrence_plot,
 
 
 #### PLOT TREES WITH ALIGNMENT ####
+
+# Load alignment with unique haplotypes. I generated the fasta from the phylip
+# produced by iqtree. I removed the 3' end of the rbcL that is only present in the
+# taxa from set103 and removed those taxa from the alignment
+haplotype_seqs_v <- read.FASTA("analyses/species_delimitation/cooccurrence/trees/focal/rbclx_set103_global_abmi_v.uniqueseq.fna")
+# Subset focal tree to haplotyes
+haplotype_labels_v <- names(haplotype_seqs_v)
+# Subset focal tree to haplotype taxa
+tree_v_haplotypes <- keep.tip(tree_v, tip = haplotype_labels_v)
+# Plot focal tree with alignment
+tree_v_haplotypes_plot <- ggtree(tree_v_haplotypes) +
+  geom_treescale(width = 0.005, y = 70, x = 0.003, offset = 2) +
+  theme(legend.position = "none")
+tree_v_haplotypes_msa <- msaplot(tree_v_haplotypes_plot, haplotype_seqs_v)
+# Save plot
+ggsave(tree_v_haplotypes_msa, filename = "document/plots/tree_haplotypes_v_msa.pdf")
