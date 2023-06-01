@@ -1,0 +1,279 @@
+DNA extraction no.*,Species name and clade no.**,Voucher,Mycobiont multilocus sequence type,Chemotype,ITS,_ -tubulin,COR1b,COR3,No. of genes,Nostoc haplotype****,Nostoc phylogroup,rbcLX
+,,,,***,,,,,,,,
+"P13301,2,3",P. aphthosa 1,"Canada, Québec, Nunavik, L. Couillard s.n., QFA-0594935",H40,aph II,MK680352,xxx,xxx,missing,3,H1,Undefined (U),MH757014
+"P13321,2",P. aphthosa 1,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595018",H41,aph II,MK680353,MK688848,MK688647,missing,3,N/A,N/A,missing
+P1334,P. aphthosa 1,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595026",H40 ,aph II,MK680354,MK688849,MK688648,missing,3,N/A,N/A,missing
+P13403,P. aphthosa 1,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595014",H40,N/A,MK680356,MK688851,missing,missing,2,H2,VI,MK720733
+"P10351,2",P. aphthosa 2,"Canada, New Brunswick, W. R. Buck 57741, NYBG 01221809",H18,aph I,MK680318,MK688814,MK688625,MK688738,4,N/A,N/A,missing
+P1309,P. aphthosa 2,"U.S., Alaska, Nome, J. Miadlikowska et al. s.n., 06. 2008, DUKE",H3,N/A,MK680338,MK688833,missing,missing,2,N/A,N/A,missing
+"P13121,2",P. aphthosa 2,"U.S., Alaska, Nome, J. Miadlikowska et al. s.n., 06. 2008, DUKE",H29,N/A,MK680339,MK688834,MK688638,missing,3,N/A,N/A,missing
+P2811,P. aphthosa 2,"U.S., Alaska, P. Nelson 2007, UBC",H20,N/A,MK680321,MK688817,missing,missing,2,H3,IV,MK720732
+,,,,,,,,,,,,
+"P40001,2",P. aphthosa 2,"U.S., Alaska, K. Spickerman 192, Katmai National Park herb.",H2,aph I,MK680304,missing,MK688611,MK688733,3,N/A,N/A,missing
+"P40021,2",P. aphthosa 2,"U.S., Alaska, K. Spickerman 134, Katmai National Park herb.",H3,N/A,MH734725P,MK688803,MK688612,MK688734,4,N/A,N/A,missing
+"P40211,2",P. aphthosa 2,"Canada, Québec, R. Darnajoux, 06.2013, AstEch7-15, DUKE",H38,aph I,MK680360,MK688854,MK688652,MK688751,4,N/A,N/A,missing
+"P40231,2",P. aphthosa 2,"Canada, Québec, R. Darnajoux, 06.2013, AaE5-51, DUKE",H45,N/A,MK680361,MK688855,MK688653,MK688752,4,N/A,N/A,missing
+P4024,P. aphthosa 2,"Canada, Québec, R. Darnajoux, 06.2013, Bms2-35, DUKE",H38,N/A,MK680362,MK688856,MK688654,MK688753,4,N/A,N/A,missing
+"P40261,2",P. aphthosa 2,"Canada, Québec, R. Darnajoux, 06.2013, AStJ4c-13, DUKE",H46,N/A,MK680364,MK688858,MK688656,MK688755,4,N/A,N/A,missing
+"P40271,2",P. aphthosa 2,"Canada, Québec, R. Darnajoux, 06.2013, BE3-58, DUKE",H47,N/A,MK680365,MK688859,MK688657,MK688756,4,N/A,N/A,missing
+P4044,P. aphthosa 2,"Canada, Nova Scotia, R. Troy McMullin 8114, DUKE",H38,N/A,MK680350,MK688846,MK688646,missing,3,N/A,N/A,missing
+P7551,P. aphthosa 2,"Canada, Nova Scotia, T. Ahti 62465, H",H39,N/A,MK680351,MK688847,missing,missing,2,N/A,N/A,missing
+"P10371,2",P. aphthosa 3,"Canada, Newfoundland, J. Lendemer 10109, NYBG 00954670",H28,aph II,MK680337,MK688832,MK688637,MK688745,4,N/A,N/A,missing
+P1318,P. aphthosa 3,"Canada, New Brunswick, J. Lendemer 28029, NYBG 01222570",H21,aph I,MK680322,MK688818,missing,missing,2,N/A,N/A,missing
+P4025,P. aphthosa 3,"Canada, Québec, R. Darnajoux, 06.2013, Bms4-39, DUKE",H28,aph I,MK680363,MK688857,MK688655,MK688754,4,N/A,N/A,missing
+"P7761,2",P. aphthosa 3,"Russia, Kamchatka, D. E. Himelbrant s.n., 03.08.2009, H",H21,aph I,MK680328,MK688824,MK688628,MK688741,4,N/A,N/A,missing
+P10101,P. aphthosa 4,"Norway, N. Magain s.n., 2011, LG",H30,N/A,MK680340,MK688835,missing,missing,2,N/A,N/A,missing
+"P10191,2",P. aphthosa 4,"Norway, N. Magain s.n., 2011, LG",H31,aph II,MK680341,MK688836,missing,MK688746,3,N/A,N/A,missing
+"P10321,2",P. aphthosa 4,"Norway, N. Magain s.n., 2011, LG ",H12,aph II,MK680343,MK688839,MK688641,MK688749,4,N/A,N/A,missing
+P110,P. aphthosa 4,"Canada, Québec, Miadlikowska et al. SN9W1, DUKE 0159625 (P5054 in Lu et al. 2018)",H4,N/A,MG811738L,missing,missing,missing,1,N/A,N/A,missing
+P1184,P. aphthosa 4,"Finland, B. Krzewicka 2512, UPS L-153684",H4,aph I,MK680323,MK688819,missing,missing,2,N/A,N/A,missing
+P1321,P. aphthosa 4,"Norway, N. Magain s.n., 2011, LG",H4,N/A,MK680344,MK688840,missing,missing,2,N/A,N/A,missing
+P13231,P. aphthosa 4,"U.S., Alaska, B. McCune 31328, McCune herb.",H1,aph III,MK680303,MK688802,missing,missing,2,H8,IV,MK720755
+"P13361,2,3",P. aphthosa 4,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595129",H42,aph III,MK680355,MK688850,MK688649,missing,3,H12,VI,MK720758
+P1346,P. aphthosa 4,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595016",H42,N/A,MK680357,MK688852,MK688650,missing,3,N/A,N/A,missing
+P1367b,P. aphthosa 4,"Finland, B. Krzewicka 2512, H",H4,N/A,MK680324,MK688820,missing,missing,2,N/A,N/A,missing
+P1368,P. aphthosa 4,"Finland, O. Vitikainen 16434, H",H4,N/A,MK680325,MK688821,missing,missing,2,N/A,N/A,missing
+P4016,P. aphthosa 4,"Canada, Alberta, J. Miadlikowska s.n., 08.16.2013, DUKE",H12,aph III,MK680316,MK688812,MK688623,MK688736,4,N/A,N/A,missing
+"P40431,2",P. aphthosa 4,"U.S., Alaska, K. Spickerman s.n., 08.01.2013, DUKE",H4,aph III,MH734723P,MH756806P,MH756878P,missing,3,N/A,N/A,missing
+"P40451,2",P. aphthosa 4,"U.S., Alaska, K. Spickerman s.n., 08.01.2013, DUKE",H5,N/A,MK680305,MK688804,MK688613,missing,3,N/A,N/A,missing
+P715,P. aphthosa 4,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H8,N/A,MK680309,missing,MK688617,missing,2,N/A,N/A,missing
+"P7181,2",P. aphthosa 4,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H10,aph III,MK680311,MK688807,MK688619,missing,3,N/A,N/A,missing
+P728,P. aphthosa 4,"Canada, Québec, J. Miadlikowska et al. W50C3, DUKE",H4,aph Ia,MK680368,missing,missing,missing,1,N/A,N/A,missing
+"P7451,2",P. aphthosa 4,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H8,N/A,MK680313,MK688809,MK688621,missing,3,N/A,N/A,missing
+P7731,P. aphthosa 4,"Russia, Kamchatka, D. E. Himelbrant s.n., 16.08.2009, H",H22,aph III,MK680327,MK688823,missing,missing,2,N/A,N/A,missing
+"P7881,2",P. aphthosa 4,"Norway, N. Magain s.n., 2011, LG ",H35,aph III,MK680346,MK688842,MK688642,MK688750,4,N/A,N/A,missing
+"P7901,2",P. aphthosa 4,"Norway, N. Magain s.n., 2011, LG",H36,N/A,MK680347,MK688843,MK688643,missing,3,N/A,N/A,missing
+Goffinet 3949b,P. aphthosa 5,"Canada, Alberta, B. Goffinet 3949b, CONN",H6,N/A,AF158645,missing,missing,missing,1,N/A,N/A,missing
+HOB020708-0-5-73,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H6,N/A,KC437625,missing,missing,missing,1,HT21,IV,KC437841
+HOB020708-31-1-71,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H13,N/A,FJ708843,FJ709274,missing,missing,2,N/A,N/A,missing
+HOB020708-31-1-8,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H13,N/A,FJ708844,FJ709275,missing,missing,2,N/A,N/A,missing
+HOB020708-35-5-4,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708820,FJ709251,missing,missing,2,N/A,N/A,missing
+HOB020708-35-5-51,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H14,N/A,FJ708845,FJ709276,missing,missing,2,N/A,N/A,missing
+HOB020708-35-5-6,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708821,FJ709252,missing,missing,2,N/A,N/A,missing
+HOB020708-39-1-91,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H15,N/A,FJ708842,FJ709273,missing,missing,2,N/A,N/A,missing
+HOB020708-4-1-53,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708822,FJ709253,missing,missing,2,HT18,IV,KC437653
+HOB020708-4-1-9,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H6,N/A,KC437623,missing,missing,missing,1,HT18,IV,KC437849
+HOB020708-4-5-7,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708823,FJ709254,missing,missing,2,N/A,N/A,missing
+HOB020708-4-9-4,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708824,FJ709255,missing,missing,2,N/A,N/A,missing
+HOB020708-4-9-53,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H6,N/A,KC437615,missing,missing,missing,1,HT2,VI,KC437853
+HOB020708-4-9-6,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708825,FJ709256,missing,missing,2,N/A,N/A,missing
+HOB020708-4-9-7,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708826,FJ709257,missing,missing,2,N/A,N/A,missing
+HOB020708-62-5-10,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H6,N/A,KC437614,missing,missing,missing,1,HT2,VI,KC437854
+HOB020708-62-5-6,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708827,FJ709258,missing,missing,2,N/A,N/A,missing
+HOB020708-66-5-10,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708828,FJ709259,missing,missing,2,N/A,N/A,missing
+HOB020708-66-5-6,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708829,FJ709260,missing,missing,2,N/A,N/A,missing
+HOB020708-66-9-10,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708830,FJ709261,missing,missing,2,N/A,N/A,missing
+HOB020708-66-9-6,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708831,FJ709262,missing,missing,2,N/A,N/A,missing
+HOB020708-66-9-71,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H16,N/A,FJ708840,FJ709271,missing,missing,2,N/A,N/A,missing
+HOB020708-66-9-8,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708832,FJ709263,missing,missing,2,N/A,N/A,missing
+HOB020708-70-9-10,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H6,N/A,KC437616,missing,missing,missing,1,HT2,VI,KC437863
+HOB020708-8-5-10,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708833,FJ709264,missing,missing,2,N/A,N/A,missing
+HOB020708-8-5-3,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708834,FJ709265,missing,missing,2,N/A,N/A,missing
+HOB020708-8-5-7,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708835,FJ709266,missing,missing,2,N/A,N/A,missing
+HOB020708-8-5-8,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708836,FJ709267,missing,missing,2,N/A,N/A,missing
+HOB020708-8-5-91,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H17,N/A,FJ708841,FJ709272,missing,missing,2,N/A,N/A,missing
+HOB020708-8-9-5,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708837,FJ709268,missing,missing,2,N/A,N/A,missing
+HOB040605-03-13,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H6,N/A,KC437627,missing,missing,missing,1,HT23,IV,KC437880
+HOB040605-09-2,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H6,N/A,KC437624,missing,missing,missing,1,HT18,IV,KC437898
+HOB040605-3-1,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708838,FJ709269,missing,missing,2,N/A,N/A,missing
+HOB040605-9-2,P. aphthosa 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H7,N/A,FJ708839,FJ709270,missing,missing,2,N/A,N/A,missing
+"P10261,2",P. aphthosa 5,"Norway, N. Magain s.n., 2011, LG ",H32,N/A,MK680342,MK688837,MK688639,MK688747,4,N/A,N/A,missing
+"P10291,2",P. aphthosa 5,"Norway, N. Magain s.n., 2011, LG",H33,aph I,MH734724P,MK688838,MK688640,MK688748,4,N/A,N/A,missing
+"P10581,2",P. aphthosa 5,"U.S., Minnesota, C. Wetmore 82617, MIN",H25,aph I,MK680333,MK688828,MK688633,MK688743,4,N/A,N/A,missing
+"P10591,2",P. aphthosa 5,"U.S., Minnesota, C. Wetmore 92443, MIN",H26,N/A,MK680334,MK688829,MK688634,missing,3,N/A,N/A,missing
+P1060,P. aphthosa 5,"U.S., Minnesota, C. Wetmore 96791, MIN",H19,N/A,MK680335,MK688830,MK688635,MK688744,4,N/A,N/A,missing
+"P11141,2",P. aphthosa 5,"Canada, Alberta, J. Hollinger 3870, UBC",H7,aph III,MK680315,MK688811,MK688622,MK688735,4,N/A,N/A,missing
+"P11721,2",P. aphthosa 5,"U.S., Minnesota, C. Wetmore 92428, MIN",H27,N/A,MK680336,MK688831,MK688636,missing,3,N/A,N/A,missing
+P11853,P. aphthosa 5,"Sweden, A. Agren 609, UPS L-137395",H7,N/A,MK680373,MK688865,missing,missing,2,H7,IV,MK720754
+P11871,P. aphthosa 5,"Sweden, I. Karlsson s.n., 10.23.2011, UPS L-552786",H50,aph I,MK680374,MK688866,missing,missing,2,N/A,N/A,missing
+P11891,P. aphthosa 5,"Sweden, I. Karlsson s.n., 10.23.2011, UPS L-552785",H51,N/A,MK680375,MK688867,missing,missing,2,N/A,N/A,missing
+P13691,P. aphthosa 5,"Sweden, O. Vitikainen 12745, H",H52,aph I,MK680376,MK688868,missing,missing,2,N/A,N/A,missing
+"P2011,2,3",P. aphthosa 5,"Canada, British Columbia, T. Goward 07-132, UBC",H19,aph III,MK680319,MK688815,MK688626,MK688739,4,H13,V,MK720761
+P226,P. aphthosa 5,"Canada, British Columbia, T. Goward 09-630, UBC",H11,N/A,MK680320,MK688816,MK688627,MK688740,4,H3,IV,MK720762
+"P40171,2",P. aphthosa 5,"Canada, Alberta, J. Miadlikowska et al. s.n., 08.17.2013, DUKE",H11,N/A,MK680317,MK688813,MK688624,MK688737,4,N/A,N/A,missing
+"P40221,2",P. aphthosa 5,"Canada, Labrador, C. J. Rothfels 4432, DUKE",H23,N/A,MK680329,missing,MK688629,MK688742,3,N/A,N/A,missing
+P40481,P. aphthosa 5,"Canada, Ontario, R. Troy McMullin 8928, DUKE",H43,N/A,MK680358,MK688904,missing,missing,2,N/A,N/A,missing
+"P40491,2",P. aphthosa 5,"Canada, Ontario, R. Troy McMullin 8920, DUKE",H44,N/A,MK680359,MK688853,MK688651,missing,3,N/A,N/A,missing
+P50033,P. aphthosa 5,"Canada, Québec, J. Miadlikowska et al. W12.5C3, DUKE",H6,N/A,MG811729L,missing,missing,missing,1,H11,IV,MG818407L
+P50051,P. aphthosa 5,"Canada, Québec J. Miadlikowska et al., W12.5C2, DUKE",H48,N/A,MG811730L,missing,missing,missing,1,H11,IV,MG818408L
+P50073,P. aphthosa 5,"Canada, Québec J. Miadlikowska et al. SN8E3, DUKE",H6,N/A,MG811731L,missing,missing,missing,1,H4,IV,MG818412L
+P5053,P. aphthosa 5,"Canada, Québec J. Miadlikowska et al. SN8E1, DUKE",H6,N/A,MG811732L,missing,missing,missing,1,H4,IV,MG818411L
+,,,,,,,,,,,,
+"P7061,2",P. aphthosa 5,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H6,aph III,MK680306,MK688805,MK688614,missing,3,N/A,N/A,missing
+P708,P. aphthosa 5,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H7,aph III,MK680307,missing,MK688615,missing,2,N/A,N/A,missing
+P709,P. aphthosa 5,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H6,N/A,MK680308,missing,MK688616,missing,2,N/A,N/A,missing
+"P7171,2",P. aphthosa 5,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H9,N/A,MK680310,MK688806,MK688618,missing,3,N/A,N/A,missing
+P719,P. aphthosa 5,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H11,aph III,MK680312,MK688808,MK688620,missing,3,N/A,N/A,missing
+P7251,P. aphthosa 5,"Canada, Québec, J. Miadlikowska et al., W6C1, DUKE",H49,aph I,MK680366,missing,MK688658,missing,2,N/A,N/A,missing
+P726,P. aphthosa 5,"Canada, Québec, J. Miadlikowska et al., W50C3, DUKE",H6,aph I,MK680367,missing,MK688659,missing,2,N/A,N/A,missing
+"P7341,2",P. aphthosa 5,"Canada, Québec, J. Miadlikowska et al, SN9C1, DUKE (P5046 in Lu et al. 2018)",H121,aph III,MG811737L,MK688860,MK688660,missing,3,N/A,N/A,missing
+P736,P. aphthosa 5,"Canada, Québec, J. Miadlikowska et al., SN9C3, DUKE",H27,N/A,MK680369,MK688861,MK688661,missing,3,N/A,N/A,missing
+P739,P. aphthosa 5,"Canada, Québec, J. Miadlikowska et al., W6C2, Duke",H11,aph III,MK680370,MK688862,MK688662,missing,3,N/A,N/A,missing
+P740,P. aphthosa 5,"Canada, Québec, J. Miadlikowska et al., W6C2, DUKE",H11,N/A,MK680371,MK688863,MK688663,missing,3,N/A,N/A,missing
+P757,P. aphthosa 5,"Canada, Manitoba, T. Ahti 63130c, H",H11,aph III,MK680330,MK688825,MK688630,missing,3,N/A,N/A,missing
+P758,P. aphthosa 5,"Canada, Manitoba, T. Ahti 63144d, H",H11,N/A,MK680331,MK688826,MK688631,missing,3,N/A,N/A,missing
+"P7591,2",P. aphthosa 5,"Canada, Manitoba, T. Ahti 63121d, H",H24,aph III,MK680332,MK688827,MK688632,missing,3,N/A,N/A,missing
+P763,P. aphthosa 5,"U.S., Alaska, T. Ahti 63221, H",H11,aph III,MK680314,MK688810,missing,missing,2,N/A,N/A,missing
+P774,P. aphthosa 5,"Russia, Krasnoyarsk Territory, V. Pervunin s.n., 07. 2000, H",H33,aph II,MK680372,MK688864,missing,missing,2,N/A,N/A,missing
+P782,P. aphthosa 5,"Iceland, H. Kristinsson 11595, AMNH",H7,aph I,MK680326,MK688822,missing,missing,2,N/A,N/A,missing
+P7871,P. aphthosa 5,"Norway, N. Magain s.n., 2011, LG",H34,aph I,MK680345,MK688841,missing,missing,2,N/A,N/A,missing
+"P7911,2",P. aphthosa 5,"Norway, N. Magain s.n., 2011, LG",H37,N/A,MK680348,MK688844,MK688644,missing,3,N/A,N/A,missing
+P796,P. aphthosa 5,"Norway, N. Magain s.n., 2011, LG ",H33,N/A,MK680349,MK688845,MK688645,missing,3,N/A,N/A,missing
+"P2001,3",P. britannica 1,"Canada, Alberta, C. Björk 18659, UBC",H62,bri I,MK680379,MK688871,missing,missing,2,H10,VI,MK720760
+"P2271,2",P. britannica 1,"Canada, British Columbia, T. Goward 09-436, UBC",H63,?,MK680380,MK688872,missing,MK688757,3,H9,IV,MK720763
+P232,P. britannica 1,"Canada, British Columbia, J. Hollinger 1514, UBC",H63,N/A,MK680382,MK688875,missing,missing,2,N/A,N/A,missing
+HOB020708-39-1-7,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H55,N/A,FJ708848,FJ709279,missing,missing,2,N/A,N/A,missing
+HOB020708-62-1-9,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H55,N/A,FJ708849,missing,missing,missing,1,N/A,N/A,missing
+HOB020708-66-5-71,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H56,N/A,FJ708850,FJ709280,missing,missing,2,N/A,N/A,missing
+HOB020708-66-5-8,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H56,N/A,FJ708851,FJ709281,missing,missing,2,N/A,N/A,missing
+HOB030611-0-10-13,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H57,N/A,KC437630,missing,missing,missing,1,HT3,VI,KC437865
+HOB030611-0-10-2,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H57,N/A,FJ708846,FJ709277,missing,missing,2,N/A,N/A,missing
+HOB030611-0-5-1,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H55,N/A,KC437617,missing,missing,missing,1,HT2,VI,KC437866
+HOB030611-0-5-2,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H55,N/A,KC437618,missing,missing,missing,1,N/A,N/A,missing
+HOB040605-02-3,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H57,N/A,KC437631,missing,missing,missing,1,N/A,N/A,missing
+HOB040605-04-33,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H58,N/A,KC437633,missing,missing,missing,1,HT19,IV,KC437884
+HOB040605-06-3,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H59,N/A,KC437634,missing,missing,missing,1,HT19,IV,KC437892
+HOB040605-07-2,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H57,N/A,KC437632,missing,missing,missing,1,HT19,IV,KC437894
+HOB040605-4-31,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H58,N/A,FJ708855,FJ709288,missing,missing,2,N/A,N/A,missing
+HOB040605-6-31,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H59,N/A,FJ708856,FJ709285,missing,missing,2,N/A,N/A,missing
+HOB040605-7-2,P. britannica 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H57,N/A,FJ708847,FJ709278,missing,missing,2,N/A,N/A,missing
+"P10331,3",P. britannica 1,"Norway, N. Magain s.n., 2011, LG ",H69,bri I,MK680389,MK688882,missing,missing,2,H3,IV,MK720740
+"P10491,2",P. britannica 1,"U.S., Montana, C. Wetmore 94801, MIN",H55,N/A,MK680388,MK688881,MK688668,missing,3,N/A,N/A,missing
+"P10501,2",P. britannica 1,"U.S., Oregon, C. Wetmore 94993, MIN",H57,bri II,MK680391,MK688883,MK688669,missing,3,H9,IV,MK720742
+"P10651,2",P. britannica 1,"U.S., Minnesota, C. Wetmore 96135, MIN",H71,bri I,MK680394,MK688886,MK688670,MK688760,4,N/A,N/A,missing
+P1080,P. britannica 1,"U.S., Washington, C. Wetmore 24550, MIN",H57,bri I,MK680393,MK688885,missing,missing,2,H9,IV,MK720747
+"P13241,2,3",P. britannica 1,"Canada, British Columbia, J. Lendemer 22342, NYBG 01221288",H60,bri I,MK680377,MK688869,MK688664,missing,3,H9,IV,MK720756
+P13251,P. britannica 1,"Canada, British Columbia, J. Lendemer 22343, NYBG 01221287",H61,N/A,MK680378,MK688870,missing,missing,2,N/A,N/A,missing
+P2281,P. britannica 1,"Canada, British Columbia, T. Goward 09-120, UBC",H64,N/A,MK680381,MK688873,missing,missing,2,H9,IV,MK720764
+"P2291,2",P. britannica 1,"Canada, British Columbia, T. Goward 08-76, UBC",H65,bri II,MH734722P,MK688874,MK688665,missing,3,H3,IV,MK720765
+P2341,P. britannica 1,"Canada, British Columbia, T. Goward 08-72, UBC",H66,N/A,MK680383,MK688876,missing,missing,2,N/A,N/A,missing
+P235,P. britannica 1,"Canada, British Columbia, T. Goward 06-834A, UBC",H66,bri II,MK680384,MK688877,missing,missing,2,N/A,N/A,missing
+P7471,P. britannica 1,"Spain, H. Sipman 45194, B",H70,bri I,MK680392,MK688884,missing,missing,2,N/A,N/A,missing
+P784,P. britannica 1,"Norway, N. Magain s.n., 2011, LG ",H69,bri I,MK680390,missing,missing,missing,1,N/A,N/A,missing
+Tønsberg 76721,P. britannica 1,"Norway, T. Tønsberg 7672, BG",H67,N/A,AF158646,missing,missing,missing,1,N/A,N/A,missing
+HOB020708-0-1-9,P. britannica 2,"Canada, British Columbia, H. O'Brien s.n., DUKE",H53,N/A,FJ708857,FJ709286,missing,missing,2,N/A,N/A,missing
+HOB020708-31-5-6,P. britannica 2,"Canada, British Columbia, H. O'Brien s.n., DUKE",H54,N/A,FJ708852,FJ709282,missing,missing,2,N/A,N/A,missing
+HOB020708-39-1-10,P. britannica 2,"Canada, British Columbia, H. O'Brien s.n., DUKE",H53,N/A,FJ708858,FJ709287,missing,missing,2,N/A,N/A,missing
+HOB030611-10-0-1,P. britannica 2,"Canada, British Columbia, H. O'Brien s.n., DUKE",H54,N/A,FJ708853,FJ709283,missing,missing,2,N/A,N/A,missing
+HOB030611-5-5-1,P. britannica 2,"Canada, British Columbia, H. O'Brien s.n., DUKE",H54,N/A,FJ708854,FJ709284,missing,missing,2,N/A,N/A,missing
+"P10431,2",P. britannica 2,"U.S., Colorado, C. Wetmore 95265, MIN",H68,bri I,MK680386,MK688879,MK688666,MK688759,4,N/A,N/A,missing
+"P10661,2",P. britannica 2,"U.S., Wyoming, C. Wetmore 96597, MIN",H72,N/A,MK680395,MK688887,MK688671,MK688761,4,N/A,N/A,missing
+"P10781,2,3",P. britannica 2,"Canada, Yukon, B. McCune 31431, McCune herb.",H73,bri I,MK680396,MK688888,MK688672,MK688762,4,H22,IV,MK720746
+"P2851,2",P. britannica 2,"Canada, Alberta, J. Hollinger 1032, UBC",H53,aph Ia ,MK680385,MK688878,missing,MK688758,3,H10,VI,MK720769
+"P7791,2",P. britannica 2,"Iceland, H. Kristinsson 48989, AMNH",H54,bri I,MK680387,MK688880,MK688667,missing,3,N/A,N/A,missing
+TG 95-255,P. chionophila,"Canada, British Columbia, T. Goward 95-255, UBC",H75,N/A,AF158648,missing,missing,missing,1,N/A,N/A,missing
+TG 96-4941,P. chionophila,"Canada, British Columbia, T. Goward 96-494, UBC",H74,N/A,AF158647,missing,missing,missing,1,N/A,N/A,missing
+"P11391,2",P. chionophila,"Canada, British Columbia, T. Goward 02-413, UBC",H76,chio I,MK680397,MK688889,MK688673,missing,3,N/A,N/A,missing
+"P11401,2",P. chionophila,"Canada, British Columbia, T. Goward 02-398, UBC",H75,N/A,MK680398,MK688890,MK688674,missing,3,N/A,N/A,missing
+P1141,P. chionophila,"Canada, British Columbia, T. Goward 02-575, UBC",H75,N/A,MK680399,MK688891,MK688675,missing,3,N/A,N/A,missing
+"P11421,2",P. chionophila,"Canada, British Columbia, T. Goward 02-414, UBC",H77,chio I,MK680400,MK688892,MK688676,missing,3,N/A,N/A,missing
+"P2371,2",P. chionophila,"Canada, British Columbia, T. Goward 06-1255, UBC",H78,N/A,MH734719P,MH756803P,MH756874P,MH756999P,4,N/A,N/A,missing
+"P2521,2",P. chionophila,"Canada, British Columbia, T. Goward 06-1375, UBC",H79,N/A,MK680401,missing,MK688677,MK688763,3,N/A,N/A,missing
+P4038,P. chionophila,"Canada, British Columbia, C. Björk 17199, UBC",H76,N/A,MK680402,MK688893,MK688678,missing,3,N/A,N/A,missing
+P4039,P. chionophila,"Canada, British Columbia, C. Björk 19447, UBC",H76,N/A,MK680403,MK688894,MK688679,missing,3,N/A,N/A,missing
+P4040,P. chionophila,"Canada, British Columbia, C. Björk 14702, UBC",H75,N/A,MK680404,MK688895,MK688680,missing,3,N/A,N/A,missing
+P4041,P. chionophila,"Canada, British Columbia, T. Goward 95-15, UBC",H76,N/A,MK680405,MK688896,MK688681,missing,3,N/A,N/A,missing
+P764,P. chionophila,"Canada, British Columbia, T. Ahti 68753, H",H76,chio I,MK680406,MK688897,MK688682,missing,3,N/A,N/A,missing
+P1174,P. frippii,"Norway, Finmark, O. Vitikainen 8323, H",H80,fri I ,MK680407,MK688898,missing,missing,2,H8,IV,MK720777
+"P13451,2",P. frippii,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595017",H80,fri I,MK680408,MK688899,MK688683,missing,3,N/A,N/A,missing 
+P1370,P. frippii,"Russia, NW Siberia, M. P. Andreev 91762 p.p., H",H80,N/A,MK680410,MK688902,MK688686,missing,3,N/A,N/A,missing
+P4036,P. frippii,"Canada, Nunavut, C. Björk 27565, UBC",H80,N/A,MH734720P,MK688900,MK688684,missing,3,N/A,N/A,missing
+P4037,P. frippii,"Canada, Nunavut, C. Björk 27420, UBC",H80,N/A,MK680409,MK688901,MK688685,missing,3,N/A,N/A,missing
+HOB020708-31-1-23,P. malacea 1,"Canada, British Columbia, H. O'Brien s.n., DUKE",H83,N/A,FJ708872,FJ709430,missing,missing,2,HT22,III,KC437691
+P1180,P. malacea 1,"Russia, Yakutia, T. Ahti 61978, H",H100,mal I,MK680449,MK688939,missing,missing,2,N/A,N/A,missing
+"P13371,2",P. malacea 1,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595129",H100,mal I,MK680443,MK688933,MK688704,missing,3,N/A,N/A,missing
+P1339,P. malacea 1,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595128",H100,mal I,MK680444,MK688934,missing,missing,2,H6,III,MK720759
+P1347,P. malacea 1,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595016",H83,mal I,MK680445,MK688935,MK688705,missing,3,N/A,N/A,missing
+"P13501,2",P. malacea 1,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0594799",H101,N/A,MK680446,MK688936,MK688706,missing,3,N/A,N/A,missing
+"P2751,2",P. malacea 1,"Canada, British Columbia, T. Goward 10-108, UBC",H89,mal I,MH734721P,MK688912,MK688693,MK688769,4,N/A,N/A,missing
+"P40191,2",P. malacea 1,"Canada, Alberta, J. Miadlikowska and F. Lutzoni s.n., 16.08. 2013, DUKE",H84,N/A,MK680417 ,missing,MK688690,MK688766,3,N/A,N/A,missing
+"P40511,2",P. malacea 1,"Canada, Yukon, J. Lendemer 28534A, DUKE",H83,mal I,MK680484,MK688905,MK688688,missing,3,N/A,N/A,missing
+"P7541,2,3",P. malacea 1,"Russia, Yakutia, T. Ahti 61461, H",H104,mal I,MK680451,MK688941,MK688709,missing,3,H14,III,MK720774
+P1022 ,P. malacea 2,"Norway, N. Magain s.n., 2011, LG ",H111,mal V,MK680469,MK688958,MK688720,MK688790,4,N/A,N/A,missing
+P1031,P. malacea 2,"Norway, N. Magain s.n., 2011, LG",H111,mal I,MK680470,MK688959,MK688721,MK688791,4,N/A,N/A,missing
+P1033b3,P. malacea 2,"Norway, N. Magain s.n., 2011, LG ",H109,N/A,MK680471,MK688960,missing,missing,2,H8,IV,MK720741
+P109,P. malacea 2,"Canada, Québec, J. Miadlikowska et al., SN8C1, DUKE (P5004 in Lu et al. 2018)",H109,mal V,MG811719L,missing,missing,missing,1,N/A,N/A,missing
+"P11301,2",P. malacea 2,"Canada, Alberta, J. Hollinger 3884, UBC",H111,mal V,MK680462,MK688951,MK688717,MK688786,4,N/A,N/A,missing
+P1179,P. malacea 2,"Russia, Krasnoyarsk Territory, V. Pervunin s.n., July 2000, H",H109,mal V,MK680473,MK688962,missing,missing,2,N/A,N/A,missing
+"P13641,2",P. malacea 2,"Finland, B. Krzewicka 2526, H",H113,mal V,MK680468,MK688957,MK688719,missing,3,N/A,N/A,missing
+P2763,P. malacea 2,"U.S., Alaska, E. Berg 3172, UBC",H111,mal I,MK680463,MK688952,missing,MK688787,3,H15,IV,MK720767
+P277,P. malacea 2,"U.S., Alaska, E. Berg 3228, UBC",H109,N/A,MK680464,MK688953,missing,missing,2,N/A,N/A,missing
+P278,P. malacea 2,"U.S., Alaska, E. Berg 3074, UBC",H111,N/A,MK680465,MK688954,missing,MK688788,3,N/A,N/A,missing
+P2793,P. malacea 2,"U.S., Alaska, E. Berg 3202, UBC",H111,N/A,MK680466,MK688955,missing,MK688789,3,H16,IV,MK720768
+"P40421,2",P. malacea 2,"U.S., Alaska, K. Spickerman s.n., 08.01.2013, DUKE",H109,mal I,MK680460,MK688949,MK688715,missing,3,N/A,N/A,missing
+"P40501,2",P. malacea 2,"Canada, Ontario, R. Troy McMullin 8925, DUKE",H112,N/A,MK680467,MK688956,MK688718,missing,3,N/A,N/A,missing
+"P7031,2,3",P. malacea 2,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H110,mal I,MK680461,MK688950,MK688716,missing,3,H17,IV,MK720771
+"P7831,2",P. malacea 2,"Norway, N. Magain s.n., 2011, LG ",H114,mal I,MK680472,MK688961,MK688722,missing,3,N/A,N/A,missing
+P1072,P. malacea 3,"U.S., Wyoming, C. Wetmore 95691, MIN",H116,mal I,MK680477,MK688966,MK688724,MK688794,4,N/A,N/A,missing
+"P10731,2",P. malacea 3,"U.S., Wyoming, C. Wetmore 96025, MIN",H118,N/A,MK680478,MK688967,MK688725,MK688795,4,N/A,N/A,missing
+"P10741,2",P. malacea 3,"U.S., Wyoming, C. Wetmore 96461, MIN",H119,N/A,MK680479,MK688968,MK688726,missing,3,H5,III,MK720743
+"P10751,2",P. malacea 3,"U.S., Wyoming, C. Wetmore 96229, MIN",H116,N/A,MK680480,MK688969,MK688727,MK688796,4,H5,III,MK720744
+"P10761,2",P. malacea 3,"U.S., Wyoming, C. Wetmore 96581, MIN",H120,mal I,MK680481,MK688970,MK688728,MK688797,4,H5,III,MK720745
+P1157,P. malacea 3,"U.S., Wyoming, C. Wetmore 96763, MIN",H118,N/A,MK680482,MK688971,MK688729,missing,3,H5,III,MK720748
+P1159,P. malacea 3,"U.S., Wyoming, C. Wetmore 96420, MIN",H105,aph Ia ,MK680454,MK688943,MK688710,missing,3,H5,III,MK720749
+"P11601,2,3",P. malacea 3,"U.S., Wyoming, C. Wetmore 96256, MIN",H106,N/A,MK680455,MK688944,MK688711,MK688782,4,H18,III,MK720750
+"P11611,2",P. malacea 3,"U.S., Wyoming, C. Wetmore 96744, MIN",H107,N/A,MK680456,MK688945,MK688712,MK688783,4,H5,III,MK720751
+"P11631,2,3",P. malacea 3,"U.S., Wyoming, C. Wetmore 96051, MIN",H105,N/A,MK680458,MK688947,MK688713,MK688784,4,H19,III,MK720752
+"P11661,2",P. malacea 3,"U.S., Wyoming, C. Wetmore 96617, MIN",H108,N/A,MK680459,MK688948,MK688714,MK688785,4,H5,III,MK720753
+P2171,P. malacea 3,"Canada, British Columbia, T. Goward 06-1030A, UBC",H115,mal II,MK680474,MK688963,missing,missing,2,N/A,N/A,missing
+P2713,P. malacea 3,"Canada, British Columbia, C. Björk 22236, UBC",H116,N/A,MK680475,MK688964,missing,MK688792,3,H20,III,MK720766
+"P2741,2",P. malacea 3,"Canada, British Columbia, T. Goward 09-111, UBC",H117,mal I,MK680476,MK688965,MK688723,MK688793,4,N/A,N/A,missing
+"P10081,2",P. malacea 4,"Norway, N. Magain s.n., 2011, LG ",H96,mal II,MK680434,MK688924,missing,MK688774,3,H6,III,MK720735
+"P10141,2",P. malacea 4,"Norway, N. Magain s.n., 2011, LG ",H98,N/A,MK680437,MK688927,MK688700,missing,3,H6,III,MK720738
+"P10271,2",P. malacea 4,"Norway, N. Magain s.n., 2011, LG ",H99,N/A,MK680439,MK688929,MK688701,MK688778,4,N/A,N/A,missing
+"P7431,2",P. malacea 4,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",H81,mal II,MK680483,MK688903,MK688687,MK688764,4,N/A,N/A,missing
+"P7531,2",P. malacea 4,"Russia, Kamchatka, D. E. Himelbrant s.n., 12.20.2010, H",H102,mal II,MK680448,MK688938,MK688708,MK688781,4,H6,III,MK720773
+Cieslinski s.n.,P. malacea 5,"Poland, Cieslinski s.n., KTC",H91,N/A,AY257966,missing,missing,missing,1,N/A,N/A,missing
+Faltynowicz 5237,P. malacea 5,"Poland, Faltynowicz 5237, UGDA-L",H91,N/A,AY257965,missing,missing,missing,1,N/A,N/A,missing
+"HOB020708-31-1-31,3",P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H86,N/A,FJ708871,FJ709429,missing,missing,2,HT9,III,KC437690
+HOB020708-31-1-4,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708859,FJ709418,missing,missing,2,N/A,N/A,missing
+HOB020708-31-5-4,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708860,FJ709419,missing,missing,2,N/A,N/A,missing
+HOB020708-35-1-2,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708861,FJ709420,missing,missing,2,N/A,N/A,missing
+HOB020708-35-1-3,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708862,FJ709421,missing,missing,2,N/A,N/A,missing
+HOB020708-35-1-4,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708863,missing,missing,missing,1,N/A,N/A,missing
+HOB020708-35-5-2,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,KC437626,missing,missing,missing,1,HT22,III,KC437846
+HOB020708-62-5-4,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,KC437622,missing,missing,missing,1,HT9,III,KC437856
+HOB020708-70-5-33,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708864,FJ709422,missing,missing,2,HT7,III,KC437686 
+HOB020708-70-5-4,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708865,FJ709423,missing,missing,2,N/A,N/A,missing
+HOB020708-70-5-5,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708866,FJ709424,missing,missing,2,N/A,N/A,missing
+HOB020708-70-5-6,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708867,FJ709425,missing,missing,2,N/A,N/A,missing
+HOB040605-03-2,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,KC437621,missing,missing,missing,1,HT7,III,KC437881
+HOB040605-04-23,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,KC437628,missing,missing,missing,1,HT25,IV,KC437883
+HOB040605-07-43,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,KC437629,missing,missing,missing,1,HT28,III,KC437896
+HOB040605-3-2,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708868,FJ709426,missing,missing,2,N/A,N/A,missing
+HOB040605-4-2,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708869,FJ709427,missing,missing,2,N/A,N/A,missing
+HOB040605-7-4,P. malacea 5,"Canada, British Columbia, H. O'Brien s.n., DUKE",H82,N/A,FJ708870,FJ709428,missing,missing,2,N/A,N/A,missing
+P10073,P. malacea 5,"Norway, N. Magain s.n., 2011, LG ",H82,N/A,MK680433,MK688923,missing,missing,2,H6,III,MK720734
+P10113,P. malacea 5,"Norway, N. Magain s.n., 2011, LG",H97,mal I,MK680435,MK688925,missing,MK688775,3,H5,III,MK720736
+P1012,P. malacea 5,"Norway, N. Magain s.n., 2011, LG",H97,N/A,MK680436,MK688926,missing,MK688776,3,H5,III,MK720737
+P1017,P. malacea 5,"Norway, N. Magain s.n., 2011, LG",H97,N/A,MK680438,MK688928,missing,MK688777,3,H5,III,MK720739
+"P10281,2",P. malacea 5,"Norway, N. Magain s.n., 2011, LG",H97,N/A,MK680440,MK688930,MK688702,MK688779,4,N/A,N/A,missing
+,,,,,,,,,,,,
+P1042,P. malacea 5,"Canada, Ontario, C. Wetmore 88347, MIN",H82,N/A,MK680447,MK688937,MK688707,MK688780,4,N/A,N/A,missing
+P1063,P. malacea 5,"U.S., Minnesota, C. Wetmore 87936, MIN",H82,mal II,MK680431,missing,MK688698,MK688772,3,N/A,N/A,missing
+P11271,P. malacea 5,"U.S., South Dakota, J. Hollinger 3476, UBC ",H103,mal II,MK680450,MK688940,missing,missing,2,N/A,N/A,missing
+"P11281,2",P. malacea 5,"U.S., Montana, J. Hollinger 3311, UBC ",H95,mal I,MK680432,MK688922,MK688699,MK688773,4,N/A,N/A,missing
+P1129,P. malacea 5,"Canada, Alberta, J. Hollinger 3830, UBC",H82,mal II,MK680415,MK688906,missing,missing,2,N/A,N/A,missing
+P1162,P. malacea 5,"U.S., Wyoming, C. Wetmore 96137, MIN",H82,mal II,MK680457,MK688946,missing,missing,2,N/A,N/A,missing
+P1178,P. malacea 5,"Canada, Manitoba, T. Ahti 63076, H",H82,mal II,MK680428,MK688919,missing,missing,2,N/A,N/A,missing
+P1327,P. malacea 5,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595024",H82,N/A,MK680442,MK688932,missing,missing,2,H5,III,MK720757
+P1359,P. malacea 5,"Switzerland, Schumm 08.1998, H",H82,mal I,MK680453,missing,missing,missing,1,N/A,N/A,missing
+P1360,P. malacea 5,"Finland, O. Vitikainen 16401, H",H82,N/A,MK680423,MK688914,missing,missing,2,N/A,N/A,missing
+"P13611,2",P. malacea 5,"Finland, V. Haikonen 26190, H",H91,mal I,MK680424,MK688915,MK688695,missing,3,N/A,N/A,missing
+P1363,P. malacea 5,"Russia, Karelia, P. Uotila 44104, H",H82,N/A,MK680427,MK688918,missing,missing,2,N/A,N/A,missing
+P1365,P. malacea 5,"Finland, O. Vitikainen 16433, H",H82,N/A,MK680425,MK688916,missing,missing,2,N/A,N/A,missing
+P1366,P. malacea 5,"Spain, A. R. Burgazet al. s.n., 02.06.1995, H",H91,mal I,MK680452,MK688942,missing,missing,2,N/A,N/A,missing
+P1381,P. malacea 5,"Austria, J. Hafellner 68171, GZU 36-2007",H82,mal I,MK680418,MK688908,missing,missing,2,N/A,N/A,missing
+P13821,P. malacea 5,"Austria, J. Hafellner 63415, GZU 7-2005",H85,N/A,MK680419,MK688909,missing,missing,2,N/A,N/A,missing
+"P2161,2",P. malacea 5,"U.S., Alaska, E. Berg 3072, UBC ",H87,mal III,"GB, MK680420","GB, MK688910","GB, MK688691","GB, MK688767",4,N/A,N/A,missing
+"P2731,2",P. malacea 5,"Canada, British Columbia, T. Goward 07-189, UBC",H88,N/A,MK680421,MK688911,MK688692,MK688768,4,N/A,N/A,missing
+"P40181,2",P. malacea 5,"Canada, Alberta, J. Miadlikowska et al. s.n., 08.06.2013, DUKE",H82,N/A,MK680416,MK688907,MK688689,MK688765,4,N/A,N/A,missing
+"P40281,2",P. malacea 5,"Russia, Caucasus, M. Zhurbenko 2012.8.18.2, DUKE",H90,mal I,MK680422,MK688913,MK688694,MK688770,4,N/A,N/A,missing
+"P40291,2",P. malacea 5,"U.S., Michigan, J. Miadlikowska et al. s.n., 06.28.2013, DUKE",H94,N/A,MK680430,MK688921,MK688697,MK688771,4,N/A,N/A,missing
+"P7501,2",P. malacea 5,"Canada, Manitoba, T. Ahti 62902, H",H93,mal II,MK680429,MK688920,MK688696,missing,3,H5,III,MK720772
+"P7811,3",P. malacea 5,"Iceland, H. Kristinsson L-27478, AMNH",H92,mal II,MK680426,MK688917,missing,missing,2,H21,III,MK720775
+P798,P. malacea 5,"Norway, N. Magain s.n., 2011, LG ",H97,mal II,MK680441,MK688931,MK688703,missing,3,H5,III,MK720776
+"P10641,2",P. leucophlebia s.l.,"U.S., Wyoming, C. Wetmore 96081, MIN",N/A,N/A,MK680413,MK688972,missing,MK688798,3,N/A,N/A,missing
+"P11151,2",P. leucophlebia s.l.,"Canada, Alberta, J. Hollinger 3871, UBC",N/A,N/A,MK680414,MK688973,MK688730,MK688799,4,N/A,N/A,missing
+"P2441,2",P. latiloba,"Canada, British Columbia, C. Björk 16336, UBC",N/A,N/A,MK680411,MK688974,MK688731,MK688800,4,N/A,N/A,missing
+"P2941,2,3",P. latiloba,"Canada, British Columbia, C. Björk 18664, UBC",N/A,N/A,MK680412,MK688975,MK688732,MK688801,4,H23,Undefined (U),MK720770

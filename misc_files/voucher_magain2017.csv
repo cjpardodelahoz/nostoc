@@ -1,0 +1,609 @@
+Taxon,DNA Number,Voucher/Published source,ITS,LSU,RPB1,ß-tubulin,EFT 2.1,rbcLX,rbcLX phylogroup or haplotype
+P. dolichorhiza,P894,Bolivia; M. Kukwa 9232; UGDA-17709,KX897177,--,--,--,--,KX922884,HT33
+P. dolichorhiza,P29,Costa Rica; J. Miadlikowska et al. s.n.; DUKE,KX897178,--,--,--,--,KX922885,HT42
+P. dolichorhiza,P893,Bolivia; M. Kukwa 9740; UGDA-17730,KX897179,KX869750,KX880192,KX880092,KX897456,KX922886,V
+P. dolichorhiza,N999,Reunion Island; N. Magain & E. Sérusiaux s.n.; LG,KX897180,KX869751,KX880193,KX880093,KX897457,KX922887,XIX
+P. dolichorhiza,P28,Costa Rica; J. Miadlikowska et al. s.n.; DUKE,KX897181,KX869752,KX880194,KX880094,KX897458,KX922888,XIXa
+P. dolichorhiza,P348,Mexico; M. A. Herrera-Campos 13382; MEXU,KX897182,666666866,666667205,666666969,666667081,KX922889,XIXb
+P. dolichorhiza,P879,Rwanda; E. Sérusiaux PA7; LG,KX897183,--,--,--,--,KX922890,XIXb
+P. dolichorhiza,N1942,Panama; B. Goffinet 753; CONN,KX897184,KX869753,KX880195,KX880095,KX897459,KX922891,XIXc
+P. dolichorhiza,P1574,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34450",KX897185,--,--,--,--,KX922892,XIXd
+P. dolichorhiza,P355,Mexico; M. A. Herrera-Campos 135; MEXU,KX897186,--,--,--,--,KX922893,XIXd
+P. dolichorhiza,P1596,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34453",KX897187,KX869754,KX880196,KX880096,KX897460,--,N/A
+P. dolichorhiza 2,P1567,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34530",KX897188,KX86975,KX880197,KX880097,KX897461,KX922894,XIXc
+P. dolichorhiza 2,P1575,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34456",KX897189,--,--,--,--,KX922895,XIXd
+P. hawaiensis,P1236,"USA, Hawaii; B. McCune 22196; McCune Private Coll.",KX897190,KX869756,--,KX880098,--,KX922896,XIX
+P. hymenina,P430,"Canada, Newfoundland; J. Lendemer 10397; H",KX897191,KX869757,KX880198,KX880099,KX897462,KX922897,VIIIb
+P. hymenina,N357,"Spain, Tenerife; E. Sérusiaux s.n.; LG",KX897192,KX869758,KX880199,KX880100,KX897463,KX922898,XIXb
+P. hymenina,N2054,Norway; H. Bratli 4604; O-65885,KX897193,--,--,--,--,KX922899,XVI
+P. hymenina,P1214,"USA, Oregon; D. Kofranek 3729; McCune Private Coll.",KX897194,--,--,--,--,KX922900,XVI
+P. hymenina,P1226,"USA, Oregon; B. McCune 26281; McCune Private Coll.",KX897195,--,--,--,--,KX922901,XVI
+P. hymenina,P516,"Portugal, Azores; E. Sérusiaux s.n.; LG",KX897196,KX869759,KX880200,--,KX897464,KX922902,XVI
+P. hymenina,P517,"Portugal, Azores; E. Sérusiaux s.n.; LG",KX897197,--,--,--,--,KX922903,XVI
+P. hymenina,P539,Norway; N. Magain s.n.; LG,KX897198,KX869760,KX880201,KX880101,KX897465,KX922904,XVI
+P. hymenina,P7,Iceland; J. Miadlikowska et al. s.n. 12540; DUKE,KX897199,--,--,--,--,KX922905,XVI
+P. hymenina,P80,Iceland; T. Ahti 69347; H,KX897200,KX869761,KX880202,KX880102,KX897466,KX922906,XVI
+P. hymenina,P851,Iceland; H. G. Kristinsson 48978; AMNH-28943,KX897201,--,--,--,--,KX922907,XVI
+P. hymenina,P870,Denmark; V. Alstrup s.n.; H,KX897202,--,--,--,--,KX922908,XVI
+P. hymenina,P871,"Portugal, Azores; F. Rodriguez 0106/2010-66; B-600173049",KX897203,--,--,--,--,KX922909,XVI
+P. hymenina,P872,"Portugal, Azores; F. Rodriguez 0106/2010-67; B-600173186",KX897204,--,--,--,--,KX922910,XVI
+P. hymenina,P1229,"USA, Oregon; B. McCune 30448; McCune Private Coll.",KX897205,KX869762,KX880203,KX880103,KX897467,KX922911,XVII
+P. hymenina,P1247,"Canada, British Columbia; C. Björk 17053; UBC",KX897206,--,--,--,--,KX922912,XVII
+P. hymenina,P1799,"Portugal, Azores; D. Upreti 6915a; MAF",KX897207,KX869763,KX880204,KX880104,KX897468,--,N/A
+P. hymenina,P1903,"Portugal, Azores; D. Upreti 6916s; MAF",KX897208,KX869764,KX880205,KX880105,--,--,N/A
+P. macra,P416,Philippines; L. A. Ejem; H,KX897209,--,--,--,--,KX922913,XII
+P. melanorrhiza,P515,"Portugal, Azores; E. Sérusiaux s.n.; LG",KX897210,KX869765,KX880206,--,KX897469,KX922914,XVI
+P. melanorrhiza,P1798,"Portugal, Azores; D. Upreti 6918b; MAF",KX897211,KX869766,KX880207,KX880106,KX897470,--,N/A
+P. nana 1,P1281,"China, Yunnan; J. Miadlikowska s.n.; DUKE",KX897212,KX869767,KX880208,--,--,KX922915,HT45
+P. nana 1,P1666,"Japan, Kochi; G. Thor 21255; UPS-383534",KX897213,KX869768,KX880209,--,--,KX922916,VIIc
+P. nana 1,P1282,"China, Yunnan; J. Miadlikowska s.n.; DUKE",KX897214,--,--,--,--,KX922917,XII
+P. nana 1,P1665,"China, Sichuan; N. Gustavsson 10; UPS-509502",KX897215,KX869769,KX880210,--,--,KX922918,XII
+P. nana 1,P1290,"China, Yunnan; J. Miadlikowska s.n.; DUKE",KX897216,KX869770,KX880211,--,--,--,N/A
+P. nana 2,P609,New Zealand; S. Stenroos 6037; H,KX897217,KX869771,KX880212,--,KX897471,KX922919,HT37
+P. neopolydactyla,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476535,HT24
+P. neopolydactyla,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82470991,VIIa
+P. neopolydactyla,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779968,VIIa
+P. neopolydactyla,GB,"Canada, Québec; O'Brien et al. 2013",--,--,--,--,--,455476637,VIIa
+P. neopolydactyla,GB,"Canada, Québec; O'Brien et al. 2013",--,--,--,--,--,455476631,XIa
+P. neopolydactyla,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690877,XIII
+P. neopolydactyla,GB,China; O'Brien et al. 2013,--,--,--,--,--,455476643,N/A
+P. neopolydactyla,GB,China; O'Brien et al. 2013,--,--,--,--,--,455476649,X
+P. neopolydactyla,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690880,N/A
+P. neopolydactyla 1,P67,"USA, North Carolina; J. Hollinger 2732; DUKE",KX897218,--,--,--,--,KX922920,VIIb
+P. neopolydactyla 1,N1944,"USA, Alaska; B. Goffinet 9424; CONN",KX897219,KX869772,KX880213,KX880107,KX897472,KX922921,VIIa
+P. neopolydactyla 1,P309,"Canada, Québec; J. Miadlikowska et al. s.n.; DUKE",KX897220,KX869773,KX880214,KX880108,KX897473,KX922922,VIIa
+P. neopolydactyla 1,P411,"Russia, Yakutia; T. Ahti 65064; H",KX897221,KX869774,KX880215,KX880109,--,KX922923,VIIa
+P. neopolydactyla 1,P844,Norway; N. Magain s.n.; LG,KX897222,--,--,--,--,KX922924,VIIa
+P. neopolydactyla 1,P845,Norway; N. Magain s.n.; LG,KX897223,KX869775,KX880216,KX880110,KX897474,KX922925,VIIa
+P. neopolydactyla 1,N1939,"USA, Alabama; B. Goffinet 5209; DUKE",KX897224,KX869776,KX880217,KX880111,KX897475,KX922926,VIIb
+P. neopolydactyla 1,P640,"USA, North Carolina; J. Miadlikowska et al. s.n.; DUKE",KX897225,KX869777,KX880218,KX880112,KX897476,KX922927,VIIb
+P. neopolydactyla 1,P645,"USA, North Carolina; J. Miadlikowska et al. s.n.; DUKE",KX897226,KX869778,KX880219,KX880113,KX897477,KX922928,VIIb
+P. neopolydactyla 1,P1252,"USA, Arizona; J. Hollinger 1781; UBC",KX897227,KX869779,KX880220,KX880114,--,KX922929,VIIc
+P. neopolydactyla 1b,P325,Peru; E. Gaya 07.14.10-19; DUKE,KX897228,KX869780,KX880221,KX880115,KX897478,KX922930,VIIb
+P. neopolydactyla 2,N1913,"China, Yunnan; B. Goffinet 10122; CONN",KX897229,--,--,--,--,KX922931,X
+P. neopolydactyla 2,N1914,"China, Yunnan; B. Goffinet 10125; CONN",KX897230,--,--,--,--,KX922932,X
+P. neopolydactyla 2,N1916,"China, Yunnan; B. Goffinet 10126; CONN",KX897231,--,--,--,--,KX922933,X
+P. neopolydactyla 2,N1926,"China, Yunnan; B. Goffinet 10128; CONN",KX897232,--,--,--,--,KX922934,X
+P. neopolydactyla 2,N1927,"China, Yunnan; B. Goffinet 10127; CONN",KX897233,--,--,--,--,KX922935,X
+P. neopolydactyla 2,N1929,"China, Yunnan; B. Goffinet 10120; CONN",KX897234,KX869781,KX880222,KX880116,KX897479,KX922936,X
+P. neopolydactyla 2,P1183,"Japan, Hokkaido; G. Thor 25759; UPS-552780",KX897235,--,--,--,--,KX922937,XIII
+P. neopolydactyla 2,P1322,Norway; N. Magain s.n.; LG,KX897236,--,--,--,--,KX922938,XIII
+P. neopolydactyla 2,P384,Norway; N. Magain s.n.; LG,KX897237,KX869782,KX880223,KX880117,KX897480,KX922939,XIII
+P. neopolydactyla 2,P386,Norway; N. Magain s.n.; LG,KX897238,--,--,--,--,KX922940,XIII
+P. neopolydactyla 2,P821,Norway; N. Magain s.n.; LG,KX897239,--,--,--,--,KX922941,XIII
+P. neopolydactyla 2,P846,Norway; N. Magain s.n.; LG,KX897240,--,--,--,--,KX922942,XIII
+P. neopolydactyla 2,P1291,"China, Yunnan; J. Miadlikowska et al. s.n.; DUKE",KX897241,--,--,KX880118,--,--,N/A
+P. neopolydactyla 2,P1659,"Japan, Hokkaido; G. Thor 25720; UPS-519479",KX897242,KX869783,KX880224,KX880119,--,--,N/A
+P. neopolydactyla 2,P1662,"Japan, Hokkaido; A. Frisch 10/Jp410; UPS-522008",KX897243,KX869784,KX880225,KX880120,--,--,N/A
+P. neopolydactyla 2,P1667,"Japan, Kochi; G. Thor 2127x; UPS-164500",KX897244,KX869785,KX880226,KX880121,--,--,N/A
+P. neopolydactyla 2,P1760,"Japan, Hokkaido; G. Thor 14656; UPS-166427",KX897245,KX869786,--,KX880122,--,--,N/A
+P. neopolydactyla 2,P390,Norway; N. Magain s.n.; LG,KX897246,KX869787,KX880227,KX880123,KX897481,--,N/A
+P. neopolydactyla 3,P859,Vietnam; Vo T. P. G. G06-NL86B; B-600144665,KX897247,KX869788,KX880228,KX880124,--,KX922943,VIIb
+P. neopolydactyla 3,P1283,"China, Yunnan; J. Miadlikowska et al. s.n.; DUKE",KX897248,--,--,--,--,KX922944,X
+P. neopolydactyla 4,P1628,"USA, Maine; W. R. Buck 54962; NY-01105128",KX897249,--,--,--,--,KX922945,IV
+P. neopolydactyla 4,P1668,"Japan, Hokkaido; G. Thor 24306; UPS-519471",KX897250,KX869789,KX880229,KX880125,KX897482,KX922946,IV
+P. neopolydactyla 4,P1675,"Japan, Hokkaido; G. Thor 24336; UPS-519493",KX897251,--,--,--,--,KX922947,IV
+P. neopolydactyla 4,P302,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897252,KX869790,KX880230,KX880126,KX897483,KX922948,IV
+P. neopolydactyla 4,P321,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897253,KX869791,KX880231,KX880127,KX897484,KX922949,IV
+P. neopolydactyla 4,P591,Norway; N. Magain s.n.; LG,KX897254,--,--,--,--,KX922950,IV
+P. neopolydactyla 4,P811,Norway; N. Magain s.n.; LG,KX897255,--,--,--,--,KX922951,IV
+P. neopolydactyla 4,P1212,Norway; N. Magain s.n.; LG,KX897256,KX869792,KX880232,--,KX897485,KX922952,Xia
+P. neopolydactyla 4,P506,Norway; N. Magain s.n.; LG,KX897257,KX869793,KX880233,KX880128,KX897486,KX922953,XIa
+P. neopolydactyla 4,P669,Norway; N. Magain s.n.; LG,KX897258,--,--,--,--,KX922954,Xia
+P. neopolydactyla 5,P1228,"USA, Oregon; B. McCune 30018; McCune Private Coll.",KX897259,KX869794,KX880234,KX880129,KX897487,KX922955,XIb
+P. neopolydactyla 5,P1232,"USA, Oregon; B. McCune 26873; McCune Private Coll.",KX897260,KX869795,--, KX880130,--,KX922956,XIb
+P. neopolydactyla 5,P1257,"USA, Oregon; J. Hollinger 1385; UBC",KX897261,KX869796,KX880235,KX880131,KX897488,KX922957,XIb
+P. neopolydactyla 5,P1677,"USA, Oregon; B. McCune 26977; McCune Private Coll.",KX897262,--,--,--,--,KX922958,XIb
+P. neopolydactyla 6,P1223,"USA, Oregon; McCune Private Coll.",KX897263,--,--,--,--,KX922959,XIII
+P. neopolydactyla 6,P1231,"USA, Oregon; B. McCune 24160; McCune Private Coll.",KX897264,KX869797,KX880236,KX880132,--,KX922960,XIII
+P. neopolydactyla 6,N1886,"USA, Oregon; B. Goffinet 8056; CONN",KX897265,--,--,--,--,KX922961,XVII
+P. neopolydactyla 6,N1888,"USA, Oregon; B. Goffinet 8049; CONN",KX897266,--,--,--,--,KX922962,XVII
+P. neopolydactyla 6,P1258,"Canada, British Columbia; C. Björk 17289; UBC",KX897267,--,--,--,--,KX922963,XVII
+P. occidentalis,P108,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897268,--,--,--,--,KX922964,VIIa
+P. occidentalis,P299,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897269,KX869798,KX880237,KX880133,KX897489,KX922965,VIIa
+P. occidentalis,P314,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897270,--,--,--,--,KX922966,VIIa
+P. occidentalis,P410,"Russia, Siberia; T. N. Otnyukova s.n.; H",KX897271,--,--,--,--,KX922967,VIIa
+P. occidentalis,P543,Norway; N. Magain s.n.; LG,KX897272,KX869799,KX880238,KX880134,KX897490,KX922968,VIIa
+P. occidentalis,P571,Norway; N. Magain s.n.; LG,KX897273,--,--,--,--,KX922969,VIIa
+P. occidentalis,P853,"USA, Alaska; T. Ahti 63310; H",KX897274,--,--,--,--,KX922970,VIIa
+P. occidentalis,P1638,"USA, North Carolina; Richard C. Harris 52559; NY",KX897275,--,--,--,--,KX922971,VIIb
+P. occidentalis,P510,Norway; N. Magain s.n.; LG,KX897276,KX869800,KX880239,--,KX897491,--,N/A
+P. occidentalis,P521,Norway; N. Magain s.n.; LG,KX897277,KX869801,KX880240,--,KX897492,--,N/A
+P. occidentalis,P866,"USA, Alaska; T. Ahti 63231; H",KX897278,KX869802,KX880241,KX880135,KX897493,--,N/A
+P. oceanica,P882,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897279,KX869803,--,--,--,--,N/A
+P. pacifica,P1240,"Canada, British Columbia; T. Goward 06-23; UBC",KX897280,--,--,--,--,KX922972,XIII
+P. pacifica,P1241,"Canada, British Columbia; C. Björk 17500; UBC",KX897281,--,--,--,--,KX922973,XIII
+P. pacifica,P1242,"Canada, British Columbia; T. Goward 06-1133; UBC",KX897282,--,--,--,--,KX922974,XIII
+P. pacifica,P1243,"Canada, British Columbia; T. Goward 06-1522; UBC",KX897283,KX869804,KX880242,KX880136,KX897494,KX922975,XIII
+P. pacifica,P443,"Canada, British Columbia; O. Vitikainen 13080; H",KX897284,666666883,666667207,666666975,666667085,--,N/A
+P. polydactylon,N2069,Norway; J. Holtan-Hartwig 528; O,KX365447,KX365455,KX880243,KX365467,--,KX922976,V
+P. polydactylon,P1213,Norway; N. Magain s.n.; LG,KX897285,--,--,--,--,KX922977,V
+P. polydactylon,P1235,"USA, Alaska; B. McCune 26434; McCune Private Coll.",KX897286,--,--,--,--,KX922978,V
+P. polydactylon,P385,Norway; N. Magain s.n.; LG,KX365448,666666886,666667319,666666971,666667083,KX922979,V
+P. polydactylon,P388,Norway; N. Magain s.n.; LG,KX365449,KX365456,KX365461,KX365468,KX897495,KX922980,V
+P. polydactylon,P682,Norway; N. Magain s.n.; LG,KX897287,--,--,--,--,KX922981,V
+P. polydactylon,P71,"USA, New Mexico; J. Hollinger 2462; DUKE",KX365444,KX365452,KX365459,KX365464,KX897496,KX922982,V
+P. polydactylon,P816,Norway; N. Magain s.n.; LG,KX897288,--,--,--,--,KX922983,V
+P. polydactylon,P833,Norway; N. Magain s.n.; LG,KX897289,--,--,--,--,KX922984,V
+P. polydactylon,P856,Iran; A. A. Maassoumi 573; B-600114374,KX365446,KX365454,--,KX365466,--,KX922985,V
+P. polydactylon,P1234,"USA, Montana; B. McCune 29108; McCune Private Coll.",KX365445,KX365453,KX365460,KX365465,--,--,N/A
+P. pulverulenta 1,P890,Bolivia; M. Kukwa 8536; UGDA-17702,KX897290,KX869805,KX880244,KX880137,KX897497,KX922986,HT41
+P. pulverulenta 1,P897,Mexico; M. A. Herrera-Campos 122; MEXU,KX897291,--,--,--,--,KX922987,XIX
+P. pulverulenta 1,P1566,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34566",KX897292,--,--,--,--,KX922988,XIX
+P. pulverulenta 1,P1572,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34445",KX897293,--,--,--,--,KX922989,XIXb
+P. pulverulenta 1,P928,Colombia; R. Lücking MPNNC214; UDBC,KX897294,--,--,--,--,KX922990,XV
+P. pulverulenta 1,P901,Colombia; R. Lücking 33383; UDBC,KX897295,KX869806,KX880245,KX880138,--,--,N/A
+P. pulverulenta 1,P938,Colombia; R. Lücking 33321; UDBC,KX897296,KX869807,KX880246,KX880139,--,--,N/A
+P. pulverulenta 1,P945,Colombia; R. Lücking 33691; UDBC,KX897297,KX869808,KX880247,KX880140,KX897498,--,N/A
+P. pulverulenta 2,P1521,Colombia; R. Lücking 34028; UDBC,KX897298,KX869809,KX880248,KX880141,KX897499,KX922991,XIXa
+P. pulverulenta 2,P900,Colombia; R. Lücking 33367; UDBC,KX897299,KX869810,KX880249,KX880142,KX897500,KX922992,XIX 
+P. pulverulenta 3,P1522,Colombia; R. Lücking 34033; UDBC,KX897300,KX869811,KX880250,KX880144,KX897501,KX922993,HT34
+P. scabrosa 1,P1210,Norway; N. Magain s.n.; LG,KX897301,KX869812,KX880251,KX880145,--,KX922994,VIIa
+P. scabrosa 1,P1250,"Canada, Alberta; J. Hollinger 1066; UBC",KX897302,KX869813,KX880252,KX880146,KX897502,KX922995,VIIa
+P. scabrosa 1,P1539,"Russia, Siberia; J. Miadlikowska et al. s.n.; DUKE",KX897303,--,--,--,--,KX922996,VIIa
+P. scabrosa 1,P306,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897304,--,--,--,--,KX922997,VIIa
+P. scabrosa 1,P311,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897305,--,--,--,--,KX922998,VIIa
+P. scabrosa 1,P93,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897306,--,--,--,--,KX922999,VIIa
+P. scabrosa 1,P97,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897307,KX869814,KX880253,KX880147,KX897503,KX923000,VIIa
+P. scabrosa 1,P550,Norway; N. Magain s.n.; LG,KX897308,KX869815,KX880254,KX880148,KX897504,--,N/A
+P. scabrosa 2,P1328,"Canada, Nunavik; J. Gagnon; QFA-0594938",KX897401,--,--,--,--,KX923001,VIId
+P. scabrosa 2,P1721,Greenland; E. Sérusiaux s.n.; LG,KX897309,--,--,--,--,KX923002,VIId
+P. scabrosa 2,P107,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897310,666666890,666667197,666666913,666667075,KX923003,XIa
+P. scabrosa 2,P113,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897311,KX869816,KX880255,KX880149,KX897505,KX923004,XIa
+P. scabrosa 2,P1209,Norway; N. Magain s.n.; LG,KX897312,KX869817,KX880256,KX880150,KX897506,KX923005,XIa
+P. scabrosa 2,P1255,"Canada, BC; C. Björk 16230; UBC",KX897313,KX869818,KX880257,KX880151,KX897507,KX923006,XIa
+P. scabrosa 2,P1540,"Russia, Siberia; J. Miadlikowska et al. s.n.; DUKE",KX897314,--,--,--,--,KX923007,XIa
+P. scabrosa 2,P296,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897315,--,--,--,--,KX923008,XIa
+P. scabrosa 2,P520,Norway; N. Magain s.n.; LG,KX897316,--,--,--,--,KX923009,XIa
+P. scabrosa 2,P617,Norway; N. Magain s.n.; LG,KX897317,--,--,--,--,KX923010,XIa
+P. scabrosa 2,P830,Norway; N. Magain s.n.; LG,KX897318,--,--,--,--,KX923011,XIa
+P. scabrosa 3,P865,"Russia, Yakutia; T. Ahti 65068; H",KX897319,KX869819,KX880258,KX880152,KX897508,KX923012,VIIa
+P. scabrosa 3,N1236,Greenland; E. Sérusiaux s.n.; LG,KX897320,KX869820,KX880259,KX880153,KX897509,KX923013,VIIc
+P. scabrosa 3,P1536,"Russia, Siberia; J. Miadlikowska et al. s.n.; DUKE",KX897321,--,--,--,--,KX923014,X
+P. scabrosa 3,P1538,"Russia, Siberia; J. Miadlikowska et al. s.n.; DUKE",KX897322,--,--,--,--,KX923015,X
+P. scabrosa 4,P312,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897323,KX869821,KX880260,KX880154,KX897510,KX923016,VIIa
+P. scabrosa 4,P315,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897324,KX869822,KX880261,KX880155,--,KX923017,VIIa
+P. scabrosa 4,P318,"Canada, Québec; F. Lutzoni et al. s.n.; DUKE",KX897325,--,--,--,--,KX923018,VIIa
+P. scabrosa 4,P529,Norway; N. Magain s.n.; LG,KX897326,--,--,--,--,KX923019,VIIa
+P. scabrosa 4,P549,Norway; N. Magain s.n.; LG,KX897327,KX869823,KX880262,KX880156,KX897511,KX923020,VIIa
+P. scabrosella,P391,Norway; N. Magain s.n.; LG,KX897328,--,--,--,--,KX923021,XIa
+P. scabrosella,P514,Norway; N. Magain s.n.; LG,KX897329,--,--,--,--,KX923022,XIa
+P. scabrosella,P619,Norway; N. Magain s.n.; LG,KX897330,--,--,--,--,KX923023,XIa
+P. scabrosella,P854,Greenland; E. S. Hansen; H-548,KX897331,--,--,--,--,KX923024,XIa
+P. scabrosella,P536,Norway; N. Magain s.n.; LG,KX897332,KX869824,KX880263,KX880157,KX897512,--,N/A
+P. sp.,N1750,Unknown; J. Santosh s.n.; J. Santosh Private Coll.,--,--,--,--,--,KX923025,HT39
+P. sp. 1,P905,Colombia; R. Lücking 33334; UDBC,KX897333,--,--,--,--,KX923026,HT40
+P. sp. 1,P889,Bolivia; M. Kukwa 9440; UGDA-17715,KX897334,--,--,--,--,KX923027,XIX
+P. sp. 1,P885,Bolivia; M. Kukwa 9276; UGDA-17710,KX897335,KX869825,KX880264,KX880158,KX897513,KX923028,XIXc
+P. sp. 1,P886,Bolivia; M. Kukwa 9327; UGDA-17713,KX897336,KX869826,KX880265,KX880159,KX897514,KX923029,XIXc
+P. sp. 1,P909,Colombia; R. Lücking 33339; UDBC,KX897337,KX869827,--,KX880160,--,--,N/A
+P. sp. 2a,P1555,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34544",KX897338,KX869828,KX880266,KX880161,KX897515,KX923030,XIXb
+P. sp. 2a,P1570,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS- 34526",KX897339,--,--,--,--,KX923031,XIXb
+P. sp. 2a,P907,Colombia; R. Lücking 33361; UDBC,KX897340,KX869829,KX880267,KX880162,--,KX923032,XV
+P. sp. 2b,P1561,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS-34399",KX897341,--,--,--,--,KX923033,V
+P. sp. 2b,P1557,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS- 34562",KX897342,KX869830,KX880268,KX880163,KX897516,KX923034,XIXd
+P. sp. 2b,P1583,"Brazil, Minas Gerais; J. Miadlikowska et al. s.n.; CGMS- 34428",KX897343,--,--,--,--,KX923035,XIXd
+P. sp. 3,P611,New Zealand; F. Högnabba 1746; H,KX897344,--,--,--,--,KX923036,V
+P. sp. 3,P612,New Zealand; F. Högnabba 1471; H,KX897345,--,--,--,--,KX923037,X
+P. sp. 3,P604,New Zealand; F. Högnabba 1538; H,KX897346,KX869831,KX880269,KX880164,KX897517,KX923038,XX
+P. sp. 3,P606,New Zealand; S. Stenroos 5942; H,KX897347,--,--,--,--,KX923039,XX
+P. sp. 3,P607,New Zealand; S. Stenroos 5820; H,KX897348,KX869832,KX880270,KX880165,KX897518,KX923040,XX
+P. sp. 3,P608,New Zealand; S. Stenroos 5830; H,KX897349,--,--,--,--,KX923041,XX
+P. sp. 3,P610,New Zealand; F. Högnabba 1575; H,KX897350,--,--,--,--,KX923042,XX
+P. sp. 3,P1530,New Zealand; D. Blanchon s.n.; DUKE,KX897351,KX869833,KX880271,KX880166,KX897519,--,N/A
+P. sp. 3,P605,New Zealand; S. Stenroos 5815; H,KX897352,KX869834,KX880272,KX880167,KX897520,--,N/A
+P. sp. 4,N1534,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897353,KX869835,KX880273,KX880168,--,KX923043,VIIb
+P. sp. 5,N1545,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897354,KX869836,KX880274,--,KX897521,KX923044,HT32
+P. sp. 5,P1716,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897355,--,--,--,--,KX923045,X
+P. sp. 6,P1734,Peru; N. Magain s.n.; DUKE,KX897356,--,--,--,--,KX923046,HT35
+P. sp. 6,P1650,Honduras; B. Allen 17790; NY,KX897357,KX869837,KX880275,KX880169,--,KX923047,HT44
+P. sp. 6,P1733,Peru; J. Miadlikowska et al. s.n.; DUKE,KX897358,--,--,--,--,KX923048,HT46
+P. sp. 6,P936,Colombia; R. Lücking 33659; UDBC,KX897359,KX869838,KX880276,KX880170,--,KX923049,XIXb
+P. sp. 6,P942,Colombia; R. Lücking 33658; UDBC,KX897360,--,--,--,--,KX923050,XIXb
+P. sp. 7a,N1674,"Canada, British Columbia; T. Tönsberg 20742; BG-34877",KX897361,--,--,--,--,KX923051,XIa
+P. sp. 7a,N1887,"USA, Oregon; B. Goffinet 7966; CONN",KX897362,--,--,--,--,KX923052,XIa
+P. sp. 7a,N1932,"Canada, British Columbia; B. Goffinet 3167; CONN",KX897363,--,--,--,--,KX923053,XIa
+P. sp. 7a,N1666,"Canada, BC; T. Tönsberg 20741; BG-34876",KX897364,KX869839,KX880277,KX880171,KX897522,--,N/A
+P. sp. 7b,P1660,"Japan, Hokkaido; G. Thor 25408; UPS-519475",KX897365,KX869840,KX880278,KX880172,--,KX923054,XIa
+P. sp. 7b,P1672,"Japan, Hokkaido; G. Thor; UPS",KX897366,--,--,--,--,KX923055,XIa
+P. sp. 7b,P1674,"Japan, Hokkaido; G. Thor 25401; UPS-519496",KX897367,--,--,--,--,KX923056,XIa
+P. sp. 8,N1947,"China, Yunnan; B. Goffinet 9978; CONN",KX897368,--,--,--,--,KX923057,HT31
+P. sp. 8,P1272,"China, Jilin; M. Sohrabi 16572; M. Sohrabi Private Coll.",KX897369,KX869841,KX880279,KX880173,KX897523,KX923058,HT43
+P. sp. 8,N1920,"China, Yunnan; B. Goffinet 9983; CONN",KX897370,--,--,--,--,KX923059,HT47
+P. sp. 8,N1754,South Korea; J. Santosh 090187; J. Santosh Private Coll.,KX897371,--,--,--,--,KX923060,VIIIa
+P. sp. 8,N1897,"China, Yunnan; B. Goffinet 10060; CONN",KX897372,--,--,--,--,KX923061,VIIIa
+P. sp. 8,N1898,"China, Yunnan; B. Goffinet 10063; CONN",KX897373,KX869842,KX880280,KX880174,KX897524,KX923062,VIIIa
+P. sp. 8,N1900,"China, Yunnan; B. Goffinet 10102; CONN",KX897374,--,--,--,--,KX923063,VIIIa
+P. sp. 8,N1922,"China, Yunnan; B. Goffinet 10072; CONN",KX897375,KX869843,KX880281,KX880175,KX897525,KX923064,VIIIa
+P. sp. 8,N1924,"China, Yunnan; B. Goffinet 10095; CONN",KX897376,KX869844,KX880282,KX880176,KX897526,KX923065,VIIIa
+P. sp. 8,N1928,"China, Yunnan; B. Goffinet 10107; CONN",KX897377,KX869845,KX880283,KX880177,KX897527,KX923066,VIIIa
+P. sp. 8,P1237,Taiwan; A. Mikulin T71; A. Mikulin Private Coll.,KX897378,KX869846,KX880284,KX880178,KX897528,KX923067,VIIIa
+P. sp. 8,P1299,"China, Yunnan; J. Miadlikowska et al. s.n.; DUKE",KX897379,--,--,--,--,KX923068,VIIIa
+P. sp. 8,N1748,South Korea; J. Santosh 080042; J. Santosh Private Coll.,KX897380,--,--,--,--,KX923069,XIV
+P. sp. 8,N1752,South Korea; J. Santosh 090132; J. Santosh Private Coll.,KX897381,--,--,--,--,KX923070,XIV
+P. sp. 8,N1766,South Korea; J. Santosh 040808; J. Santosh Private Coll.,KX897382,--,--,--,--,KX923071,XIV
+P. sp. 9,N1907,"China, Yunnan; B. Goffinet 10100; CONN",KX897383,--,--,--,--,KX923072,VIIIa
+P. sp. 9,N1908,"China, Yunnan; B. Goffinet 10040; CONN",KX897384,--,--,--,--,KX923073,VIIIa
+P. sp. 9,N1918,"China, Yunnan; B. Goffinet 10101; CONN",KX897385,--,--,--,--,KX923074,VIIIa
+P. sp. 9,N1921,"China, Yunnan; B. Goffinet 10064; CONN",KX897386,--,--,--,--,KX923075,VIIIa
+P. sp. 9,N1923,"China, Yunnan; B. Goffinet 10073; CONN",KX897387,KX869847,KX880285,KX880179,KX897529,KX923076,VIIIa
+P. sp. 9,N1936,"China, Yunnan; B. Goffinet 10108; CONN",KX897388,--,--,--,--,KX923077,VIIIa
+P. sp. 9,P1508,"China, Yunnan; J. Miadlikowska et al. s.n.; DUKE",KX897389,--,--,--,--,KX923078,VIIIa
+P. sp. 9,N1899,"China, Yunnan; B. Goffinet 10014; CONN",KX897390,KX869848,KX880286,--,KX897530,--,N/A
+P. sp. 10,P1652,"Canada, Nova Scotia; NY",KX365450,KX365457,KX365462,--,--,KX923079,V
+P. sp. 10,P450,"USA, Pennsylvania; J. Lendemer 16792; NY",KX365451,KX365458,KX365463,--,KX897531,KX923080,V
+P. sp. 11,N1532,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897391,KX869849,KX880287,KX880180,--,KX923081,IX
+P. sp. 11,N1533,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897392,KX869850,--,KX880181,--,KX923082,IX
+P. sp. 11,N1537,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897393,--,--,--,--,KX923083,IX
+P. sp. 11,N1547,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897394,--,--,--,--,KX923084,IX
+P. sumatrana,P884,Papua New Guinea; E. Sérusiaux s.n.; LG,KX897395,--,--,KX880182,--,--,N/A
+P. truculenta,P332,Chile; T. Wheeler 89; T. Wheeler Private Coll.,KX897396,KX869851,KX880288,KX880183,--,KX923085,HT36
+P. truculenta,P329,Chile; P. Nelson 4362; T. Wheeler Private Coll.,KX897397,KX869852,KX880289,--,KX897532,KX923086,HT38
+P. truculenta,P1251,Chile; J. Hollinger 1925; UBC,KX897398,KX869853,--,KX880184,KX897533,KX923087,VIIIb
+P. truculenta,P335,Chile; T. Wheeler 1093; T. Wheeler Private Coll.,KX897399,KX869854,KX880290,KX880185,KX897534,KX923088,VIIIb
+P. truculenta,P330,Chile; T. Wheeler 3826; T. Wheeler Private Coll.,KX897400,KX869855,KX880291,KX880186,KX897535,KX923089,XV
+P. aphthosa,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475902,HT08
+P. aphthosa,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475866,"HT18, IV"
+P. aphthosa,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476547,"HT23, IV"
+P. aphthosa,GB,Switzerland; O'Brien et al. 2005,--,--,--,--,--,82471081,V
+P. aphthosa,P1330,"Canada, Nunavik; L. Couillard 191; QFA-0594935",--,--,--,--,--,KX923090,XVIII
+P. aphthosa,P1321,Norway; N. Magain s.n.; LG,--,--,666667227,666667049,--,--,N/A
+P. aphthosa,P788,Norway; N. Magain s.n.; LG,--,14422959,666667213,666666983,666667091,--,N/A
+P. aphthosa,GB,Switzerland; O'Brien et al. 2005,--,--,--,--,--,82471084,N/A
+P. aphthosa*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475860,"HT19, IV"
+P. britannica,P1324,"Canada, British Columbia; J. Lendemer 22342; NY",--,--,--,--,--,KX923091,"HT48, IV"
+P. britannica,P227,"Canada, British Columbia; T. Goward 09-436; UBC",--,--,666667201,666666965,--,KX923092,"HT48, IV"
+P. britannica,P228,"Canada, British Columbia; T. Goward 09-120; UBC",--,666666860,666667203,666666967,666667079,KX923093,"HT48, IV"
+P. britannica,P16,Iceland; H. G. Kristinsson LA30299; AMNH-30229,--,--,--,--,--,KX923094,XVI
+P. britannica,P1342,"Canada, Nunavik; J. Gagnon GPS 099; QFA-595029",--,--,--,--,--,KX923095,XVIII
+P. britannica*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475935,HT10
+P. canina,P4,Iceland; J. Miadlikowska & F. Lutzoni 08.08.10-3; DUKE,--,666666861,666667179,666666973,666667053,KX923096,HT49
+P. canina,P14,Iceland; J. Miadlikowska & F. Lutzoni 08.09.10-3; DUKE,--,666666862,666667181,666666937,666667055,KX923097,N/A
+P. canina,GB,"Canada, British Columbia; O'Brien et al. 2009",--,--,--,255347899,--,--,N/A
+P. canina,GB,Germany; O'Brien et al. 2005,--,--,--,--,--,82470985,N/A
+P. canina,GB,Poland; O'Brien et al. 2005,--,--,--,--,--,82471036,N/A
+P. canina,GB,Unknown; O'Brien et al. 2005,--,--,--,--,--,82470931,N/A
+P. canina,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82470994,N/A
+P. canina,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471009,N/A
+P. canina*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476004,HT06
+P. cinnamomea,P1808,Canada; T. Goward SN 27/09/3003; UBC,--,--,KX880292,KX880187,KX897536,--,N/A
+P. collina,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475737,HT13
+P. collina,P1263,Chile; J. Hollinger 1929; UBC,--,666666863,666667221,666666919,666667099,--,N/A
+P. continentalis,P1809,China; T. Koponen 45091; H,--,--,KX880293,KX880188,KX897537,--,N/A
+P. continentalis,P1810,Russia; J. Miadlikowska et al. s.n.; DUKE,--,666666864,666667245,666666945,666667113,--,N/A
+P. degenii,P1849,China; M. Sohrabi 16583; H,--,KX869856,KX880294,--,--,--,N/A
+P. degenii,P523,Norway; N. Magain s.n.; LG,--,KM005744, KM005939,--,    KM005878,--,N/A
+P. degenii,GB,Canada; O'Brien et al. 2005,--,--,--,--,--,82471057,N/A
+P. degenii,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779967,N/A
+P. didactyla,P1812,Belgium; N. Magain s.n.; LG,--,--,KX880295,--,KX897538,--,N/A
+P. didactyla,P1813,Norway; N. Magain s.n.; LG,--,KX869857,KX880296,--,KX897539,--,N/A
+P. didactyla,GB,Unknown; O'Brien et al. 2005,--,--,--,--,--,82470940,N/A
+P. didactyla,GB,"Iceland, O'Brien et al. 2005",--,--,--,--,--,82470937,N/A
+P. didactyla,GB,Poland; O'Brien et al. 2005,--,--,--,--,--,82471060,N/A
+P. didactyla,GB,Germany; O'Brien et al. 2005,--,--,--,--,--,82470979,N/A
+P. elisabethae,P66,"USA, New Mexico; J. Hollinger 2397; DUKE",--,666666867,666667189,--,666667065,KX923098,V
+P. elisabethae,P1544,"Russia, Siberia; J. Miadlikowska et al. s.n.; DUKE",--,666666868,666667237,666666935,666667105,--,N/A
+P. evansiana,P1817,"USA, Pennsylvania; J. Lendemer 17422; NY-1105603",--,666666869,666667247,666666947,666667115,--,N/A
+P. evansiana,P1818,"USA, Pennsylvania; J. Lendemer 17422; NY-1103610",--,666666858,666667249,666666949,666667117,--,N/A
+P. extenuata,P1851,Norway; N. Magain s.n.; LG,--,KX869858,KX880297,--,--,--,N/A
+P. extenuata,P81,"Russia, Kamchatka; D. E. Himelbrandt; H",--,XXXX,--,--,KX897540,--,HT54
+P. frigida,P82,Chile; C. Rubis 4064; H,--,XXXX,--,--,KX897541,--,N/A
+P. fripii,P1370,"Russia, Siberia; M. P. Andreev 91762; H",--,14422955,666667235,666666931,666667103,--,N/A
+P. fuscopraetextata*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476040,HT03
+P. granulosa,P1825,Papua New Guinea; E. Sérusiaux s.n.; LG,--,--,--,KX880189,KX897542,--,N/A
+P. horizontalis,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476142,"HT11, V"
+P. horizontalis,P65,"USA, North Carolina; J. Hollinger 2691; DUKE",--,--,--,--,--,KX923099,V
+P. horizontalis,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471003,V
+P. horizontalis,P1274,"China, Jilin; M. Sohrabi 16639; M. Sohrabi Private Coll.",--,666666870,666667223,666666921,666667101,--,N/A
+P. horizontalis,P1641,"USA, North Carolina; J. Lendemer 8136; NY",--,666666871,666667243,666666943,666667111,--,N/A
+P. hydrothyria,P1497,"Canada, Nova Scotia; F. Anderson 151675; NSPM",--,--,666667297,666666933,666667165,--,N/A
+P. hydrothyria,P1498,"Canada, Nova Scotia; F. Anderson 151055; NSPM",--,666666874,666667299,666667047,666667167,--,N/A
+P. hydrothyria,P1845,"Canada, Nova Scotia; F. Anderson 159031; NSPM",--,666666873,666667301,666666953,666667169,--,N/A
+P. koponenii,P1827,Papua New Guinea; E. Sérusiaux s.n.; LG,--,--,--,KX880190,--,--,N/A
+P. kristinssonii,P1292,"Canada, Québec; J. Gagnon 594989; QFA-0594989",--,666666875,666667225,666666923,--,--,N/A
+P. laciniata,P26,Costa Rica; J. Miadlikowska et al. s.n.; DUKE,--,666666877,666667183,666666961,666667057,--,N/A
+P. laciniata,P924,Colombia; R. Lücking 33692; UDBC,--,666666876,--,666666985,666667059,--,N/A
+P. latiloba,P1175,"Russia, Sakha Republic; T. Ahti 64755; H",--,--,666667217,666666915,666667095,--,N/A
+P. latiloba,P210,"Canada, British Columbia; P. Nelson 11-034; UBC",--,--,666667199,666666963,666667077,--,N/A
+P. lepidophora,P1844,"Canada, British Columbia; T. Goward s.n.; UBC",--,666666859,666667251,666666951,666667119,--,N/A
+P. lepidophora,GB,Canada; O'Brien et al. 2005,--,--,--,--,--,82471063,N/A
+P. leucophlebia,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476310,HT20
+P. leucophlebia,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476385,HT30
+P. leucophlebia,P17,Iceland; S. Heidmarsson 1983; AMNH-29884,--,--,--,--,--,KX923100,HT55
+P. leucophlebia,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690850,V
+P. leucophlebia,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690853,V
+P. leucophlebia,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690862,V
+P. leucophlebia,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690865,V
+P. leucophlebia,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690859,V
+P. leucophlebia,P1343,"Canada, Nunavik; J. Gagnon GPS 100; QFA-594931",--,--,--,--,--,KX923101,XVIII
+P. leucophlebia,P1329,"Canada, Nunavik; J. Gagnon; QFA-594936",--,--,666667229,666666925,--,--,N/A
+P. leucophlebia,P1333,"Canada, Nunavik; J. Gagnon; QFA-594851",--,--,666667231,666666927,--,--,N/A
+P. leucophlebia,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690856,N/A
+P. leucophlebia,GB,"Canada, Québec; O'Brien et al. 2013",--,--,--,--,--,455476640,N/A
+P. leucophlebia*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476274,HT02
+P. leucophlebia*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476544,"HT21, IV"
+P. leucophlebia*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476358,HT04
+P. malacea,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475965,"HT07, III"
+P. malacea,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475977,"HT09, III"
+P. malacea,GB,Unknown,--,--,--,--,--,455476625,III
+P. malacea,GB,Unknown,--,--,--,--,--,455476613,III
+P. malacea,GB,Unknown,--,--,--,--,--,455476658,III
+P. malacea,GB,Unknown,--,--,--,--,--,455476616,III
+P. malacea,GB,Unknown,--,--,--,--,--,455476619,III
+P. malacea,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690868,III
+P. malacea,GB,"Canada, Québec; O'Brien et al. 2013",--,--,--,--,--,455476610,III
+P. malacea,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476556,HT25
+,,,,,,,,,
+P. malacea,GB,"Canada, Québec; O'Brien et al. 2013",--,--,--,--,--,455476622,III
+P. malacea,GB,Unknown,--,--,--,--,--,455476655,IV
+P. malacea,P1028,Norway; N. Magain s.n.; LG,--,666666878,666667215,666666911,666667093,--,N/A
+P. malacea,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455475980,HT22
+P. malacea,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476595,HT28
+P. malacea,P1363,"Russia, Karelia; P. Uotila 44104; H",--,--,666667233,666666929,--,--,N/A
+P. membranacea,GB,Canada; O'Brien et al. 2005,--,--,--,--,--,82470928,V
+P. membranacea,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471000,V
+P. membranacea,GB,Russia; O'Brien et al. 2005,--,--,--,--,--,82471066,V
+P. membranacea,GB,Canada; O'Brien et al. 2005,--,--,--,--,--,82471069,XIII
+P. membranacea,P3,Iceland; J. Miadlikowska & F. Lutzoni 08.08.10-2; DUKE,--,666666879,666667177,666666959,666667051,KX923102,XVI
+P. membranacea,P86,Madeira; H. Vare L1807; H,--,--,KX880298,--,KX897543,--,N/A
+P. membranacea,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690874,N/A
+P. membranacea,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82470997,N/A
+P. membranacea,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690871,N/A
+P. membranacea,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476529,HT15
+P. membranacea*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476412,"HT14, XIII"
+P. monticola,P73,Austria; R. Türk 37593; H,--,666666880,--,666666979,666667069,KX923103,HT51
+P. monticola,P75,Norway; T. Ahti 65831; H,--,666666881,666667195,666666981,666667073,KX923104,HT59
+P. neckeri,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476136,HT16
+P. neckeri,P15,Iceland; J. Miadlikowska 08.09.10-2; DUKE,--,--,--,--,--,KX923105,HT52
+P. neckeri,P1620,"USA, Arkansas; R. C. Harris 45472; NY",--,666666882,666667241,666666941,666667109,--,N/A
+P. neocanina,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476607,HT29
+P. neocanina,P68,"USA, New Mexico; J. Hollinger 2401; DUKE",--,--,--,--,--,KX923106,HT53
+P. neocanina,P70,"USA, New Mexico; J. Hollinger 2460; DUKE",--,--,--,--,--,KX923107,V
+P. neocanina*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476130,"HT01, V"
+P. papuanorum,P1831,Papua New Guinea; E. Sérusiaux s.n.; LG,--,--,KX880299,--,--,--,N/A
+P. patagonica,P76,Chile; C. Rubio 7077; H,--,--,--,--,--,KX923108,HT50
+P. phyllidiosa,P72,"USA, North Carolina; J. Hollinger 2708; DUKE",--,--,--,--,--,KX923109,HT62
+P. phyllidiosa,P1245,Unknown; J. Hollinger 1097; UBC,--,666666884,666667219,666666917,666667097,--,N/A
+P. phyllidiosa,P1617,"USA, Tennessee; W. R. Buck 56402; NY",--,666666885,666667239,666666939,666667107,--,N/A
+P. polydactyloides,P1756,Rwanda; E. Sérusiaux s.n.; LG,--,KX869859,KX880300,KX880191,--,--,N/A
+P. ponojensis,P77,Chile; B. Goffinet 6837; CONN,--,--,--,--,--,KX923110,HT57
+P. ponojensis,P84,"USA, Pennsylvania; J. Lendemer 13556; H",--,--,--,--,--,KX923111,HT63
+P. praetextata,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476526,HT17
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690886,V
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690889,V
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690892,V
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690895,V
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690898,V
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690901,V
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690883,V
+P. praetextata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690904,V
+P. praetextata,P1862,"France, Reunion Island; K. Kalb s.n.; DUKE",--,--,666667253,666666957,666667123,--,N/A
+P. praetextata,P570,Norway; N. Magain s.n.; LG,--,666666887,666667211,666666989,666667089,--,N/A
+P. retifoveata,P1839,Alaska; J. Miadlikowska et al. s.n.; DUKE,--,--,KX880301,--,KX897544,--,N/A
+P. retifoveata,P74,"Russia, Sakha Republic; T. Ahti 61821; H",--,666666888,666667193,--,666667071,--,N/A
+P. rufescens,P5,Iceland; J. Miadlikowska & F. Lutzoni 08.08.10-4; DUKE,--,--,--,KX880143,--,--,N/A
+P. rufescens,GB,Germany; O'Brien et al. 2005,--,--,--,--,--,82470982,N/A
+P. rufescens,GB,Germany; O'Brien et al. 2005,--,--,--,--,--,82470964,N/A
+P. rufescens,GB,Unknown; O'Brien et al. 2005,--,--,--,--,--,82470961,N/A
+P. rufescens,GB,Germany; O'Brien et al. 2005,--,--,--,--,--,82470976,N/A
+P. rufescens,GB,Germany; O'Brien et al. 2005,--,--,--,--,--,82470970,N/A
+P. rufescens,GB,England; O'Brien et al. 2005,--,--,--,--,--,82470934,N/A
+P. rufescens,GB,Poland; O'Brien et al. 2005,--,--,--,--,--,82471072,N/A
+P. rufescens,GB,Germany; O'Brien et al. 2005,--,--,--,--,--,82470973,N/A
+P. rufescens ,P6,Iceland; J. Miadlikowska & F. Lutzoni 08.08.10-5; DUKE,--,666666889,--,666666977,--,KX923112,HT58
+P. sp.,P1319,"Canada, Québec; J. Miadlikowska & F. Lutzoni s.n.; DUKE",--,--,--,--,--,KX923113,HT60
+P. sp.,P1335,"Canada, Nunavik; J. Gagnon GPS 106; QFA 595025",--,--,--,--,--,KX923114,XVIII
+P. sp.,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690907,N/A
+P. ulcerata,P43,Costa Rica; J. Miadlikowska et al. s.n.; DUKE,--,--,--,--,--,KX923115,HT61
+P. ulcerata,P48,Costa Rica; J. Miadlikowska et al. s.n.; DUKE,--,666666891,666667185,--,666667061,--,N/A
+P. ulcerata,P51,Costa Rica; J. Miadlikowska et al. s.n.; DUKE,--,666666892,666667187,--,666667063,--,N/A
+P. venosa,P1905,Norway; N. Magain s.n.; LG,--,666666893,666667255,--,666667125,--,N/A
+P. venosa,P69,"USA, New Mexico; J. Hollinger 2475; DUKE",--,666666894,666667191,--,666667067,--,N/A
+Arctomia fasciculare 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278413,N/A
+A. fasciculare 2,GB,Spain; Otálora et al. 2010,N/A,N/A,N/A,N/A,N/A,205278416,N/A
+Anabaena augstumalis,GB,Germany; Rajaniemi et al. 2005,N/A,N/A,N/A,N/A,N/A,55650808,N/A
+A. cf. cylindrica,GB,Unknown; Gugger et al. 2002,N/A,N/A,N/A,N/A,N/A,15282236,N/A
+Anthoceros sp.,GB,Italy; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82470946,N/A
+Anthoceros sp.,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82470958,N/A
+Blasia pusilla,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82470952,N/A
+B. pusilla,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82470955,N/A
+B. pusilla,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471090,N/A
+Blennothallia crispus 1,GB,Spain; Otálora et al. 2010,N/A,N/A,N/A,N/A,N/A,205278404,N/A
+B. crispus 2,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82470967,N/A
+Collema flaccidum 1,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779973,N/A
+C. flaccidum 2,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779972,N/A
+C. flaccidum 3,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278419,N/A
+C. flaccidum 4,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278422,N/A
+C. flaccidum 5,GB,USA; Otálora et al. 2010,--,--,--,--,--,241913794,N/A
+C. furfuraceum 1,GB,USA; Otálora et al. 2010,--,--,--,--,--,205278440,N/A
+C. furfuraceum 2,GB,Portugal; Otálora et al. 2010,--,--,--,--,--,205278437,N/A
+C. furfuraceum 3,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278431,N/A
+C. furfuraceum 4,GB,Croatia; Otálora et al. 2010,--,--,--,--,--,205278434,N/A
+C. nigrescens 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278449,N/A
+C. nigrescens 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278443,N/A
+C. nigrescens 3,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278446,N/A
+C. subnigrescens 1,GB,Croatia; Otálora et al. 2010,--,--,--,--,--,205278461,N/A
+C. subnigrescens 2,GB,Portugal; Otálora et al. 2010,--,--,--,--,--,205278458,N/A
+C. subnigrescens 3,GB,Portugal; Otálora et al. 2010,--,--,--,--,--,205278464,N/A
+Cycas circinalis,GB,Brazil; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471075,N/A
+Degelia plumbea,GB,Madeira; Myllys et al. 2007,--,--,--,--,--,119690755,N/A
+Encephalartos natalensis,GB,Italy; O'Brien et al. 2005,--,--,--,--,--,82470949,N/A
+Enchylium polycarpon 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278455,N/A
+E. polycarpon 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278452,N/A
+E. tenax 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278473,N/A
+E. tenax 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278470,N/A
+E. tenax 3,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278467,N/A
+Fischerella muscicola,GB,New Zealand; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471045,N/A
+Geosiphon pyriforme,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471096,N/A
+G. pyriforme,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82470943,N/A
+Gunnera manicata,GB,Germany; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471093,N/A
+Lathagrium auriforme 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278410,N/A
+L. auriforme 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278407,N/A
+L. undulatum 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278428,N/A
+L. undulatum 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278425,N/A
+Leptogium austroamericanum 1,GB,Argentina; Otálora et al. 2010,--,--,--,--,--,205278479,N/A
+L. austroamericanum 2,GB,Colombia; Otálora et al. 2010,--,--,--,--,--,205278476,N/A
+L. azureum 1,GB,Argentina; Otálora et al. 2010,--,--,--,--,--,205278488,N/A
+L. azureum 2,GB,Chile; Otálora et al. 2010,--,--,--,--,--,205278485,N/A
+L. azureum 3,GB,Brazil; Otálora et al. 2010,--,--,--,--,--,205278482,N/A
+L. brebissonii 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278494,N/A
+L. brebissonii 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278491,N/A
+L. corniculatum 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278497,N/A
+L. corniculatum 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278500,N/A
+L. corticola 1,GB,Costa Rica; Otálora et al. 2010,--,--,--,--,--,205278503,N/A
+L. corticola 2,GB,USA; Otálora et al. 2010,--,--,--,--,--,205278506,N/A
+L. cyanescens 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278515,N/A
+L. cyanescens 2,GB,USA; Otálora et al. 2010,--,--,--,--,--,205278512,N/A
+L. cyanescens 3,GB,Panama; Otálora et al. 2010,--,--,--,--,--,205278509,N/A
+L. furfuraceum 1,GB,Croatia; Otálora et al. 2010,--,--,--,--,--,205278530,N/A
+L. furfuraceum 2,GB,Portugal; Otálora et al. 2010,--,--,--,--,--,205278533,N/A
+L. furfuraceum 3,GB,Portugal; Otálora et al. 2010,--,--,--,--,--,205278536,N/A
+L. furfuraceum 4,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278518,N/A
+L. furfuraceum 5,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278521,N/A
+L. furfuraceum 6,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278524,N/A
+L. furfuraceum 7,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278527,N/A
+L. pseudofurfuraceum 1,GB,Argentina; Otálora et al. 2010,--,--,--,--,--,205278587,N/A
+L. pseudofurfuraceum 2,GB,USA; Otálora et al. 2010,--,--,--,--,--,205278578,N/A
+L. pseudofurfuraceum 3,GB,USA; Otálora et al. 2010,--,--,--,--,--,205278584,N/A
+L. pseudofurfuraceum 4,GB,USA; Otálora et al. 2010,--,--,--,--,--,205278581,N/A
+L. pseudofurfuraceum 5,GB,Argentina; Otálora et al. 2010,--,--,--,--,--,205278590,N/A
+L. saturninum 1,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779971,N/A
+L. saturninum 2,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779970,N/A
+L. saturninum 3,GB,France; Otálora et al. 2010,--,--,--,--,--,205278602,N/A
+L. saturninum 4,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278605,N/A
+L. saturninum 5,GB,USA; Otálora et  al. 2010,--,--,--,--,--,205278608,N/A
+L. saturninum 6,GB,Canada; Otálora et al. 2010,--,--,--,--,--,205278599,N/A
+Lobaria amplissima,GB,Norway; Stenroos et al. 2006,--,--,--,--,--,82779934,N/A
+L. amplissima,GB,Norway; Stenroos et al. 2006,--,--,--,--,--,82779933,N/A
+L. amplissima,GB,Austria; O'Brien et al. 2005,--,--,--,--,--,82471018,N/A
+L. hallii,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471021,N/A
+L. kukorawa,GB,China; O'Brien et al. 2013,--,--,--,--,--,455476652,N/A
+L. kukorawa,GB,China; O'Brien et al. 2013,--,--,--,--,--,455476646,N/A
+L. pulmonaria,OG6,"USA, North Carolina, N. Magain s.n., DUKE",--,KX869860,KX880302,--,--,--,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690773,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690770,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690767,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690776,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690779,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690782,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690764,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690758,N/A
+L. pulmonaria,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690761,N/A
+L. scrobiculata,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690785,N/A
+Massalongia carnosa,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471024,N/A
+M. carnosa,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779969,N/A
+Nephroma arcticum,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476562,"HT26, IV"
+N. arcticum,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476565,"HT27, IV"
+N. arcticum,GB,"Canada, Québec; O'Brien et al. 2013",--,--,--,--,--,455476628,XIa
+N. bellum,OG4,Norway; N. Magain s.n.; LG,--,KX869861,KX880303,--,--,--,N/A
+N. bellum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690791,N/A
+N. bellum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690803,N/A
+N. bellum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690788,N/A
+N. bellum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690794,N/A
+N. bellum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690797,N/A
+N. bellum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690800,N/A
+N. bellum,GB,Austria; O'Brien et al. 2005,--,--,--,--,--,82471027,N/A
+N. bellum*,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476436,HT12
+N. helveticum,GB,Canada; O'Brien et al. 2005,--,--,--,--,--,82471030,N/A
+N. laevigatum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690806,N/A
+N. laevigatum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690809,N/A
+N. parile,GB,"Canada, British Columbia; O'Brien et al. 2013",--,--,--,--,--,455476439,HT05
+N. parile,OG3,Norway; N. Magain s.n.; LG,--,KX869862,--,--,--,--,N/A
+N. parile,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690812,N/A
+N. parile,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690818,N/A
+N. parile,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690821,N/A
+N. parile,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690815,N/A
+N. resupinatum,GB,"Canada, Québec; O'Brien et al. 2013",--,--,--,--,--,455476634,N/A
+N. resupinatum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690824,N/A
+N. resupinatum,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690827,N/A
+N. tangeriense,GB,Madeira; Myllys et al. 2007,--,--,--,--,--,119690830,N/A
+Nostoc calcicola,GB,Czech Republic; Rajaniemi et al. 2005,N/A,N/A,N/A,N/A,N/A,55650826,N/A
+N. calcicola,GB,Czech Republic; Rajaniemi et al. 2005,N/A,N/A,N/A,N/A,N/A,55650829,N/A
+N. commune,GB,USA; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82470988,N/A
+N. commune,GB,China; Rudi et al. 1998,N/A,N/A,N/A,N/A,N/A,2463296,N/A
+N. edaphicum,GB,Czech Republic; Rajaniemi et al. 2005,N/A,N/A,N/A,N/A,N/A,55650832,N/A
+N. ellipsorum,GB,Czech Republic; Rajaniemi et al. 2005,N/A,N/A,N/A,N/A,N/A,55650835,N/A
+N. flagelliforme,GB,China; Rudi et al. 1998,N/A,N/A,N/A,N/A,N/A,2463302,N/A
+N. muscorum,GB,France; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471087,N/A
+N. punctiforme,GB,France; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471099,N/A
+Nostoc sp.,GB,Unknown; Fewer et al. 2007,N/A,N/A,N/A,N/A,N/A,159154307,N/A
+Nostoc sp.,GB,Unknown; Kaneko et al. 2001,N/A,N/A,N/A,N/A,N/A,47118302,N/A
+Nostoc sp.,GB,Unknown; Tomitani et al. 2006,N/A,N/A,N/A,N/A,N/A,89241989,N/A
+Nostoc sp.,GB,"Svalbard, Norway; Rudi et al. 1998",N/A,N/A,N/A,N/A,N/A,2463317,N/A
+Nostoc sp.,GB,Unknown; Fewer et al. 2007,N/A,N/A,N/A,N/A,N/A,159154309,N/A
+Nostoc sp.,GB,"USA, Rudi et al. 1998",N/A,N/A,N/A,N/A,N/A,2463308,N/A
+Nostoc sp.,GB,Indonesia; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471039,N/A
+Nostoc sp.,GB,Senegel; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471051,N/A
+Nostoc sp.,GB,Finland; Rajaniemi et al. 2005,N/A,N/A,N/A,N/A,N/A,55650727,N/A
+Nostoc sp.,GB,Unknown; Kaneko et al. 2001,N/A,N/A,N/A,N/A,N/A,17227497,N/A
+Nostoc sp.,GB,Norway; Rudi et al. 1998,N/A,N/A,N/A,N/A,N/A,2463311,N/A
+Nostoc sp.,GB,Antarctica; Rudi et al. 1998,N/A,N/A,N/A,N/A,N/A,2463314,N/A
+Pannaria conoplea,GB,Austria; O'Brien et al. 2005,--,--,--,--,--,82471033,N/A
+Parmeliella triptophylla,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690836,N/A
+P. triptophylla,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690839,N/A
+P. triptophylla,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690842,N/A
+P. triptophylla,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690845,N/A
+Protopannaria pezizoides,GB,Finland; Myllys et al. 2007,--,--,--,--,--,119690833,N/A
+Parmotrema tinctorum,GB,Unknown; Lei et al. 2008,--,--,--,--,--,190147520,N/A
+P. tinctorum,GB,Unknown; Lei et al. 2008,--,--,--,--,--,190147518,N/A
+P. tinctorum,GB,Unknown; Lei et al. 2008,--,--,--,--,--,190147522,N/A
+Protopannaria pezizoides,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779965,N/A
+Pseudocyphellaria clathrata,GB,Brazil; Stenroos et al. 2006,--,--,--,--,--,82779936,N/A
+P. coriifolia,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779949,N/A
+P. coriifolia,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779938,N/A
+P. coriifolia,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779955,N/A
+P. crocata,GB,Madeira; Myllys et al. 2007,--,--,--,--,--,119690910,N/A
+P. crocata,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779944,N/A
+P. crocata,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779943,N/A
+P. crocata,GB,Canada; Stenroos et al. 2006,--,--,--,--,--,82779935,N/A
+P. crocata,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779942,N/A
+P. crocata,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779945,N/A
+P. crocata,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779948,N/A
+P. crocata,GB,Thailand; Stenroos et al. 2006,--,--,--,--,--,82779952,N/A
+P. crocata,GB,Mauritius; Stenroos et al. 2006,--,--,--,--,--,82779954,N/A
+P. hirsuta,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779940,N/A
+P. hirsuta,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779975,N/A
+P. hirsuta,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779947,N/A
+P. intricata,GB,Reunion Island; Stenroos et al. 2006,--,--,--,--,--,82779953,N/A
+P. intricata,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779946,N/A
+P. intricata,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779939,N/A
+P. mallota,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779951,N/A
+P. mallota,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779937,N/A
+P. pilosella,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779950,N/A
+P. scabrosa,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779974,N/A
+P. scabrosa,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779941,N/A
+Scytinium gelatinosum 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278542,N/A
+S. gelatinosum 2,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471015,N/A
+S. gelatinosum 3,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278539,N/A
+S. lichenoides 1,GB,Sweden; Otálora et al. 2010,--,--,--,--,--,241913791,N/A
+S. lichenoides 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278548,N/A
+S. lichenoides 3,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278545,N/A
+S. lichenoides 4,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278551,N/A
+S. lichenoides 5,GB,Portugal; Otálora et al. 2010,--,--,--,--,--,205278554,N/A
+S. lichenoides 6,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278557,N/A
+S. magnusonii 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278566,N/A
+S.  magnusonii 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278569,N/A
+S.  magnusonii 3,GB,Sweden; Otálora et al. 2010,--,--,--,--,--,205278560,N/A
+S.  magnusonii 4,GB,Denmark; Otálora et al. 2010,--,--,--,--,--,205278563,N/A
+S.  magnusonii 5,GB,Sweden; Otálora et al. 2010,--,--,--,--,--,205278575,N/A
+S.  magnusonii 6,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278572,N/A
+S. pulvinatum 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278596,N/A
+S. pulvinatum 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278593,N/A
+S. schraderi 1,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278614,N/A
+S. schraderi 2,GB,Spain; Otálora et al. 2010,--,--,--,--,--,205278611,N/A
+Solorina crocea,OG14,"Russia, Karelia; T. Ahti s.n.; PTZ",--,123979314,123979355,--,--,--,N/A
+S. saccata,OG13,"Russia, Karelia; T. Ahti s.n.; PTZ",--,--,KX880304,--,--,--,N/A
+Stangeria paradosa,GB,England; O'Brien et al. 2005,N/A,N/A,N/A,N/A,N/A,82471078,N/A
+Stereocaulon exutum,GB,Japan; Stenroos et al. 2006,--,--,--,--,--,82779962,N/A
+S. fronduliferum,GB,New Zealand; Stenroos et al. 2006,--,--,--,--,--,82779963,N/A
+S. tomentosum,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779964,N/A
+Sticta beauvoisii,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471006,N/A
+S. fuliginosa,GB,USA; O'Brien et al. 2005,--,--,--,--,--,82471102,N/A
+S. gaudichaldia,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779960,IV
+S. hypochra,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779959,IV
+S. hypochra,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779958,IV
+S. hypochra,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779957,IV
+S. hypochra,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779956,IV
+S. hypochra,GB,Argentina; Stenroos et al. 2006,--,--,--,--,--,82779961,IV
+Trichormus variabilis,GB,Russia; Rajaniemi et al. 2005,N/A,N/A,N/A,N/A,N/A,55650847,N/A
+Vahliella leucophaea,GB,Finland; Stenroos et al. 2006,--,--,--,--,--,82779966,N/A

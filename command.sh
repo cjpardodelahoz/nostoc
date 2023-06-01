@@ -768,9 +768,14 @@ sbatch scripts/gunc_set12c.sh
 #
 Rscript scripts/report_voucher.R
 
+################################################################################
+# GLOBAL RBCLX RECLASSIFICATION
+################################################################################
 
+# Data compilation
 
-
+# Compile public rbclx metadata
+Rscript scripts/compile_public_rbclx_metadata.R
 
 # PULL
 rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/scripts .
