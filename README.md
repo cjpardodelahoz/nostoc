@@ -34,6 +34,7 @@ install.packages("labdsv")
 packageurl <- "https://cran.r-project.org/src/contrib/Archive/ggplot2/ggplot2_3.4.0.tar.gz"
 install.packages(packageurl, repos=NULL, type="source")
 install.packages("ggimage")
+install.packages("pegas")
 install.packages("MSCquartets")
 ```
 
@@ -110,6 +111,9 @@ mv download mugsy_x86-64-v1r2.3.tgz
 tar xvzf mugsy_x86-64-v1r2.3.tgz 
 cd mugsy_x86-64-v1r2.2/
 # in mugsyenv.sh modify MUGSY_INSTALL
+
+# Gubbins
+mamba create -n gubbins -c bioconda -c r -c defaults -c conda-forge gubbins
 ```
 
 -To build from source:

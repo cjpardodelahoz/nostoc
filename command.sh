@@ -623,7 +623,7 @@ sbatch scripts/hessian_set103.sh
 sbatch scripts/mcmctree_sampling_1_part_set103.sh
 sbatch scripts/mcmctree_sampling_4_part_set103.sh
 
-#
+# Plots for Figure 1 - time tree and conflict sumaries
 Rscript scripts/fig1.R
 
 ################################################################################
