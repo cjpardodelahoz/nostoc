@@ -667,6 +667,8 @@ done
 # SPECIES DELIMITATION
 ################################################################################
 
+# FastANI and PopCOGenT clustering
+
 # Run all-by-all comparison of set12c with Fastani
 mkdir -p analyses/species_delimitation/fastani/set12c
 sbatch scripts/fastani_set12c.sh
@@ -676,6 +678,12 @@ sbatch scripts/fastani_set12c.sh
 Rscript scripts/sum_ani_results.R
 # PopCOGenT on chromosomes to test recombination
 sbatch scripts/popcogent_set12c.sh
+# Summary of ANI and popcogent clusters
+Rscript scripts/sum_clusters.R
+
+# Recombination with Gubbins
+
+
 
 # Testing differation in co-occurrence in three lineage case studies with rbcLX
 
