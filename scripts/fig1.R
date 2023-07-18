@@ -72,6 +72,7 @@ discordant_vs_time <- tree_df %>%
   filter(support == "percent_discordant") %>%
   ggplot(aes(x = branch.length, y = percent)) +
   geom_point(color = "#ea4753") +
+  scale_y_continuous(limits = c(0, 100)) +
   labs(x = "Internode length (Myr)", y = "Percent of discordant trees") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
@@ -96,6 +97,7 @@ weak_reject_vs_time <- tree_df %>%
   filter(support == "percent_weak_reject") %>%
   ggplot(aes(x = branch.length, y = percent)) +
   geom_point(color = "#e8db7e") +
+  scale_y_continuous(limits = c(0, 100)) +
   labs(x = "Internode length (Myr)", y = "Percent of weakly discordant trees") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
