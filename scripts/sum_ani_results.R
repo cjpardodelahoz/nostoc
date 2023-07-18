@@ -111,10 +111,9 @@ ani_matrix <- read_delim(file = "analyses/species_delimitation/fastani/set12c/fa
   mutate_if(is.character, as.numeric)
 ani_matrix[ani_matrix == 0] <- 60
 # Make sure that the matrix is symmetric by equating upper and lower triangle
-ani_matrix[lower.tri(ani_matrix)] <- ani_matrix[upper.tri(ani_matrix)]
+#ani_matrix[lower.tri(ani_matrix)] <- ani_matrix[upper.tri(ani_matrix)]
 # cluster the genomes using 95% ANI
 ani_95_clusters <- abs(100-ani_matrix) %>%
-  as.matrix() %>%
   as.dist() %>%
   hclust() %>%
   cutree(h = 5) %>%
@@ -125,8 +124,6 @@ ani_95_clusters <- abs(100-ani_matrix) %>%
 # Save ANI cluster results
 write_csv(ani_95_clusters, 
           file = "analyses/species_delimitation/fastani/set12c/ani_95_clusters.csv")
-
-
 
 
 
