@@ -71,7 +71,7 @@ ani_gap_all <- ggplot(gap_df, aes(y = reorder(genomes, gap_low_lim),
   geom_dumbbell(size_x = 0.2, size_xend = 0.2, size = 0.2) +
   geom_vline(xintercept = 95, linetype = "dashed", color = "gray40") +
   labs(x = "ANI gap span", y = "Genomes") +
-  scale_x_continuous(n.breaks = 10) +
+  scale_x_continuous(n.breaks = 10, limits = c(80, 98)) +
   theme(panel.background = NULL,
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
         axis.text = element_text(size = 12, color = "black"),
