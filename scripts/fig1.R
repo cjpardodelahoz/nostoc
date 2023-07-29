@@ -89,6 +89,7 @@ weak_support_vs_time <- tree_df %>%
   filter(support == "percent_weak_support") %>%
   ggplot(aes(x = branch.length, y = percent)) +
   geom_point(color = "#4599ad") +
+  scale_y_continuous(limits = c(0, 100)) +
   labs(x = "Internode length (Myr)", y = "Percent of weakly concordant trees") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
@@ -103,14 +104,14 @@ weak_reject_vs_time <- tree_df %>%
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
         axis.text = element_text(size = 12, color = "black"))
 # Arrange plots
-strong_plots <- ggarrange(ncol = 1, nrow = 2, 
-                          concordant_vs_time, discordant_vs_time)
-weak_plots <- ggarrange(ncol = 2, nrow = 1, 
-                        weak_support_vs_time, weak_reject_vs_time)
+main_plots <- ggarrange(ncol = 1, nrow = 2, 
+                          concordant_vs_time, weak_reject_vs_time)
+suppl_plots <- ggarrange(ncol = 2, nrow = 1, 
+                        weak_support_vs_time, discordant_vs_time)
 # Save pdfs
-ggsave(strong_plots, filename = "document/plots/conflict_vs_time_strong.pdf", 
+ggsave(main_plots, filename = "document/plots/conflict_vs_time_main.pdf", 
        height = 6, width = 3)
-ggsave(weak_plots, filename = "document/plots/conflict_vs_time_weak.pdf", 
+ggsave(suppl_plots, filename = "document/plots/conflict_vs_time_suppl.pdf", 
        height = 3, width = 6)
 
 ##### SIMPLEX PLOTS #####
