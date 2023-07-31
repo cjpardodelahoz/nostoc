@@ -3,15 +3,17 @@
 # Load required packages and functions
 library(tidyverse)
 library(ggtree)
+library(ggtreeExtra)
 library(ggimage)
 library(ggpubr)
+library(ggnewscale)
 library(tidytree)
 library(treeio)
 library(labdsv)
 library(MSCquartets)
 source("scripts/r_functions.R")
 
-##### CONFLICT PIE CHARTS #####
+##### CONFLICT PIE CHARTS AND LIFESTYLE #####
 
 # Load and root the dated tree (wASTRAL topology)
 dated_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree")
@@ -40,10 +42,23 @@ names(discov_df_list) <- discov_df_top %>%
   pull(node) %>% 
   unique() %>% 
   sort
+# Load lifestyle metadata and join it to the tree
+lifestyle_metadata <- read_csv("misc_files/set103_lifestyle_metadata.csv") %>%
+  mutate(tip_label =
+           paste(tip_label, ".fa", sep = ""))
+# Get node numbers for major clades
+outgroup_node <- MRCA(dated_tree, c("Cylindrospermum_stagnale_PCC_7417.fa", "Anabaena_cylindrica_PCC_7122.fa"))
+subclade1_node <- MRCA(dated_tree, c("Nostoc_sp_JC1668.fa", "Nostoc_linckia_z4.fa"))
+subclade2_node <- MRCA(dated_tree, c("P12588_bin_4.fa", "NOS_bin_1.fa"))
+subclade3a_node <- MRCA(dated_tree, c("P9820_bin_6.fa", "P539_bin_14.fa"))
+subclade3b_node <- MRCA(dated_tree, c("P943_bin_5.fa", "Nmoss2.fa"))
 # Named vector of colors for piecharts
 pie_colors <- c("percent_concordant" = "#40549f", "percent_discordant" = "#ea4753", 
                 "percent_uninformative" = "#9b979c", "percent_weak_reject" = "#e8db7e", 
                 "percent_weak_support" = "#4599ad")
+# Colors for lifestyle categories
+lifestyle_colors <- c("bryophyte_associated" = "#C8F32F", "cycad_symbiont" = "#a484f4", 
+                      "Free-living" = "#E36A86", "lichenized" = "#51a9a6")
 # Generate list of piecharts
 conflict_pies <- discov_df_list %>%
   map(~ggplot(.x, aes(x = "", y = percent, fill = support)) +
@@ -53,11 +68,36 @@ conflict_pies <- discov_df_list %>%
         theme_void() +
         theme(legend.position = "none"))
 # Plot the dated tree with the piecharts
-tree_plot <- ggtree(dated_tree, right = T)
+tree_plot <- ggtree(dated_tree, right = T) %<+% lifestyle_metadata
 tree_pies <- tree_plot +
-  geom_inset(conflict_pies, width = 0.02, height = 0.02, x = "node")
-ggsave(plot = tree_pies, "document/plots/dated_tree_pies.pdf",
-       units = "cm", width = 15, height = 27,device = "pdf")
+  geom_inset(conflict_pies, width = 0.02, height = 0.02, x = "node") +
+  new_scale_color() +
+  geom_fruit(geom = geom_point, 
+             mapping = aes(y = label, color = lifestyle), shape = "circle", 
+             size = 1.3, offset = 0.05) +
+  scale_color_manual(values = lifestyle_colors, na.value = "white")+
+  geom_cladelab(node = subclade1_node, label = "subclade 1", 
+                angle = 270, offset.text= 0.03, 
+                offset= 0.075,
+                fontsize = 3.5, barsize = 0.8) +
+  geom_cladelab(node = subclade2_node, label = "subclade 2", 
+                angle = 270, offset.text= 0.03, 
+                offset= 0.075,
+                fontsize = 3.5, barsize = 0.8) +
+  geom_cladelab(node = subclade3a_node, label = "subclade 3a", 
+                angle = 270, offset.text = 0.03,
+                offset= 0.075,
+                fontsize = 3.5, barsize = 0.8) +
+  geom_cladelab(node = subclade3b_node, label = "subclade 3b", 
+                angle = 270, offset.text = 0.03, 
+                offset= 0.075, 
+                fontsize = 3.5, barsize = 0.8) +
+  geom_cladelab(node = outgroup_node, label = "outgroup", 
+                angle = 0, offset.text = 0.03, 
+                offset= 0.075, 
+                fontsize = 3.5, barsize = 0.8)
+ggsave(plot = tree_pies, "document/plots/dated_tree_pies_lifestyle.pdf",
+       units = "cm", width = 27, height = 27,device = "pdf")
 
 ##### CONFLICT VS TIME #####
 
