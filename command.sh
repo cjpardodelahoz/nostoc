@@ -672,18 +672,36 @@ done
 # Run all-by-all comparison of set12c with Fastani
 mkdir -p analyses/species_delimitation/fastani/set12c
 sbatch scripts/fastani_set12c.sh
-# Summarize ANI results
-# This will generate the plots summarizing the distribution of pairwise ANI,
-# the correlation of ANI with alignment fraction, and the ANI gap
-Rscript scripts/sum_ani_results.R
 # PopCOGenT on chromosomes to test recombination
 sbatch scripts/popcogent_set12c.sh
-# Summary of ANI and popcogent clusters
+# Run all-by-all 16S comparisons
+mkdir -p analyses/species_delimitation/16s
+cp analyses/phylogenetics/set103/seqs/16s.fas analyses/species_delimitation/16s/16s.fas
+sbatch scripts/pairwise_16s_set103.sh
+# Summarize clustering results
+# This will generate the plots summarizing the distribution of pairwise ANI,
+# the correlation of ANI with alignment fraction, and the ANI gap
 Rscript scripts/sum_clusters.R
 
 # Recombination with Gubbins
+conda activate gubbins
+generate_ska_alignment.py --reference analyses/cyano_genomes/set12c/Nostoc_sp_Peltigera_membranacea_cyanobiont_232_chromosome.fa \
+ --input analyses/species_delimitation/gubbins/test/test_df1.tsv \
+ --out analyses/species_delimitation/gubbins/test/out1.aln \
+ --threads 4
 
+run_gubbins.py --prefix analyses/species_delimitation/gubbins/test/out1 \
+ --threads 4 \
+ analyses/species_delimitation/gubbins/test/out1.aln
+ 
+generate_ska_alignment.py --reference analyses/cyano_genomes/set12c/Nostoc_sp_Peltigera_membranacea_cyanobiont_232_chromosome.fa \
+ --input analyses/species_delimitation/gubbins/test/test_df2.tsv \
+ --out analyses/species_delimitation/gubbins/test/out2.aln \
+ --threads 4
 
+run_gubbins.py --prefix analyses/species_delimitation/gubbins/test/out2 \
+ --threads 4 \
+ analyses/species_delimitation/gubbins/test/out2.aln
 
 # Testing differation in co-occurrence in three lineage case studies with rbcLX
 
