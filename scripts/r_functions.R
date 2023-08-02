@@ -385,3 +385,43 @@ gap <- function(fastani_df, low_lim, hi_lim) {
   out
 }
 
+
+# Function to find synapomorphies for sets of taxa in a fasta sequence alignment
+# alignment   DNAbin object with sequence alignment. Can obtain with ape::read.fasta()
+# taxa set    Character vector with the names of the taxa in the alingment for which to find the synappomorphies
+find_synapomorphies <- function(alignment, taxa_set) {
+  # Convert alignment to data frame
+  aln_df <- as.character(alignment) %>%
+    as.data.frame()
+  synapomorphies <- character()
+  if (all(taxa_set %in% rownames(aln_df))) {
+    other_taxa <- setdiff(rownames(aln_df), taxa_set)
+  } else {
+    stop("some of the taxa in the set are not part of the alignment")
+  }
+  for (site in names(aln_df)) {
+    # Get the character states for the target taxa set
+    unique_target_states <- aln_df[taxa_set, site] %>%
+      unique()
+    # Get the caracter states for the off-target set
+    unique_other_states <- aln_df[other_taxa, site] %>%
+      unique()
+    # Check if there is only one unique value in the target set
+    if (length(unique_target_states) == 1) {
+      # Check to see if it is a synapomorphy
+      if (!(unique_target_states %in% unique_other_states)) {
+        synapomorphies[site] <- unique_target_states
+      }
+    }
+  }
+  # Check to see if any synapomorphies were found
+  if (length(synapomorphies) > 0) {
+    # Rename the apomorphic sites
+    names(synapomorphies) <- stringr::str_replace(names(synapomorphies), 
+                                                  "V", "site_")
+  } else {
+    synapomorphies <- c("none")
+  }
+  return(synapomorphies)
+}
+
