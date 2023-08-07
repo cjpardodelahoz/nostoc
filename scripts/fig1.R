@@ -154,6 +154,44 @@ ggsave(main_plots, filename = "document/plots/conflict_vs_time_main.pdf",
 ggsave(suppl_plots, filename = "document/plots/conflict_vs_time_suppl.pdf", 
        height = 3, width = 6)
 
+##### LABELED WASTRAL TREE PLOT #####
+
+# Load table with taxon name key
+key_df <- read_csv("document/tables/voucher_v1.csv") %>%
+  select(genome_id, taxon_name, country) %>%
+  mutate(taxon_name = 
+           ifelse(taxon_name == genome_id,
+                  taxon_name,
+                  paste(genome_id, taxon_name, sep = "_"))) %>%
+  mutate(genome_id = 
+           paste(genome_id, ".fa", sep = "")) %>%
+  mutate(taxon_name = 
+           paste(taxon_name, country, sep = "_")) %>%
+  select(genome_id, taxon_name)
+# A toy df for plotting full label
+toy_df <- key_df %>% distinct() %>%
+  column_to_rownames(var = "taxon_name") %>%
+  mutate(genome_id = "not_a_variable")
+# Load wASTRAL tree
+wastral_tree <- read.tree(file = "analyses/phylogenetics/set103/trees/astral/wastral.tree")
+wastral_tree$edge.length[is.na(wastral_tree$edge.length)] <- 1
+ggtree(wastral_tree)
+# Rename tree tips
+tree_key <- wastral_tree$tip.label %>%
+  as_tibble() %>%
+  left_join(key_df, by = c("value" = "genome_id"))
+wastral_tree <- rename_taxa(wastral_tree, data = tree_key)
+# Plot the tree with cluster and tip labels
+wastra_tree_plot <- ggtree(wastral_tree) +
+  geom_tiplab(size = 2) +
+  geom_treescale()
+tree_plot_tmp <- gheatmap(wastra_tree_plot, toy_df, width = 0.1, offset = 35, colnames = F) +
+  theme(legend.position = "none")
+# Save the tree to check
+ggsave(tree_plot_tmp, filename = "document/plots/wastral_labeled_left.pdf",
+       width = 8, height = 12)
+
+
 ##### SIMPLEX PLOTS #####
 
 # Load gene trees
