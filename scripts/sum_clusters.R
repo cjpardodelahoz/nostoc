@@ -51,12 +51,8 @@ ani_95_clusters <- abs(100-ani_matrix) %>%
 write_csv(ani_95_clusters, 
           file = "analyses/species_delimitation/fastani/set12c/ani_95_clusters.csv")
 
-## ANI gap calculation
+## Parse fastani results for histogram and alignment fraction calculation
 
-# Outgroup taxa
-outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
-             "Anabaena_cylindrica_PCC_7122.fa",
-             "Cylindrospermum_stagnale_PCC_7417.fa")
 # Load FastANI output as a data frame and remove duplicate pairwise entries
 fastani_df <- read_delim(file = "analyses/species_delimitation/fastani/set12c/fastani_set12c_ql_out", 
                          col_names = FALSE) %>%
@@ -81,9 +77,19 @@ fastani_df <- read_delim(file = "analyses/species_delimitation/fastani/set12c/fa
   select(!c(X1, X2, X4, X5)) %>%
   rename(ani = X3) %>%
   relocate(genome1, genome2)
-# Calculate ANI gap
-gap_df <- gap(fastani_df, low_lim = 88, hi_lim = 98) %>%
-  rename(label = genomes)
+
+## ANI gap calculation
+
+# Outgroup taxa
+outgroup = c("Aphanizomenon_flos_aquae_NIES_81.fa",
+             "Anabaena_cylindrica_PCC_7122.fa",
+             "Cylindrospermum_stagnale_PCC_7417.fa")
+# Get DF for plotting ANI gap with all ANI points
+fastani_df2 <- ani_matrix %>%
+  rownames_to_column(var = "genome_id") %>%
+  pivot_longer(cols = 2:152, names_to = "genome_pair", values_to = "ani") %>%
+  filter(genome_id %nin% outgroup) %>%
+  filter(ani > 79 & ani < 100)
 
 
 #### 16S CLUSTERING ####
@@ -107,7 +113,7 @@ clusters_16s <- abs(100-pairwise_16s_matrix) %>%
 
 #### PLOT CLUSTER RESULTS ####
 
-## Tree plot with clusters
+## Tree plot with clusters and species complex clades
 
 # Transform cluster assignments into binary variable for plotting
 
@@ -139,9 +145,8 @@ bin_tip_clusters <- function(tree_plot, cluster_df, label_col, cluster_col,
     select(all_of(c(label_col, bin_col)))
 }
 # Load and root the dated tree (wASTRAL topology)
-gap_na <- gap_df %>% filter(is.na(gap)) %>% pull (label)
 dated_tree <- read.tree("analyses/phylogenetics/set103/divtime/1_part/mcmc/c1/dated.tree") %>%
-  drop.tip(c(outgroup, gap_na))
+  drop.tip(c(outgroup))
 # Load PopCOGenT clusters
 popcogent_clusters <- read_delim(file = "analyses/species_delimitation/popcogent/set12c/set12c_0.000355362.txt.cluster.tab.txt",
                                  delim = "\t") %>%
@@ -156,57 +161,72 @@ ani_95_clusters <- ani_95_clusters %>%
            str_remove(ani_95_cluster, "c")) %>%
   mutate(ani_95_cluster = 
            as.integer(ani_95_cluster))
-clusters_16s <- clusters_16s %>%
-  mutate(cluster_16s = 
-           str_remove(cluster_16s, "c")) %>%
-  mutate(cluster_16s = 
-           as.integer(cluster_16s))
-# Transform cluster assignments for plotting
+# Genome ids binned by ANI95 for plotting
 ani_95_bins <- bin_tip_clusters(tree_plot = ggtree(dated_tree), 
                                 cluster_df = ani_95_clusters, 
                                 label_col = "genome", 
                                 cluster_col = "ani_95_cluster", 
                                 bin_col = "ani_95_bin")
+# Genome ids binned by popcogent clusters for plotting
 popcogent_bins <- bin_tip_clusters(tree_plot = ggtree(dated_tree), 
                                    cluster_df = popcogent_clusters, 
                                    label_col = "Strain", 
                                    cluster_col = "Main_cluster", 
                                    bin_col = "popcogent_bin")
-r16s_bins <- bin_tip_clusters(tree_plot = ggtree(dated_tree), 
-                                cluster_df = clusters_16s, 
-                                label_col = "genome", 
-                                cluster_col = "cluster_16s", 
-                                bin_col = "bin_16s")
-# Join all cluster bins
+# Join both binned dfs
 all_cluster_bins <- left_join(ani_95_bins, popcogent_bins,
                               by = c("genome" = "Strain")) %>%
-  left_join(r16s_bins, by = "genome") %>%
   column_to_rownames(var = "genome")
-# Plot the dated tree with the ANI and popcogent clusters mapped
-t <- ggtree(dated_tree)
+# Get species complex nodes
+node_a <- MRCA(dated_tree, c("P2081_bin_11.fa", "P8768_bin_2.fa"))
+node_b <- MRCA(dated_tree, c("P6447_bin_3.fa",  "Nostoc_sp_Lobaria_pulmonaria_5183.fa"))
+node_d <- MRCA(dated_tree, c("P6636_bin_11.fa", "P2213_bin_24.fa"))
+node_e <- MRCA(dated_tree, c("S67_bin_3.fa", "P6602_bin_13.fa"))
+node_f <- MRCA(dated_tree, c("P2162_bin_10.fa", "P8202_bin_9.fa"))
+node_g <- MRCA(dated_tree, c("P6620_bin_4.fa", "P3068_bin_7.fa"))
+node_h <- MRCA(dated_tree, c("Nostoc_KVS11.fa", "Nmoss2.fa"))
+node_j <- MRCA(dated_tree, c("P2039_bin_23.fa", "S32_bin_15.fa"))
+node_k <- MRCA(dated_tree, c("NMS1_bin_5.fa", "P6963_bin_9.fa"))
+node_l <- MRCA(dated_tree, c("P9820_bin_6.fa", "Nostoc_commune_NIES_4072.fa"))
+node_m <- MRCA(dated_tree, c("P12545_bin_5.fa", "P12564_bin_10.fa"))
+node_n <- MRCA(dated_tree, c("P12537_bin_5.fa", "P12591_bin_6.fa"))
+node_p <- MRCA(dated_tree, c("P10247_bin_16.fa", "NOS_bin_1.fa"))
+# Plot the dated tree with the ANI and popcogent clusters mapped, and species
+# complexes highlighted
+t <- ggtree(dated_tree) +
+  geom_highlight(node = node_a, fill = "black", alpha = 0.3) +
+  geom_highlight(node = node_b, fill = "#939495", alpha = 0.25) +
+  geom_highlight(node = node_d, fill = "#939495", alpha = 0.25) +
+  geom_highlight(node = node_e, fill = "black", alpha = 0.3) +
+  geom_highlight(node = node_f, fill = "#939495", alpha = 0.25) +
+  geom_highlight(node = node_g, fill = "black", alpha = 0.3) +
+  geom_highlight(node = node_h, fill = "#939495", alpha = 0.25) +
+  geom_highlight(node = node_j, fill = "#939495", alpha = 0.25) +
+  geom_highlight(node = node_k, fill = "black", alpha = 0.3) +
+  geom_highlight(node = node_l, fill = "#939495", alpha = 0.25) +
+  geom_highlight(node = node_m, fill = "black", alpha = 0.3) +
+  geom_highlight(node = node_n, fill = "#939495", alpha = 0.25) +
+  geom_highlight(node = node_p, fill = "#939495", alpha = 0.25)
 tree_plot <- gheatmap(t, all_cluster_bins, width = 0.1, offset = -0.01, colnames = F) +
   scale_fill_manual(values = c("gray" = "#AAA7BF", "black" = "#1176A5"), na.value = "white") +
   theme(legend.position = "none")
 
-all_cluster_bins %>% filter(is.na(bin_16s)) %>% nrow
-
 ## ANI plots
 
-# Distribution of ANI gaps
-ani_gap_all <- ggplot(gap_df, aes(y = label, 
-                                  x = gap_low_lim, 
-                                  xend = gap_hi_lim)) +
-  geom_dumbbell(size_x = 0.2, size_xend = 0.2, size = 0.2) +
+# Distribution of ANI gaps (all ANIs as dots)
+ani_gap_dots <- ggplot(fastani_df2,  aes(y = genome_id, 
+                                         x = ani)) +
+  geom_point(size = 0.15)  +
+  scale_x_continuous(n.breaks = 11, limits = c(80, 100)) +
   geom_vline(xintercept = 95, linetype = "dashed", color = "gray40") +
-  labs(x = "ANI gap span") +
-  scale_x_continuous(n.breaks = 10, limits = c(80, 98)) +
+  labs(x = "ANI") +
   theme(panel.background = NULL,
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
         axis.text = element_text(size = 12, color = "black"),
         axis.text.y = element_blank(),
         axis.title.y = element_blank(),
         axis.ticks.y = element_blank())
-ani_gap_tree <- ani_gap_all %>% insert_left(tree_plot)
+ani_gap_dots_tree <- ani_gap_dots %>% insert_left(tree_plot)
 # Histogram of pairwise ANIS
 ani_hist <- ggplot(data = fastani_df, aes(x = ani)) +
   geom_histogram(fill = "gray40") +
@@ -230,11 +250,11 @@ ani_vs_aln <- ggplot(data = fastani_df, aes(x = ani, y = alignment_fraction)) +
   annotate("rect", xmin = 83, xmax = 96, ymin = 0, ymax = 1, fill = "grey70", 
            alpha = 0.3)
 # Arrange ani hist and aln fraction
-ani_botton <- ggarrange(nrow = 1, ncol = 2, ani_hist, ani_vs_aln)
+ani_traditional <- ggarrange(nrow = 1, ncol = 2, ani_hist, ani_vs_aln)
 # Save plots
-ggsave(ani_gap_tree, filename = "document/plots/ani_gap_tree.pdf", 
-       width = 7.7, height = 4)
-ggsave(ani_botton, filename = "document/plots/ani_bottom.pdf", 
+ggsave(ani_gap_dots_tree, filename = "document/plots/ani_gap_dots_tree.pdf", units = "cm", 
+       width = 17.4, height = 13)
+ ggsave(ani_traditional, filename = "document/plots/ani_traditional.pdf", 
        width = 7.7, height = 4)
 
 ## Old stuff for faceting
