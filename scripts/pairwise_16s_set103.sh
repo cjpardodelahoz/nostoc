@@ -18,3 +18,7 @@ blastn -query analyses/species_delimitation/16s/16s.fas \
  -db analyses/species_delimitation/16s/16s_db \
  -outfmt '6 qseqid sseqid pident' \
  -out analyses/species_delimitation/16s/blast_pairs_16s.txt
+# Run all-by-all blast and print regular blast output
+blastn -query analyses/species_delimitation/16s/16s.fas \
+ -db analyses/species_delimitation/16s/16s_db \
+ -out analyses/species_delimitation/16s/blast_pairs_16s_regfmt.txt

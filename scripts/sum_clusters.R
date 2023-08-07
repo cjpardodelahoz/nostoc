@@ -271,6 +271,48 @@ f5 <- facet_plot(f4, panel = "popcogent", data = popcogent_clusters, geom = geom
 
 
 
+#### PLOT FOR CHECKING ####
+
+# Load table with taxon name key
+key_df <- read_csv("document/tables/voucher_v1.csv") %>%
+  select(genome_id, taxon_name, country) %>%
+  mutate(taxon_name = 
+           ifelse(taxon_name == genome_id,
+                  taxon_name,
+                  paste(genome_id, taxon_name, sep = "_"))) %>%
+  mutate(genome_id = 
+           paste(genome_id, ".fa", sep = "")) %>%
+  mutate(taxon_name = 
+           paste(taxon_name, country, sep = "_")) %>%
+  select(genome_id, taxon_name)
+# Rename cluster bins df
+all_cluster_bins_tmp <- all_cluster_bins %>%
+  rownames_to_column() %>%
+  left_join(key_df, by = c("rowname" = "genome_id")) %>%
+  select(taxon_name, ani_95_bin, popcogent_bin, bin_16s) %>%
+  column_to_rownames(var = "taxon_name")
+# Rename tree tips
+tree_key <- dated_tree$tip.label %>%
+  as_tibble() %>%
+  left_join(key_df, by = c("value" = "genome_id"))
+dated_tree_tmp <- rename_taxa(dated_tree, data = tree_key)
+# Plot the tree with cluster and tip labels
+t_tmp <- ggtree(dated_tree_tmp) +
+  geom_tiplab(size = 2)
+tree_plot_tmp <- gheatmap(t_tmp, all_cluster_bins_tmp, width = 0.1, offset = 1.1, colnames = F) +
+  scale_fill_manual(values = c("gray" = "#AAA7BF", "black" = "#1176A5"), na.value = "white") +
+  theme(legend.position = "none")
+# Save the tree to check
+ggsave(tree_plot_tmp, filename = "document/plots/cluster_tree_to_check.pdf",
+       width = 8, height = 12)
+
+# Load 16S alignment
+aln_16s <- read.dna("analyses/phylogenetics/set103/alignments/single/16s_aln.fas", 
+                    format = "fasta")
+aln <- read.dna("seq.fasta", format = "fasta")
+find_synapomorphies(aln, c("a"))
+find_synapomorphies(aln_16s, c("Nostoc_sp_Peltigera_membranacea_cyanobiont_210A.fa", "P2083_bin_10.fa", "3_bin_5.fa"))
+
 #### FASTBAPS CLUSTERING SET103 ####
 
 

@@ -667,7 +667,7 @@ done
 # SPECIES DELIMITATION
 ################################################################################
 
-# FastANI and PopCOGenT clustering
+# FastANI PopCOGenT and 16S clustering
 
 # Run all-by-all comparison of set12c with Fastani
 mkdir -p analyses/species_delimitation/fastani/set12c
