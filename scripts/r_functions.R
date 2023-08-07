@@ -425,3 +425,11 @@ find_synapomorphies <- function(alignment, taxa_set) {
   return(synapomorphies)
 }
 
+# Function to obtain a(x) from Degnan and Rosenberg 2016 Plos Biol.
+deg_ros_a_of_x <- function(x) {
+  num <- 3*(exp(1)^(2*x)) - 2
+  den <- 18*((exp(1)^(3*x)) - (exp(1)^(2*x)))
+  a_of_x <- log(2/3 + (num/den))
+  return(a_of_x)
+}
+
