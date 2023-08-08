@@ -1,0 +1,251 @@
+collection_number,genus,species,collection_site,its_type,its_accesion,rbclx_cluster,rbclx_type,rbclx_accession,nifv_type,nifv_accession,rpoc_type,rpoc_accession,trnl_type,trnl_accession
+HOB020708-0-1-1,Peltigera,canina,Spahats Creek,2,FJ708877,VI,2,KC437696,4,KC437943,1,KC438063,11,KC438179
+HOB020708-0-1-2,Peltigera,canina,Spahats Creek,2,FJ708878,VI,2,KC437697,4,KC437944,1,KC438064,11,KC438180
+HOB020708-0-1-3,Peltigera,canina,Spahats Creek,2,FJ708879,VI,2,KC437698,4,KC437945,1,KC438065,11,KC438181
+HOB020708-0-1-4,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708970,VI,2,KC437781,2,KC437985,2,KC438105,11,KC438221
+HOB020708-0-1-5,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708971,VI,2,KC437782,2,KC437986,2,KC438106,11,KC438222
+HOB020708-0-1-6,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709004,VI,2,KC437809,2,KC437994,2,KC438113,11,KC438229
+HOB020708-0-1-7,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709005,VI,2,KC437810,4,KC437995,1,KC438114,11,KC438230
+HOB020708-0-1-8,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708954,VI,2,KC437767,2,KC437977,2,KC438097,11,KC438213
+HOB020708-0-1-9,Peltigera,britannica,Spahats Creek,7,FJ708857,VI,2,KC437679,1,KC437940,2,KC438060,11,KC438176
+HOB020708-0-5-1,Peltigera,neocanina,Spahats Creek,2,FJ708922,V,1,KC437741,6,KC437929,3,KC438050,7,KC438165
+HOB020708-0-5-2,Peltigera,leucophlebia Clade I,Spahats Creek,3,FJ708987,VI,2,KC437796,2,KC437992,2,KC438111,11,KC438227
+HOB020708-0-5-4,Peltigera,leucophlebia Clade I,Spahats Creek,3,KC437613,VI,2,KC437840,2,KC437991,2,KC438110,11,KC438226
+HOB020708-0-5-5,Peltigera,leucophlebia Clade III,Spahats Creek,14,FJ709028,VI,2,KC437829,2,KC438006,2,KC438120,11,KC438236
+HOB020708-0-5-7,Peltigera,aphthosa,Spahats Creek,1,KC437625,IV,21,KC437841,,,,,,
+HOB020708-0-9-1,Peltigera,membranacea,Spahats Creek,1,FJ709031,V,1,KC437832,6,KC437921,3,KC438042,7,KC438157
+HOB020708-0-9-10,Nephroma,parile,Spahats Creek,1,KC437594,II,5,KC437842,8,KC438017,5,KC438131,12,KC438247
+HOB020708-0-9-2,Peltigera,membranacea,Spahats Creek,1,FJ709032,V,1,KC437833,6,KC437922,3,KC438043,7,KC438158
+HOB020708-0-9-3,Peltigera,membranacea,Spahats Creek,1,FJ709033,V,1,KC437834,6,KC437923,3,KC438044,7,KC438159
+HOB020708-0-9-4,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708955,VI,2,KC437768,4,KC437978,1,KC438098,11,KC438214
+HOB020708-0-9-5,Peltigera,leucophlebia Clade III,Spahats Creek,15,FJ709029,VI,2,KC437830,4,KC438007,1,KC438121,11,KC438237
+HOB020708-0-9-6,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708956,VI,2,KC437769,4,KC437979,1,KC438099,11,KC438215
+HOB020708-0-9-7,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708957,VI,2,KC437770,4,KC437980,1,KC438100,11,KC438216
+HOB020708-0-9-8,Nephroma,bellum,Spahats Creek,2,KC437606,II,12,KC437843,7,KC438032,9,KC438145,14,KC438262
+HOB020708-0-9-9,Nephroma,parile,Spahats Creek,1,KC437595,II,5,KC437844,8,KC438018,5,KC438132,12,KC438248
+HOB020708-31-1-1,Peltigera,fuscopraetextata,Spahats Creek,5,FJ708903,VI,2,KC437722,,,,,,
+HOB020708-31-1-2,Peltigera,malacea,Spahats Creek,3,FJ708872,III,22,KC437691,,,,,,
+HOB020708-31-1-3,Peltigera,malacea,Spahats Creek,2,FJ708871,III,9,KC437690,,,,,,
+HOB020708-31-1-4,Peltigera,malacea,Spahats Creek,1,FJ708859,III,22,KC437681,,,,,,
+HOB020708-31-1-8,Peltigera,aphthosa,Spahats Creek,5,FJ708844,VI,2,KC437670,,,,,,
+HOB020708-31-5-1,Peltigera,canina,Spahats Creek,1,FJ708873,VI,2,KC437692,,,,,,
+HOB020708-31-5-2,Peltigera,canina,Spahats Creek,1,FJ708874,VI,2,KC437693,,,,,,
+HOB020708-31-5-3,Peltigera,fuscopraetextata,Spahats Creek,1,FJ708892,VI,3,KC437711,,,,,,
+HOB020708-31-5-4,Peltigera,malacea,Spahats Creek,1,FJ708860,III,9,KC437682,,,,,,
+HOB020708-31-5-6,Peltigera,britannica,Spahats Creek,4,FJ708852,VI,10,KC437676,,,,,,
+HOB020708-31-5-7,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708972,VI,2,KC437783,,,,,,
+HOB020708-31-5-8,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708973,VI,2,KC437784,2,KC437990,,,,
+HOB020708-31-9-10,Nephroma,parile,Spahats Creek,1,KC437600,II,5,KC437845,,,,,,
+HOB020708-31-9-2,Peltigera,praetextata,Spahats Creek,1,FJ708904,VI,3,KC437723,,,,,,
+HOB020708-31-9-5,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708959,VI,10,KC437771,,,,,,
+HOB020708-31-9-7,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708960,VI,2,KC437772,,,,,,
+HOB020708-35-1-2,Peltigera,malacea,Spahats Creek,1,FJ708861,III,9,KC437683,,,,,,
+HOB020708-35-1-3,Peltigera,malacea,Spahats Creek,1,FJ708862,III,9,KC437684,,,,,,
+HOB020708-35-1-4,Peltigera,malacea,Spahats Creek,1,FJ708863,III,9,KC437685,,,,,,
+HOB020708-35-1-6,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709007,VI,2,KC437811,2,KC437996,2,KC438115,11,KC438231
+HOB020708-35-5-10,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709008,VI,2,KC437812,3,KC438001,,,,
+HOB020708-35-5-2,Peltigera,malacea,Spahats Creek,1,KC437626,III,22,KC437846,,,,,,
+HOB020708-35-5-4,Peltigera,aphthosa,Spahats Creek,1,FJ708820,IV,19,KC437651,,,,,,
+HOB020708-35-5-5,Peltigera,aphthosa,Spahats Creek,6,FJ708845,VI,2,KC437671,,,,,,
+HOB020708-35-5-6,Peltigera,aphthosa,Spahats Creek,1,FJ708821,IV,19,KC437652,,,,,,
+HOB020708-35-5-7,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709009,VI,2,KC437813,,,,,,
+HOB020708-35-5-8,Peltigera,leucophlebia Clade I,Spahats Creek,3,FJ708988,IV,19,KC437797,,,,,,
+HOB020708-35-5-9,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709010,VI,2,KC437814,3,KC438002,,,,
+HOB020708-39-1-10,Peltigera,britannica,Spahats Creek,7,FJ708858,VI,2,KC437680,,,,,,
+HOB020708-39-1-5,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709011,VI,2,KC437815,12,KC438003,,,,
+HOB020708-39-1-6,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709012,VI,10,KC437816,,,,,,
+HOB020708-39-1-7,Peltigera,britannica,Spahats Creek,2,FJ708848,VI,2,KC437673,,,,,,
+HOB020708-39-1-9,Peltigera,aphthosa,Spahats Creek,4,FJ708842,VI,2,KC437669,,,,,,
+HOB020708-39-5-2,Peltigera,canina,Spahats Creek,2,FJ708880,VI,6,KC437699,,,,,,
+HOB020708-4-1-1,Peltigera,fuscopraetextata,Spahats Creek,2,FJ708898,VI,2,KC437717,2,KC437951,2,KC438071,11,KC438187
+HOB020708-4-1-10,Nephroma,parile,Spahats Creek,1,KC437596,II,5,KC437847,8,KC438019,5,KC438133,12,KC438249
+HOB020708-4-1-2,Peltigera,fuscopraetextata,Spahats Creek,2,FJ708899,VI,2,KC437718,2,KC437952,2,KC438072,11,KC438188
+HOB020708-4-1-4,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708962,VI,2,KC437773,1,KC437981,2,KC438101,11,KC438217
+HOB020708-4-1-5,Peltigera,aphthosa,Spahats Creek,1,FJ708822,IV,18,KC437653,,,,,,
+HOB020708-4-1-6,Peltigera,leucophlebia Clade I,Spahats Creek,1,KC437608,VI,2,KC437848,1,KC437975,1,KC438095,11,KC438211
+HOB020708-4-1-7,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709013,I,4,KC437817,10,KC438015,4,KC438129,17,KC438245
+HOB020708-4-1-8,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708963,VI,2,KC437774,2,KC437982,2,KC438102,11,KC438218
+HOB020708-4-1-9,Peltigera,aphthosa,Spahats Creek,1,KC437623,IV,18,KC437849,,,,,,
+HOB020708-4-5-1,Peltigera,canina,Spahats Creek,4,FJ708890,V,1,KC437709,5,KC437918,3,KC438039,,
+HOB020708-4-5-10,Nephroma,parile,Spahats Creek,1,KC437597,II,5,KC437850,8,KC438020,5,KC438134,12,KC438250
+HOB020708-4-5-2,Peltigera,fuscopraetextata,Spahats Creek,2,FJ708900,VI,2,KC437719,4,KC437953,1,KC438073,11,KC438189
+HOB020708-4-5-3,Peltigera,venosa,Spahats Creek,1,KC437590,VI,2,KC437851,1,KC438011,2,KC438125,11,KC438241
+HOB020708-4-5-4,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708974,VI,2,KC437785,1,KC437987,2,KC438107,11,KC438223
+HOB020708-4-5-5,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709014,VI,2,KC437818,1,KC437997,2,KC438116,11,KC438232
+HOB020708-4-5-7,Peltigera,aphthosa,Spahats Creek,1,FJ708823,IV,19,KC437654,,,,,,
+HOB020708-4-5-8,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708975,VI,2,KC437786,2,KC437988,2,KC438108,11,KC438224
+HOB020708-4-5-9,Nephroma,parile,Spahats Creek,1,KC437598,II,5,KC437852,8,KC438021,5,KC438135,12,KC438251
+HOB020708-4-9-1,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709015,VI,2,KC437819,2,KC437998,2,KC438117,11,KC438233
+HOB020708-4-9-2,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709016,VI,2,KC437820,,,,,,
+HOB020708-4-9-3,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709017,VI,2,KC437821,2,KC438004,,,,
+HOB020708-4-9-4,Peltigera,aphthosa,Spahats Creek,1,FJ708824,VI,2,KC437655,2,KC437933,1,KC438054,11,KC438169
+HOB020708-4-9-5,Peltigera,aphthosa,Spahats Creek,1,KC437615,VI,2,KC437853,,,,,,
+HOB020708-4-9-6,Peltigera,aphthosa,Spahats Creek,1,FJ708825,VI,2,KC437656,,,,,,
+HOB020708-4-9-7,Peltigera,aphthosa,Spahats Creek,1,FJ708826,VI,2,KC437657,,,,,,
+HOB020708-62-1-1,Peltigera,species A,Spahats Creek,3,FJ708907,VI,2,KC437726,2,KC438010,2,KC438124,13,KC438240
+HOB020708-62-1-2,Peltigera,fuscopraetextata,Spahats Creek,4,FJ708902,VI,2,KC437721,2,KC437955,1,KC438075,11,KC438191
+HOB020708-62-1-3,Peltigera,ponojensis,Spahats Creek,1,FJ709039,VI,2,KC437838,2,KC438008,2,KC438122,13,KC438238
+HOB020708-62-1-4,Peltigera,kristinssonii,Spahats Creek,1,FJ708935,VI,2,KC437748,2,KC437963,2,KC438083,13,KC438199
+HOB020708-62-1-5,Peltigera,kristinssonii,Spahats Creek,3,FJ708952,VI,2,KC437765,2,KC437973,2,KC438093,13,KC438209
+HOB020708-62-1-6,Peltigera,kristinssonii,Spahats Creek,1,FJ708936,VI,2,KC437749,2,KC437964,2,KC438084,13,KC438200
+HOB020708-62-1-7,Peltigera,kristinssonii,Spahats Creek,1,FJ708937,VI,2,KC437750,2,KC437965,2,KC438085,13,KC438201
+HOB020708-62-5-1,Peltigera,fuscopraetextata,Spahats Creek,3,FJ708901,VI,6,KC437720,2,KC438023,2,KC438137,13,KC438253
+HOB020708-62-5-10,Peltigera,aphthosa,Spahats Creek,1,KC437614,VI,2,KC437854,2,KC437932,2,KC438053,11,KC438168
+HOB020708-62-5-2,Peltigera,fuscopraetextata,Spahats Creek,3,KC437607,VI,2,KC437855,2,KC437954,2,KC438074,13,KC438190
+HOB020708-62-5-3,Peltigera,fuscopraetextata,Spahats Creek,1,FJ708893,VI,2,KC437712,2,KC437948,2,KC438068,13,KC438184
+HOB020708-62-5-4,Peltigera,malacea,Spahats Creek,1,KC437622,III,9,KC437856,18,KC438026,,,22,KC438256
+HOB020708-62-5-6,Peltigera,aphthosa,Spahats Creek,1,FJ708827,VI,2,KC437658,2,KC437936,,,13,KC438172
+HOB020708-62-9-3,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709019,VI,2,KC437822,3,KC437999,2,KC438118,11,KC438234
+HOB020708-62-9-6,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708977,VI,2,KC437787,2,KC437989,1,KC438109,11,KC438225
+HOB020708-66-1-1,Peltigera,fuscopraetextata,Spahats Creek,1,FJ708894,VI,2,KC437713,1,KC437946,2,KC438066,11,KC438182
+HOB020708-66-1-10,Nephroma,resupinatum,Spahats Creek,1,KC437604,II,12,KC437857,7,KC438033,9,KC438146,14,KC438263
+HOB020708-66-1-2,Peltigera,fuscopraetextata,Spahats Creek,1,FJ708895,VI,2,KC437714,1,KC437947,2,KC438067,11,KC438183
+HOB020708-66-1-4,Peltigera,species A,Spahats Creek,3,FJ708908,VI,3,KC437727,23,KC438012,2,KC438126,20,KC438242
+HOB020708-66-1-5,Peltigera,kristinssonii,Spahats Creek,1,FJ708938,VI,2,KC437751,1,KC437957,2,KC438077,11,KC438193
+HOB020708-66-1-7,Peltigera,leucophlebia Clade I,Spahats Creek,9,FJ708997,VI,2,KC437803,1,KC437993,2,KC438112,11,KC438228
+HOB020708-66-1-8,Nephroma,parile,Spahats Creek,1,KC437599,II,5,KC437858,8,KC438022,5,KC438136,12,KC438252
+HOB020708-66-1-9,Nephroma,bellum,Spahats Creek,1,KC437605,II,12,KC437859,7,KC438031,9,KC438144,14,KC438261
+HOB020708-66-5-10,Peltigera,aphthosa,Spahats Creek,1,FJ708828,VI,2,KC437659,1,KC437934,2,KC438055,11,KC438170
+HOB020708-66-5-2,Peltigera,neocanina,Spahats Creek,1,FJ708916,I,4,KC437735,10,KC438016,4,KC438130,24,KC438246
+HOB020708-66-5-3,Peltigera,kristinssonii,Spahats Creek,4,FJ708953,VI,2,KC437766,1,KC437974,2,KC438094,11,KC438210
+HOB020708-66-5-4,Peltigera,kristinssonii,Spahats Creek,1,FJ708939,VI,2,KC437752,2,KC437958,2,KC438078,11,KC438194
+HOB020708-66-5-5,Peltigera,kristinssonii,Spahats Creek,1,FJ708940,VI,2,KC437753,2,KC437959,2,KC438079,11,KC438195
+HOB020708-66-5-6,Peltigera,aphthosa,Spahats Creek,1,FJ708829,VI,2,KC437660,2,KC437935,1,KC438056,11,KC438171
+HOB020708-66-5-7,Peltigera,britannica,Spahats Creek,3,FJ708850,VI,2,KC437674,1,KC437938,2,KC438058,11,KC438174
+HOB020708-66-5-8,Peltigera,britannica,Spahats Creek,3,FJ708851,VI,2,KC437675,1,KC437939,2,KC438059,11,KC438175
+HOB020708-66-5-9,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709020,VI,2,KC437823,1,KC438000,2,KC438119,11,KC438235
+HOB020708-66-9-1,Peltigera,neocanina,Spahats Creek,1,FJ708917,V,1,KC437736,6,KC437924,3,KC438045,7,KC438160
+HOB020708-66-9-10,Peltigera,aphthosa,Spahats Creek,1,FJ708830,IV,21,KC437661,,,6,KC438150,15,KC438266
+HOB020708-66-9-2,Peltigera,neocanina,Spahats Creek,1,FJ708918,V,1,KC437737,6,KC437925,3,KC438046,7,KC438161
+HOB020708-66-9-3,Peltigera,neocanina,Spahats Creek,1,FJ708919,V,1,KC437738,6,KC437926,3,KC438047,7,KC438162
+HOB020708-66-9-4,Peltigera,neocanina,Spahats Creek,1,FJ708920,V,1,KC437739,6,KC437927,3,KC438048,7,KC438163
+HOB020708-66-9-5,Peltigera,neocanina,Spahats Creek,1,FJ708921,V,1,KC437740,6,KC437928,3,KC438049,7,KC438164
+HOB020708-66-9-6,Peltigera,aphthosa,Spahats Creek,1,FJ708831,IV,21,KC437662,,,6,KC438151,15,KC438267
+HOB020708-66-9-8,Peltigera,aphthosa,Spahats Creek,1,FJ708832,IV,21,KC437663,,,6,KC438152,15,KC438268
+HOB020708-70-1-1,Peltigera,kristinssonii,Spahats Creek,1,FJ708941,VI,2,KC437754,14,KC437970,1,KC438090,18,KC438206
+HOB020708-70-1-10,Peltigera,leucophlebia Clade I,Spahats Creek,1,KC437609,VI,2,KC437860,1,KC437976,2,KC438096,11,KC438212
+HOB020708-70-1-3,Peltigera,canina,Spahats Creek,1,FJ708875,VI,2,KC437694,15,KC437941,2,KC438061,20,KC438177
+HOB020708-70-1-4,Peltigera,ponojensis,Spahats Creek,2,FJ709040,VI,2,KC437839,2,KC438009,2,KC438123,11,KC438239
+HOB020708-70-1-5a,Peltigera,kristinssonii,Spahats Creek,1,KC437637,VI,2,KC437861,2,KC437956,2,KC438076,11,KC438192
+HOB020708-70-1-8,Peltigera,venosa,Spahats Creek,1,KC437591,VI,2,KC437862,,,,,,
+HOB020708-70-1-9,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708964,I,4,KC437775,10,KC438013,4,KC438127,17,KC438243
+HOB020708-70-5-2,Peltigera,canina,Spahats Creek,1,FJ708876,VI,2,KC437695,15,KC437942,2,KC438062,20,KC438178
+HOB020708-70-5-3,Peltigera,malacea,Spahats Creek,1,FJ708864,III,7,KC437686,13,KC438024,10,KC438138,21,KC438254
+HOB020708-70-5-4,Peltigera,malacea,Spahats Creek,1,FJ708865,III,9,KC437687,16,KC438027,7,KC438140,22,KC438257
+HOB020708-70-5-5,Peltigera,malacea,Spahats Creek,1,FJ708866,III,9,KC437688,16,KC438028,7,KC438141,22,KC438258
+HOB020708-70-5-6,Peltigera,malacea,Spahats Creek,1,FJ708867,III,7,KC437689,13,KC438025,10,KC438139,21,KC438255
+HOB020708-70-5-7,Peltigera,kristinssonii,Spahats Creek,1,FJ708942,VI,2,KC437755,4,KC437960,1,KC438080,11,KC438196
+HOB020708-70-5-8,Peltigera,kristinssonii,Spahats Creek,1,FJ708943,VI,2,KC437756,14,KC437971,1,KC438091,18,KC438207
+HOB020708-70-5-9,Peltigera,kristinssonii,Spahats Creek,1,FJ708944,VI,2,KC437757,14,KC437972,1,KC438092,18,KC438208
+HOB020708-70-9-1,Peltigera,kristinssonii,Spahats Creek,1,FJ708945,VI,2,KC437758,2,KC437966,2,KC438086,13,KC438202
+HOB020708-70-9-10,Peltigera,aphthosa,Spahats Creek,2,KC437616,VI,2,KC437863,12,KC437937,2,KC438057,11,KC438173
+HOB020708-70-9-2,Peltigera,kristinssonii,Spahats Creek,1,FJ708946,VI,2,KC437759,1,KC437961,2,KC438081,11,KC438197
+HOB020708-70-9-3,Peltigera,kristinssonii,Spahats Creek,1,FJ708947,VI,2,KC437760,2,KC437967,2,KC438087,13,KC438203
+HOB020708-70-9-4,Peltigera,kristinssonii,Spahats Creek,1,FJ708948,VI,2,KC437761,1,KC437962,2,KC438082,11,KC438198
+HOB020708-70-9-5,Peltigera,kristinssonii,Spahats Creek,1,FJ708949,VI,2,KC437762,2,KC437968,2,KC438088,13,KC438204
+HOB020708-70-9-6,Peltigera,kristinssonii,Spahats Creek,1,FJ708950,VI,2,KC437763,2,KC437969,2,KC438089,13,KC438205
+HOB020708-70-9-7,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708965,VI,2,KC437776,12,KC437983,2,KC438103,11,KC438219
+HOB020708-70-9-8,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708966,VI,2,KC437777,12,KC437984,2,KC438104,11,KC438220
+HOB020708-8-1-1,Peltigera,horizontalis,Spahats Creek,1,FJ708930,V,1,KC437744,6,KC437919,3,KC438040,7,KC438155
+HOB020708-8-1-10,Peltigera,leucophlebia Clade I,Spahats Creek,2,FJ708978,VI,3,KC437788,,,,,,
+HOB020708-8-1-2,Peltigera,fuscopraetextata,Spahats Creek,1,FJ708896,VI,2,KC437715,9,KC437950,8,KC438070,23,KC438186
+HOB020708-8-1-4,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709021,VI,2,KC437824,,,,,,
+HOB020708-8-1-5,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709022,VI,2,KC437825,4,KC438005,,,,
+HOB020708-8-1-7,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708967,VI,2,KC437778,,,,,,
+HOB020708-8-1-8,Peltigera,leucophlebia Clade I,Spahats Creek,8,FJ708996,VI,2,KC437802,,,,,,
+HOB020708-8-1-9,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709023,VI,30,KC437826,2,KC438038,,,,
+HOB020708-8-5-1,Peltigera,horizontalis,Spahats Creek,1,FJ708931,V,11,KC437745,5,KC438029,3,KC438142,7,KC438259
+HOB020708-8-5-10,Peltigera,aphthosa,Spahats Creek,1,FJ708833,VI,2,KC437664,,,,,,
+HOB020708-8-5-2,Peltigera,horizontalis,Spahats Creek,1,FJ708932,V,11,KC437746,5,KC438030,3,KC438143,7,KC438260
+HOB020708-8-5-3,Peltigera,aphthosa,Spahats Creek,1,FJ708834,VI,8,KC437665,,,,,,
+HOB020708-8-5-4,Peltigera,leucophlebia Clade I,Spahats Creek,1,FJ708968,VI,2,KC437779,,,,,,
+HOB020708-8-5-5,Peltigera,leucophlebia Clade I,Spahats Creek,5,FJ708990,VI,2,KC437799,,,,,,
+HOB020708-8-5-6,Peltigera,leucophlebia Clade I,Spahats Creek,5,FJ708991,VI,2,KC437800,,,,,,
+HOB020708-8-5-7,Peltigera,aphthosa,Spahats Creek,1,FJ708835,VI,8,KC437666,,,,,,
+HOB020708-8-5-9,Peltigera,aphthosa,Spahats Creek,3,FJ708841,IV,21,KC437668,,,,,,
+HOB020708-8-9-1,Peltigera,fuscopraetextata,Spahats Creek,1,FJ708897,VI,2,KC437716,2,KC437949,2,KC438069,13,KC438185
+HOB020708-8-9-2,Peltigera,horizontalis,Spahats Creek,1,FJ708933,V,1,KC437747,6,KC437920,3,KC438041,7,KC438156
+HOB020708-8-9-3,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709024,VI,2,KC437827,,,,,,
+HOB020708-8-9-4,Peltigera,leucophlebia Clade III,Spahats Creek,13,FJ709025,VI,2,KC437828,,,,,,
+HOB020708-8-9-5,Peltigera,aphthosa,Spahats Creek,1,FJ708837,IV,21,KC437667,,,,,,
+HOB030611-0-0-2,Nephroma,parile,Battle Creek,1,KC437601,II,5,KC437864,,,,,,
+HOB030611-0-0-3,Peltigera,leucophlebia Clade II,Battle Creek,12,FJ709001,VI,2,KC437806,,,,,,
+HOB030611-0-0-4,Peltigera,cinnamomea,Battle Creek,2,FJ708912,V,1,KC437731,,,,,,
+HOB030611-0-0-5,Peltigera,praetextata,Battle Creek,1,FJ708905,VI,2,KC437724,,,,,,
+HOB030611-0-0-6,Peltigera,canina,Battle Creek,2,FJ708881,VI,2,KC437700,,,,,,
+HOB030611-0-0-7,Peltigera,canina,Battle Creek,2,FJ708882,VI,2,KC437701,,,,,,
+HOB030611-0-10-1,Peltigera,britannica,Battle Creek,1,KC437630,VI,3,KC437865,,,,,,
+HOB030611-0-10-2,Peltigera,britannica,Battle Creek,1,FJ708846,VI,3,KC437672,,,,,,
+HOB030611-0-10-3,Peltigera,leucophlebia Clade II,Battle Creek,10,FJ708998,VI,2,KC437804,,,,,,
+HOB030611-0-10-4,Peltigera,canina,Battle Creek,2,FJ708883,VI,2,KC437702,,,,,,
+HOB030611-0-5-1,Peltigera,britannica,Battle Creek,2,KC437617,VI,2,KC437866,,,,,,
+HOB030611-0-5-10,Peltigera,cinnamomea,Battle Creek,4,FJ708914,VI,6,KC437733,,,,,,
+HOB030611-0-5-2,Peltigera,britannica,Battle Creek,2,KC437618,VI,2,KC437867,,,,,,
+HOB030611-0-5-5,Peltigera,leucophlebia Clade II,Battle Creek,12,FJ709002,VI,2,KC437807,,,,,,
+HOB030611-0-5-6,Peltigera,polydactylon,Battle Creek,1,FJ709038,VI,6,KC437837,,,,,,
+HOB030611-0-5-7,Peltigera,cinnamomea,Battle Creek,5,FJ708915,VI,6,KC437734,,,,,,
+HOB030611-0-5-8,Peltigera,praetextata,Battle Creek,2,FJ708906,VI,3,KC437725,,,,,,
+HOB030611-10-0-1,Peltigera,britannica,Battle Creek,4,FJ708853,VI,2,KC437677,,,,,,
+HOB030611-10-0-3,Peltigera,canina,Battle Creek,2,FJ708884,VI,2,KC437703,,,,,,
+HOB030611-10-0-4,Peltigera,species A,Battle Creek,3,FJ708909,VI,2,KC437728,,,,,,
+HOB030611-10-0-5,Peltigera,canina,Battle Creek,2,FJ708885,VI,2,KC437704,,,,,,
+HOB030611-10-0-6,Peltigera,canina,Battle Creek,2,FJ708886,VI,2,KC437705,,,,,,
+HOB030611-10-10-1,Nephroma,parile,Battle Creek,1,KC437602,II,5,KC437868,,,,,,
+HOB030611-10-10-3,Peltigera,polydactylon,Battle Creek,1,KC437643,V,1,KC437869,6,KC437930,3,KC438051,7,KC438166
+HOB030611-10-10-4,Peltigera,canina,Battle Creek,2,FJ708887,V,1,KC437706,,,,,,
+HOB030611-10-10-6,Peltigera,polydactylon,Battle Creek,1,KC437644,V,1,KC437870,6,KC437931,3,KC438052,7,KC438167
+HOB030611-10-5-1,Peltigera,leucophlebia Clade I,Battle Creek,2,FJ708980,VI,2,KC437789,,,,,,
+HOB030611-10-5-2,Peltigera,canina,Battle Creek,2,FJ708888,VI,6,KC437707,,,,,,
+HOB030611-10-5-3,Peltigera,species A,Battle Creek,3,FJ708910,VI,2,KC437729,,,,,,
+HOB030611-10-5-4,Peltigera,leucophlebia Clade I,Battle Creek,2,FJ708981,VI,2,KC437790,,,,,,
+HOB030611-10-5-5,Peltigera,canina,Battle Creek,2,FJ708889,VI,6,KC437708,,,,,,
+HOB030611-10-5-6,Peltigera,leucophlebia Clade I,Battle Creek,2,FJ708982,VI,2,KC437791,,,,,,
+HOB030611-10-5-7,Peltigera,leucophlebia Clade I,Battle Creek,2,FJ708983,VI,2,KC437792,,,,,,
+HOB030611-5-10-2,Peltigera,leucophlebia Clade I,Battle Creek,1,FJ708969,VI,2,KC437780,,,,,,
+HOB030611-5-10-3,Peltigera,leucophlebia Clade I,Battle Creek,2,KC437612,VI,2,KC437871,,,,,,
+HOB030611-5-10-4,Peltigera,leucophlebia Clade II,Battle Creek,11,FJ708999,VI,2,KC437805,,,,,,
+HOB030611-5-10-5,Peltigera,leucophlebia Clade II,Battle Creek,12,FJ709003,VI,2,KC437808,,,,,,
+HOB030611-5-10-6,Peltigera,canina,Battle Creek,4,FJ708891,VI,2,KC437710,,,,,,
+HOB030611-5-10-7,Peltigera,praetextata,Battle Creek,2,KC437648,VI,2,KC437872,,,,,,
+HOB030611-5-10-8,Peltigera,praetextata,Battle Creek,2,KC437650,I,17,KC437873,,,,,,
+HOB030611-5-5-1,Peltigera,britannica,Battle Creek,4,FJ708854,VI,2,KC437678,,,,,,
+HOB030611-5-5-2,Peltigera,leucophlebia Clade I,Battle Creek,2,FJ708984,VI,2,KC437793,,,,,,
+HOB040605-01-2,Peltigera,membranacea,Cameron Ridge,3,KC437646,NA,15,KC437874,,,,,,
+HOB040605-01-3,Peltigera,leucophlebia Clade III,Cameron Ridge,13,KC437620,I,4,KC437875,,,,,,
+HOB040605-02-1,Peltigera,neopolydactyla,Cameron Ridge,2,KC437647,VI,24,KC437876,,,,,,
+HOB040605-02-2,Peltigera,neocanina,Cameron Ridge,4,KC437635,I,4,KC437877,,,,,,
+HOB040605-02-3,Peltigera,britannica,Cameron Ridge,1,KC437631,I,4,KC437878,,,,,,
+HOB040605-02-4,Peltigera,leucophlebia Clade I,Cameron Ridge,5,KC437611,IV,21,KC437879,,,,,,
+HOB040605-03-1,Peltigera,aphthosa,Ghost Lake,1,KC437627,IV,23,KC437880,,,14,KC438153,15,KC438269
+HOB040605-03-2,Peltigera,malacea,Ghost Lake,1,KC437621,III,7,KC437881,,,,,,
+HOB040605-04-1,Peltigera,collina,Ghost Lake,1,KC437638,I,13,KC437882,,,11,KC438147,,
+HOB040605-04-2,Peltigera,malacea,Ghost Lake,1,KC437628,IV,25,KC437883,17,KC438035,,,16,KC438270
+HOB040605-04-3,Peltigera,britannica,Ghost Lake,5,KC437633,IV,19,KC437884,,,6,KC438149,15,KC438264
+HOB040605-05-1-1,Nephroma,arcticum,Ghost Lake,2,KC437592,NA,26,KC437885,22,KC438036,,,26,KC438271
+HOB040605-05-1-2,Nephroma,arcticum,Ghost Lake,2,KC437593,IV,27,KC437886,20,KC438037,12,KC438154,16,KC438272
+HOB040605-05-2-1,Peltigera,leucophlebia Clade I,Ghost Lake,5,KC437610,IV,19,KC437887,,,,,15,KC438265
+HOB040605-05-2-2,Peltigera,leucophlebia Clade III,Ghost Lake,13,KC437619,I,4,KC437888,21,KC438014,13,KC438128,25,KC438244
+HOB040605-05-3,Peltigera,collina,Ghost Lake,1,KC437639,I,13,KC437889,19,KC438034,11,KC438148,,
+HOB040605-06-1,Peltigera,collina,Ghost Lake,1,KC437640,I,13,KC437890,,,,,,
+HOB040605-06-2,Nephroma,parile,Ghost Lake,1,KC437603,II,5,KC437891,,,,,,
+HOB040605-06-3,Peltigera,britannica,Ghost Lake,6,KC437634,IV,19,KC437892,,,,,,
+HOB040605-07-1,Peltigera,collina,Ghost Lake,1,KC437641,I,13,KC437893,,,,,,
+HOB040605-07-2,Peltigera,britannica,Ghost Lake,1,KC437632,IV,19,KC437894,,,,,,
+HOB040605-07-3,Peltigera,collina,Ghost Lake,1,KC437642,I,13,KC437895,,,,,,
+HOB040605-07-4,Peltigera,malacea,Ghost Lake,1,KC437629,III,28,KC437896,,,,,,
+HOB040605-09-1,Peltigera,horizontalis,Ghost Lake,1,KC437645,V,1,KC437897,,,,,,
+HOB040605-09-2,Peltigera,aphthosa,Ghost Lake,1,KC437624,IV,18,KC437898,,,,,,
+HOB040605-10-1,Peltigera,membranacea,Barkersville,2,FJ709034,NA,14,KC437835,,,,,,
+HOB040605-10-2,Peltigera,neopolydactyla,Barkersville,1,FJ709036,NA,14,KC437836,,,,,,
+HOB040605-10-3,Peltigera,degenii,Barkersville,1,FJ709030,NA,14,KC437831,,,,,,
+HOB040605-11-1,Peltigera,leucophlebia Clade I,Barkersville,2,FJ708985,VI,6,KC437794,,,,,,
+HOB040605-11-2,Peltigera,cinnamomea,Barkersville,3,FJ708913,VI,6,KC437732,,,,,,
+HOB040605-12-1,Peltigera,venosa,Barkersville,2,KC437649,VI,10,KC437899,,,,,,
+HOB040605-12-2,Peltigera,leucophlebia Clade I,Barkersville,2,FJ708986,VI,2,KC437795,,,,,,
+HOB040605-12-3,Peltigera,cinnamomea,Barkersville,1,FJ708911,V,1,KC437730,,,,,,
+HOB040605-12-4,Peltigera,neckeri,Barkersville,2,FJ708929,I,16,KC437743,,,,,,
+HOB040605-13-1,Peltigera,leucophlebia Clade I,Barkersville,4,FJ708989,VI,3,KC437798,,,,,,
+HOB040605-13-2,Peltigera,neckeri,Barkersville,1,FJ708928,I,4,KC437742,,,,,,
+HOB040605-13-3,Peltigera,neocanina,Barkersville,3,KC437636,NA,29,KC437900,,,,,,
+HOB040605-13-4,Peltigera,kristinssonii,Barkersville,2,FJ708951,VI,3,KC437764,,,,,,
+HOB040605-13-5,Peltigera,leucophlebia Clade I,Barkersville,6,FJ708994,I,20,KC437801 ,,,,,,

@@ -93,34 +93,34 @@ P6070,P. leucophlebia 5,CHL,"Russia, Khabarovsk, J. Miadlikowska s.n., DUKE",SEA
 P6073,P. leucophlebia 5,CHL,"Russia, Khabarovsk, J. Miadlikowska s.n., DUKE",SEA,MH734713,MH756867,MH756789,MH756884,MH756935,MH756916,6,MH757014,MH753202,H144,C. solorinae,,,,Absent
 P1330,P. aphthosa 1,PLT,"Canada, Québec, Nunavik, L. Couillard s.n., QFA-0594935",ENA,-,-,-,-,-,-,0,MH757051,MH753221,V,C. solorinae,,,N/A,
 P1332,P. aphthosa 1,PLT,"Canada, Québec, Nunavik, J. Gagnon s.n., QFA-0595018",ENA,-,-,-,-,-,-,0,MH757057,MH753150,VI,C. solorinae,,,Absent,
-P1312,P. aphthosa 2,PLT,"U.S., Alaska, Nome, J. Miadlikowska et al. s.n., 06. 2008, DUKE",ALA,-,-,-,-,-,-,0,MH757073*,MH753218,IV,C. solorinae,,,Absent,
+P1312,P. aphthosa 2,PLT,"U.S., Alaska, Nome, J. Miadlikowska et al. s.n., 06. 2008, DUKE",ALA,-,-,-,-,-,-,0,MH757073,MH753218,IV,C. solorinae,,,Absent,
 P1309,P. aphthosa 2,PLT,"U.S., Alaska, Nome, J. Miadlikowska et al. s.n., 06. 2008, DUKE",ALA,-,-,-,-,-,-,0,MH757012,MH753217,VI,C. solorinae,,,Absent,
-P776,P. aphthosa 3,PLT,"Russia, Kamchatka, D. E. Himelbrant s.n., 03.08.2009, H",RUS,-,-,-,-,-,-,0,MH757070*,MH753223,IV,C. solorinae,,,Present,
-P4025,P. aphthosa 3,PLT,"Canada, Québec, R. Darnajoux, 06.2013, Bms4-39, DUKE",ENA,-,-,-,-,-,-,0,MH757084*,MH753187,IV,C. subellipsoidea,,,Absent,
-P4043,P. aphthosa 4,PLT,"U.S., Alaska, K. Spickerman s.n., 08.01.2013, DUKE",ALA,MH734723,MH756806,-,MH756878,-,-,0,MH757066*,-,IV,-,,,,Absent
-P790,P. aphthosa 4,PLT,"Norway, N. Magain s.n., 2011, LG",NE,-,-,-,-,-,-,0,MH757071*,MH753216,IV,C. solorinae,,,Absent,
-P1184,P. aphthosa 4,PLT,"Finland, B. Krzewicka 2512, UPS L-153684",NE,-,-,-,-,-,-,0,MH757072*,MH753224,IV,C. solorinae,,,Absent,
-P774,P. aphthosa 5,PLT,"Russia, Krasnoyarskiy kray, V. Pervunin s.n., 07. 2000, H",RUS,-,-,-,-,-,-,0,MH757062*,-,IV,-,,,,Present
-P1172,P. aphthosa 5,PLT,"U.S., Minnesota, C. Wetmore 92428, MIN",ENA,-,-,-,-,-,-,0,MH757063*,-,IV,-,,,,Absent
-P4048,P. aphthosa 5,PLT,"Canada, Ontario, R. Troy McMullin 8928, DUKE",ENA,-,-,-,-,-,-,0,MH757064*,MH753215,IV,C. solorinae,,,Absent,
-P725,P. aphthosa 5,PLT,"Canada, Québec W6C1, J. Miadlikowska et al. s.n., DUKE",ENA,-,-,-,-,-,-,0,MH757065*,-,IV,-,,,,Absent
-P4049,P. aphthosa 5,PLT,"Canada, Ontario, R. Troy McMullin 8920, DUKE",ENA,-,-,-,-,-,-,0,MH757067*,MH753222,IV,C. solorinae,,,Absent,
-P1189,P. aphthosa 5,PLT,"Sweden, I. Karlsson s.n., 10.23.2011, UPS L-552785",NE,-,-,-,-,-,-,0,MH757068*,MH753220,IV,C. solorinae,,,Absent,
-P709,P. aphthosa 5,PLT,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",ALA,-,-,-,-,-,-,0,MH757069*,MH753189,IV,C. solorinae,,,Absent,
-P726,P. aphthosa 5,PLT,"Canada, Québec W50C3, J. Miadlikowska et al. s.n., DUKE",ENA,-,-,-,-,-,-,0,MH757077*,MH753162,IV,C. subellipsoidea,,,Absent,
-P708,P. aphthosa 5,PLT,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",ALA,-,-,-,-,-,-,0,MH757081*,MH753188,IV,C. solorinae,,,Absent,
+P776,P. aphthosa 3,PLT,"Russia, Kamchatka, D. E. Himelbrant s.n., 03.08.2009, H",RUS,-,-,-,-,-,-,0,MH757070,MH753223,IV,C. solorinae,,,Present,
+P4025,P. aphthosa 3,PLT,"Canada, Québec, R. Darnajoux, 06.2013, Bms4-39, DUKE",ENA,-,-,-,-,-,-,0,MH757084,MH753187,IV,C. subellipsoidea,,,Absent,
+P4043,P. aphthosa 4,PLT,"U.S., Alaska, K. Spickerman s.n., 08.01.2013, DUKE",ALA,MH734723,MH756806,-,MH756878,-,-,0,MH757066,-,IV,-,,,,Absent
+P790,P. aphthosa 4,PLT,"Norway, N. Magain s.n., 2011, LG",NE,-,-,-,-,-,-,0,MH757071,MH753216,IV,C. solorinae,,,Absent,
+P1184,P. aphthosa 4,PLT,"Finland, B. Krzewicka 2512, UPS L-153684",NE,-,-,-,-,-,-,0,MH757072,MH753224,IV,C. solorinae,,,Absent,
+P774,P. aphthosa 5,PLT,"Russia, Krasnoyarskiy kray, V. Pervunin s.n., 07. 2000, H",RUS,-,-,-,-,-,-,0,MH757062,-,IV,-,,,,Present
+P1172,P. aphthosa 5,PLT,"U.S., Minnesota, C. Wetmore 92428, MIN",ENA,-,-,-,-,-,-,0,MH757063,-,IV,-,,,,Absent
+P4048,P. aphthosa 5,PLT,"Canada, Ontario, R. Troy McMullin 8928, DUKE",ENA,-,-,-,-,-,-,0,MH757064,MH753215,IV,C. solorinae,,,Absent,
+P725,P. aphthosa 5,PLT,"Canada, Québec W6C1, J. Miadlikowska et al. s.n., DUKE",ENA,-,-,-,-,-,-,0,MH757065,-,IV,-,,,,Absent
+P4049,P. aphthosa 5,PLT,"Canada, Ontario, R. Troy McMullin 8920, DUKE",ENA,-,-,-,-,-,-,0,MH757067,MH753222,IV,C. solorinae,,,Absent,
+P1189,P. aphthosa 5,PLT,"Sweden, I. Karlsson s.n., 10.23.2011, UPS L-552785",NE,-,-,-,-,-,-,0,MH757068,MH753220,IV,C. solorinae,,,Absent,
+P709,P. aphthosa 5,PLT,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",ALA,-,-,-,-,-,-,0,MH757069,MH753189,IV,C. solorinae,,,Absent,
+P726,P. aphthosa 5,PLT,"Canada, Québec W50C3, J. Miadlikowska et al. s.n., DUKE",ENA,-,-,-,-,-,-,0,MH757077,MH753162,IV,C. subellipsoidea,,,Absent,
+P708,P. aphthosa 5,PLT,"U.S., Alaska, J. Miadlikowska and F. Lutzoni s.n., 08.09.2011, DUKE",ALA,-,-,-,-,-,-,0,MH757081,MH753188,IV,C. solorinae,,,Absent,
 P1114,P. aphthosa 5,PLT,"Canada, Alberta, J. Hollinger 3870, UBC",ALB,-,-,-,-,-,-,0,MH757047,MH753219,VI,C. solorinae,,,Absent,
-P1324,P. britannica 1,PLT,"Canada, British Columbia, J. Lendemer 22342, NYBG 01221288",PNW,-,-,-,-,-,-,0,MH757060*,MH753160,IV,C. subellipsoidea,,,Present,
-P1066,P. britannica 2,PLT,"U.S., Wyoming, C. Wetmore 96597, MIN",MWNA,-,-,-,-,-,-,0,MH757053*,MH753185,VI,C. subellipsoidea,,,Present,
-P237,P. chionophila,PLT,"Canada, British ColombiaC, T. Goward 06-1255, UBC",PNW,MH734719,MH756803,-,MH756874,MH756999,-,0,MH757058*,MH733943,IV,C. subellipsoidea,,,Absent,
-P4039,P. chionophila,PLT,"Canada, British Columbia, Björk 19447, UBC",PNW,-,-,-,-,-,-,0,MH757059*,MH753161,IV,C. subellipsoidea,,,N/A,
-P252,P. chionophila,PLT,"Canada, British Columbia, T. Goward 06-1375, UBC",PNW,-,-,-,-,-,-,0,MH757061*,-,IV,-,,,,Absent
-P1142,P. chionophila,PLT,"Canada, BC, T. Goward 02-414, UBC",PNW,-,-,-,-,-,-,0,MH757074*,MH753157,IV,C. subellipsoidea,,,Present,
-P1140,P. chionophila,PLT,"Canada, BC, T. Goward 02-398, UBC",PNW,-,-,-,-,-,-,0,MH757075*,MH753174,IV,C. subellipsoidea,,,Absent,
-P4041,P. chionophila,PLT,"Canada, BC, T. Goward 95-15, UBC",PNW,-,-,-,-,-,-,0,MH757078*,-,IV,-,,,,Absent
-P1174,P. frippii,PLT,"Norway, Finmark, O. Vitikainen 8323, H",NE,-,-,-,-,-,-,0,MH757079*,-,IV,-,,,,Absent
-P4036,P. frippii,PLT,"Canada, Nunavut, C. Björk 27565, UBC",ARC,MH734720,MH756807,-,MH756875,-,-,0,MH757080*,-,IV,-,,,,N/A
-P4037,P. frippii,PLT,"Canada, Nunavut, C. Björk 27420, UBC",ARC,-,-,-,-,-,-,0,MH757082*,-,IV,-,,,,N/A
-P1180,P. malacea 1,PLT,"Russia, Sakha Republic, T. Ahti 61978, H",RUS,-,-,-,-,-,-,0,MH757083*,-,III,-,,,,Absent
-P1129,P. malacea 5,PLT,"Canada, Alberta, J. Hollinger 3830, UBC",ALB,-,-,-,-,-,-,0,MH757076*,MH753214,IV,-,,,,Absent
+P1324,P. britannica 1,PLT,"Canada, British Columbia, J. Lendemer 22342, NYBG 01221288",PNW,-,-,-,-,-,-,0,MH757060,MH753160,IV,C. subellipsoidea,,,Present,
+P1066,P. britannica 2,PLT,"U.S., Wyoming, C. Wetmore 96597, MIN",MWNA,-,-,-,-,-,-,0,MH757053,MH753185,VI,C. subellipsoidea,,,Present,
+P237,P. chionophila,PLT,"Canada, British ColombiaC, T. Goward 06-1255, UBC",PNW,MH734719,MH756803,-,MH756874,MH756999,-,0,MH757058,MH733943,IV,C. subellipsoidea,,,Absent,
+P4039,P. chionophila,PLT,"Canada, British Columbia, Björk 19447, UBC",PNW,-,-,-,-,-,-,0,MH757059,MH753161,IV,C. subellipsoidea,,,N/A,
+P252,P. chionophila,PLT,"Canada, British Columbia, T. Goward 06-1375, UBC",PNW,-,-,-,-,-,-,0,MH757061,-,IV,-,,,,Absent
+P1142,P. chionophila,PLT,"Canada, BC, T. Goward 02-414, UBC",PNW,-,-,-,-,-,-,0,MH757074,MH753157,IV,C. subellipsoidea,,,Present,
+P1140,P. chionophila,PLT,"Canada, BC, T. Goward 02-398, UBC",PNW,-,-,-,-,-,-,0,MH757075,MH753174,IV,C. subellipsoidea,,,Absent,
+P4041,P. chionophila,PLT,"Canada, BC, T. Goward 95-15, UBC",PNW,-,-,-,-,-,-,0,MH757078,-,IV,-,,,,Absent
+P1174,P. frippii,PLT,"Norway, Finmark, O. Vitikainen 8323, H",NE,-,-,-,-,-,-,0,MH757079,-,IV,-,,,,Absent
+P4036,P. frippii,PLT,"Canada, Nunavut, C. Björk 27565, UBC",ARC,MH734720,MH756807,-,MH756875,-,-,0,MH757080,-,IV,-,,,,N/A
+P4037,P. frippii,PLT,"Canada, Nunavut, C. Björk 27420, UBC",ARC,-,-,-,-,-,-,0,MH757082,-,IV,-,,,,N/A
+P1180,P. malacea 1,PLT,"Russia, Sakha Republic, T. Ahti 61978, H",RUS,-,-,-,-,-,-,0,MH757083,-,III,-,,,,Absent
+P1129,P. malacea 5,PLT,"Canada, Alberta, J. Hollinger 3830, UBC",ALB,-,-,-,-,-,-,0,MH757076,MH753214,IV,-,,,,Absent
 P6094,P. venosa,PHL,"U.S., Utah, C.Truong 4008, DUKE",MWNA,MH734718,-,-,-,-,-,0,MH757003,MH753204,XLIV,C. solorinae,,,N/A,

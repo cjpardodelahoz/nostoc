@@ -1,0 +1,304 @@
+taxon,clade,dna_id,voucher_published source,its,b-tubulin,COR1B,COR3,COR16,rbclx,rbclx_phylogroup_haplotype,name_on_the_tree
+"P. fimbriata Vitik., Sérus., Goffinet & Mi_dl.",6,FIM1,"Papua New Guinea, Sérusiaux & al. 2009",FJ527272,---,---,---,---,---,N/A,6P_fimbriata_PapuaNewGuinea_FJ527272 
+"P. fimbriata Vitik., Sérus., Goffinet & Mi_dl.",6,FIM2,"Papua New Guinea, Sérusiaux & al. 2009",FJ527273,---,---,---,---,---,N/A,6P_fimbriata_PapuaNewGuinea_FJ527273 
+"P. fimbriata Vitik., Sérus., Goffinet & Mi_dl.",6,FIM3,"Papua New Guinea, Sérusiaux & al. 2009",FJ527274 ,---,---,---,---,---,N/A,6P_fimbriata_PapuaNewGuinea_FJ527274 
+P. isidiophora L. F. Han & S. Y. Guo,3,20421S1,"China: Hebei, Han & al. 2015",KJ095106,---,---,---,---,---,N/A,3P_isidiophora20421S1
+P. isidiophora L. F. Han & S. Y. Guo,3,20421S2,"China: Hebei, Han & al. 2015",KJ095107,---,---,---,---,---,N/A,3P_isidiophora20421S2
+P. isidiophora L. F. Han & S. Y. Guo,3,20423,"China: Hebei, Han & al. 2015",KJ095108,---,---,---,---,---,N/A,3P_isidiophora20423
+P. ulcerata Gyeln.,4,P1852,"Philippines, Kalb & Schrogl s.n., DUKE",MH758266,---,---,---,---,---,N/A,4P_ulcerata_Philippines_P1852 
+P. canina (L.) Willd. 2,9,HOB11,"Canada: BC, O'Brien & al. 2013",FJ708876,FJ709303,---,---,---,---,N/A,9P_canina_CanadaBC_HOB0207087052 
+P. cinnamomea Goward,7,HOB23,"Canada: BC, O'Brien & al. 2013",FJ708911,FJ709305,---,---,---,---,N/A,7P_cinnamomea_CanadaBC_HOB040605123 
+P. membranacea (Ach.) Nyl. 1,8,HOB5,"Canada: BC, O'Brien & al. 2013",KC437646,FJ709435,---,---,---,---,N/A,8P_membranacea_CanadaBC_HOB04060512 
+P. neocanina 1,7,HOB24,"Canada: BC, O'Brien & al. 2013",FJ708922,FJ709443,---,---,---,---,N/A,7P_neocanina_CanadaBC_HOB020708051 
+P. neocanina 1,7,HOB25,"Canada: BC, O'Brien & al. 2013",FJ708916,FJ709444,---,---,---,---,N/A,7P_neocanina_CanadaBC_HOB0207086652 
+P. ponojensis Gyeln./monticola Vitik. 3,5,HOB28,"Canada: BC, O'Brien & al. 2013",FJ709039,FJ709448,---,---,---,---,N/A,5P_ponojensis_CanadaBC_HOB0207086213 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,HOB20,"Canada: BC, O'Brien & al. 2013",FJ708906,FJ709452,---,---,---,---,N/A,9P_praetextata_CanadaBC_HOB030611058 
+P. evansiana Gyeln.,9,P1818,"USA: PA, Lendemer 17753, NY 01103610",MH758492,KM005809,---,---,---,---,N/A,9P_evansiana_USA_P1818 
+P. aubertii C. W. Dodge,2,P1815,"Chile: Region XII, Stenroos 2459, H",MH758229,MH770812,---,---,---,---,N/A,2P_aubertii_Chile_P1815 
+P. antarctica C. W. Dodge,5,P1805,"South Orkney Islands, Lindsay 935, H",MH758275,MH770826,---,---,---,---,N/A,5P_antarctica_OrkneyIslands_P1805 
+P. friesiorum Gyeln.,6,P2006,"Brazil, Lutzoni & al. s.n, CGMS 34570",MH758331,MH770873,---,---,---,MH770630,XXXIXe,6P_friesiorum_Brazil_P2006 
+P. neocanina 1,7,P0070,"USA: NM, Hollinger 2460, UBC",MH758395,MH770900,---,---,---,KX923107,V,7P_neocanina_USA_P0070 
+P. tereziana Gyeln.,8,P2155,"New Zealand, Tibell 9563, UPS L-536309",MH758437,MH770943,---,---,---,---,N/A,8P_tereziana_NewZealand_P2155 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 1,9,P0027,"Costa Rica, Miadlikowska & Lutzoni 23.03.03-10, DUKE 0357975",MH758454,MH770954,---,---,---,MH770742,XXXIX,9P_fibrilloides_CostaRica_P0027 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 4,9,P0032,"Costa Rica, Miadlikowska & Lutzoni 23.03.03-15, DUKE 0401855",MH758455,MH770963,---,---,---,MH770742,XL,9P_fibrilloides_CostaRica_P0032 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 4,9,P0038,"Costa Rica, Miadlikowska & Lutzoni 23.03.03-21, DUKE 0401857",MH758456,MH770964,---,---,---,MH770743,XXXIX,9P_fibrilloides_CostaRica_P0038 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 4,9,P0054,"Costa Rica, Miadlikowska & Lutzoni 22.03.03-37, DUKE 0401853",MH758457,MH770965,---,---,---,MH770744,XL,9P_fibrilloides_CostaRica_P0054 
+P. didactyla (With.) J. R. Laundon 3,4,P2110,"Canada: BC, Goward s.n., DUKE 0017197",MH758242,---,MH770034,---,---,MH770541,XXX,4P_didactyla_CanadaBC_P2110 
+"P. montis-wilhelmii Sérus., Goffinet, Mi_dl. & Vitik. 2",7,P2157,"Papua New Guinea, Sérusiaux 13984, LG",MH758383,---,MH770135,---,---,MH770691,XXXI,7P_montiswilhelmii_PapuaNewGuinea_P2157 
+P. canina (L.) Willd. 1,9,P2159,"Papua New Guinea, Sérusiaux s.n., LG",MH758472,MH770981,MH770210,---,---,---,N/A,9P_koponenii_PapuaNewGuinea_P2159 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2091,"Canada: ON, Harris 56462, DUKE 0159321",MH758510,MH770999,MH770236,---,---,---,N/A,9P_praetextata_Canada_P2091 
+P. aubertii C. W. Dodge,2,P2066,"Chile: Region X, Wheeler & Nelson 5870, CONC",MH758234,---,MH770015,MH770261,---,MH770516,unique,2P_aubertii_Chile_P2066 
+P. kristinssonii Vitik.,2,HOB1,"Canada: BC, O'Brien & al. 2013",FJ708952,FJ709345,MH770018,MH770265,---,---,N/A,2P_kristinssonii_CanadaBC_HOB0207086215 
+P. patagonica Räsänen,2,P2049,"Argentina, Tibell 17450, UPS 40293",MH758226,---,---,MH770271,---,MH770526,XXVIII,2P_patagonica_Argentina_P2049 
+P. sp. 14,2,P1534,"Chile: Region XII, Buck 47968, NY",MH758217,MH770817,---,MH770272,---,MH770527,XXIII,2P_hydrophila_Chile_P1534 
+"P. castanea Goward, Goffinet & Mi_dl.",4,P2102,"Russia: Krasnoyarsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0357981",MH758239,---,MH770029,MH770279,---,MH770534,XXXIIIa,4P_castanea_Russia_P2102 
+P. didactyla (With.) J. R. Laundon 2,4,NP2,"China: Sichuan, Wang LiSong 10-31861, KUN",MH758243,---,MH770033,MH770283,---,MH770538,XXXIIb,4P_didactyla_China_NP2 
+P. sorediifera (Nyl.) Vitik.,4,P2173,"Australia: ACT, Streimann & Curnow 34999, H (CBG 9507177)",MH758256,---,MH770042,MH770291,---,MH770551,V,4P_lambionii_Australia_P2173 
+P. antarctica C. W. Dodge,5,P2034,"Argentina, Stenroos 1954, H",MH758270,---,MH770053,MH770302,---,MH770564,XXX,5P_antarctica_Argentina_P2034 
+"P. papuana Sérus., Goffinet, Mi_dl. & Vitik.",6,P2178,"Papua New Guinea, E. Sérusiaux 13655, LG",MH758366,MH770885,---,MH770367,---,MH770653,XXXI,6P_papuana_PapuaNewGuinea_P2178 
+P. rufescentiformis (Gyeln.) C. W. Dodge,6,P2142,"Kenya, Moberg 3983, UPS L-536565",MH758372,---,MH770112,MH770373,---,MH770660,XXXIX,6P_rufescentiformis_Kenya_P2142 
+P. rufescentiformis (Gyeln.) C. W. Dodge,6,P2143,"Kenya, Moberg 4324, UPS L-536552",MH758373,MH770891,MH770113,MH770374,---,MH770661,XXXVII,6P_rufescentiformis_Kenya_P2143 
+P. soredians Vitik.,6,P2151,"Ecuador, Kalb 39787, DUKE",MH758348,MH770892,MH770114,MH770375,---,MH770664,XL,6P_laciniata_Ecuador_P2151 
+P. neocanina 1,7,HOB26,"Canada:BC, O'Brien & al. 2013",FJ708917,FJ709438,---,MH770382,---,---,N/A,7P_neocanina_CanadaBC_HOB0207086691 
+P. erioderma Vain. 2,7,P2163,"Papua New Guinea, Sérusiaux 14107, LG",MH758381,---,MH770133,MH770398,---,MH770689,XXXI,7P_erioderma_PapuaNewGuinea_P2163 
+"P. montis-wilhelmii Sérus., Goffinet, Mi_dl. & Vitik. 1",7,P2156,"Papua New Guinea, Sérusiaux s.n., LG",MH758382,MH770912,MH770134,MH770399,---,MH770690,V,7P_montiswilhelmii_PapuaNewGuinea_P2156 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 1,9,P0408,"Colombia, Dumont & al. 4066, H",MH758440,MH770955,MH770185,MH770444,---,MH770743,V,9P_austroamericana_Colombia_P0408 
+P. canina (L.) Willd. 2,9,P2126,"USA: NC, Goffinet 4755, DUKE",---,MH770987,MH770217,MH770474,---,MH770778,XXXIV,9P_canina_USA_P2126
+P. sp. 22,9,P2074,"Peru, Miadlikowska s.n., DUKE 0357976",MH758499,---,MH770253,MH770504,---,MH770810,XXXIX,9P_sp22_Peru_P2074 
+P. malacea (Ach.) Funck,OG,P216,"USA: AK, E. Berg 3072, UBC",---,MH771011,MH770255,MH770506,---,---,N/A,P216_malacea
+P. polydactylon (Neck.) Hoffm.,OG,P385,Norway; Magain s.n.; LG,---,KM005820,KX365489,KX373621,KX373632,---,N/A,P385_polydactylon
+P. hymenina (Ach.) Delise,OG,P430,"Canada: NL, Lendemer 10397, H",---,KX880099,MF947046,MF946937,MF946831,---,N/A,P430_hymenina
+P. scabrosa Th. Fr.,OG,P107,"Canada: QC, Lutzoni & al. s.n., DUKE 0401873",---,KM005791,---,MF947024,MF946916,---,N/A,P107_scabrosa
+P. retifoveata Vitik.,1,P0074,"Russia: Sakha Republic, Ahti 61821, H",MH758213,---,MH770010,MH770257,MH769757,MH770508,XXXIIIa,1P_retifoveata_Russia_P0074 
+P. retifoveata Vitik.,1,P2100,"USA: AK, Miadlikowska & Lutzoni s.n., DUKE 0357984",MH758215,---,MH770011,MH770258,MH769758,MH770510,XXXIIIa,1P_retifoveata_Alaska_P2100 
+P. sp. 13,1,P2225,"China: Yunnan, Goffinet 9974, CONN",MH758216,---,MH770012,---,MH769759,MH770511,VIIIa,1P_sp_China_P2225 
+P. aubertii C. W. Dodge,2,P2037,"Chile: Region XII, Goffinet 10559, CONN",MH758230,MH770813,MH770013,MH770259,MH769760,MH770512,XXII,2P_aubertii_Chile_P2037 
+P. aubertii C. W. Dodge,2,P2056,"Chile: Region X, Wheeler & Nelson 3191, CONC",MH758233,MH770814,MH770014,MH770260,MH769761,MH770515,XXIII,2P_aubertii_Chile_P2056 
+P. frigida R. Sant.,2,P0422,"Chile: Region XII, Stenroos 2192, H",MH758222,MH770815,---,MH770262,MH769762,MH770518,VI,2P_frigida_Chile_P0422 
+P. frigida R. Sant.,2,P0427,"Argentina, Stenroos 2158, H",MH758220,MH770816,MH770016,MH770263,MH769763,MH770519,VI,2P_frigida_Argentina_P0427 
+P. frigida R. Sant.,2,P2041,"Chile: Region XII, Shaw 18024, DUKE",MH758223,---,MH770017,MH770264,MH769764,MH770521,VI,2P_frigida_Chile_P2041 
+P. kristinssonii Vitik.,2,HOB2,"Canada: BC, O'Brien & al. 2013",FJ708944,FJ709341,MH770019,MH770266,MH769765,---,N/A,2P_kristinssonii_CanadaBC_HOB0207087059 
+P. kristinssonii Vitik.,2,P1112,"Canada: BC, Goward 11-16, UBC",MH758224,---,MH770020,MH770267,MH769766,MH770522,VI,2P_kristinssonii_NorthAmerica_P1112 
+P. kristinssonii Vitik.,2,P1292,"Canada: QC, J. Gagnon s.n., QFA-0594989",MH758225,KM005796,MH770021,MH770268,MH769767,MH770523,VI,2P_kristinssonii_Norway_P1292 
+P. patagonica Räsänen,2,P0076,"Chile: Region XI, Rubio 4077, H",MH758227,---,MH770022,MH770269,MH769768,KX923108,XXVIII,2P_patagonica_Chile_P0076 
+P. patagonica Räsänen,2,P2013,"Chile: Region XII, Stenroos 2427, H",MH758228,---,MH770023,MH770270,MH769769,MH770524,XXVIII,2P_patagonica_Chile_P2013 
+P. sp. 14,2,P2039,"Chile: Region XII, Shaw 17848, DUKE 0401861",MH758218,MH770818,MH770024,MH770273,MH769770,MH770528,XXIII,2P_hydrophila_Chile_P2039 
+P. sp. 14,2,P2062,"Chile: Region X, Wheeler & Nelson 5191, CONC",MH758219,MH770819,---,MH770274,MH769771,MH770529,XXIII,2P_hydrophila_Chile_P2062 
+P. sp. 16,2,P2186,"USA: OR, McCune 31966, OSC",MH758235,---,MH770025,MH770275,MH769772,MH770530,XXX,2P_sp16_USA_P2186 
+P. continentalis Vitik.,3,NP29,"China: Ningxia, Niu Dongling 12-0087, Ningxia Univ.",MH758236,MH770820,MH770026,MH770276,MH769773,MH770531,XXXIIc,3P_continentalis_China_NP29 
+P. continentalis Vitik.,3,P1810,"Russia: Krasnoyarsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0357965",MH758237,KM005807,MH770027,MH770277,MH769774,MH770532,XXXIX,3P_continentalis_Russia_P1810 
+P. continentalis Vitik.,3,P2099,"Russia: Krasnoyarsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0357969",MH758238,MH770821,MH770028,MH770278,MH769775,MH770533,XXXIX,3P_continentalis_Russia_P2099 
+P. didactyla (With.) J. R. Laundon 3,4,P2109,"USA: PA, Lendemer 13269, DUKE 0154812",MH758245,---,---,---,MH769776,MH770540,XXXV,4P_didactyla_USA_P2109 
+P. didactyla (With.) J. R. Laundon 1,4,P2140=P1812,"Belgium, Magain s.n., DUKE 0357985",MH758240,---,MH770030,MH770280,MH769777,MH770535,unique,4P_didactyla_Belgium_P2140 
+P. didactyla (With.) J. R. Laundon 1,4,P2144,"Norway, Magain s.n., LG",MH758244,---,MH770031,MH770281,MH769778,---,N/A,4P_didactyla_Norway_P2144 
+P. didactyla (With.) J. R. Laundon 1,4,P2200,"USA: UT; Truong 3991, DUKE 0401851",MH758246,---,MH770032,MH770282,MH769779,MH770537,XXX,4P_didactyla_USA_P2200 
+P. extenuata (Nyl. ex Vain.) Lojka 1,4,P2064,"Chile: Region XI, Wheeler & Nelson 6297, CONC",MH758247,---,MH770035,MH770284,MH769780,MH770544,XXXIIIb,4P_extenuata_Chile_P2064 
+P. extenuata (Nyl. ex Vain.) Lojka 1,4,P2103,"Russia: Krasnoyarsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0357970",MH758252,---,MH770036,MH770285,MH769781,MH770545,XXXIIIb,4P_extenuata_Russia_P2103 
+P. extenuata (Nyl. ex Vain.) Lojka 1,4,P2104,"USA: MI, Miadlikowska & Lutzoni s.n., DUKE 0357972",MH758253,---,MH770037,MH770286,MH769782,MH770546,XXXIIIb,4P_extenuata_USA_P2104 
+P. extenuata (Nyl. ex Vain.) Lojka 1,4,P2111,"USA: NY, Harris 53633, DUKE 0138925",MH758254,---,MH770038,MH770287,MH769783,MH770547,XXXIIIb,4P_extenuata_USA_P2111 
+P. extenuata (Nyl. ex Vain.) Lojka 2,4,P0943,"Colombia, Lücking 33627, UDBC",MH758248,---,MH770039,MH770288,MH769784,MH770548,XXI,4P_extenuata_Colombia_P0943 
+P. extenuata (Nyl. ex Vain.) Lojka 2,4,P2057,"Ecuador: Galapagos, Spielmann 10611, CDS-51978",MH758249,---,MH770040,MH770289,MH769785,MH770549,XXI,4P_extenuata_Ecuador_P2057 
+P. sorediifera (Nyl.) Vitik.,4,P2146,"Australia, NSW, Streimann 50996, H",MH758255,---,MH770041,MH770290,MH769786,MH770550,V,4P_lambionii_Australia_P2146 
+P. ulcerata Müll. Arg. 1,4,P0048,"Costa Rica, Miadlikowska & Lutzoni 23.03.03-31, DUKE 0357987",MH758264,---,MH770043,MH770292,MH769787,MH770554,XXXIXc,4P_ulcerata_CostaRica_P0048 
+P. ulcerata Müll. Arg. 1,4,P2063,"Chile: Region X, Wheeler & Nelson 5444, CONC",MH758259,---,MH770044,MH770293,MH769788,MH770555,V,4P_ulcerata_Chile_P2063 
+P. ulcerata Müll. Arg. 1,4,P2105,"Peru, Lutzoni s.n., DUKE 0357986",MH758265,---,MH770045,MH770294,MH769789,MH770556,unique,4P_ulcerata_Peru_P2105 
+P. ulcerata Müll. Arg. 1,4,P2148,"Colombia, Lücking DNA1190, UDBC",MH758260,---,MH770046,MH770295,MH769790,MH770557,XXXIXc,4P_ulcerata_Colombia_P2148 
+P. ulcerata Müll. Arg. 2 ,4,P2154=P1838,"Brazil: Rio, Marcelli & al. 25096, H",MH758258,---,MH770047,MH770296,MH769791,MH770558,N/A,4P_ulcerata_Brazil_P2154 
+P. ulcerata Müll. Arg. 2 ,4,P2216,"Australia: NSW, Elix 35980, H (CBG 9616513)",MH758257,---,MH770048,MH770297,MH769792,MH770559,V,4P_ulcerata_Australia_P2216 
+P. vainioi Gyeln.,4,P2115,"Colombia, Miadlikowska s.n., ANDES",MH758268,---,MH770049,MH770298,MH769793,MH770561,XXVIa,4P_vainioi_Colombia_P2115 
+P. vainioi Gyeln.,4,P2196,"Ecuador, Truong 3983, DUKE 0401860",MH758269,---,MH770050,MH770299,MH769794,MH770562,XXVIa,4P_vainioi_Ecuador_P2196 
+P. antarctica C. W. Dodge,5,P0077,"Chile: Region XII, Goffinet 6837, CONN ",MH758271,MH770824,MH770051,MH770300,MH769795,KX923110,VI,5P_antarctica_Chile_P0077 
+P. antarctica C. W. Dodge,5,P0442,"Chile: Region XI, Rubio 4073, H",MH758272,MH770825,MH770052,MH770301,MH769796,MH770563,VI,5P_antarctica_Chile_P0442 
+P. antarctica C. W. Dodge,5,P2044,"Chile: Region XII, Goffinet 10521-2, CONN",MH758273,MH770827,MH770054,MH770303,MH769797,MH770565,XXV,5P_antarctica_Chile_P2044 
+P. antarctica C. W. Dodge,5,P2065,"Chile: Region X, Wheeler & Nelson 5893, CONC",MH758274,MH770828,MH770055,MH770304,MH769798,MH770566,unique,5P_antarctica_Chile_P2065 
+P. ponojensis Gyeln./monticola Vitik. 10a,5,P2000,"USA: CA, Arnold 73, YOSE 221393",MH758311,MH770829,---,MH770305,MH769799,MH770567,unique,5P_monticola_USA_P2000 
+P. ponojensis Gyeln./monticola Vitik. 10a,5,P2168,"USA: CA, McCune 28024, OSC ",MH758313,MH770830,MH770056,MH770306,MH769800,MH770568,unique,5P_monticola_USA_P2168 
+P. ponojensis Gyeln./monticola Vitik. 10a,5,P2187,"USA: CA, McCune 29670, OSC ",MH758314,MH770831,MH770057,MH770307,MH769801,MH770569,VI,5P_monticola_USA_P2187 
+P. ponojensis Gyeln./monticola Vitik. 10b,5,P2114,"USA: UT, Truong & N. Magain s.n., DUKE 0357983",MH758312,MH770832,MH770058,MH770308,MH769802,MH770570,XXX,5P_monticola_USA_P2114 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P0084,"USA: PA, Lendemer 13556, H",MH758276,MH770833,MH770059,MH770309,MH769803,KX923111,XXXV,5P_ponojensis_USA_P0084 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P1106,"Canada: BC, Goward 7-187, UBC",MH758277,---,MH770060,---,MH769804,MH770571,XXX,5P_ponojensis_NorthAmerica_P1106 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P1108,"Canada: BC, T. Goward 07-234a, UBC",MH758283,---,MH770061,---,MH769805,MH770572,XXVII,5P_ponojensis_NorthAmerica_P1108 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P1486,"USA: ME, Harris 55417, NY 01103744",MH758278,---,---,---,MH769806,MH770573,XXX,5P_ponojensis_USA_P1486 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P2003,"Canada: MB, Ahti 62717, H",MH758279,MH770834,---,MH770310,MH769807,MH770574,XXI,5P_ponojensis_Canada_P2003 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P2028,"USA: MO, Harris 48184, NY 01180306",MH758280,MH770835,MH770062,MH770311,MH769808,MH770575,XXXV,5P_ponojensis_USA_P2028 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P2180,"USA: OR, McCune 29956, OSC",MH758281,MH770836,MH770063,MH770312,MH769809,MH770576,XXVII,5P_ponojensis_USA_P2180 
+P. ponojensis Gyeln./monticola Vitik. 1a,5,P2181,"Canada: AB, Miadlikowska & Lutzoni s.n., DUKE 0401809",MH758282,MH770837,MH770064,MH770313,MH769810,MH770577,XXXIIIa,5P_ponojensis_Canada_P2181 
+P. ponojensis Gyeln./monticola Vitik. 1b,5,P2204,"USA: UT, Truong 4045, DUKE 0401866",MH758284,MH770838,MH770065,MH770314,MH769811,MH770578,XXX,5P_ponojensis_USA_P2204 
+P. ponojensis Gyeln./monticola Vitik. 2,5,P2004,"Germany, Türk 34539, H",MH758285,MH770839,---,MH770315,MH769812,MH770579,XXX,5P_ponojensis_Germany_P2004 
+P. ponojensis Gyeln./monticola Vitik. 2,5,P2132,"France, Magain s.n., LG",MH758286,MH770840,MH770066,MH770316,MH769813,---,N/A,5P_ponojensis_France_P2132 
+P. ponojensis Gyeln./monticola Vitik. 2,5,P2175,"Switzerland, Vust 1687, G.",MH758287,MH770841,MH770067,MH770317,MH769814,MH770580,XXX,5P_ponojensis_Switzerland_P2175 
+P. ponojensis Gyeln./monticola Vitik. 4,5,P0444,"USA: KS, Buck 46381, NY 881403",MH758288,MH770842,---,MH770318,MH769815,MH770581,XXXIV,5P_ponojensis_USA_P0444 
+P. ponojensis Gyeln./monticola Vitik. 4,5,P2027,"USA: MO, Harris 45692, NY",MH758289,MH770843,MH770068,MH770319,MH769816,MH770582,XXXIV,5P_ponojensis_USA_P2027 
+P. ponojensis Gyeln./monticola Vitik. 4,5,P2029,"USA: AR, Buck 46600, NY 0050439",MH758290,MH770844,MH770069,MH770320,MH769817,MH770583,XXXIV,5P_ponojensis_USA_P2029 
+P. ponojensis Gyeln./monticola Vitik. 4,5,P2085,"USA: AR, Majestyk 8060, DUKE 0401845",MH758291,MH770845,MH770070,MH770321,MH769818,MH770584,XXI,5P_ponojensis_USA_P2085 
+P. ponojensis Gyeln./monticola Vitik. 5a,5,P0192,"India: Uttarakhand, Divakar s.n., MAF",MH758293,MH770846,MH770071,MH770322,MH769819,MH770585,XXXII,5P_ponojensis_India_P0192 
+P. ponojensis Gyeln./monticola Vitik. 5a,5,P1287,"China: Yunnan, Rosentreter 15, DUKE 0401846",MH758292,MH770847,MH770072,MH770323,MH769820,MH770586,XXXVII,5P_ponojensis_China_P1287 
+P. ponojensis Gyeln./monticola Vitik. 5b,5,HOB29,"Canada: BC, O'Brien & al. 2013",FJ709040,FJ709449,---,MH770324,MH769821,---,N/A,5P_ponojensis_CanadaBC_HOB0207087014 
+P. ponojensis Gyeln./monticola Vitik. 6,5,P0834,"Norway, Magain s.n., LG",MH758294,---,---,MH770325,MH769822,---,N/A,5P_monticola_Norway_P0834 
+P. ponojensis Gyeln./monticola Vitik. 6,5,P2167,"China: Yunnan, Miadlikowska s.n., DUKE 0401815",MH758295,MH770848,---,MH770326,MH769823,MH770589,XXXIIc,5P_monticola_China_P2167 
+P. ponojensis Gyeln./monticola Vitik. 7,5,P0075,"Norway, Ahti 65831, H",MH758296,KM005825,MH770073,MH770327,MH769824,KX923104,XLII,5P_monticola_Norway_P0075 
+P. ponojensis Gyeln./monticola Vitik. 7,5,P2220,"USA: CA, McCune 30357, OSC ",MH758297,MH770849,MH770074,MH770328,MH769825,MH770590,unique,5P_monticola_USA_P2220 
+P. ponojensis Gyeln./monticola Vitik. 8,5,P2087,"USA: UT, Buck 55054, NY01136425",MH758298,MH770850,MH770075,MH770329,MH769826,MH770591,XXXVIIIb,5P_ponojensis_USA_P2087 
+P. ponojensis Gyeln./monticola Vitik. 8,5,P2185,"Canada: BC, Goward 5302, UBC",MH758299,MH770851,MH770076,MH770330,MH769827,MH770592,XXX,5P_ponojensis_CanadaBC_P2185 
+P. ponojensis Gyeln./monticola Vitik. 8,5,P2206,"USA: UT, Truong 4048, DUKE 040189",MH758300,---,MH770077,MH770331,MH769828,MH770593,XXX,5P_ponojensis_USA_P2206 
+P. ponojensis Gyeln./monticola Vitik. 8,5,P2208,"USA: UT, Truong 4001, DUKE 0401848",MH758302,MH770852,MH770078,MH770332,MH769829,MH770595,XXX,5P_ponojensis_USA_P2208 
+P. ponojensis Gyeln./monticola Vitik. 8,5,P2214,"Canada: BC, Goward 5300, UBC",MH758305,MH770853,MH770079,MH770333,MH769830,MH770597,VI,5P_ponojensis_CanadaBC_P2214 
+P. ponojensis Gyeln./monticola Vitik. 8,5,P2215,"USA: OR, Hardman s.n., DUKE0158521",MH758304,MH770854,MH770080,MH770334,MH769831,MH770598,XXX,5P_ponojensis_USA_P2215 
+P. ponojensis Gyeln./monticola Vitik. 9,5,NP20,"China: Ningxia, Niu Dongling 12-0005, Ningxia Univ.",MH758307,MH770855,MH770081,MH770335,MH769832,MH770599,XXX,5P_monticola_China_NP20 
+P. ponojensis Gyeln./monticola Vitik. 9,5,P0073,"Austria, Türk 37593, H",MH758310,KM005824,MH770082,MH770336,MH769833,KX923103,XXX,5P_monticola_Austria_P0073 
+P. ponojensis Gyeln./monticola Vitik. 9,5,P0419,"Russia: Dagestan, Urbanavichus 0902150, H",MH758308,MH770856,---,MH770337,MH769834,MH770590,XXX,5P_monticola_Russia_P0419 
+P. ponojensis Gyeln./monticola Vitik. 9,5,P2127,"Switzerland, Vust s.n., G.",MH758309,MH770857,MH770083,MH770338,MH769835,MH770591,V,5P_monticola_Switzerland_P2127 
+P. sp. 17,5,P1728,"Peru, Lutzoni 05.22.2012-8, DUKE 0401804",MH758320,MH770858,MH770084,MH770339,MH769836,MH770610,XXVIb,5P_sp17_Peru_P1728 
+P. sp. 17,5,P2164,"Peru, Miadlikowska s.n., DUKE 0357990",MH758321,MH770859,MH770085,MH770340,MH769837,MH770611,XXVIb,5P_sp17_Peru_P2164 
+P. sp. 17,5,P2165,"Peru, Lutzoni s.n., DUKE 0401811",---,MH770860,MH770086,MH770341,MH769838,MH770612,XXVIb,5P_sp17_Peru_P2165
+P. sp. 17,5,P2195,"Ecuador, Truong 3976, DUKE 0401864",MH758315,MH770861,MH770087,MH770342,MH769839,MH770613,XXXIX,5P_sp17_Ecuador_P2195 
+P. neorufescens 1,6,P2061,"Mexico, Barcenas-Peña 1229, MEXU",MH758362,MH770862,MH770088,MH770343,MH769840,MH770614,unique,6P_neorufescens_Mexico_P2061 
+P. neorufescens 1,6,P2072,"Costa Rica, Miadlikowska & al. s.n., DUKE 0401820",MH758360,MH770863,MH770089,MH770344,MH769841,MH770613,XXXVI,6P_neorufescens_CostaRica_P2072 
+P. neorufescens 2,6,P2046,"Bolivia, Kukwa 8958, Ex UGDA-L-17704, DUKE dupl. 0401871",MH758357,MH770864,MH770090,MH770345,MH769842,MH770614,VI,6P_neorufescens_Bolivia_P2046 
+P. neorufescens 2,6,P2053,"Peru, Bennett s.n., WIS",MH758363,MH770865,MH770091,MH770346,MH769843,MH770615,VI,6P_neorufescens_Peru_P2053 
+P. neorufescens 3,6,P2184,"Germany, Sipman 53601, B 600127393",MH758361,MH770866,MH770092,MH770347,MH769844,MH770616,unique,6P_neorufescens_Germany_P2184 
+P. neorufescens 4,6,P2229,"Canada: AB, Miadlikowska & Lutzoni s.n., DUKE 0401823",MH758359,MH770867,MH770093,MH770348,MH769845,MH770617,XXX,6P_neorufescens_Canada_P2229 
+P. “neorufescens” 5,6,P2086,"Canada: YT, Lendemer 28945, NY 0159332",MH758358,MH770868,---,MH770349,MH769846,MH770618,XLI,6P_neorufescens_Canada_P2086 
+P. “neorufescens” 6,6,P2205,"USA: UT, Truong 4023, DUKE 0401868",MH758364,MH770869,---,MH770350,MH769847,MH770619,XXXVIIIb,6P_neorufescens_USA_P2205 
+P. friesiorum Gyeln.,6,P1647,"Brazil, Miadlikowska & al. s.n., CGMS 34539",MH758328,MH770870,MH770094,MH770351,MH769848,MH770626,V,6P_friesiorum_Brazil_P1647 
+P. spuriella Vain.,6,P1648,"Peru, A. D. Maldonado 14, NY",MH758329,MH770871,MH770095,MH770352,MH769849,MH770627,unique,6P_friesiorum_Brazil_P1648 
+P. friesiorum Gyeln.,6,P1739,"Peru, Miadlikowska s.n., DUKE 0401814",MH758337,MH770872,MH770096,MH770353,MH769850,MH770628,XXXIXd,6P_friesiorum_Peru_P1739 
+P. friesiorum Gyeln.,6,P2007,"Brazil, Miadlikowska & al. s.n., CGMS 34587",MH758332,MH770874,MH770097,MH770354,MH769851,MH770631,V,6P_friesiorum_Brazil_P2007 
+P. friesiorum Gyeln.,6,P2035,"Brazil, Spielmann & al. 9935, CGMS 35048",MH758335,MH770875,MH770098,MH770355,MH769852,MH770634,V,6P_friesiorum_Brazil_P2035 
+P. friesiorum Gyeln.,6,P2045,"Bolivia, Kukwa 8465, Ex UGDA-L-17699",MH758322,MH770876,MH770099,MH770356,MH769853,MH770635,XXXVI,6P_friesiorum_Bolivia_P2045 
+"P. granulosa Sérus., Goffinet, Mi_dl. & Vitik.",6,P2176,"Papua New Guinea, Sérusiaux 15150, LG",MH758338,MH770877,MH770100,MH770357,MH769854,MH770637,V,6P_granulosa_PapuaNewGuinea_P2176 
+P. laciniata (G. Merr.) Gyeln. 1,6,P0026,"Costa Rica, Miadlikowska & Lutzoni 23-03-03-9, DUKE 0401843",MH758343,KM005815,MH770101,MH770358,MH769855,MH770638,XL,6P_laciniata_CostaRica_P0026 
+P. laciniata (G. Merr.) Gyeln. 1,6,P2058,"Ecuador, Yanez-Anabaca 2556, CDF",MH758347,MH770878,MH770102,MH770359,MH769856,MH770641,XL,6P_laciniata_Ecuador_P2058 
+P. laciniata (G. Merr.) Gyeln. 1,6,P2075,"Colombia, Lücking 33693, UDBC",MH758341,MH770879,MH770103,MH770360,MH769857,MH770642,XL,6P_laciniata_Colombia_P2075 
+P. laciniata (G. Merr.) Gyeln. 1,6,P2198,"Ecuador, Truong 3956, DUKE 0401842",MH758350,MH770880,MH770104,MH770361,MH769858,MH770644,XL,6P_laciniata_Ecuador_P2198 
+P. laciniata (G. Merr.) Gyeln. 2,6,P2051,"Bolivia, Kukwa 9562, Ex UGDA-L-17724, DUKE dupl. 0401839",MH758340,MH770881,MH770105,MH770362,MH769859,MH770646,XL,6P_laciniata_Bolivia_P2051 
+P. lepidophora (Vain.) Bitter 1,6,P1844,"Canada: BC, T. Goward s.n., UBC",MH758354,KM005810,---,MH770363,MH769860,MH770647,XXX,6P_lepidophora_scotland_P1844 
+P. lepidophora (Vain.) Bitter 1,6,P2124,"Iceland, Kristinsson 49244 LA-29491, AMNH",MH758353,MH770882,MH770106,MH770364,MH769861,MH770648,XXX,6P_lepidophora_Iceland_P2124 
+P. lepidophora (Vain.) Bitter 1 ,6,P2112,"USA: NY, Lendemer 12047, NY 0154474",MH758355,MH770883,MH770107,MH770365,MH769862,MH770649,XLI,6P_lepidophora_USA_P2112 
+P. lepidophora (Vain.) Bitter 2,6,P2101,"USA: AK, Miadlikowska & Lutzoni, DUKE 0357968",MH758352,MH770884,MH770108,MH770366,MH769863,MH770650,XXIV,6P_lepidophora_Alaska_P2101 
+P. rufescens (Weiss) Humb. 1,6,P2002,"Denmark, Hansen s.n., H",MH758368,MH770886,---,MH770368,MH769864,MH770655,XXV,6P_rufescens_Denmark_P2002 
+P. rufescens (Weiss) Humb. 1,6,P2043,"Chile: Region XII, Goffinet 7076, CONN",MH758367,MH770887,MH770109,MH770369,MH769865,MH770656,XXV,6P_rufescens_Chile_P2043 
+P. rufescens (Weiss) Humb. 1,6,P2083,"USA: NC, Hollinger 2711, UBC",MH758370,MH770888,MH770110,MH770370,MH769866,MH770657,XXXV,6P_rufescens_USA_P2083 
+P. rufescens (Weiss) Humb. 1,6,P2203,"USA: UT, Truong 4044, DUKE 0401869",---,MH770889,MH770111,MH770371,MH769867,MH770658,XXXIII,6P_rufescens_USA_P2203
+P. rufescens (Weiss) Humb. 2,6,P2071,"Costa Rica, Miadlikowska & Lutzoni 23.03.03-3, DUKE 0401870",MH758371,MH770890,---,MH770372,MH769868,MH770659,XL,6P_rufescens_CostaRica_P2071 
+P. soredians Vitik.,6,P2152,"Ecuador, Kalb 39785, DUKE",MH758349,MH770893,MH770115,MH770376,MH769869,MH770665,XXVIc,6P_laciniata_Ecuador_P2152 
+P. sp. 15,6,P0432,"Ecuador, Frisch 96/Eq101, H",MH758375,MH770894,MH770116,MH770377,MH769870,MH770667,XL,6P_spuriella_Ecuador_P0432 
+P. sp. 15,6,P2153,"Colombia, Lücking 34027, UDBC",MH758374,MH770895,MH770117,MH770378,MH769871,MH770668,XL,6P_spuriella_Colombia_P2153 
+P. wulingensis L. F. Han & S. Y. Guo,6,P1348,"Canada: QC, J. Gagnon s.n., QFA 0595019",MH758377,MH770896,---,MH770379,MH769872,MH770669,XXXIIIb,6P_wulingensis_Quebec_P1348 
+P. wulingensis L. F. Han & S. Y. Guo,6,P2031,"Russia: Krasnoyarsk Territory, Miadlikowska s.n., Duke 0357978",MH758378,MH770897,MH770118,MH770380,MH769873,MH770670,XXXIIIb,6P_wulingensis_Russia_P2031 
+P. wulingensis L. F. Han & S. Y. Guo,6,P2188,"Canada: AB, Miadlikowska & Lutzoni s.n., DUKE 0357979",MH758376,MH770898,MH770119,MH770381,MH769874,MH770671,V,6P_wulingensis_Canada_P2188 
+P. neocanina 1,7,HOB27,"Canada: BC, O'Brien & al. 2013",KC437635,MH770899,MH770120,MH770383,MH769875,KC437877,XXX,7P_neocanina_CanadaBC_HOB04060522 
+P. neocanina 1,7,P2098,"USA: AK, Miadlikowska & Lutzoni s.n., DUKE 0401834",MH758384,MH770901,MH770121,MH770384,MH769876,MH770675,XXXIX,7P_neocanina_Alaska_P2098 
+P. neocanina 1,7,P2192,"USA: AK, Miadlikowska & Lutzoni s.n., DUKE 0401816",---,MH770902,MH770122,MH770385,MH769877,MH770676,XXXIIIa,7P_neocanina_Alaska_P2192
+P. neocanina 1,7,P2212,"Canada: BC, Goward 5306, UBC",MH758385,MH770903,MH770123,MH770386,MH769878,MH770677,XXX,7P_neocanina_CanadaBC_P2212 
+P. neocanina 2,7,P0068,"USA: NM, Hollinger 2401, UBC",MH758394,MH770904,MH770124,MH770387,MH769879,KX923106,XXX,7P_neocanina_USA_P0068 
+P. neocanina 2,7,P2089,"USA: CO, King L286, NY",MH758397,MH770905,---,MH770388,MH769880,MH770678,XXX,7P_neocanina_USA_P2089 
+P. neocanina 2,7,P2202,"USA: UT, Truong 3995, DUKE 0401867",MH758398,MH770906,MH770125,MH770389,MH769881,MH770679,XXX,7P_neocanina_USA_P2202 
+P. neocanina 3,7,P1405,"Russia: Krasnoyarsk Territory, Miadlikowska & al. s.n., DUKE 0401821",MH758390,MH770907,---,MH770390,MH769882,MH770680,V,7P_neocanina_Russia_P1405 
+P. neocanina 3,7,P2224,"China: Yunnan, Goffinet 9979, CONN",MH758386,MH770908,MH770126,MH770391,MH769883,MH770684,XXXIIc,7P_neocanina_China_P2224 
+P. neocanina 4,7,P0006,"Iceland, Miadlikowska & Lutzoni 08.08.10-5, DUKE 0401832",MH758387,MH770909,MH770127,MH770392,MH769884,MH770685,XLII,7P_neocanina_Iceland_P0006 
+P. neocanina 4,7,P2232,"Norway, Goward 02-1480, UBC",MH758389,MH770910,MH770128,MH770393,MH769885,MH770686,V,7P_neocanina_Norway_P2232 
+P. cinnamomea Goward,7,HOB21,"Canada: BC, O'Brien & al. 2013",FJ708912,FJ709306,MH770129,MH770394,MH769886,---,N/A,7P_cinnamomea_CanadaBC_HOB030611004 
+P. cinnamomea Goward,7,HOB22,"Canada: BC, O'Brien & al. 2013",FJ708913,FJ709307,MH770130,MH770395,MH769887,---,N/A,7P_cinnamomea_CanadaBC_HOB040605112 
+P. cinnamomea Goward,7,P2141=P1808,"Canada: BC, Goward s.n., UBC",MH758379,KX880187,MH770131,MH770396,MH769888,MH770687,XLII,7P_cinnamomea_Canada_P2141 
+P. erioderma Vain. 1,7,P2162,"Papua New Guinea, Sérusiaux s.n., LG",MH758380,MH770911,MH770132,MH770397,MH769889,MH770688,XXXI,7P_erioderma_PapuaNewGuinea_P2162 
+P. degenii Gyeln. 1,8,P0523,"Norway, Magain s.n., LG",MH758402,KM005828,MH770136,MH770400,MH769890,MH770692,XLIII,8P_degenii1_Norway_P0523 
+P. degenii Gyeln. 1,8,P0563,"Norway, Magain s.n., LG",MH758403,MH770913,MH770137,MH770401,MH769891,MH770693,XVI,8P_degenii1_Norway_P0563 
+P. degenii Gyeln. 1,8,P0586,"Norway, Magain s.n., LG",MH758404,MH770914,MH770138,MH770402,MH769892,MH770694,XIII,8P_degenii1_Norway_P0586 
+P. degenii Gyeln. 1,8,P2108,"Austria, Hafellner & Miadlikowska, DUKE 0032160",MH758399,MH770915,MH770139,MH770403,MH769893,MH770695,XXX,8P_degenii1_Austria_P2108 
+P. degenii Gyeln. 1,8,P2129,"France, Magain s.n., DUKE 0401808",MH758400,MH770916,MH770140,MH770404,MH769894,---,N/A,8P_degenii1_France_P2129 
+P. degenii Gyeln. 1,8,P2130,"France, Magain s.n., DUKE 0401807",MH758401,MH770917,MH770141,MH770405,MH769895,MH770696,V,8P_degenii1_France_P2130 
+P. degenii Gyeln. 1,8,P2133,"Ukraine, Dymytrova & Naumovich 183, KW 69499",MH758405,MH770918,MH770142,MH770406,MH769896,---,N/A,8P_degenii1_Ukraine_P2133 
+P. degenii Gyeln. 1,8,P2170,"Ukraine, Dymytrova & Savchyn 22, KW",MH758406,MH770919,MH770143,MH770407,MH769897,MH770697,XLIII,8P_degenii1_Ukraine_P2170 
+P. degenii Gyeln. 2a,8,HOB3,"Canada: BC, O'Brien & al. 2013",FJ709030,FJ709315,MH770144,MH770408,MH769898,---,N/A,8P_degenii2_CanadaBC_HOB040605103 
+P. degenii Gyeln. 2a,8,P2107,"Canada: QC, Darnajoux s.n., DUKE 0401806",MH758410,MH770920,MH770145,---,MH769899,MH770698,V,8P_degenii2_Quebec_P2107 
+P. degenii Gyeln. 2a,8,P2139,"Russia: Khabarovsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0401824",MH758413,MH770921,MH770146,MH770409,MH769900,MH770699,XLIII,8P_degenii2_Russia_P2139 
+P. degenii Gyeln. 2a,8,P2147,"Canada: BC, Goward 02-380, ACC L41345",MH758407,MH770922,MH770147,---,MH769901,MH770700,XLIII,8P_degenii2_CanadaBC_P2147 
+P. degenii Gyeln. 2a,8,P2182,"Canada: QC, Roy 11-5914C, QFA 0595636",MH758411,---,MH770148,---,MH769902,MH770701,XLII,8P_degenii2_Quebec_P2182 
+P. degenii Gyeln. 2a,8,P2183,"Canada: QC, Miadlikowska & Lutzoni 07.04.03-1A, DUKE 0401805",MH758412,MH770923,MH770149,---,MH769903,MH770702,XIII,8P_degenii2_Quebec_P2183 
+P. degenii Gyeln. 2a,8,P3086,"Japan: Hokkaido, Thor 13948, UPS 392189",MH758409,MH770924,MH770150,MH770410,MH769904,MH770703,XIII,8P_degenii2_Japan_P3086 
+P. degenii Gyeln. 2b,8,P2228,"Japan: Honshu, Thor 11963, UPS395916",MH758408,---,MH770151,MH770411,MH769905,MH770704,XIII,8P_degenii2_Japan_P2228 
+P. degenii Gyeln. 3a,8,P2136,"Russia: Sakhalin, Tchabanenko, SAKH 3083",MH758419,MH770925,MH770152,MH770412,MH769906,MH770705,XLIII,8P_degenii3_Russia_P2136 
+P. degenii Gyeln. 3a,8,P2137,"Russia: Sakhalin, Tchabanenko, SAKH 3081",MH758420,MH770926,MH770153,MH770413,MH769907,MH770706,V,8P_degenii3_Russia_P2137 
+P. degenii Gyeln. 3b,8,P1267,"China: Jilin, Sohrabi 16474, H",MH758414,MH770927,MH770154,MH770414,MH769908,MH770707,V,8P_degenii3_China_P1267 
+P. degenii Gyeln. 3b,8,P1276,"China: Jilin, Sohrabi 16417, H",MH758415,MH770928,MH770155,MH770415,MH769909,MH770708,V,8P_degenii3_China_P1276 
+P. degenii Gyeln. 3b,8,P2022,"Russia: Kurile Islands, Abrahamczyk 15, H",MH758416,MH770929,MH770156,MH770416,MH769910,MH770709,V,8P_degenii3_Russia_P2022 
+P. degenii Gyeln. 3c,8,ES3306,"Japan: Honshu, Sérusiaux s.n., LG",MH758417,MH770930,MH770157,MH770417,MH769911,MH770710,XXXIIb,8P_degenii3_Japan_ES3306 
+P. degenii Gyeln. 3c,8,P2023,"Japan: Honshu, Ohmura & al. s.n., DUKE 0188055",MH758418,MH770931,MH770158,MH770418,MH769912,MH770711,V,8P_degenii3_Japan_P2023 
+P. membranacea (Ach.) Nyl. 1,8,HOB4,"Canada: BC, O'Brien & al. 2013",FJ709034,FJ709434,MH770159,MH770419,MH769913,---,N/A,8P_membranacea_CanadaBC_HOB0406051011 
+P. membranacea (Ach.) Nyl. 1,8,HOB6,"Canada: BC, O'Brien & al. 2013",FJ709031,FJ709431,MH770160,MH770420,MH769914,---,N/A,8P_membranacea_CanadaBC_HOB020708091 
+P. membranacea (Ach.) Nyl. 1,8,P0003,"Iceland, Miadlikowska & Lutzoni s.n., DUKE 0357981",MH758426,KM005814,MH770161,MH770421,MH769915,KX923102,XVI,8P_membranacea_Iceland_P0003 
+P. membranacea (Ach.) Nyl. 1,8,P0086,"Spain, Vare L1807, H",MH758431,MH770932,MH770162,MH770422,MH769916,MH770712,XVI,8P_membranacea_Spain_P0086 
+P. membranacea (Ach.) Nyl. 1,8,P1005,"Norway, Magain s.n., LG",MH758428,MH770933,---,MH770423,MH769917,MH770713,XIII,8P_membranacea_Norway_P1005 
+P. membranacea (Ach.) Nyl. 1,8,P2116,"Canada: BC, Truong s.n., DUKE 0401833",MH758421,MH770934,MH770163,MH770424,MH769918,MH770714,XLIII,8P_membranacea_CanadaBC_P2116 
+P. membranacea (Ach.) Nyl. 1,8,P2121,"Portugal, Vust 3084, G.",MH758429,MH770935,MH770164,MH770425,MH769919,MH770715,XVI,8P_membranacea_Portugal_P2121 
+P. membranacea (Ach.) Nyl. 1,8,P2122,"France: Corsica, Vust 6423, G.",MH758422,MH770936,MH770165,MH770426,MH769920,MH770716,XVI,8P_membranacea_Corse_P2122 
+P. membranacea (Ach.) Nyl. 1,8,P2128,"France: Corsica, Vust 6405, G.",MH758423,MH770937,MH770166,MH770427,MH769921,---,N/A,8P_membranacea_Corse_P2128 
+P. membranacea (Ach.) Nyl. 1,8,P2131,"France, Magain s.n., DUKE 0401819",MH758424,MH770938,MH770167,MH770428,MH769922,---,N/A,8P_membranacea_France_P2131 
+P. membranacea (Ach.) Nyl. 1,8,P2191,"Iceland, Heidmarsson 2746, AMNH LA-31754",MH758427,MH770939,MH770168,MH770429,MH769923,MH770717,XVI,8P_membranacea_Iceland_P2191 
+P. membranacea (Ach.) Nyl.2,8,P2135,"Russia: Khabarovsk Territory, Miadlikowska & al. s.n., DUKE 0401812",MH758430,MH770940,MH770169,MH770430,MH769924,---,N/A,8P_membranacea_Russia_P2135 
+P. tereziana Gyeln.,8,P0433,"Australia: VIC, H. Streimann 50914, H",MH758432,MH770941,MH770170,MH770431,MH769925,MH770718,XX,8P_tereziana_Australia_P0433 
+P. tereziana Gyeln.,8,P2021,"Australia: ACT, Kalb 30730, DUKE",MH758433,MH770942,MH770171,MH770432,MH769926,MH770719,XX,8P_tereziana_Australia_P2021 
+P. tereziana Gyeln.,8,P2171,"Australia: NSW, Streimann 63484, CANB 604582.1",MH758434,MH770944,MH770172,MH770433,MH769927,MH770720,XX,8P_tereziana_Australia_P2171 
+P. tereziana Gyeln.,8,P2172,"Australia: NSW, Streimann 60382, CBG 9906411",MH758435,MH770945,MH770173,MH770434,MH769928,MH770721,XX,8P_tereziana_Australia_P2172 
+P. tereziana Gyeln.,8,P2174,"Australia: VIC, Elix 39629, CANB 00792024",MH758436,MH770946,MH770174,MH770435,MH769929,MH770722,XX,8P_tereziana_Australia_P2174 
+P. fuscopraetextata,9,HOB7,"Canada: BC, O'Brien & al. 2013",FJ708893,FJ709317,MH770175,MH770436,MH769930,---,N/A,9P_fuscopraetextata_CanadaBC_HOB0207086253 
+P. fuscopraetextata,9,HOB8,"Canada: BC, O'Brien & al. 2013",FJ708892,FJ709316,MH770176,MH770437,MH769931,---,N/A,9P_fuscopraetextata_CanadaBC_HOB0207083153 
+P. fuscopraetextata,9,P1110,"Canada: BC, Goward 06-1538B, UBC",MH758507,MH770947,MH770177,---,MH769932,MH770723,VI,9P_fuscopraetextata_NorthAmerica_P1110 
+P. fuscopraetextata,9,P2012,"Argentina, Stenroos 2235, H",MH758500,MH770948,MH770178,MH770438,MH769933,MH770724,VI,9P_fuscopraetextata_Argentina_P2012 
+P. fuscopraetextata,9,P2014,"Chile: Region XI, Rubio 4067, H",MH758503,MH770949,MH770179,MH770439,MH769934,MH770725,VI,9P_fuscopraetextata_Chile_P2014 
+P. fuscopraetextata,9,P2018,"Argentina, Kalb s.n., DUKE 0401830",MH758502,MH770950,MH770180,---,MH769935,MH770728,VI,9P_fuscopraetextata_Argentina_P2018 
+P. fuscopraetextata,9,P2036,"Chile: Region XII, Goffinet 10490, CONN",MH758505,MH770951,MH770181,MH770440,MH769936,MH770729,VI,9P_fuscopraetextata_Chile_P2036 
+P. fuscopraetextata,9,P2067,"Chile: Region XII, Wheeler & Nelson 6528, CONC",MH758506,MH770952,MH770182,MH770441,MH769937,MH770730,VI,9P_fuscopraetextata_Chile_P2067 
+P. fuscopraetextata,9,P2219,"USA: OR, McCune 30990, OSC",MH758508,---,MH770183,MH770442,MH769938,MH770731,VI,9P_fuscopraetextata_USA_P2219 
+P. fuscopraetextata,9,P2223,"USA: UT, Truong 4016, DUKE 0401863",MH758509,MH770953,MH770184,MH770443,MH769939,MH770732,XXX,9P_fuscopraetextata_USA_P2223 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 2,9,P2059,"Mexico, Herrera-Campos 13380 MEXU",MH758442,MH770956,MH770186,MH770445,MH769940,MH770744,XXXIX,9P_austroamericana_Mexico_P2059 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 2,9,P2138,"Mexico, Herrera-Campos 13381, MEXU",MH758462,MH770957,MH770187,MH770446,MH769941,MH770745,N/A,9P_fibrilloides_Mexico_P2138 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 3,9,P2048,"Peru, Lutzoni 05.23.212-7, DUKE 0357974",MH758465,MH770958,MH770188,MH770447,MH769942,MH770746,XXXIX,9P_fibrilloides_Peru_P2048 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 3,9,P2073,"Peru, Rivas Plata & Ramos s.n., DUKE 0357973",MH758466,MH770959,MH770189,MH770448,MH769943,MH770747,XXXVI,9P_fibrilloides_Peru_P2073 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 3,9,P2076,"Colombia, Lücking 33628, UDBC",MH758451,MH770960,MH770190,MH770449,MH769944,MH770748,XXXVI,9P_fibrilloides_Colombia_P2076 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 3,9,P2197,"Ecuador, Truong 3975, DUKE 040152",MH758460,MH770961,MH770191,MH770450,MH769945,MH770749,XXXIX,9P_fibrilloides_Ecuador_P2197 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 4,9,P0025,"Costa Rica, Miadlikowska & Lutzoni 23.03.03-8, DUKE 0401856",MH758453,MH770962,MH770192,MH770451,MH769946,MH770750,XXXIXe,9P_fibrilloides_CostaRica_P0025 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 4,9,P2060,"Mexico, Herrera-Campos 137, MEXU",MH758461,MH770966,MH770193,MH770452,MH769947,MH770745,XXXIX,9P_fibrilloides_Mexico_P2060 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 5,9,P1598,"Brazil, Miadlikowska & al. s.n., CGMS 34505",MH758438,MH770967,MH770194,MH770453,MH769948,MH770751,V,9P_austroamericana_Brazil_P1598 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 5,9,P2010,"Brazil, Canez 10234, CGMS 35044",MH758447,MH770968,MH770195,MH770454,MH769949,MH770753,V,9P_fibrilloides_Brazil_P2010 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 5,9,P2011,"Brazil, Magain s.n., CGMS 34427",MH758448,MH770969,MH770196,MH770455,MH769950,MH770754,V,9P_fibrilloides_Brazil_P2011 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 5,9,P2019,"Ecuador, Kalb 18391, DUKE",MH758459,MH770970,MH770197,---,MH769951,MH770755,XXXIX,9P_fibrilloides_Ecuador_P2019 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 5,9,P2052,"Bolivia, Kukwa 8504, Ex UGDA-L-17700, DUKE dupl. 0401859",MH758445,MH770971,MH770198,MH770456,MH769952,MH770757,XXXIX,9P_fibrilloides_Bolivia_P2052 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 5,9,P2134,"Bolivia, Truong 2826, DUKE 0401858",MH758446,MH770972,MH770199,MH770457,MH769953,---,N/A,9P_fibrilloides_Bolivia_P2134 
+P. austroamericana Zahlbr./fibrilloides (Gyeln.) Vitik. 6,9,P2055,"Peru, Bennett s.n., WIS",MH758444,MH770973,MH770200,MH770458,MH769954,MH770758,XXXVI,9P_austroamericana_Peru_P2055 
+P. canina (L.) Willd. 1,9,HOB12,"Canada: BC, O'Brien & al. 2013",FJ708890,---,MH770201,MH770459,MH769955,KC437709,V,9P_canina_CanadaBC_HOB020708451 
+P. canina (L.) Willd. 1,9,HOB13,"Canada: BC, O'Brien & al. 2013",FJ708881,FJ709294,MH770202,MH770460,MH769956,---,N/A,9P_canina_CanadaBC_HOB030611006 
+P. canina (L.) Willd. 1,9,P0014,"Iceland, Miadlikowska & Lutzoni s.n., DUKE 0357980",KU954063,KM005803,MH770203,MH770461,MH769957,KX923097,VI,9P_canina_Iceland_P0014 
+P. canina (L.) Willd. 1,9,P1411,"Russia: Krasnoyarsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0357997",MH758475,MH770974,---,---,MH769958,MH770759,V,9P_canina_Russia_P1411 
+P. canina (L.) Willd. 1,9,P2032,"Russia: Krasnoyarsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0401836",MH758478,MH770975,MH770204,MH770462,MH769959,MH770762,V,9P_canina_Russia_P2032 
+P. canina (L.) Willd. 1,9,P2097,"China: Yunnan, Miadlikowska s.n., DUKE 0401862",MH758470,MH770976,MH770205,---,MH769960,MH770763,XXXVIIIa,9P_canina_China_P2097 
+P. canina (L.) Willd. 1,9,P2113,"Austria, Hafellner & Miadlikowska, DUKE 0130114",MH758467,MH770977,MH770206,MH770463,MH769961,MH770764,V,9P_canina_Austria_P2113 
+P. canina (L.) Willd. 1,9,P2118,"France: Corsica, Vust 6421, G.",MH758471,MH770978,MH770207,MH770464,MH769962,MH770765,XXIX,9P_canina_Corse_P2118 
+P. canina (L.) Willd. 1,9,P2120,"Switzerland, Vust 279, G.",MH758479,MH770979,MH770208,MH770465,MH769963,MH770766,V,9P_canina_Switzerland_P2120 
+P. canina (L.) Willd. 1,9,P2123,"France: Corsica, Vust 6412, G.",MH758473,MH770980,MH770209,MH770466,MH769964,MH770767,XXIX,9P_canina_Corse_P2123 
+P. canina (L.) Willd. 1,9,P2193,"The Netherlands, Aptroot 53752, ABL",MH758474,MH770982,MH770211,MH770467,MH769965,MH770769,XXV,9P_canina_Netherland_P2193 
+P. canina (L.) Willd. 1,9,P2213,"Canada: BC, Goward 5305, UBC",MH758469,MH770983,MH770212,MH770468,MH769966,MH770770,VI,9P_canina_CanadaBC_P2213 
+P. canina (L.) Willd. 2,9,HOB10,"Canada: BC, O'Brien & al. 2013",FJ708874,FJ709290,MH770213,---,MH769967,---,N/A,9P_canina_CanadaBC_HOB0207083152 
+P. canina (L.) Willd. 2,9,HOB9,"Canada: BC, O'Brien & al. 2013",FJ708875,FJ709304,MH770214,MH770469,MH769968,---,N/A,9P_canina_CanadaBC_HOB0207087013 
+P. canina (L.) Willd. 2,9,P0004,"Iceland, Miadlikowska & Lutzoni 08.08.10-3, DUKE 0401829",KU954062,KM005821,MH770215,MH770470,MH769969,KX923096,XXXIII,9P_canina_Iceland_P0004 
+P. canina (L.) Willd. 2,9,P2026,"USA: NC, Miadlikowska & Lutzoni s.n., DUKE 0357999",MH758483,MH770984,MH770223,MH770471,MH769970,MH770775,XXXVIIIa,9P_canina_USA_P2026 
+P. canina (L.) Willd. 2,9,P2081,"USA: NC, Hollinger 2731, UBC",MH758484,MH770985,MH770224,MH770472,MH769971,MH770776,XXXVII,9P_canina_USA_P2081 
+P. canina (L.) Willd. 2,9,P2090,"USA: OK, Buck 46463, DUKE 0138952",MH758485,MH770986,MH770216,MH770473,MH769972,MH770777,XXXIV,9P_canina_USA_P2090 
+P. canina (L.) Willd. 2,9,P2190,"Canada: AB, Miadlikowska & Lutzoni s.n., DUKE 0401817",MH758468,MH770988,MH770218,---,MH769973,MH770779,VI,9P_canina_Canada_P2190 
+P. canina (L.) Willd. 2,9,P2201,"USA: UT, Truong 3996, DUKE 0401865",MH758486,MH770989,MH770219,MH770475,MH769974,MH770780,XXX,9P_canina_USA_P2201 
+P. canina (L.) Willd. 2,9,P2211,"USA: CO, Leavitt SDL-CO-13, BRY-C",MH758487,MH770990,MH770220,---,MH769975,MH770781,XXX,9P_canina_USA_P2211 
+P. canina (L.) Willd. 2,9,P2221,"USA: MI, Miadlikowska & Lutzoni s.n., DUKE 0401826",MH758488,MH770991,MH770221,MH770476,MH769976,MH770782,XXXIII,9P_canina_USA_P2221 
+P. canina (L.) Willd. 2,9,P2222,"USA: TN, Chen & Gajdeczka s.n., DUKE 0401818",MH758489,MH770992,MH770222,MH770477,MH769977,MH770783,V,9P_canina_USA_P2222 
+P. evansiana Gyeln.,9,P1817,"USA: PA, Lendemer 17422, NY 01105603",MH758491,KM005808,---,MH770478,MH769978,MH770785,XXXIXa,9P_evansiana_USA_P1817 
+P. evansiana Gyeln.,9,P2084,"USA: NC, Miadlikowska & Lutzoni s.n., DUKE 0357991",MH758493,MH770993,MH770225,MH770479,MH769979,MH770786,XXXIXa,9P_evansiana_USA_P2084 
+P. evansiana Gyeln.,9,P2189,"USA: MI, Miadlikowska & al s.n., DUKE 0401813",MH758494,MH770994,MH770226,MH770480,MH769980,MH770787,XXXIIIb,9P_evansiana_USA_P2189 
+P. islandica T. Goward & S. S. Manoharan-Basil,9,IC332,"Iceland, Manoharan-Basil & al. 2016",KJ413245,KJ413189,MH770227,MH770481,MH769981,---,N/A,9P_sp20_Iceland_IC332 
+P. islandica T. Goward & S. S. Manoharan-Basil,9,IC355,"Iceland, Manoharan-Basil & al. 2016",KJ413244,KJ413192,MH770228,MH770482,MH769982,---,N/A,9P_sp20_Iceland_IC355 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,HOB18,"Canada: BC, O'Brien & al. 2013",FJ708905,FJ709451,MH770229,MH770483,MH769983,---,N/A,9P_praetextata_CanadaBC_HOB030611005 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,HOB19,"Canada: BC, O'Brien & al. 2013",FJ708904,FJ709450,MH770230,MH770484,MH769984,---,N/A,9P_praetextata_CanadaBC_HOB0207083192 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P0420,"Serbia, Uotila 48419, H",MH758520,---,---,---,MH769985,MH770788,V,9P_praetextata_Serbia_P0420 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P0570,"Norway, Magain s.n., LG",MH758515,KM005829,MH770231,MH770485,MH769986,MH770789,XLII,9P_praetextata_Norway_P0570 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P0622,"Norway, Magain s.n., LG",MH758516,MH770995,MH770232,MH770486,MH769987,---,N/A,9P_praetextata_Norway_P0622 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P1515,"China: Yunnan, Miadlikowska s.n., DUKE 0357961",MH758513,MH770996,MH770233,MH770487,MH769988,MH770792,XXXIIa,9P_praetextata_China_P1515 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2025,"Russia: Karachaevo-Cherkesiya Republic, Zhurbenko s.n., DUKE 0357996",MH758518,MH770997,MH770234,MH770488,MH769989,MH770793,V,9P_praetextata_Russia_P2025 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2088,"USA: NY, Buck 54040, NY 01077051",MH758521,MH770998,MH770235,MH770489,MH769990,MH770794,V,9P_praetextata_USA_P2088 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2092,"USA: ME, Harris 53056, DUKE 0138948",MH758522,MH771000,MH770237,MH770490,MH769991,MH770795,V,9P_praetextata_USA_P2092 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2096,"India: Himachal Pradesh, Divakar s.n., MAF",MH758514,MH771001,---,MH770491,MH769992,MH770796,XXXIIa,9P_praetextata_India_P2096 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2226,"USA: MI, Miadlikowska & Lutzoni s.n., DUKE 0357993",MH758523,MH771002,MH770238,MH770492,MH769993,MH770797,V,9P_praetextata_USA_P2226 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2227,"Russia: Khabarovsk Territory, Miadlikowska & Lutzoni s.n., DUKE 0401831",MH758519,MH771003,MH770239,MH770493,MH769994,MH770798,V,9P_praetextata_Russia_P2227 
+P. praetextata (Flörke ex Sommerf.) Zopf,9,P2233,"USA: AZ, Miadlikowska & Lutzoni s.n., DUKE 0401835",MH758524,MH771004,MH770240,MH770494,MH769995,MH770800,XXXVI,9P_praetextata_USA_P2233 
+P. sp. 18,9,P1413,"Russia: Krasnoyarsk Territory, Zhurbenko s.n., DUKE 0357978",MH758527,MH771005,MH770241,---,MH769996,MH770801,V,9P_sp18_Russia_P1413 
+P. sp. 18,9,P2094,"India: Uttarakhand, P.K. Divakar s.n., MAF",MH758526,MH771006,MH770242,MH770495,MH769997,MH770802,XXXII,9P_sp18_India_P2094 
+P. sp. 19,9,P0078,"USA: OR, McCune 31048, OSC",MH758528,MH771007,MH770243,MH770496,MH769998,MH770803,VI,9P_sp19_USA_P0078 
+P. sp. 19,9,P1230,"USA: OR, McCune 26686, OSC",MH758529,MH771008,MH770244,MH770497,MH769999,MH770804,VI,9P_sp19_USA_P1230 
+P. sp. 19,9,P2030,"USA: OR, McCune 30122, OSC",MH758530,MH771009,MH770245,MH770498,MH770000,MH770805,VI,9P_sp19_USA_P2030 
+P. sp. 20,9,HOB14,"Canada: BC, O'Brien & al. 2013",FJ708909,FJ709455,MH770246,MH770499,MH770001,KC437728,VI,9P_sp20_CanadaBC_HOB0306111004 
+P. sp. 20,9,HOB15,"Canada: BC, O'Brien & al. 2013",FJ708907,FJ709453,MH770247,MH770500,MH770002,---,N/A,9P_sp20_CanadaBC_HOB0207086211 
+P. sp. 20,9,HOB16,"Canada: BC, O'Brien & al. 2013",FJ708908,FJ709454,MH770248,MH770501,MH770003,---,N/A,9P_sp20_CanadaBC_HOB0207086614 
+P. sp. 20,9,HOB17,"Canada: BC, O'Brien & al. 2013",FJ708910,FJ709456,MH770249,---,MH770004,---,N/A,9P_sp20_CanadaBC_HOB0306111053 
+P. sp. 21,9,P2218,"USA: AZ, Miadlikowska & Lutzoni s.n., DUKE 0401825",MH758525,MH771010,MH770250,MH770502,MH770005,MH770806,XXXVI,9P_sp9_USA_P2218 
+P. sp. 22,9,P0926,"Colombia, Lücking MPNNC122, UDBC",MH758495,---,MH770251,MH770503,MH770006,MH770807,VI,9P_sp22_Colombia_P0926 
+P. sp. 22,9,P2054,"Peru, Bennett s.n., WIS",MH758498,---,MH770252,---,MH770007,MH770809,XXXIXd,9P_sp22_Peru_P2054 
+P. sp. 22,9,P2077,"Colombia, Lücking MPNNC92m, UDBC",MH758497,---,MH770254,MH770505,MH770008,MH770811,XXXIX,9P_sp22_Colombia_P2077 
+Peltigera aphthosa (L.) Willd.,OG,P4002,"USA: AK, Miadlikowska s.n., OSC",---,MH771012,MH770256,MH770507,MH770009,---,N/A,P4002_aphthosa

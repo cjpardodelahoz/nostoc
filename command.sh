@@ -703,6 +703,16 @@ run_gubbins.py --prefix analyses/species_delimitation/gubbins/test/out2 \
  --threads 4 \
  analyses/species_delimitation/gubbins/test/out2.aln
 
+################################################################################
+# GLOBAL RBCLX RECLASSIFICATION AND ABMI COOCCURRENCE ANALYSES
+################################################################################
+
+# Compilation of public rbclx sequences and metadata
+
+# Compile public rbclx metadata and get accessions
+Rscript scripts/compile_public_rbclx_metadata.R
+# Retrieve sequences from NCBI
+
 # Testing differation in co-occurrence in three lineage case studies with rbcLX
 
 # Make directory structure
@@ -740,10 +750,6 @@ sbatch scripts/ml_rbclx_focal_groups.sh
 Rscript scripts/plot_focal_trees.R
 
 
-
-
-# 
-Rscript scripts/fastbaps_cluster.R
 
 
 ################################################################################
@@ -794,32 +800,3 @@ sbatch scripts/gunc_set12c.sh
 #
 Rscript scripts/report_voucher.R
 
-################################################################################
-# GLOBAL RBCLX RECLASSIFICATION
-################################################################################
-
-# Data compilation
-
-# Compile public rbclx metadata
-Rscript scripts/compile_public_rbclx_metadata.R
-
-# PULL
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/scripts .
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/document .
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/species_delimitation analyses
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/cyano_genomes analyses
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/genome_qc/set103 analyses/genome_qc
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/phylogenetics/set103/conflict analyses/phylogenetics/set103
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/assemblies analyses
-rsync -av cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/cyano_genomes_annotation analyses
-rsync -av cjp47@dcc-login.oit.duke.edu:/work/cjp47/nostoc/assemblies analyses
-
-
-
-# PUSH
-rsync -av scripts cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc
-rsync -av packrat cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc
-rsync -av .Rprofile cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/.Rprofile
-rsync -av analyses/cyano_genomes cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses
-rsync -av analyses/phylogenetics/set103/trees cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/phylogenetics/set103
-rsync -av analyses/bins/graphbin cjp47@dcc-login.oit.duke.edu:/hpc/group/bio1/carlos/nostoc/analyses/bins
