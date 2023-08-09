@@ -712,6 +712,10 @@ run_gubbins.py --prefix analyses/species_delimitation/gubbins/test/out2 \
 # Compile public rbclx metadata and get accessions
 Rscript scripts/compile_public_rbclx_metadata.R
 # Retrieve sequences from NCBI
+efetch -db nuccore -id $(cat analyses/species_delimitation/rbclx/public/public_rbclx_accessions.txt | tr '\n' , | sed "s|,$||") \
+ -format fasta > analyses/species_delimitation/rbclx/public/public_rbclx.fasta
+# Trim sequence headers to accession only
+sed -i'.bak' "s|\..*||" analyses/species_delimitation/rbclx/public/public_rbclx.fasta
 
 # Testing differation in co-occurrence in three lineage case studies with rbcLX
 

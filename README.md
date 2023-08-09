@@ -137,6 +137,10 @@ export PATH=/hpc/group/bio1/carlos/apps/sratoolkit.3.0.0-centos_linux64/bin:$PAT
 git clone https://github.com/rrwick/SPAdes-Contig-Graph.git
 export PATH=/hpc/group/bio1/carlos/apps/SPAdes-Contig-Graph:$PATH
 
+# Entrez Direct
+sh -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
+export PATH=${HOME}/edirect:${PATH}
+
 # Seqkit
 wget https://github.com/shenwei356/seqkit/releases/download/v2.2.0/seqkit_linux_amd64.tar.gz
 export PATH=/hpc/group/bio1/carlos/apps/:$PATH
