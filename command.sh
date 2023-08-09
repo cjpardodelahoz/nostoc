@@ -711,48 +711,52 @@ run_gubbins.py --prefix analyses/species_delimitation/gubbins/test/out2 \
 
 # Compile public rbclx metadata and get accessions
 Rscript scripts/compile_public_rbclx_metadata.R
-# Retrieve sequences from NCBI
+# Retrieve accessions from NCBI and dereplicate accession records
 efetch -db nuccore -id $(cat analyses/species_delimitation/rbclx/public/public_rbclx_accessions.txt | tr '\n' , | sed "s|,$||") \
+ -format acc | sort | uniq | sed "s|\..*||" > \
+ analyses/species_delimitation/rbclx/public/rbclx_accessions_dereplicated.txt
+# Retrieve sequences from NCBI
+efetch -db nuccore -id $(cat analyses/species_delimitation/rbclx/public/rbclx_accessions_dereplicated.txt | tr '\n' , | sed "s|,$||") \
  -format fasta > analyses/species_delimitation/rbclx/public/public_rbclx.fasta
 # Trim sequence headers to accession only
 sed -i'.bak' "s|\..*||" analyses/species_delimitation/rbclx/public/public_rbclx.fasta
 # Get list of NCBI GIs that don't match their current accession
-grep ">" analyses/species_delimitation/rbclx/public/public_rbclx.fasta | \
- sed "s|>||" > analyses/species_delimitation/rbclx/public/revised_accessions.txt
-grep -xvF -f analyses/species_delimitation/rbclx/public/revised_accessions.txt \
+grep -xvF -f analyses/species_delimitation/rbclx/public/rbclx_accessions_dereplicated.txt \
  analyses/species_delimitation/rbclx/public/public_rbclx_accessions.txt | sort -n > \
  analyses/species_delimitation/rbclx/public/unmatched_gis.txt
 # Retrieve matching accessions for unamatched GIs
 efetch -db nuccore -id $(cat analyses/species_delimitation/rbclx/public/unmatched_gis.txt | tr '\n' , | sed "s|,$||") \
- -format acc > analyses/species_delimitation/rbclx/public/unmatched_accessions.txt
+ -format acc | sed "s|\..*||" > \
+ analyses/species_delimitation/rbclx/public/unmatched_accessions.txt
 
-# Testing differation in co-occurrence in three lineage case studies with rbcLX
+# Placement and classification of global and ABMI rbclx seqs
 
 # Make directory structure
-mkdir -p analyses/species_delimitation/cooccurrence/seqs
-mkdir -p analyses/species_delimitation/cooccurrence/alignments
-mkdir -p analyses/species_delimitation/cooccurrence/trees/placement
+mkdir -p analyses/species_delimitation/rbclx/clade_assignment/seqs
+mkdir -p analyses/species_delimitation/rbclx/clade_assignment/alignments
+mkdir -p analyses/species_delimitation/rbclx/clade_assignment/trees/placement
+# Copy rbcLX public sequences to seqs/ directory
+cp analyses/species_delimitation/rbclx/public/public_rbclx.fasta \
+ analyses/species_delimitation/rbclx/clade_assignment/seqs/public_rbclx.fasta
 # Copy rbcL (2400at1161) and rbcX sequences (14372at1161) from set103 taxa
-# I also made a copy of the rbcLX seqs from ABMI sites under seqs/
 cp analyses/phylogenetics/set103/seqs/2400at1161.fna \
- analyses/species_delimitation/cooccurrence/seqs/rbcl_set103.fna
+ analyses/species_delimitation/rbclx/clade_assignment/seqs/rbcl_set103.fna
 cp analyses/phylogenetics/set103/seqs/14372at1161.fna \
- analyses/species_delimitation/cooccurrence/seqs/rbcx_set103.fna
+ analyses/species_delimitation/rbclx/clade_assignment/seqs/rbcx_set103.fna
 # Concatenate rbcl and rbcx from set103
 sbatch scripts/concatenate_rbclx.sh
 # Add the ABMI  and global rbclx seqs to set103
 # I edited the ABMI seqs to exclude the universal tags and primers and removed
-# P11480, and put them all in the right orientation (rbclx_abmi_edited_all.fna)
-cat analyses/species_delimitation/cooccurrence/seqs/rbclx_set103.fna \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_abmi_edited_all.fna \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_global_v.fna \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_global_xxxix.fna> \
- analyses/species_delimitation/cooccurrence/seqs/rbclx_set103_abmi_global.fna
+# P11480, and put them all in the right orientation (rbclx_abmi.fna)
+cat analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103.fna \
+ analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_abmi.fna \
+ analyses/species_delimitation/rbclx/clade_assignment/seqs/public_rbclx.fasta > \
+ analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103_abmi_public.fna
 # Align all the rbcLX
 # I edited this alignment in Mesquite  and exluded ambiguous regions
 sbatch scripts/mafft_rbclx_placement.sh
 # Place the rbclx
-sbatch scripts/rbclx_abmi_epa_placement.sh
+sbatch scripts/rbclx_epa_placement.sh
 # Sort rbclx seqs into focal groups
 Rscript scripts/sort_rbclx_placements.R
 # Align rbcLX focal groups
