@@ -716,6 +716,15 @@ efetch -db nuccore -id $(cat analyses/species_delimitation/rbclx/public/public_r
  -format fasta > analyses/species_delimitation/rbclx/public/public_rbclx.fasta
 # Trim sequence headers to accession only
 sed -i'.bak' "s|\..*||" analyses/species_delimitation/rbclx/public/public_rbclx.fasta
+# Get list of NCBI GIs that don't match their current accession
+grep ">" analyses/species_delimitation/rbclx/public/public_rbclx.fasta | \
+ sed "s|>||" > analyses/species_delimitation/rbclx/public/revised_accessions.txt
+grep -xvF -f analyses/species_delimitation/rbclx/public/revised_accessions.txt \
+ analyses/species_delimitation/rbclx/public/public_rbclx_accessions.txt | sort -n > \
+ analyses/species_delimitation/rbclx/public/unmatched_gis.txt
+# Retrieve matching accessions for unamatched GIs
+efetch -db nuccore -id $(cat analyses/species_delimitation/rbclx/public/unmatched_gis.txt | tr '\n' , | sed "s|,$||") \
+ -format acc > analyses/species_delimitation/rbclx/public/unmatched_accessions.txt
 
 # Testing differation in co-occurrence in three lineage case studies with rbcLX
 
