@@ -754,13 +754,27 @@ cat analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103.fna \
  analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103_abmi_public.fna
 # Align all the rbcLX
 # I edited this alignment in Mesquite  and exluded ambiguous regions
+# I also removed 291 public sequences that had no or very short rbcL 
+# Note that there are a few ABMI sequences that are also short, but I kept them in
 sbatch scripts/mafft_rbclx_placement.sh
 # Place the rbclx
 sbatch scripts/rbclx_epa_placement.sh
 # Sort rbclx seqs into focal groups
 Rscript scripts/sort_rbclx_placements.R
+# List of sorted rbclx sequences
+basename analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_[2-3]_[1-9]*.fna | sed "s|.fna||" > \
+ misc_files/clade_list.txt
+basename analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_subclade1.fna | sed "s|.fna||" >> \
+ misc_files/clade_list.txt
 # Align rbcLX focal groups
+# I checked these alignments in mesquite to make sure spacer was alignable and
+# removed some ambiguous sites
 sbatch scripts/mafft_rbclx_focal_groups.sh
+# File with list of edited alignments
+ls analyses/species_delimitation/rbclx/clade_assignment/alignments/*edited* > \
+ misc_files/edited_alns.txt
+# Make output directory
+mkdir -p  analyses/species_delimitation/rbclx/clade_assignment/trees/focal
 # Infer ML trees for focal groups
 sbatch scripts/ml_rbclx_focal_groups.sh
 # Plot trees for focal groups
