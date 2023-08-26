@@ -57,15 +57,33 @@ query_source_df <- tree$tip.label %>%
 ref_public_taxa <- query_source_df %>%
   filter(source == "public" | source == "reference_tree") %>%
   pull(taxon)
+# Load table with ref taxon name key
+ref_key_df <- read_csv("document/tables/voucher_v1.csv") %>%
+  select(genome_id, taxon_name, country) %>%
+  mutate(country = str_replace(country, "United Kingdom", "UK")) %>%
+  mutate(country = str_replace(country, "United States of America", "USA")) %>%
+  mutate(country = str_replace(country, "United States of America", "Panama")) %>%
+  mutate(taxon_name =
+           ifelse(taxon_name == genome_id,
+                  taxon_name,
+                  paste(genome_id, taxon_name, sep = "_"))) %>%
+  mutate(genome_id = 
+           paste(genome_id, ".fa", sep = "")) %>%
+  mutate(taxon_name = 
+           ifelse(!is.na(country),
+                  paste(taxon_name, country, sep = "_"),
+                  taxon_name)) %>%
+  select(genome_id, taxon_name)
 # Get df key to replace tip labes
 tiplabel_key <- query_source_df %>%
   filter(source == "public" | source == "reference_tree") %>%
   left_join(public_rbclx_metadata, by = c("taxon" = "rbclx_accession")) %>%
   left_join(ani95_clusters, by = c("taxon" = "genome")) %>%
   left_join(popcogent_clusters, by = c("taxon" = "Strain")) %>%
+  left_join(ref_key_df, by = c("taxon" = "genome_id")) %>%
   mutate(new_label = if_else(source == "public",
                              paste(taxon, dna_source, region, "Phylogroup", nostoc_phylogroup),
-                             paste(taxon, ani_95_cluster, Main_cluster))) %>%
+                             paste(taxon_name, ani_95_cluster, Main_cluster))) %>%
   select(taxon, new_label)
 # Function to prepare data to plot rbclx trees with public metadata
 prep_public_focal_trees <- function(treefile, outgroup_taxa, font_size,
@@ -90,14 +108,24 @@ prep_public_focal_trees <- function(treefile, outgroup_taxa, font_size,
 outgroup_3_1 <- c("P2081_bin_11.fa", "MH770776")
 clade_3_1_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_1.treefile",
-  outgroup_taxa = outgroup_3_1, font_size = 3, col_offset = 0.1)
+  outgroup_taxa = outgroup_3_1, font_size = 3, col_offset = 0.1) +
+  geom_treescale(width = 0.005, y = 50, x = 0.003, offset = 1.5)
 ggsave(clade_3_1_public_plot, file = "document/plots/clade_3_1_public.pdf",
        units = "cm", height = 40, width = 40)
-# Clade 3-4
+# Clade 3-2
+outgroup_3_2 <- c("NMS9_bin_7.fa", "S44_bin_8.fa", "KX923109")
+clade_3_2_public_plot <- prep_public_focal_trees(
+  treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_2.treefile",
+  outgroup_taxa = outgroup_3_2, font_size = 3, col_offset = 0.1) +
+  geom_treescale(width = 0.005, y = 20, x = 0.003, offset = 0.5)
+ggsave(clade_3_2_public_plot, file = "document/plots/clade_3_2_public.pdf",
+       units = "cm", height = 20, width = 30)
+ # Clade 3-4
 outgroup_3_4 <- c("KX923097")
 clade_3_4_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_4.treefile",
-  outgroup_taxa = outgroup_3_4, font_size = 3, col_offset = 0.1)
+  outgroup_taxa = outgroup_3_4, font_size = 3, col_offset = 0.1) +
+  geom_treescale(width = 0.005, y = 30, x = 0.003, offset = 1.5)
 ggsave(clade_3_4_public_plot, file = "document/plots/clade_3_4_public.pdf")
 # Clade 3-5
 outgroup_3_5 <- c("DQ185281", "KX922920", "KX922926", "KX922928", "S67_bin_3.fa",
@@ -105,16 +133,18 @@ outgroup_3_5 <- c("DQ185281", "KX922920", "KX922926", "KX922928", "S67_bin_3.fa"
                   "P3034_bin_5.fa", "S66_bin_1.fa")
 clade_3_5_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_5_with_spacer.treefile",
-  outgroup_taxa = outgroup_3_5, font_size = 3, col_offset = 0.08)
+  outgroup_taxa = outgroup_3_5, font_size = 3, col_offset = 0.08) +
+  geom_treescale(width = 0.005, y = 30, x = 0.003, offset = 1.5)
 ggsave(clade_3_5_public_plot, file = "document/plots/clade_3_5_public.pdf")
 # Clade 3-6
 tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_6.treefile")
 #root_node_3_6 <- MRCA(tmp_tree, c("P8202_bin_9.fa", "P8569_bin_1.fa")) 
-root_node_3_6 <- MRCA(tmp_tree, c("KX922980", "P8569_bin_1.fa")) 
+root_node_3_6 <- MRCA(tmp_tree, c("P8202_bin_9.fa", "P8569_bin_1.fa")) 
 outgroup_3_6 <- tree_subset(tmp_tree, node = root_node_3_6, levels_back = 0)$tip.label
 clade_3_6_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_6.treefile",
-  outgroup_taxa = outgroup_3_6, font_size = 3, col_offset = 0.08)
+  outgroup_taxa = outgroup_3_6, font_size = 3, col_offset = 0.08) +
+  geom_treescale(width = 0.005, y = 30, x = 0.003, offset = 1.5)
 ggsave(clade_3_6_public_plot, file = "document/plots/clade_3_6_public.pdf",
        units = "cm", height = 40, width = 40)
 # Clade 3-7
@@ -123,19 +153,22 @@ root_node_3_7 <- MRCA(tmp_tree, c("Z94893", "P3068_bin_7.fa"))
 outgroup_3_7 <- tree_subset(tmp_tree, node = root_node_3_7, levels_back = 0)$tip.label
 clade_3_7_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_7.treefile",
-  outgroup_taxa = outgroup_3_7, font_size = 3, col_offset = 0.08)
+  outgroup_taxa = outgroup_3_7, font_size = 3, col_offset = 0.08) +
+  geom_treescale(width = 0.005, y = 20, x = 0.003, offset = 1.0)
 ggsave(clade_3_7_public_plot, file = "document/plots/clade_3_7_public.pdf")
 # Clade 3-8
 outgroup_3_8 <- c("Nostoc_KVJ2.fa", "Nostoc_KVS11.fa")
 clade_3_8_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_8.treefile",
-  outgroup_taxa = outgroup_3_8, font_size = 3, col_offset = 0.08)
+  outgroup_taxa = outgroup_3_8, font_size = 3, col_offset = 0.08) +
+  geom_treescale(width = 0.005, y = 5, x = 0.003, offset = 0.2)
 ggsave(clade_3_8_public_plot, file = "document/plots/clade_3_8_public.pdf")
 # Clade 3-9
 outgroup_3_9 <- c("KX922962", "KX922961")
 clade_3_9_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_9.treefile",
-  outgroup_taxa = outgroup_3_9, font_size = 3, col_offset = 0.08)
+  outgroup_taxa = outgroup_3_9, font_size = 3, col_offset = 0.08) +
+  geom_treescale(width = 0.005, y = 5, x = 0.003, offset = .2)
 ggsave(clade_3_9_public_plot, file = "document/plots/clade_3_9_public.pdf")
 # Clade 3-10
 tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_10.treefile")
@@ -143,53 +176,619 @@ root_node_3_10 <- MRCA(tmp_tree, c("P2037_bin_28.fa", "P2039_bin_23.fa"))
 outgroup_3_10 <- tree_subset(tmp_tree, node = root_node_3_10, levels_back = 0)$tip.label
 clade_3_10_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_10.treefile",
-  outgroup_taxa = outgroup_3_10, font_size = 3, col_offset = 0.08)
+  outgroup_taxa = outgroup_3_10, font_size = 3, col_offset = 0.08) +
+  geom_treescale(width = 0.005, y = 20, x = 0.003, offset = 1)
 ggsave(clade_3_10_public_plot, file = "document/plots/clade_3_10_public.pdf",
        units = "cm", height = 40, width = 40)
 # Clade 3-11
 outgroup_3_11 <- c("NMS1_bin_5.fa", "NMS2_bin_6.fa")
 clade_3_11_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_11.treefile",
-  outgroup_taxa = outgroup_3_11, font_size = 3, col_offset = 0.09)
+  outgroup_taxa = outgroup_3_11, font_size = 3, col_offset = 0.09) +
+  geom_treescale(width = 0.005, y = 10, x = 0.003, offset = .2)
 ggsave(clade_3_11_public_plot, file = "document/plots/clade_3_11_public.pdf")
 # Clade 3-12
 outgroup_3_12 <- c("P9820_bin_6.fa")
 clade_3_12_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_12.treefile",
-  outgroup_taxa = outgroup_3_12, font_size = 3, col_offset = 0.09)
+  outgroup_taxa = outgroup_3_12, font_size = 3, col_offset = 0.09) +
+  geom_treescale(width = 0.005, y = 25, x = 0.003, offset = .2)
 ggsave(clade_3_12_public_plot, file = "document/plots/clade_3_12_public.pdf")
 # Clade 2-1
 outgroup_2_1 <- c("EF102347")
 clade_2_1_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_1.treefile",
-  outgroup_taxa = outgroup_2_1, font_size = 3, col_offset = 0.09)
+  outgroup_taxa = outgroup_2_1, font_size = 3, col_offset = 0.09) +
+  geom_treescale(width = 0.005, y = 30, x = 0.003, offset = .5)
 ggsave(clade_2_1_public_plot, file = "document/plots/clade_2_1_public.pdf")
 # Clade 2-2
 outgroup_2_2 <- c("S8_bin_2.fa", "S9_bin_6.fa", "KX923058", "EU877488", "P12591_bin_6.fa")
 clade_2_2_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_2.treefile",
-  outgroup_taxa = outgroup_2_2, font_size = 3, col_offset = 0.09)
+  outgroup_taxa = outgroup_2_2, font_size = 3, col_offset = 0.09) +
+  geom_treescale(width = 0.005, y = 5, x = 0.003, offset = .2)
 ggsave(clade_2_2_public_plot, file = "document/plots/clade_2_2_public.pdf")
-# Clade 2-3
 # Clade 2-4
 tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_4.treefile")
 root_node_2_4 <- MRCA(tmp_tree, c("P8690_bin_1.fa", "JL33_bin_16.fa", "P10247_bin_16.fa")) 
 outgroup_2_4 <- tree_subset(tmp_tree, node = root_node_2_4, levels_back = 0)$tip.label
 clade_2_4_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_4.treefile",
-  outgroup_taxa = outgroup_2_4, font_size = 3, col_offset = 0.09)
+  outgroup_taxa = outgroup_2_4, font_size = 3, col_offset = 0.09) +
+  geom_treescale(width = 0.005, y = 50, x = 0.003, offset = 1)
 ggsave(clade_2_4_public_plot, file = "document/plots/clade_2_4_public.pdf",
        units = "cm", height = 30, width = 30)
 
 
+#### GENERATE TABLES WITH REVISED RBCLX CLASSIFICATION ####
 
-  clade_3_5_public_plot <- ggtree(clade_3_5_public_bundle$tree) +
-  geom_tiplab(align = T, size = 3)
-clade_3_5_public_plot <- gheatmap(clade_3_5_public_plot, clade_3_5_public_bundle$df, 
-                                  width = 0.1, offset = 0.08, colnames = F) +
-  theme(legend.position = "none")
+# Section 3-1
+
+# Load and root section tree the same way as we plotted before
+outgroup_3_1 <- c("P2081_bin_11.fa", "MH770776")
+tree_3_1 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_1.treefile") %>%
+  root(outgroup = outgroup_3_1, resolve.root = T)
+# Classify phylogroup XXXVII taxa
+phylogroup_xxxvii_node <- MRCA(tree_3_1, c("P2081_bin_11.fa", "MH770776"))
+phylogroup_xxxvii_taxa <- tree_subset(tree_3_1, node = phylogroup_xxxvii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXXVII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXXIV taxa
+phylogroup_xxxiv_node <- MRCA(tree_3_1, c("MH770581", "MH770583"))
+phylogroup_xxxiv_taxa <- tree_subset(tree_3_1, node = phylogroup_xxxiv_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXXIV") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXXVIII taxa
+phylogroup_xxxviii_node <- MRCA(tree_3_1, c("MH770775", "DQ185283"))
+phylogroup_xxxviii_taxa <- tree_subset(tree_3_1, node = phylogroup_xxxviii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXXVIII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXXIII taxa
+phylogroup_xxxiii_node <- MRCA(tree_3_1, c("P8575_bin_3.fa", "JL31_bin_38.fa"))
+phylogroup_xxxiii_taxa <- tree_subset(tree_3_1, node = phylogroup_xxxiii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXXIII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXIX taxa
+phylogroup_xxix_node <- MRCA(tree_3_1, c("MH770767", "EU877530"))
+phylogroup_xxix_taxa <- tree_subset(tree_3_1, node = phylogroup_xxix_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXIX") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXVII taxa
+phylogroup_xxvii_node <- MRCA(tree_3_1, c("MH770576", "DQ185308"))
+phylogroup_xxvii_taxa <- tree_subset(tree_3_1, node = phylogroup_xxvii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXVII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXV taxa
+phylogroup_xxv_node <- MRCA(tree_3_1, c("MH770616", "MH770769"))
+phylogroup_xxv_taxa <- tree_subset(tree_3_1, node = phylogroup_xxv_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXV") %>%
+  rename(dna_id = value)
+# Classify species complex 3-1a
+complex_3_1_node <- MRCA(tree_3_1, c("KX922914", "MH770769"))
+complex_3_1_taxa <- tree_subset(tree_3_1, node = complex_3_1_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(sepecies_complex = "3.1a") %>%
+  rename(dna_id = value)
+# Classify section 3-1
+section_3_1_taxa <- tree_3_1$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.1") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_1 <- bind_rows(phylogroup_xxxvii_taxa, phylogroup_xxxiv_taxa, phylogroup_xxxviii_taxa,
+                                   phylogroup_xxxiii_taxa, phylogroup_xxix_taxa, phylogroup_xxvii_taxa, 
+                                   phylogroup_xxv_taxa) %>%
+  right_join(section_3_1_taxa, by = "dna_id") %>%
+  left_join(complex_3_1_taxa, by = "dna_id")
+
+# Section 3-2
+
+# Load and root section tree the same way as we plotted before
+outgroup_3_2 <- c("NMS9_bin_7.fa", "S44_bin_8.fa", "KX923109")
+tree_3_2 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_2.treefile") %>%
+  root(outgroup = outgroup_3_2, resolve.root = T)
+# Classify phylogroup NEW1 taxa
+phylogroup_new1_node <- MRCA(tree_3_2, c("P11060_bin_1.fa", "EU877528"))
+phylogroup_new1_taxa <- tree_subset(tree_3_2, node = phylogroup_new1_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "NEW1") %>%
+  rename(dna_id = value)
+# Classify phylogroup NEW2 taxa
+phylogroup_new2_node <- MRCA(tree_3_2, c("S44_bin_8.fa", "KX923109"))
+phylogroup_new2_taxa <- tree_subset(tree_3_2, node = phylogroup_new2_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "NEW2") %>%
+  rename(dna_id = value)
+# Classify section 3-2
+section_3_2_taxa <- tree_3_2$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.2") %>%
+  rename(dna_id = value) %>%
+  add_column(species_complex = "3.2a")
+# Join all assignments
+clade_assignments_3_2 <- bind_rows(phylogroup_new1_taxa, phylogroup_new2_taxa) %>%
+  right_join(section_3_2_taxa, by = "dna_id")
+
+# Section 3-3
+
+# Only one genome in the section, and sequences that were placed with can be 94%
+# similar so, will consider them aff_3.3
+clade_assignments_3_3 <- read.FASTA(file = "analyses/species_delimitation/rbclx/clade_assignment/alignments/rbclx_3_3_aln.fna") %>%
+  names() %>%
+  as_tibble() %>%
+  rename(dna_id = value) %>%
+  mutate(section = ifelse(dna_id == "NMS4_bin_2.fa",
+                          "3.3", "aff_3.3")) %>%
+  add_column(species_complex = NA) %>%
+  add_column(phylogroup = NA)
+
+# Section 3-4
+
+# This is all phylogroup VI
+clade_assignments_3_4 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_4.treefile")$tip.label %>%
+  as_tibble() %>%
+  rename(dna_id = value) %>%
+  mutate(section = "3.4") %>%
+  add_column(species_complex = NA) %>%
+  add_column(phylogroup = "VI")
+
+# Section 3-5
+  
+# Load and root section tree the same way as we plotted before
+outgroup_3_5 <- c("DQ185281", "KX922920", "KX922926", "KX922928", "S67_bin_3.fa",
+                  "KX922927","KX922930", "KX922971", "KX923043", 
+                  "P3034_bin_5.fa", "S66_bin_1.fa")
+tree_3_5 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_5_with_spacer.treefile") %>%
+  root(outgroup = outgroup_3_5, resolve.root = T)
+# Classify phylogroup VIIb taxa
+phylogroup_viib_node <- MRCA(tree_3_5, c("S66_bin_1.fa", "KX922926"))
+phylogroup_viib_taxa <- tree_subset(tree_3_5, node = phylogroup_viib_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "VIIb") %>%
+  rename(dna_id = value)
+# Classify phylogroup VIId taxa
+phylogroup_viid_node <- MRCA(tree_3_5, c("P10089", "KX923001"))
+phylogroup_viid_taxa <- tree_subset(tree_3_5, node = phylogroup_viid_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "VIId") %>%
+  rename(dna_id = value)
+# Classify phylogroup VIIa taxa
+phylogroup_viia_node <- MRCA(tree_3_5, c("P6455", "KX923000"))
+phylogroup_viia_taxa <- tree_subset(tree_3_5, node = phylogroup_viia_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "VIIa") %>%
+  rename(dna_id = value)
+# Classify phylogroup VIIc taxa REVISE THIS BECAUSE VIIc DOESNT WORK
+phylogroup_viic_node <- MRCA(tree_3_5, c("P6465_bin_9.fa", "S43_bin_7.fa"))
+phylogroup_viic_taxa <- tree_subset(tree_3_5, node = phylogroup_viic_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "VIIc") %>%
+  rename(dna_id = value)
+# Classify phylogroup Xa taxa
+phylogroup_xa_node <- MRCA(tree_3_5, c("KX922934", "KX923014"))
+phylogroup_xa_taxa <- tree_subset(tree_3_5, node = phylogroup_xa_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "Xa") %>%
+  rename(dna_id = value)
+# Classify phylogroup Xb taxa
+phylogroup_xb_node <- MRCA(tree_3_5, c("KX922933", "KX922935"))
+phylogroup_xb_taxa <- tree_subset(tree_3_5, node = phylogroup_xb_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "Xb") %>%
+  rename(dna_id = value)
+# Classify phylogroup XV taxa
+phylogroup_xv_node <- MRCA(tree_3_5, c("KX923032", "KX922990"))
+phylogroup_xv_taxa <- tree_subset(tree_3_5, node = phylogroup_xv_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XV") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXVIa taxa
+phylogroup_xxvia_node <- MRCA(tree_3_5, c("MH770562", "MH770561"))
+phylogroup_xxvia_taxa <- tree_subset(tree_3_5, node = phylogroup_xxvia_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXVIa") %>%
+  rename(dna_id = value)
+# Classify species complex 3-5a
+complex_3_5_node <- MRCA(tree_3_5, c("KX923001", "MH770561"))
+complex_3_5_taxa <- tree_subset(tree_3_5, node = complex_3_5_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(sepecies_complex = "3.5a") %>%
+  rename(dna_id = value)
+# Classify section 3-5
+section_3_5_taxa <- tree_3_5$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.5") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_5 <- bind_rows(phylogroup_viia_taxa, phylogroup_viib_taxa, phylogroup_viic_taxa, 
+                                   phylogroup_viid_taxa, phylogroup_xa_taxa, phylogroup_xb_taxa, 
+                                   phylogroup_xv_taxa, phylogroup_xxvia_taxa) %>%
+  right_join(section_3_5_taxa, by = "dna_id") %>%
+  left_join(complex_3_5_taxa, by = "dna_id")
 
 
+# Section 3-6
+
+# Load and root section tree the same way as we plotted before
+tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_6.treefile")
+root_node_3_6 <- MRCA(tmp_tree, c("P8202_bin_9.fa", "P8569_bin_1.fa")) 
+outgroup_3_6 <- tree_subset(tmp_tree, node = root_node_3_6, levels_back = 0)$tip.label
+tree_3_6 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_6.treefile") %>%
+  root(outgroup = outgroup_3_6, resolve.root = T)
+# Classify phylogroup V taxa
+phylogroup_v_node <- MRCA(tree_3_6, c("P6572", "KX922985"))
+phylogroup_v_taxa <- tree_subset(tree_3_6, node = phylogroup_v_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "V") %>%
+  rename(dna_id = value)
+# Classify phylogroup XLII taxa
+phylogroup_xlii_node <- MRCA(tree_3_6, c("MH770701", "P8202_bin_9.fa"))
+phylogroup_xlii_taxa <- tree_subset(tree_3_6, node = phylogroup_xlii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XLII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XLII taxa
+phylogroup_xlii_node <- MRCA(tree_3_6, c("MH770701", "P8202_bin_9.fa"))
+phylogroup_xlii_taxa <- tree_subset(tree_3_6, node = phylogroup_xlii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XLII") %>%
+  rename(dna_id = value)
+# Classify species complex 3.6a taxa
+complex_3_6_node <- MRCA(tree_3_6, c("KX923047", "MH770745"))
+complex_3_6_taxa <- tree_subset(tree_3_6, node = complex_3_6_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(species_complex = "3.6a") %>%
+  rename(dna_id = value)
+# Classify section 3-6
+section_3_6_taxa <- tree_3_6$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.6") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_6 <- bind_rows(phylogroup_v_taxa, phylogroup_xlii_taxa) %>%
+  right_join(section_3_6_taxa, by = "dna_id") %>%
+  left_join(complex_3_6_taxa, by = "dna_id")
+
+# Section 3-7
+
+# Load and root section tree the same way as we plotted before
+tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_7.treefile")
+root_node_3_7 <- MRCA(tmp_tree, c("Z94893", "P3068_bin_7.fa")) 
+outgroup_3_7 <- tree_subset(tmp_tree, node = root_node_3_7, levels_back = 0)$tip.label
+tree_3_7 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_7.treefile") %>%
+  root(outgroup = outgroup_3_7, resolve.root = T)
+# Classify phylogroup XIa taxa
+phylogroup_xia_node <- MRCA(tree_3_7, c("P5023_bin_4.fa", "KX923052"))
+phylogroup_xia_taxa <- tree_subset(tree_3_7, node = phylogroup_xia_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XIa") %>%
+  rename(dna_id = value)
+# Classify phylogroup XIb taxa
+phylogroup_xib_node <- MRCA(tree_3_7, c("P3068_bin_7.fa", "KX922955"))
+phylogroup_xib_taxa <- tree_subset(tree_3_7, node = phylogroup_xib_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XIb") %>%
+  rename(dna_id = value)
+# Classify section 3-7
+section_3_7_taxa <- tree_3_7$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.7") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_7 <- bind_rows(phylogroup_xia_taxa, phylogroup_xib_taxa) %>%
+  right_join(section_3_7_taxa, by = "dna_id") %>%
+  add_column(species_complex = NA)
+
+# Section 3-8
+
+# Load and root section tree the same way as we plotted before
+outgroup_3_8 <- c("Nostoc_KVJ2.fa", "Nostoc_KVS11.fa")
+tree_3_8 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_8.treefile") %>%
+  root(outgroup = outgroup_3_8, resolve.root = T)
+# Classify phylogroup NEW3 taxa
+phylogroup_new3_node <- MRCA(tree_3_8,  c("Nostoc_KVJ2.fa", "Nostoc_KVS11.fa"))
+phylogroup_new3_taxa <- tree_subset(tree_3_8, node = phylogroup_new3_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "NEW3") %>%
+  rename(dna_id = value)
+# Classify phylogroup NEW4 taxa
+phylogroup_new4_taxa <- drop.tip(tree_3_8, outgroup_3_8)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "NEW4") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_8 <- bind_rows(phylogroup_new3_taxa, phylogroup_new4_taxa) %>%
+  add_column(section = "3.8") %>%
+  add_column(species_complex = NA)
+
+# Section 3-9
+
+# Load and root section tree the same way as we plotted before
+outgroup_3_9 <- c("KX922962", "KX922961")
+tree_3_9 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_9.treefile") %>%
+  root(outgroup = outgroup_3_9, resolve.root = T)
+# Classify phylogroup XXI taxa
+phylogroup_xxi_node <- MRCA(tree_3_9,  c("MH770584", "P8820"))
+phylogroup_xxi_taxa <- tree_subset(tree_3_9, node = phylogroup_xxi_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXI") %>%
+  rename(dna_id = value) %>%
+  add_column(section = "3.9")
+# Classify phylogroup XXI taxa
+phylogroup_xvii_node <- MRCA(tree_3_9,  c("KX922962", "KX922961"))
+phylogroup_xvii_taxa <- tree_subset(tree_3_9, node = phylogroup_xvii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XVII") %>%
+  rename(dna_id = value) %>%
+  add_column(section = "aff_3.9")
+# Join all assignments
+clade_assignments_3_9 <- bind_rows(phylogroup_xxi_taxa, phylogroup_xvii_taxa) %>%
+  add_column(species_complex = NA)
+
+# Section 3-10
+
+# Load and root section tree the same way as we plotted before
+tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_10.treefile")
+root_node_3_10 <- MRCA(tmp_tree, c("P2037_bin_28.fa", "P2039_bin_23.fa")) 
+outgroup_3_10 <- tree_subset(tmp_tree, node = root_node_3_10, levels_back = 0)$tip.label
+tree_3_10 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_10.treefile") %>%
+  root(outgroup = outgroup_3_10, resolve.root = T)
+# Classify phylogroup XXII taxa
+phylogroup_xxii_node <- MRCA(tree_3_10,  c("P2037_bin_28.fa", "MH770512"))
+phylogroup_xxii_taxa <- tree_subset(tree_3_10, node = phylogroup_xxii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XXIII taxa
+phylogroup_xxiii_node <- MRCA(tree_3_10,  c("P2039_bin_23.fa", "MH770527"))
+phylogroup_xxiii_taxa <- tree_subset(tree_3_10, node = phylogroup_xxiii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XXIII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XIII.XLIII taxa
+phylogroup_xiii_xliii_node <- MRCA(tree_3_10,  c("MK720761", "KX922938"))
+phylogroup_xiii_xliii_taxa <- tree_subset(tree_3_10, node = phylogroup_xiii_xliii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XIII.XLIII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XIII.XLIII taxa
+phylogroup_xiii_xliii_node <- MRCA(tree_3_10,  c("MK720761", "KX922938"))
+phylogroup_xiii_xliii_taxa <- tree_subset(tree_3_10, node = phylogroup_xiii_xliii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XIII.XLIII") %>%
+  rename(dna_id = value)
+# Classify phylogroup VIIIa taxa
+phylogroup_viiia_node <- MRCA(tree_3_10,  c("MH770511", "KX923074"))
+phylogroup_viiia_taxa <- tree_subset(tree_3_10, node = phylogroup_viiia_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "VIIIa") %>%
+  rename(dna_id = value)
+# Classify phylogroup XX taxa
+phylogroup_xx_node <- MRCA(tree_3_10,  c("KX923038", "MH770720"))
+phylogroup_xx_taxa <- tree_subset(tree_3_10, node = phylogroup_xx_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XX") %>%
+  rename(dna_id = value)
+# Classify phylogroup XVI.XVIII taxa
+phylogroup_xvi_xviii_node <- MRCA(tree_3_10,  c("P1229_bin_25.fa", "MH770712"))
+phylogroup_xvi_xviii_taxa <- tree_subset(tree_3_10, node = phylogroup_xvi.xviii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XVI.XVIII") %>%
+  rename(dna_id = value)
+# Classify phylogroup XL taxa
+phylogroup_xl_node <- MRCA(tree_3_10,  c("MH770644", "MH770659"))
+phylogroup_xl_taxa <- tree_subset(tree_3_10, node = phylogroup_xl_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XL") %>%
+  rename(dna_id = value)
+# Classify phylogroup XIX taxa
+phylogroup_xix_node <- MRCA(tree_3_10,  c("KX922887", "P1574_bin_1.fa"))
+phylogroup_xix_taxa <- tree_subset(tree_3_10, node = phylogroup_xix_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XIX") %>%
+  rename(dna_id = value)
+# Classify species complex 3-10a
+complex_3_10_node <- MRCA(tree_3_10, c("P1574_bin_1.fa", "MH770515"))
+complex_3_10_taxa <- tree_subset(tree_3_10, node = complex_3_10_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(sepecies_complex = "3.10a") %>%
+  rename(dna_id = value)
+# Classify section 3-10
+section_3_10_taxa <- tree_3_10$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.10") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_10 <- bind_rows(phylogroup_xxii_taxa, phylogroup_xxiii_taxa, phylogroup_xiii_xliii_taxa, 
+                                   phylogroup_viiia_taxa, phylogroup_xx_taxa, phylogroup_xvi_xviii_taxa, 
+                                   phylogroup_xl_taxa, phylogroup_xix_taxa) %>%
+  right_join(section_3_10_taxa, by = "dna_id") %>%
+  left_join(complex_3_10_taxa, by = "dna_id")
+
+# Section 3-11
+
+# Load and root section tree the same way as we plotted before
+outgroup_3_11 <- c("NMS1_bin_5.fa", "NMS2_bin_6.fa")
+tree_3_11 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_11.treefile") %>%
+  root(outgroup = outgroup_3_11, resolve.root = T)
+# Classify phylogroup I? taxa
+phylogroup_i_node <- MRCA(tree_3_11,  c("NMS1_bin_5.fa", "NMS2_bin_6.fa"))
+phylogroup_i_taxa <- tree_subset(tree_3_11, node = phylogroup_i_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "I") %>%
+  rename(dna_id = value)
+# Classify phylogroup VIIIb taxa
+phylogroup_viiib_node <- MRCA(tree_3_11,  c("KX922897", "KX923088"))
+phylogroup_viiib_taxa <- tree_subset(tree_3_11, node = phylogroup_viiib_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "VIIIb") %>%
+  rename(dna_id = value)
+# Classify phylogroup NEW5 taxa
+phylogroup_new5_node <- MRCA(tree_3_11,  c("P8256_bin_3.fa", "MH770580"))
+phylogroup_new5_taxa <- tree_subset(tree_3_11, node = phylogroup_new5_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "VIIIb") %>%
+  rename(dna_id = value)
+# Classify species complex 3-11a
+complex_3_11_node <- MRCA(tree_3_11, c("KX922897", "P6963_bin_9.fa"))
+complex_3_11_taxa <- tree_subset(tree_3_11, node = complex_3_11_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(sepecies_complex = "3.11a") %>%
+  rename(dna_id = value)
+# Classify section 3-11
+section_3_11_taxa <- tree_3_11$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.11") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_11 <- bind_rows(phylogroup_i_taxa, phylogroup_viiib_taxa, phylogroup_new5_taxa) %>%
+  right_join(section_3_11_taxa, by = "dna_id") %>%
+  left_join(complex_3_11_taxa, by = "dna_id")
+
+# Section 3-12
+
+# Load and root section tree the same way as we plotted before
+outgroup_3_12 <- c("P9820_bin_6.fa", "P9820")
+tree_3_12 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_12.treefile") %>%
+  root(outgroup = outgroup_3_12, resolve.root = T)
+# Classify phylogroup NEW6 taxa
+phylogroup_new6_taxa <- c("P9820_bin_6.fa", "P9820") %>%
+  as_tibble() %>%
+  mutate(phylogroup = "NEW6") %>%
+  rename(dna_id = value)
+# Classify phylogroup XIV taxa
+phylogroup_xiv_taxa <- c("KX923070", "KX923071", "KX923069") %>%
+  as_tibble() %>%
+  mutate(phylogroup = "XIV") %>%
+  rename(dna_id = value)
+# Classify species complex 3-11a
+complex_3_12_node <- MRCA(tree_3_12, c("AJ632063", "KX923069"))
+complex_3_12_taxa <- tree_subset(tree_3_12, node = complex_3_12_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(sepecies_complex = "3.12a") %>%
+  rename(dna_id = value)
+# Classify section 3-12
+section_3_12_taxa <- tree_3_12$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "3.12") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_3_12 <- bind_rows(phylogroup_new5_taxa, phylogroup_xiv_taxa) %>%
+  right_join(section_3_12_taxa, by = "dna_id") %>%
+  left_join(complex_3_12_taxa, by = "dna_id")
+
+# Section 2-1
+
+# Load and root section tree the same way as we plotted before
+outgroup_2_1 <- c("EF102347")
+tree_2_1 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_1.treefile") %>%
+  root(outgroup = outgroup_2_1, resolve.root = T)
+# Classify section 2-1 taxa
+section_2_1_node <- MRCA(tree_2_1,  c("DQ266020", "P12559_bin_8.fa"))
+section_2_1_taxa <- tree_subset(tree_2_1, node = section_2_1_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "2.1") %>%
+  rename(dna_id = value) %>%
+  add_column(phylogroup = NA) %>%
+  add_column(species_complex = "2.1a")
+# Classify aff section 2-1 taxa
+aff_section_2_1_node <- MRCA(tree_2_1,  c("DQ185294", "DQ266002"))
+aff_section_2_1_taxa <- tree_subset(tree_2_1, node = aff_section_2_1_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  add_row(value = "EF102347") %>%
+  mutate(section = "aff_2.1") %>%
+  rename(dna_id = value) %>%
+  add_column(phylogroup = NA) %>%
+  add_column(species_complex = NA)
+# Join all assignments
+clade_assignments_2_1 <- bind_rows(section_2_1_taxa, aff_section_2_1_taxa)
+
+# Section 2-2
+
+# Load and root section tree the same way as we plotted before
+outgroup_2_2 <- c("S8_bin_2.fa", "S9_bin_6.fa", "KX923058", "EU877488", "P12591_bin_6.fa")
+tree_2_2 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_2.treefile") %>%
+  root(outgroup = outgroup_2_2, resolve.root = T) 
+# Classify phylogroup IX
+phylogroup_ix_taxa <- c("KX923082", "KX923081") %>%
+  as_tibble() %>%
+  mutate(section = "2.2") %>%
+  rename(dna_id = value) %>%
+  add_column(phylogroup = "IX") %>%
+  add_column(species_complex = "2.2a")
+# Classify species complex 2.2a
+complex_2_2_taxa <- tree_2_2$tip.label %>%
+  as_tibble() %>%
+  mutate(section = "2.2") %>%
+  rename(dna_id = value) %>%
+  add_column(phylogroup = NA) %>%
+  add_column(species_complex = "2.2a")
+# Join all assignments
+clade_assignments_2_2 <- bind_rows(phylogroup_ix_taxa, complex_2_2_taxa)
+
+# Section 2-3
+
+# Only one genome in the section, and sequences that were placed with can be 94%
+# similar so, will consider them aff_2.3
+clade_assignments_2_3 <- read.FASTA(file = "analyses/species_delimitation/rbclx/clade_assignment/alignments/rbclx_2_3_aln.fna") %>%
+  names() %>%
+  as_tibble() %>%
+  rename(dna_id = value) %>%
+  mutate(section = ifelse(dna_id == "P12588_bin_4.fa",
+                          "2.3", "aff_2.3")) %>%
+  add_column(species_complex = NA) %>%
+  add_column(phylogroup = NA)
+
+# Section 2-4
+
+# Load and root section tree the same way as we plotted before
+tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_4.treefile")
+root_node_2_4 <- MRCA(tmp_tree, c("P8690_bin_1.fa", "JL33_bin_16.fa", "P10247_bin_16.fa")) 
+outgroup_2_4 <- tree_subset(tmp_tree, node = root_node_2_4, levels_back = 0)$tip.label
+tree_2_4 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_4.treefile") %>%
+  root(outgroup = outgroup_2_4, resolve.root = T)
+# Classify phylogroup III taxa
+phylogroup_iii_node <- MRCA(tree_2_4,  c("P10247_bin_16.fa", "P8690_bin_1.fa"))
+phylogroup_iii_taxa <- tree_subset(tree_2_4, node = phylogroup_iii_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "III") %>%
+  rename(dna_id = value)
+# Classify phylogroup IVa taxa
+phylogroup_iva_node <- MRCA(tree_2_4,  c("MH757069", "NOS_bin_1.fa"))
+phylogroup_iva_taxa <- tree_subset(tree_2_4, node = phylogroup_iva_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "IVa") %>%
+  rename(dna_id = value)
+# Classify phylogroup IVb taxa
+phylogroup_ivb_node <- MRCA(tree_2_4,  c("P10894_bin_1.fa", "MH757080"))
+phylogroup_ivb_taxa <- tree_subset(tree_2_4, node = phylogroup_ivb_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "IVb") %>%
+  rename(dna_id = value)
+# Classify phylogroup IVc taxa
+phylogroup_ivc_node <- MRCA(tree_2_4,  c("P9728_bin_6.fa", "NMS7_bin_22.fa"))
+phylogroup_ivc_taxa <- tree_subset(tree_2_4, node = phylogroup_ivc_node, levels_back = 0)$tip.label %>%
+  as_tibble() %>%
+  mutate(phylogroup = "IVc") %>%
+  rename(dna_id = value)
+# Classify section and complex 2-4
+section_2_4_taxa <- tree_2_4$tip.label %>%
+  as_tibble() %>%
+  add_column(section = "2.4") %>%
+  add_column(species_complex = "2.4") %>%
+  rename(dna_id = value)
+# Join all assignments
+clade_assignments_2_4 <- bind_rows(phylogroup_iii_taxa, phylogroup_iva_taxa, phylogroup_ivb_taxa,
+                                   phylogroup_ivc_taxa) %>%
+  right_join(section_2_4_taxa, by = "dna_id")
+z
 #### PLOT TREES WITH SPATIAL DATA ####
 
 # Load backbone tree

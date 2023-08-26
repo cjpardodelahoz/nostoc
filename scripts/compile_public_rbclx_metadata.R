@@ -117,7 +117,20 @@ magain_2018 <- read_csv(file = "misc_files/voucher_magain2018.csv",
 # Join all rbclx metadata tables
 public_rbclx_metadata <- bind_rows(obrien_2013, magain_2017, miadlikowska_2018, 
                                    chagnon_2018, pardodelahoz_2018, magain_2018) %>%
-  distinct(rbclx_accession, .keep_all = T)
+  distinct(rbclx_accession, .keep_all = T) %>%
+  mutate(dna_source = str_remove(dna_source, " Gyeln.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " Zahlbr.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " S\u008erus.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " C. W. Dodge")) %>%
+  mutate(dna_source = str_remove(dna_source, " \\(With.\\).*")) %>%
+  mutate(dna_source = str_remove(dna_source, " R\u008as.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " Goward.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " Vitik.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " L. F.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " \\(.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " M\u009f.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " Vain.*")) %>%
+  mutate(dna_source = str_remove(dna_source, " R. Sa.*"))
 # Save the list of unique accessions and the metadata
 dir.create(path = "analyses/species_delimitation/rbclx/public", recursive = T)
 public_rbclx_metadata %>%
