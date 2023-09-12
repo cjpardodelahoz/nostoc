@@ -719,19 +719,17 @@ tree_2_2 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignme
 # Classify phylogroup IX
 phylogroup_ix_taxa <- c("KX923082", "KX923081") %>%
   as_tibble() %>%
-  mutate(section = "2.2") %>%
   rename(dna_id = value) %>%
-  add_column(phylogroup = "IX") %>%
-  add_column(species_complex = "2.2a")
+  add_column(phylogroup = "IX")
 # Classify species complex 2.2a
 complex_2_2_taxa <- tree_2_2$tip.label %>%
   as_tibble() %>%
   mutate(section = "2.2") %>%
   rename(dna_id = value) %>%
-  add_column(phylogroup = NA) %>%
   add_column(species_complex = "2.2a")
 # Join all assignments
-clade_assignments_2_2 <- bind_rows(phylogroup_ix_taxa, complex_2_2_taxa)
+clade_assignments_2_2 <- left_join(complex_2_2_taxa, phylogroup_ix_taxa, 
+                                   by = "dna_id") 
 
 # Section 2-3
 
@@ -797,7 +795,7 @@ clade_assignments_subclade_1 <- read.FASTA(file = "analyses/species_delimitation
   names() %>%
   as_tibble() %>%
   rename(dna_id = value) %>%
-  add_column(subclade = "subclade_1")
+  add_column(subclade = "subclade_1") %>%
   add_column(section = NA) %>%
   add_column(species_complex = NA) %>%
   add_column(phylogroup = NA)
@@ -809,7 +807,7 @@ unassigned_queries <- scan(file = "analyses/species_delimitation/rbclx/clade_ass
                            what = "character") %>%
   str_remove("QUERY___")
 # Join all asignments
-clade_assignments_all <- bind_rows(clade_assignments_2_1, clade_assignments_2_2, clade_assignments_2_4,
+clade_assignments_all <- bind_rows(clade_assignments_2_1, clade_assignments_2_2,
                                    clade_assignments_2_3, clade_assignments_2_4, clade_assignments_3_1,
                                    clade_assignments_3_2, clade_assignments_3_3, clade_assignments_3_4,
                                    clade_assignments_3_5, clade_assignments_3_6, clade_assignments_3_7,
@@ -825,9 +823,9 @@ clade_assignments_public <- public_rbclx_metadata %>%
   distinct(rbclx_accession, .keep_all = T) %>%
   left_join(clade_assignments_all, by = c("rbclx_accession" = "dna_id"))
 # Write tables
-write.csv(clade_assignments_all, file = "analyses/species_delimitation/rbclx/clade_assignment/clade_assignments_all.csv")
-  
-  
+write.csv(clade_assignments_all, file = "analyses/species_delimitation/rbclx/clade_assignment/clade_assignments_all.csv",
+          row.names = F)
+
 z
 #### PLOT TREES WITH SPATIAL DATA ####
 
