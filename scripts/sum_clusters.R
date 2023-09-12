@@ -92,25 +92,6 @@ fastani_df2 <- ani_matrix %>%
   filter(ani > 79 & ani < 100)
 
 
-#### 16S CLUSTERING ####
-
-# Load the 16S pairwise similarities
-pairwise_16s_df <- read_delim("analyses/species_delimitation/16s/blast_pairs_16s.txt",
-                              col_names = F)
-pairwise_16s_matrix <- pairwise_16s_df %>%
-  select(1:3) %>% 
-  as.matrix() %>%
-  matrify() %>%
-  mutate_if(is.character, as.numeric)
-clusters_16s <- abs(100-pairwise_16s_matrix) %>%
-  as.dist() %>%
-  hclust() %>%
-  cutree(h = 1.3) %>%
-  enframe(name = "genome", value = "cluster_16s") %>%
-  arrange(cluster_16s) %>%
-  mutate(cluster_16s = 
-           paste("c", cluster_16s, sep = ""))
-
 #### PLOT CLUSTER RESULTS ####
 
 ## Tree plot with clusters and species complex clades
