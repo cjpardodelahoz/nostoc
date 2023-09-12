@@ -71,6 +71,8 @@ query_source_df <- tree$tip.label %>%
   mutate(source = case_when(taxon %in% ref_taxa ~ "reference_tree",
                             str_detect(taxon, "QUERY___P[1-9]*") ~ "abmi",
                             .default = "public"))
+write.csv(query_source_df, file = "analyses/species_delimitation/rbclx/clade_assignment/query_source.csv",
+          row.names = F)
 # All Nostoc queries
 all_queries <- query_source_df %>% filter(source == "public" | source == "abmi") %>%
   filter(taxon %nin% outgroup) %>%
