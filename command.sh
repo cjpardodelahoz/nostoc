@@ -683,6 +683,39 @@ sbatch scripts/pairwise_16s_set103.sh
 # the correlation of ANI with alignment fraction, and the ANI gap
 Rscript scripts/sum_clusters.R
 
+# Pangenome to FastGear recombination analyses
+
+# Directory for pangenome analyses
+mkdir -p analyses/species_delimitation/pangenome
+# List of genomes (removed outgroups and Nostoc_sp_B_2019 by hand)
+for genome in $(cat misc_files/genome_ids_set12c) ; do
+ printf "${genome%%_chromosome.fa}\tanalyses/cyano_genomes/set12c/${genome}\n"
+done > analyses/species_delimitation/pangenome/genome_list.tsv
+# Run pagenome analysis with ppangolin
+sbatch scripts/ppanggolin_set12c.sh
+# Get fasta with core gene CDS
+sbatch scripts/ppanggolin_core_genes_set12c.sh
+# fastgear directory and list of alignment files
+mkdir -p analyses/species_delimitation/fastgear/core 
+ls analyses/species_delimitation/pangenome/core_genes/msa_core_dna/ > \
+ analyses/species_delimitation/fastgear/core/core_alns.txt
+# Remove line 818 from aln file list
+sed -i '818d' analyses/species_delimitation/fastgear/core/core_alns.txt  
+# Run fastgear on core genes
+# Initially ran with 987 but P8571_bin_17_CDS_5904.aln (818) is empty, 
+# probably because of duplications so I removed it from the list in the previous
+# step
+sbatch scripts/fastgear_core_set12c.sh
+# Prepare HERO table
+mkdir -p analyses/species_delimitation/hero/core
+aln_path=analyses/species_delimitation/pangenome/core_genes/msa_core_dna
+out_path=analyses/species_delimitation/fastgear/core
+for aln in $(cat analyses/species_delimitation/fastgear/core/core_alns.txt) ; do
+ echo -e ${aln%%.aln}"\t"${aln_path}"/"${aln}"\t"${out_path}"/"${aln%%.aln}
+done > analyses/species_delimitation/hero/core/hero_table.tsv
+# Run HERO
+sbatch scripts/hero_core_set12c.sh
+
 # Recombination with Gubbins
 conda activate gubbins
 generate_ska_alignment.py --reference analyses/cyano_genomes/set12c/Nostoc_sp_Peltigera_membranacea_cyanobiont_232_chromosome.fa \
@@ -752,6 +785,9 @@ cat analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103.fna \
  analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_abmi.fna \
  analyses/species_delimitation/rbclx/clade_assignment/seqs/public_rbclx.fasta > \
  analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103_abmi_public.fna
+# Remove question marks from concatenation
+sed -i "s|[?]||g" analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103_abmi_public.fna
+sed -i -e '/^$/d' analyses/species_delimitation/rbclx/clade_assignment/seqs/rbclx_set103_abmi_public.fna
 # Align all the rbcLX
 # I edited this alignment in Mesquite  and exluded ambiguous regions
 # I also removed 291 public sequences that had no or very short rbcL 
@@ -777,6 +813,8 @@ ls analyses/species_delimitation/rbclx/clade_assignment/alignments/*edited* > \
 mkdir -p  analyses/species_delimitation/rbclx/clade_assignment/trees/focal
 # Infer ML trees for focal groups
 sbatch scripts/ml_rbclx_focal_groups.sh
+# Run all-by-all rbcLX blast
+sbatch scripts/pairwise_all_rbclx.sh
 # Plot trees for focal groups
 Rscript scripts/plot_focal_trees.R
 
