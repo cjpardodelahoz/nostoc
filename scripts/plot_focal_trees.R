@@ -274,7 +274,7 @@ phylogroup_xxv_taxa <- tree_subset(tree_3_1, node = phylogroup_xxv_node, levels_
 complex_3_1_node <- MRCA(tree_3_1, c("KX922914", "MH770769"))
 complex_3_1_taxa <- tree_subset(tree_3_1, node = complex_3_1_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(sepecies_complex = "3.1a") %>%
+  mutate(species_complex = "3.1a") %>%
   rename(dna_id = value)
 # Classify section 3-1
 section_3_1_taxa <- tree_3_1$tip.label %>%
@@ -399,7 +399,7 @@ phylogroup_xxvia_taxa <- tree_subset(tree_3_5, node = phylogroup_xxvia_node, lev
 complex_3_5_node <- MRCA(tree_3_5, c("KX923001", "MH770561"))
 complex_3_5_taxa <- tree_subset(tree_3_5, node = complex_3_5_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(sepecies_complex = "3.5a") %>%
+  mutate(species_complex = "3.5a") %>%
   rename(dna_id = value)
 # Classify section 3-5
 section_3_5_taxa <- tree_3_5$tip.label %>%
@@ -578,7 +578,7 @@ phylogroup_xx_taxa <- tree_subset(tree_3_10, node = phylogroup_xx_node, levels_b
   rename(dna_id = value)
 # Classify phylogroup XVI.XVIII taxa
 phylogroup_xvi_xviii_node <- MRCA(tree_3_10,  c("P1229_bin_25.fa", "MH770712"))
-phylogroup_xvi_xviii_taxa <- tree_subset(tree_3_10, node = phylogroup_xvi.xviii_node, levels_back = 0)$tip.label %>%
+phylogroup_xvi_xviii_taxa <- tree_subset(tree_3_10, node = phylogroup_xvi_xviii_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
   mutate(phylogroup = "XVI.XVIII") %>%
   rename(dna_id = value)
@@ -598,7 +598,7 @@ phylogroup_xix_taxa <- tree_subset(tree_3_10, node = phylogroup_xix_node, levels
 complex_3_10_node <- MRCA(tree_3_10, c("P1574_bin_1.fa", "MH770515"))
 complex_3_10_taxa <- tree_subset(tree_3_10, node = complex_3_10_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(sepecies_complex = "3.10a") %>%
+  mutate(species_complex = "3.10a") %>%
   rename(dna_id = value)
 # Classify section 3-10
 section_3_10_taxa <- tree_3_10$tip.label %>%
@@ -640,7 +640,7 @@ phylogroup_new5_taxa <- tree_subset(tree_3_11, node = phylogroup_new5_node, leve
 complex_3_11_node <- MRCA(tree_3_11, c("KX922897", "P6963_bin_9.fa"))
 complex_3_11_taxa <- tree_subset(tree_3_11, node = complex_3_11_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(sepecies_complex = "3.11a") %>%
+  mutate(species_complex = "3.11a") %>%
   rename(dna_id = value)
 # Classify section 3-11
 section_3_11_taxa <- tree_3_11$tip.label %>%
@@ -672,7 +672,7 @@ phylogroup_xiv_taxa <- c("KX923070", "KX923071", "KX923069") %>%
 complex_3_12_node <- MRCA(tree_3_12, c("AJ632063", "KX923069"))
 complex_3_12_taxa <- tree_subset(tree_3_12, node = complex_3_12_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(sepecies_complex = "3.12a") %>%
+  mutate(species_complex = "3.12a") %>%
   rename(dna_id = value)
 # Classify section 3-12
 section_3_12_taxa <- tree_3_12$tip.label %>%
@@ -788,89 +788,221 @@ section_2_4_taxa <- tree_2_4$tip.label %>%
 clade_assignments_2_4 <- bind_rows(phylogroup_iii_taxa, phylogroup_iva_taxa, phylogroup_ivb_taxa,
                                    phylogroup_ivc_taxa) %>%
   right_join(section_2_4_taxa, by = "dna_id")
+
+# Subclade 1
+
+# No phylogroups delimited within subclade 1, so will consider only the subclade
+# level
+clade_assignments_subclade_1 <- read.FASTA(file = "analyses/species_delimitation/rbclx/clade_assignment/alignments/rbclx_subclade1_aln_edited.fna") %>%
+  names() %>%
+  as_tibble() %>%
+  rename(dna_id = value) %>%
+  add_column(subclade = "subclade_1")
+  add_column(section = NA) %>%
+  add_column(species_complex = NA) %>%
+  add_column(phylogroup = NA)
+
+# Tables with all assignments
+
+# Bring in unassigned queries
+unassigned_queries <- scan(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/placement/unassigned_queries.txt", 
+                           what = "character") %>%
+  str_remove("QUERY___")
+# Join all asignments
+clade_assignments_all <- bind_rows(clade_assignments_2_1, clade_assignments_2_2, clade_assignments_2_4,
+                                   clade_assignments_2_3, clade_assignments_2_4, clade_assignments_3_1,
+                                   clade_assignments_3_2, clade_assignments_3_3, clade_assignments_3_4,
+                                   clade_assignments_3_5, clade_assignments_3_6, clade_assignments_3_7,
+                                   clade_assignments_3_8, clade_assignments_3_9, clade_assignments_3_10,
+                                   clade_assignments_3_11, clade_assignments_3_12, clade_assignments_subclade_1) %>%
+  mutate(subclade = ifelse(is.na(subclade),
+                           case_when(str_detect(section, "2\\.") ~ "subclade_2",
+                                     str_detect(section, "3\\.") ~ "subclade_3"),
+                           subclade)) %>%
+  add_row(dna_id = unassigned_queries, subclade = "unassigned")
+# Public clade assignments
+clade_assignments_public <- public_rbclx_metadata %>%
+  distinct(rbclx_accession, .keep_all = T) %>%
+  left_join(clade_assignments_all, by = c("rbclx_accession" = "dna_id"))
+# Write tables
+write.csv(clade_assignments_all, file = "analyses/species_delimitation/rbclx/clade_assignment/clade_assignments_all.csv")
+  
+  
 z
 #### PLOT TREES WITH SPATIAL DATA ####
 
-# Load backbone tree
-backbone_tree <- read.tree("analyses/species_delimitation/cooccurrence/trees/placement/backbone.tree")
-# Get labels of reference taxa to remove from the focal ml trees 
-reference_node_v <- MRCA(backbone_tree, c("JL34_bin_22.fa", "P2162_bin_10.fa"))
-reference_tree_v <- tree_subset(backbone_tree, node = reference_node_v,
-                                levels_back = 0)
-reference_taxa_v <- reference_tree_v$tip.label
-# Load focal ml trees
-tree_v <- read.tree("analyses/species_delimitation/cooccurrence/trees/focal/rbclx_set103_global_abmi_v.treefile")
-# Remove reference taxa from focal trees
-tree_v <- drop.tip(tree_v, reference_taxa_v)
-
-# Classify taxa from focal groups according to clades
-
+# Function to prepare ABMI site data for plotting
+prep_abmi_data <- function(clade_assignments, source_data, abmi_metadata) {
+  # Get clade assignments for ABMI taxa in focal tree
+  clade_assignments_abmi <- clade_assignments %>%
+    left_join(source_data, by = c("dna_id" = "taxon")) %>%
+    filter(source == "abmi")
+  # Get list of ABMI taxa in focal tree
+  abmi_taxa <- clade_assignments_abmi %>%
+    pull(dna_id)
+  # Get counts of OTU per site
+  # An TOU could be a phylogroup, or if no phylogroup was assigned, then all
+  # floating taxa within a species complex were considered the same OTU
+  cooccurrence_df <- clade_assignments_abmi %>%
+    left_join(abmi_metadata, by = c("dna_id" = "duke_dna")) %>%
+    mutate(best_otu = ifelse(!is.na(phylogroup),
+                             phylogroup, species_complex)) %>%
+    filter(!is.na(site)) %>% # FIGURE OUT WHY P6314, P6535 and P6314 are not in DB
+    select(site, best_otu) %>%
+    distinct() %>% # KEEPS ONLY ONE DUPLICATE BUT BOTH RECORDS HAVE THE SAME SITE SO IT'S SAFE
+    group_by(site) %>%
+    summarise(n_otu = length(best_otu))
+  # Join cooccurrence df with cyano db and natural regions from site data
+  site_data <- left_join(clade_assignments_abmi, abmi_metadata, 
+                             by = c("dna_id" = "duke_dna")) %>%
+    distinct(dna_id, .keep_all = T) %>% # KEEPS ONLY ONE DUPLICATE BUT BOTH RECORDS HAVE THE SAME SITE SO IT'S SAFE
+    filter(!is.na(site)) %>% # FIGURE OUT WHY P6314, P6535 and P6314 are not in DB
+    left_join(cooccurrence_df, by = "site")
+  # Results into table
+  result <- list(site_data = site_data, abmi_taxa = abmi_taxa, 
+                 clade_assignments_abmi = clade_assignments_abmi)
+}
 # Load ABMI data
 cyano_db <- read.delim("misc_files/ABMI_cyanolichen_db_T-BAS_v6.csv",
                        header = T, sep = ",") %>%
   select(duke_dna, site)
-# Load site metadata
-all_site_data <- read.delim("misc_files/cyano_db_site_data.csv", header = T, sep = ",")
-# Split focal group V into clades V, XLII, and XXXIX
-clade_v_anchor <- c("P2176", "P2156")
-clade_v_node <- MRCA(tree_v, clade_v_anchor)
-clade_v_taxa <- tree_subset(tree_v, node = clade_v_node, levels_back = 0)$tip.label %>%
-  as_tibble() %>%
-  mutate(clade = "V") %>%
-  rename(duke_dna = value)
-clade_xlii_anchor <- c("P8203", "P10943")
-clade_xlii_node <- MRCA(tree_v, clade_xlii_anchor)
-clade_xlii_taxa <- tree_subset(tree_v, node = clade_xlii_node, levels_back = 0)$tip.label %>%
-  as_tibble() %>%
-  mutate(clade = "XLII") %>%
-  rename(duke_dna = value)
-clade_xxxix_taxa <- tree_v$tip.label %>%
-  setdiff(c(clade_v_taxa$duke_dna, clade_xlii_taxa$duke_dna)) %>%
-  as_tibble() %>%
-  mutate(clade = "XXXIX") %>%
-  rename(duke_dna = value)
-clade_assignments_v <- bind_rows(clade_v_taxa, clade_xlii_taxa, clade_xxxix_taxa)
-# Get counts of clades per site
-cooccurrence_df <- left_join(cyano_db, clade_assignments_v, by = "duke_dna") %>%
-  filter(!is.na(clade)) %>%
-  select(2:3) %>%
-  distinct() %>%
-  group_by(site) %>%
-  summarise(n_clades = length(clade))
-# Join cooccurrence df with cyano db and natural regions from site data
-# Remove row 67 which has a wrong dupplicate
-# FIGURE OUT DUPLICATES
-site_data_v <- left_join(clade_assignments_v, cyano_db, by = "duke_dna") %>%
-  filter(!row_number() %in% 67) %>%
-  left_join(cooccurrence_df, by = "site") %>%
-  left_join(select(all_site_data, site, nat_reg, nat_subreg), by = "site") %>%
-  mutate(nat_reg = 
-           na_if(nat_reg, "#VALUE!")) %>%
-  mutate(nat_subreg = 
-           na_if(nat_subreg, "#VALUE!")) %>%
-  distinct()
+# Prep site and list of taxa for abmi plots
+abmi_data_3_1 <- prep_abmi_data(clade_assignments_3_1, query_source_df, cyano_db)
+abmi_data_3_5 <- prep_abmi_data(clade_assignments_3_5, query_source_df, cyano_db)
+abmi_data_3_6 <- prep_abmi_data(clade_assignments_3_6, query_source_df, cyano_db)
+abmi_data_2_4 <- prep_abmi_data(clade_assignments_2_4, query_source_df, cyano_db)
+# Get list of ABMI taxa in focal trees
+abmi_taxa_3_1 <- abmi_data_3_1$abmi_taxa
+abmi_taxa_3_5 <- abmi_data_3_5$abmi_taxa
+abmi_taxa_3_6 <- abmi_data_3_6$abmi_taxa
+abmi_taxa_2_4 <- abmi_data_2_4$abmi_taxa
+# Get site data for focal trees
+site_data_3_1 <- abmi_data_3_1$site_data
+site_data_3_5 <- abmi_data_3_5$site_data
+site_data_3_6 <- abmi_data_3_6$site_data
+site_data_2_4 <- abmi_data_2_4$site_data
+# Get clade assignments for focal trees
+clade_assignments_2_4_abmi <- abmi_data_2_4$clade_assignments_abmi
+# Remove reference and public taxa from focal trees
+tree_3_1_abmi <- keep.tip(tree_3_1, abmi_taxa_3_1)
+tree_3_5_abmi <- keep.tip(tree_3_5, abmi_taxa_3_5)
+tree_3_6_abmi <- keep.tip(unroot(tree_3_6), abmi_taxa_3_6)
+tree_2_4_abmi <- keep.tip(unroot(tree_2_4), abmi_taxa_2_4)
 # Join site data to trees for plotting
-tree_v_meta <- as_tibble(tree_v) %>%
-  left_join(site_data_v, by = c("label" = "duke_dna")) %>%
+tree_3_1_abmi_meta <- as_tibble(tree_3_1_abmi) %>%
+  left_join(site_data_3_1, by = c("label" = "dna_id")) %>%
   as.treedata()
-# Plot tree with cooccurrence data
-tree_v_cooccurrence_plot <- ggtree(tree_v_meta) +
-  geom_tippoint(aes(color = factor(n_clades), alpha = 0.3), na.rm = T) +
-  geom_cladelab(node = clade_v_node, label = "V") +
-  geom_cladelab(node = clade_xlii_node, label = "XLII") +
-  geom_cladelab(node = 456, label = "XXXIX") + 
-  scale_color_discrete(name = "No. of co-occurring clades") +
+tree_3_5_abmi_meta <- as_tibble(tree_3_5_abmi) %>%
+  left_join(site_data_3_5, by = c("label" = "dna_id")) %>%
+  as.treedata()
+tree_3_6_abmi_meta <- as_tibble(tree_3_6_abmi) %>%
+  left_join(site_data_3_6, by = c("label" = "dna_id")) %>%
+  as.treedata()
+tree_2_4_abmi_meta <- as_tibble(tree_2_4_abmi) %>%
+  left_join(site_data_2_4, by = c("label" = "dna_id")) %>%
+  as.treedata()
+# Get node numbers for phylogroups
+abmi_v_node <- MRCA(tree_3_6_abmi, 
+                    filter(clade_assignments_3_6_abmi, phylogroup == "V") %>%
+                      pull(dna_id) %>% 
+                      unique()
+                    )
+abmi_xlii_node <- MRCA(tree_3_6_abmi, 
+                    filter(clade_assignments_3_6_abmi, phylogroup == "XLII") %>%
+                      pull(dna_id) %>% 
+                      unique()
+                    )
+abmi_iva_node <- MRCA(tree_2_4_abmi, 
+                       filter(clade_assignments_2_4_abmi, phylogroup == "IVa") %>%
+                         pull(dna_id) %>% 
+                         unique()
+)
+abmi_ivb_node <- MRCA(tree_2_4_abmi, 
+                      filter(clade_assignments_2_4_abmi, phylogroup == "IVb") %>%
+                        pull(dna_id) %>% 
+                        unique()
+)
+abmi_ivc_node <- MRCA(tree_2_4_abmi, 
+                      filter(clade_assignments_2_4_abmi, phylogroup == "IVc") %>%
+                        pull(dna_id) %>% 
+                        unique()
+)
+abmi_iii_node <- MRCA(tree_2_4_abmi, 
+                      filter(clade_assignments_2_4_abmi, phylogroup == "III") %>%
+                        pull(dna_id) %>% 
+                        unique()
+)
+# Colors for cooccurrence
+colors_3 <- c("1" = "#F29AAA", "2" = "#1F78B4", "3" = "#B2DF8A")
+colors_4 <- c("1" = "#F29AAA", "2" = "#1F78B4", "3" = "#B2DF8A", "4" = "#AD6E1A")
+# Plot trees with cooccurrence data
+tree_3_6_cooccurrence_plot <- ggtree(tree_3_6_abmi_meta) +
+  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1)) +
+  geom_cladelab(node = abmi_v_node, label = "V") +
+  geom_cladelab(node = abmi_xlii_node, label = "XLII") +
+  scale_color_manual(name = "No. of co-occurring OTUs\nin collection site", values = colors_3) +
   xlim(0, 0.037) +
   ylim(0, 460) +
   geom_treescale(width = 0.005, y = 50, x = 0.003, offset = 3.5) +
   theme(legend.position = c(0.05, 0.7),
         legend.justification = "left", 
         legend.direction = "vertical")
-# Save tree plot
-ggsave(tree_v_cooccurrence_plot, 
-       filename = "document/plots/cooccurrence_tree_v.pdf")
-  
+tree_2_4_cooccurrence_plot <- ggtree(tree_2_4_abmi_meta) +
+  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1), na.rm = T) +
+  geom_cladelab(node = abmi_iva_node, label = "IVa") +
+  geom_cladelab(node = abmi_ivb_node, label = "IVb") +
+  geom_cladelab(node = abmi_ivc_node, label = "IVc") +
+  geom_cladelab(node = abmi_iii_node, label = "III") +
+  scale_color_manual(name = "No. of co-occurring OTUs\nin collection site", values = colors_4) +
+  geom_treescale(width = 0.005, y = 50, x = 0.003, offset = 3.5)
 
+ggtree(tree_3_1_abmi_meta) +
+  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1), na.rm = T)
+ggtree(tree_3_5_abmi_meta) +
+  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1), na.rm = T)
+# Save tree plots
+ggsave(tree_3_6_cooccurrence_plot, 
+       filename = "document/plots/tree_3_6_cooccurrence_plot.pdf")
+ggsave(tree_2_4_cooccurrence_plot, 
+       filename = "document/plots/tree_2_4_cooccurrence_plot.pdf") 
+  
+# Site data for plotting maps in ArcGIS
+
+# Add count of number of specimens and lat lons
+# 3-1
+site_data_3_1_plot_sum <- site_data_3_1 %>%
+  group_by(site) %>%
+  summarise(n_specimens = length(dna_id), n_otu = unique(n_otu)) %>%
+  left_join(all_site_data, by = "site") %>%
+  select(site, n_specimens, n_otu, lat, long) %>%
+  filter(!is.na(lat))
+# 3-5
+site_data_3_5_plot_sum <- site_data_3_5 %>%
+  group_by(site) %>%
+  summarise(n_specimens = length(dna_id), n_otu = unique(n_otu)) %>%
+  left_join(all_site_data, by = "site") %>%
+  select(site, n_specimens, n_otu, lat, long) %>%
+  filter(!is.na(lat))
+# 3-6
+site_data_3_6_plot_sum <- site_data_3_6 %>%
+  group_by(site) %>%
+  summarise(n_specimens = length(dna_id), n_otu = unique(n_otu)) %>%
+  left_join(all_site_data, by = "site") %>%
+  select(site, n_specimens, n_otu, lat, long) %>%
+  filter(!is.na(lat))
+# 2-4
+site_data_2_4_plot_sum <- site_data_2_4 %>%
+  group_by(site) %>%
+  summarise(n_specimens = length(dna_id), n_otu = unique(n_otu)) %>%
+  left_join(all_site_data, by = "site") %>%
+  select(site, n_specimens, n_otu, lat, long) %>%
+  filter(!is.na(lat))
+# Save site data as csvs
+dir.create("analyses/species_delimitation/rbclx/cooccurrence_maps")
+write_csv(site_data_3_1_plot_sum, file = "analyses/species_delimitation/rbclx/cooccurrence_maps/site_data_3_1_plot_sum.csv")
+write_csv(site_data_3_5_plot_sum, file = "analyses/species_delimitation/rbclx/cooccurrence_maps/site_data_3_5_plot_sum.csv")
+write_csv(site_data_3_6_plot_sum, file = "analyses/species_delimitation/rbclx/cooccurrence_maps/site_data_3_6_plot_sum.csv")
+write_csv(site_data_2_4_plot_sum, file = "analyses/species_delimitation/rbclx/cooccurrence_maps/site_data_2_4_plot_sum.csv")
 
 #### PLOT TREES WITH ALIGNMENT ####
 

@@ -87,6 +87,7 @@ assigned_queries <- c(tree_3_1$tip.label, tree_3_2$tip.label, tree_3_3$tip.label
   pull(value)
 # queries that fell outside of focal groups
 unassigned_queries <- setdiff(all_queries, assigned_queries)
+write(unassigned_queries, file = "analyses/species_delimitation/rbclx/clade_assignment/trees/placement/unassigned_queries.txt")
 # Tree showing only unassigned queries
 tree_unassigned <- keep.tip(tree, c(ref_taxa, unassigned_queries))
 write.tree(tree_unassigned, file = "analyses/species_delimitation/rbclx/clade_assignment/trees/placement/unassigned.tree")
