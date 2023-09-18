@@ -247,7 +247,7 @@ phylogroup_xxxviii_taxa <- tree_subset(tree_3_1, node = phylogroup_xxxviii_node,
   mutate(phylogroup = "XXXVIII") %>%
   rename(dna_id = value)
 # Classify phylogroup XXXIII taxa
-phylogroup_xxxiii_node <- MRCA(tree_3_1, c("P8575_bin_3.fa", "JL31_bin_38.fa"))
+phylogroup_xxxiii_node <- MRCA(tree_3_1, c("P8575_bin_3.fa", "P8891"))
 phylogroup_xxxiii_taxa <- tree_subset(tree_3_1, node = phylogroup_xxxiii_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
   mutate(phylogroup = "XXXIII") %>%
@@ -825,8 +825,10 @@ clade_assignments_public <- public_rbclx_metadata %>%
 # Write tables
 write.csv(clade_assignments_all, file = "analyses/species_delimitation/rbclx/clade_assignment/clade_assignments_all.csv",
           row.names = F)
+write.csv(clade_assignments_public, file = "document/tables/clade_assignments_public.csv",
+          row.names = F)
 
-z
+
 #### PLOT TREES WITH SPATIAL DATA ####
 
 # Function to prepare ABMI site data for plotting
@@ -880,6 +882,9 @@ site_data_3_5 <- abmi_data_3_5$site_data
 site_data_3_6 <- abmi_data_3_6$site_data
 site_data_2_4 <- abmi_data_2_4$site_data
 # Get clade assignments for focal trees
+clade_assignments_3_1_abmi <- abmi_data_3_1$clade_assignments_abmi
+clade_assignments_3_5_abmi <- abmi_data_3_5$clade_assignments_abmi
+clade_assignments_3_6_abmi <- abmi_data_3_6$clade_assignments_abmi
 clade_assignments_2_4_abmi <- abmi_data_2_4$clade_assignments_abmi
 # Remove reference and public taxa from focal trees
 tree_3_1_abmi <- keep.tip(tree_3_1, abmi_taxa_3_1)
@@ -900,40 +905,79 @@ tree_2_4_abmi_meta <- as_tibble(tree_2_4_abmi) %>%
   left_join(site_data_2_4, by = c("label" = "dna_id")) %>%
   as.treedata()
 # Get node numbers for phylogroups
+# Section 3.1
+abmi_xxv_node <- MRCA(tree_3_1_abmi, 
+                    filter(clade_assignments_3_1_abmi, phylogroup == "XXV") %>%
+                      pull(dna_id) %>% 
+                      unique())
+abmi_xxvii_node <- MRCA(tree_3_1_abmi, 
+                      filter(clade_assignments_3_1_abmi, phylogroup == "XXVII") %>%
+                        pull(dna_id) %>% 
+                        unique())
+abmi_xxxiii_node <- MRCA(tree_3_1_abmi, 
+                      filter(clade_assignments_3_1_abmi, phylogroup == "XXXIII") %>%
+                        pull(dna_id) %>% 
+                        unique())
+# Section 3.5
+abmi_viic_node <- MRCA(tree_3_5_abmi, 
+                         filter(clade_assignments_3_5_abmi, phylogroup == "VIIc") %>%
+                           pull(dna_id) %>% 
+                           unique())
+abmi_viia_node <- MRCA(tree_3_5_abmi, 
+                       filter(clade_assignments_3_5_abmi, phylogroup == "VIIa") %>%
+                         pull(dna_id) %>% 
+                         unique())
+abmi_viid_node <- MRCA(tree_3_5_abmi, 
+                       filter(clade_assignments_3_5_abmi, phylogroup == "VIId") %>%
+                         pull(dna_id) %>% 
+                         unique())
+# Section 3.6
 abmi_v_node <- MRCA(tree_3_6_abmi, 
                     filter(clade_assignments_3_6_abmi, phylogroup == "V") %>%
                       pull(dna_id) %>% 
-                      unique()
-                    )
+                      unique())
 abmi_xlii_node <- MRCA(tree_3_6_abmi, 
                     filter(clade_assignments_3_6_abmi, phylogroup == "XLII") %>%
                       pull(dna_id) %>% 
-                      unique()
-                    )
+                      unique())
+# Section 2.4
 abmi_iva_node <- MRCA(tree_2_4_abmi, 
                        filter(clade_assignments_2_4_abmi, phylogroup == "IVa") %>%
                          pull(dna_id) %>% 
-                         unique()
-)
+                         unique())
 abmi_ivb_node <- MRCA(tree_2_4_abmi, 
                       filter(clade_assignments_2_4_abmi, phylogroup == "IVb") %>%
                         pull(dna_id) %>% 
-                        unique()
-)
+                        unique())
 abmi_ivc_node <- MRCA(tree_2_4_abmi, 
                       filter(clade_assignments_2_4_abmi, phylogroup == "IVc") %>%
                         pull(dna_id) %>% 
-                        unique()
-)
+                        unique())
 abmi_iii_node <- MRCA(tree_2_4_abmi, 
                       filter(clade_assignments_2_4_abmi, phylogroup == "III") %>%
                         pull(dna_id) %>% 
-                        unique()
-)
+                        unique())
 # Colors for cooccurrence
 colors_3 <- c("1" = "#F29AAA", "2" = "#1F78B4", "3" = "#B2DF8A")
 colors_4 <- c("1" = "#F29AAA", "2" = "#1F78B4", "3" = "#B2DF8A", "4" = "#AD6E1A")
 # Plot trees with cooccurrence data
+tree_3_1_cooccurrence_plot <- ggtree(tree_3_1_abmi_meta) +
+  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1)) +
+  geom_cladelab(node = abmi_xxv_node, label = "XXV") +
+  geom_cladelab(node = abmi_xxvii_node, label = "XXVII") +
+  geom_cladelab(node = abmi_xxxiii_node, label = "XXXIII") +
+  scale_color_manual(name = "No. of co-occurring OTUs\nin collection site", values = colors_3) +
+  geom_treescale(width = 0.005, y = 50, x = 0.06, offset = 5)
+tree_3_5_cooccurrence_plot <- ggtree(tree_3_5_abmi_meta) +
+  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1)) +
+  geom_cladelab(node = abmi_viia_node, label = "VIIa") +
+  geom_cladelab(node = abmi_viic_node, label = "VIIc") +
+  geom_cladelab(node = abmi_viid_node, label = "VIId") +
+  scale_color_manual(name = "No. of co-occurring OTUs\nin collection site", values = colors_3) +
+  geom_treescale(width = 0.005, y = 50, x = 0.017, offset = 3.5) +
+  theme(legend.position = c(0.05, 0.7),
+        legend.justification = "left", 
+        legend.direction = "vertical")
 tree_3_6_cooccurrence_plot <- ggtree(tree_3_6_abmi_meta) +
   geom_tippoint(aes(color = factor(n_otu), alpha = 0.1)) +
   geom_cladelab(node = abmi_v_node, label = "V") +
@@ -953,12 +997,13 @@ tree_2_4_cooccurrence_plot <- ggtree(tree_2_4_abmi_meta) +
   geom_cladelab(node = abmi_iii_node, label = "III") +
   scale_color_manual(name = "No. of co-occurring OTUs\nin collection site", values = colors_4) +
   geom_treescale(width = 0.005, y = 50, x = 0.003, offset = 3.5)
-
-ggtree(tree_3_1_abmi_meta) +
-  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1), na.rm = T)
-ggtree(tree_3_5_abmi_meta) +
-  geom_tippoint(aes(color = factor(n_otu), alpha = 0.1), na.rm = T)
 # Save tree plots
+ggsave(tree_3_1_cooccurrence_plot, 
+       filename = "document/plots/tree_3_1_cooccurrence_plot.pdf",
+       height = 8, width = 8)
+ggsave(tree_3_5_cooccurrence_plot, 
+       filename = "document/plots/tree_3_5_cooccurrence_plot.pdf",
+       height = 8, width = 8)
 ggsave(tree_3_6_cooccurrence_plot, 
        filename = "document/plots/tree_3_6_cooccurrence_plot.pdf")
 ggsave(tree_2_4_cooccurrence_plot, 
