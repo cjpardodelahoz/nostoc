@@ -137,7 +137,7 @@ discordant_vs_time <- discordant_data %>%
   annotate("text", label = "P < 0.001 *", x = 400, y = 80, size = 4) +
   annotate("text", label = "R^2 == 0.40", x = 400, y = 70, size = 4, parse = T) +
   scale_y_continuous(limits = c(0, 100)) +
-  labs(x = "Internode length (Myr)", y = "Percent of discordant trees") +
+  labs(x = "Branch length (Myr)", y = "Percent of discordant trees") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
         axis.text = element_text(size = 12, color = "black"))
@@ -163,7 +163,7 @@ concordant_vs_time <- concordant_data %>%
   scale_y_continuous(limits = c(0, 100)) +
   annotate("text", label = "P < 0.001 *", x = 500, y = 50, size = 4) +
   annotate("text", label = "R^2 == 0.58", x = 500, y = 40, size = 4, parse = T) +
-  labs(x = "Internode length (Myr)", y = "Percent of concordant trees") +
+  labs(x = "Branch length (Myr)", y = "Percent of concordant trees") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
         axis.text = element_text(size = 12, color = "black"))
@@ -182,7 +182,7 @@ weak_support_vs_time <- weak_support_data %>%
   annotate("text", label = "P = 0.205", x = 400, y = 80, size = 4) +
   annotate("text", label = "R^2 == 0.004", x = 400, y = 70, size = 4, parse = T) +
   scale_y_continuous(limits = c(0, 100)) +
-  labs(x = "Internode length (Myr)", y = "Percent of weakly concordant trees") +
+  labs(x = "Branch length (Myr)", y = "Percent of weakly concordant trees") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
         axis.text = element_text(size = 12, color = "black"))
@@ -208,7 +208,7 @@ weak_reject_vs_time <- weak_reject_data %>%
   scale_y_continuous(limits = c(0, 100)) +
   annotate("text", label = "P < 0.001 *", x = 400, y = 80, size = 4) +
   annotate("text", label = "R^2 == 0.52", x = 400, y = 70, size = 4, parse = T) +
-  labs(x = "Internode length (Myr)", y = "Percent of weakly discordant trees") +
+  labs(x = "Branch length (Myr)", y = "Percent of weakly discordant trees") +
   theme(panel.background = NULL, 
         panel.border = element_rect(fill = "transparent", linewidth = 0.75),
         axis.text = element_text(size = 12, color = "black"))
