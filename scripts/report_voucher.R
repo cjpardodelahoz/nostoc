@@ -46,7 +46,7 @@ depths_and_lenghts <- read.csv(file = "document/tables/contig_class_consensus.cs
   mutate(chromosome_median_depth = case_when(
     !is.na(chromosome_median_depth) ~ paste(round(chromosome_median_depth), "x", sep = ""),
     !is.na(chromosome_median_depth) ~ NA))
-# Load voucher primer table and merge with genome ids for set 103a
+# Generate voucher table joining voucher primer 5, BUSCO, QUAST and Plasmid results
 voucher_df <- read_delim("misc_files/voucher_primer_5.txt", delim = "\t") %>%
   right_join(genome_ids_df, by = "sample_id") %>%
   relocate(sample_id, genome_id) %>%

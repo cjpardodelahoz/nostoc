@@ -44,8 +44,8 @@ Nostoc_sphaeroides_Kutzing	Nostoc_sphaeroides_Kutzing	NA	NA	aquatic	NA	"China, E
 P10073	Nephroma_resupinatum	nephromataceae	nephroma	epiphytic	ABMI 875	"Canada, Alberta, ABMI ID 241800, PMAE"		This study	log/stump		Canada
 P10160	Peltigera_aphthosa_5	peltigeraceae	peltigera	terricolous	ABMI 963	"Canada, Alberta, ABMI ID 288992, PMAE"		This study	Tree/Other		Canada
 P10246	Protopannaria_pezizoides	pannariaceae	protopannaria	terricolous	ABMI 1425	"Canada, Alberta, ABMI ID 1269260, PMAE"		This study	log/stump		Canada
-P10247	Scytinium_sp	collemataceae	leptogium	terricolous	ABMI 1447	"Canada, Alberta, ABMI 1263667, PMAE"		This study	upland		Canada
-P10264	Leptogium_saturninum	collemataceae	leptogium	epiphytic	ABMI 930	"Canada, Alberta, ABMI 1521014, PMAE"		This study	Tree/Other		Canada
+P10247	Scytinium_intermedium	collemataceae	leptogium	terricolous	ABMI 1447	"Canada, Alberta, ABMI 1263667, PMAE"		This study	upland		Canada
+P10264	Leptogium_burnetiae	collemataceae	leptogium	epiphytic	ABMI 930	"Canada, Alberta, ABMI 1521014, PMAE"		This study	Tree/Other		Canada
 P1030	Peltigera_retifoveata	peltigeraceae	peltigera	terricolous	NA	"Norway, Magain s.n. (LG)"		This study			Norway
 P10324	Peltigera_britannica_2	peltigeraceae	peltigera	terricolous	ABMI 1232	"Canada, Alberta, ABMI ID 295052, PMAE"		This study	log/stump		Canada
 P10894	Peltigera_malacea_2	peltigeraceae	peltigera	terricolous	ABMI 292	"Canada, Alberta, ABMI ID 374039, PMAE"		This study	Wetland		Canada
