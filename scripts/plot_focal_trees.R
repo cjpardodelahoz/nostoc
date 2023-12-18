@@ -46,13 +46,18 @@ tree <- read.tree("analyses/species_delimitation/rbclx/clade_assignment/trees/pl
   root(outgroup = outgroup, resolve.root = T)
 # Make table to indicate where queries come from (ABMI or public)
 ref_taxa <- scan(file = "misc_files/genome_ids_set103", what = "character")
+dh_personal <- c("P6578","P6521","P6534","P6584","P6587","P9229","P6312","P6313","P9769","P6314","P6535","P9135") # I thought these guys were collected by ABMI but they were actually collected by DH, so I will exclude them
+contaminants <- c("P9818","P8737","P8658","P10133","P11197","P6520","P10945","P10138","P8987","P8826","P10091","P10284","P8257","P8913","P9025","P8669","P8670","P9023") # Contaminant rbcLX sequences identified after a first round of ID chekcs. Removing from assignments.
 query_source_df <- tree$tip.label %>%
   as_tibble() %>%
   rename(taxon = value) %>%
   mutate(source = case_when(taxon %in% ref_taxa ~ "reference_tree",
                             str_detect(taxon, "QUERY___P[1-9]*") ~ "abmi",
                             .default = "public")) %>%
-  mutate(taxon = str_remove(taxon, "QUERY___"))
+  mutate(taxon = str_remove(taxon, "QUERY___")) %>%
+  mutate(source = case_when(taxon %in% dh_personal ~ "dh_personal",
+                            taxon %in% contaminants ~ "contaminants",
+                            .default = source))
 # Reference and public taxa
 ref_public_taxa <- query_source_df %>%
   filter(source == "public" | source == "reference_tree") %>%
@@ -800,12 +805,19 @@ clade_assignments_subclade_1 <- read.FASTA(file = "analyses/species_delimitation
   add_column(species_complex = NA) %>%
   add_column(phylogroup = NA)
 
-# Tables with all assignments
+# Write tables with assignments
 
-# Bring in unassigned queries
+# Bring in unassigned queries and queries that are not nostoc
 unassigned_queries <- scan(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/placement/unassigned_queries.txt", 
                            what = "character") %>%
   str_remove("QUERY___")
+not_nostoc_queries <- c("Aphanizomenon_flos_aquae_NIES_81.fa",
+              "Anabaena_cylindrica_PCC_7122.fa",
+              "Cylindrospermum_stagnale_PCC_7417.fa",
+              "AJ632057", "AJ293165", "Z94888",
+              "DQ266032", "DQ266030", "DQ266029",
+              "DQ185301", "DQ185297", "DQ185264",
+              "AJ632066", "P9373", "P9367")
 # Join all asignments
 clade_assignments_all <- bind_rows(clade_assignments_2_1, clade_assignments_2_2,
                                    clade_assignments_2_3, clade_assignments_2_4, clade_assignments_3_1,
@@ -819,15 +831,65 @@ clade_assignments_all <- bind_rows(clade_assignments_2_1, clade_assignments_2_2,
                            subclade)) %>%
   add_row(dna_id = unassigned_queries, subclade = "unassigned")
 # Public clade assignments
+public_queries <- query_source_df %>% filter(source == "public") %>% pull(taxon) %>% str_remove("QUERY___")
+public_queries <- public_queries[public_queries %nin% c("EF102332", "KX922980", "EF102330")] # Removing three queries that were removed for being too short at the focal alignment stage
 clade_assignments_public <- public_rbclx_metadata %>%
   distinct(rbclx_accession, .keep_all = T) %>%
-  left_join(clade_assignments_all, by = c("rbclx_accession" = "dna_id"))
-# Write tables
-write.csv(clade_assignments_all, file = "analyses/species_delimitation/rbclx/clade_assignment/clade_assignments_all.csv",
-          row.names = F)
-write.csv(clade_assignments_public, file = "document/tables/clade_assignments_public.csv",
-          row.names = F)
-
+  left_join(clade_assignments_all, by = c("rbclx_accession" = "dna_id")) %>%
+  rename(original_phylogroup = "nostoc_phylogroup", revised_phylogroup = "phylogroup") %>%
+  mutate(subclade = case_when(
+    !is.na(subclade) ~ subclade,
+    rbclx_accession %in% not_nostoc_queries ~ "not_nostoc",
+    rbclx_accession %nin% public_queries ~ "sequence_too_short")) %>%
+  select(rbclx_accession, dna_id, dna_source, region, original_phylogroup,
+          reference, subclade, section, species_complex, revised_phylogroup)
+# ABMI clade assignments
+# Load ABMI data
+cyano_db <- read_csv("misc_files/ABMI_cyanolichen_db_T-BAS_v9.csv",
+                       col_names = T) %>%
+  select(duke_dna, abmi_id, site, year, collector, orig_id, peltigera_final_molecular_id_updated)
+# Build ABMI clade assignments data
+clade_assignments_abmi <- query_source_df %>%
+  filter(source == "abmi") %>%
+  mutate(taxon = str_remove(taxon, "QUERY___")) %>%
+  left_join(clade_assignments_all, by = c("taxon" = "dna_id")) %>%
+  mutate(subclade = case_when(
+    is.na(subclade) ~ "not_nostoc",
+    taxon %in% unassigned_queries ~ "unassigned",
+    !is.na(subclade) ~ subclade)) %>%
+  left_join(cyano_db, by = c("taxon" = "duke_dna")) %>%
+  mutate(site = paste("ABMI", site, sep = " ")) %>%
+  rename("DNA ID" = taxon,
+         "ABMI ID" = abmi_id,
+         Section = section,
+         Phylogroup = phylogroup,
+         "Species complex" = "species_complex",
+         Subclade = subclade,
+         Site = site,
+         Year = year,
+         Collector = collector,
+         "Mycobiont morphological ID" = orig_id,
+         "Mycobiont molecular ID" = peltigera_final_molecular_id_updated) %>%
+  select("DNA ID", "ABMI ID", Subclade, Section, "Species complex", Phylogroup, "Mycobiont morphological ID", "Mycobiont molecular ID", Site, Year, Collector)
+# Build ABMI site data
+abmi_sites_data <- read_csv("misc_files/ABMI_cyanolichen_db_T-BAS_v9.csv",
+                              col_names = T) %>%
+  select(duke_dna, site, year, region, Lat_dd, Long_dd, "Altitude (mASL)", "Habitat (from portal download Aug 2023)") %>%
+  right_join(clade_assignments_abmi, by = c("duke_dna" = "DNA ID")) %>%
+  select(site, year, region, Lat_dd, Long_dd, "Altitude (mASL)", "Habitat (from portal download Aug 2023)") %>%
+  distinct(site, year, .keep_all = T) %>%
+  mutate(site = paste("ABMI", site, sep = " ")) %>%
+  rename(Site = site,
+         Year = year,
+         Region = region,
+         "Public latitud" = Lat_dd,
+         "Public longitude" = Long_dd,
+         "Habitat" = "Habitat (from portal download Aug 2023)")
+# Save tables
+write_csv(clade_assignments_all, file = "analyses/species_delimitation/rbclx/clade_assignment/clade_assignments_all.csv")
+write_csv(clade_assignments_public, file = "document/tables/clade_assignments_public.csv")
+write_csv(clade_assignments_abmi, file = "document/tables/clade_assignments_abmi.csv")
+write_csv(abmi_sites_data, file = "document/tables/abmi_site_data.csv")
 
 #### PLOT TREES WITH SPATIAL DATA ####
 
@@ -862,10 +924,6 @@ prep_abmi_data <- function(clade_assignments, source_data, abmi_metadata) {
   result <- list(site_data = site_data, abmi_taxa = abmi_taxa, 
                  clade_assignments_abmi = clade_assignments_abmi)
 }
-# Load ABMI data
-cyano_db <- read.delim("misc_files/ABMI_cyanolichen_db_T-BAS_v6.csv",
-                       header = T, sep = ",") %>%
-  select(duke_dna, site)
 # Prep site and list of taxa for abmi plots
 abmi_data_3_1 <- prep_abmi_data(clade_assignments_3_1, query_source_df, cyano_db)
 abmi_data_3_5 <- prep_abmi_data(clade_assignments_3_5, query_source_df, cyano_db)
@@ -1046,6 +1104,14 @@ write_csv(site_data_3_1_plot_sum, file = "analyses/species_delimitation/rbclx/co
 write_csv(site_data_3_5_plot_sum, file = "analyses/species_delimitation/rbclx/cooccurrence_maps/site_data_3_5_plot_sum.csv")
 write_csv(site_data_3_6_plot_sum, file = "analyses/species_delimitation/rbclx/cooccurrence_maps/site_data_3_6_plot_sum.csv")
 write_csv(site_data_2_4_plot_sum, file = "analyses/species_delimitation/rbclx/cooccurrence_maps/site_data_2_4_plot_sum.csv")
+
+NA_contaminant
+NA _seq_too_short
+NA_chimera
+
+
+
+
 
 #### PLOT TREES WITH ALIGNMENT ####
 
