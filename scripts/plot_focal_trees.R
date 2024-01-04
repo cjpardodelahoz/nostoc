@@ -9,8 +9,8 @@ library(treeio)
 library(ggtree)
 library(vegan)
 library(labdsv)
-library(betapart)
 library(bipartite)
+library(RColorBrewer)
 source("scripts/r_functions.R")
 
 
@@ -51,7 +51,7 @@ tree <- read.tree("analyses/species_delimitation/rbclx/clade_assignment/trees/pl
 # Make table to indicate where queries come from (ABMI or public)
 ref_taxa <- scan(file = "misc_files/genome_ids_set103", what = "character")
 dh_personal <- c("P6578","P6521","P6534","P6584","P6587","P9229","P6312","P6313","P9769","P6314","P6535","P9135") # I thought these guys were collected by ABMI but they were actually collected by DH, so I will exclude them
-contaminants <- c("P9818","P8737","P8658","P10133","P11197","P6520","P10945","P10138","P8987","P8826","P10091","P10284","P8257","P8913","P9025","P8669","P8670","P9023") # Contaminant rbcLX sequences identified after a first round of ID chekcs. Removing from assignments.
+contaminants <- c("P9818","P8737","P8658","P10133","P11197","P6520","P10945","P10138","P8987","P8826","P10091","P10284","P8257","P8913","P9025","P8669","P8670","P9023", "P8988", "P11197", "P10120", "P10142", "P11513", "P8584", "P8930", "P8544") # Contaminant rbcLX sequences identified after a first round of ID chekcs. Removing from assignments.
 query_source_df <- tree$tip.label %>%
   as_tibble() %>%
   rename(taxon = value) %>%
@@ -789,7 +789,7 @@ phylogroup_ivc_taxa <- tree_subset(tree_2_4, node = phylogroup_ivc_node, levels_
 section_2_4_taxa <- tree_2_4$tip.label %>%
   as_tibble() %>%
   add_column(section = "2.4") %>%
-  add_column(species_complex = "2.4") %>%
+  add_column(species_complex = "2.4a") %>%
   rename(dna_id = value)
 # Join all assignments
 clade_assignments_2_4 <- bind_rows(phylogroup_iii_taxa, phylogroup_iva_taxa, phylogroup_ivb_taxa,
@@ -849,7 +849,7 @@ clade_assignments_public <- public_rbclx_metadata %>%
           reference, subclade, section, species_complex, revised_phylogroup)
 # ABMI clade assignments
 # Load ABMI data
-cyano_db <- read_csv("misc_files/ABMI_cyanolichen_db_T-BAS_v9.csv",
+cyano_db <- read_csv("misc_files/ABMI_cyanolichen_db_T-BAS_v10.csv",
                        col_names = T) %>%
   select(duke_dna, abmi_id, site, year, collector, orig_id, peltigera_final_molecular_id_updated)
 # Build ABMI clade assignments data
@@ -876,7 +876,7 @@ clade_assignments_abmi <- query_source_df %>%
          "Mycobiont molecular ID" = peltigera_final_molecular_id_updated) %>%
   select("DNA ID", "ABMI ID", Subclade, Section, "Species complex", Phylogroup, "Mycobiont morphological ID", "Mycobiont molecular ID", Site, Year, Collector)
 # Build ABMI site data
-abmi_sites_data <- read_csv("misc_files/ABMI_cyanolichen_db_T-BAS_v9.csv",
+abmi_sites_data <- read_csv("misc_files/ABMI_cyanolichen_db_T-BAS_v10.csv",
                               col_names = T) %>%
   select(duke_dna, site, year, region, Lat_dd, Long_dd, "Altitude (mASL)", "Habitat (from portal download Aug 2023)") %>%
   right_join(clade_assignments_abmi, by = c("duke_dna" = "DNA ID")) %>%
@@ -1111,36 +1111,6 @@ write_csv(site_data_2_4_plot_sum, file = "analyses/species_delimitation/rbclx/co
 
 #### ANALYSES OF PARTNER SHARING ####
 
-# Function to check which Nostoc OTU combinations are found in each site
-check_otu_pair <- function(data) {
-  # Add OTU column
-  data <- data %>%
-    mutate(nostoc_otu = case_when(!is.na(phylogroup) ~ phylogroup,
-                                  is.na(phylogroup) & !is.na(species_complex) ~ species_complex,
-                                  is.na(phylogroup) & is.na(species_complex) ~ section)) %>%
-    select(dna_id, site, nostoc_otu, peltigera_final_molecular_id_updated, n_otu)
-  # Get unique values in the otu column
-  unique_ids <- unique(data$nostoc_otu)
-  # Get all unordered pairwise combinations of otus
-  pairs <- combn(unique_ids, 2, simplify = TRUE)
-  pair_names <- apply(pairs, 2, paste, collapse = "_")
-  # Get DF with one row per site and list of sites
-  site_df <- data %>% select(site) %>% distinct() 
-  site_list <- pull(site_df, site)
-  # Iterate over each site and test if each otu combination is present in the site
-  for (target_site in site_list) {
-    site_otus <- filter(data, site == target_site) %>%
-      pull(nostoc_otu) %>% # change to nostoc_otu
-      unique
-    for (pair in pair_names) {
-      pair_values <- str_split(pair, "_")[[1]]
-      site_df[site_df$site == target_site, pair] <- all(pair_values %in% site_otus)
-    }
-  }
-  # Merge the scored site table with the original data
-  data <- left_join(data, site_df, by = "site")
-  data
-}
 # Function to evaluate cooccurrence and sharing of a pair of Nostoc strains
 check_single_strain_pair <- function(combination, data) {
   # Get the the IDs of the sample pair
@@ -1167,8 +1137,6 @@ check_strain_pairs <- function(data) {
   # and adding OTU column
   data <- data %>%
     filter(!is.na(peltigera_final_molecular_id_updated)) %>%
-    mutate(nostoc_otu = case_when(!is.na(phylogroup) ~ phylogroup,
-                                  is.na(phylogroup) & !is.na(species_complex) ~ species_complex)) %>% # double check this
     select(dna_id, site, nostoc_otu, peltigera_final_molecular_id_updated)
   # Create pairwise combinations of DNA ids
   sample_combinations <- combn(unique(data$dna_id), 2, simplify = TRUE)
@@ -1185,16 +1153,14 @@ check_strain_pairs <- function(data) {
            peltigera_sharing = V1,
            cooccurrence = V2)
 }
-#
+# Function to plot interaction matrix and spatial sharing
 sum_partner_sharing <- function(data) {
-  # Add OTU column and check OTU pairs at each site
-  data <- site_data_3_6 %>% # CHANGE TO DATA
-  check_otu_pair
-  # Get vector with OTU pairs and start a dataframe
-  unique_ids <- unique(data$nostoc_otu) %>% sort()
-  pairs <- combn(unique_ids, 2, simplify = TRUE)
-  pair_names <- apply(pairs, 2, paste, collapse = "_")
-  beta_df <- data.frame(otu_pair = pair_names)
+  # Add OTU column
+  data <- site_data_2_4 %>% # CHANGE TO DATA
+    mutate(nostoc_otu = case_when(!is.na(phylogroup) ~ phylogroup,
+                                  is.na(phylogroup) & !is.na(species_complex) ~ species_complex,
+                                  is.na(phylogroup) & is.na(species_complex) ~ section)) %>%
+    select(dna_id, site, nostoc_otu, peltigera_final_molecular_id_updated, n_otu)
   # Get regional interaction matrix
   regional_int_mat <- data %>%
     filter(!is.na(peltigera_final_molecular_id_updated)) %>%
@@ -1202,155 +1168,60 @@ sum_partner_sharing <- function(data) {
     count() %>%
     as.data.frame() %>%
     matrify()
-  # Get regional Bray df
-  regional_bray_df <- get_bray_df(regional_int_mat)
-  # Get regional Sorensen dfs
-  regional_sorensen_dfs <- get_sorensen_dfs(regional_int_mat)
-  # Add tables with beta to beta_df
-  beta_df <- beta_df %>%
-    left_join(regional_bray_df, by = "otu_pair") %>%
-    left_join(regional_sorensen_dfs$beta.sor, by = "otu_pair") %>%
-    left_join(regional_sorensen_dfs$beta.sim, by = "otu_pair") %>%
-    left_join(regional_sorensen_dfs$beta.sne, by = "otu_pair") %>%
-    mutate_if(is.numeric, replace_na, replace = 0)
-}
-#
-
-
-#
-strain_pairs <- check_strain_pairs(site_data_3_6) %>%
-  group_by(otu_pair, peltigera_sharing, cooccurrence) %>%
-  count() %>%
-  mutate(peltigera_sharing = case_when(peltigera_sharing == TRUE ~ "same_pelt",
-                                       peltigera_sharing == FALSE ~ "diff_pelt"),
-         cooccurrence = case_when(cooccurrence == TRUE ~ "same_site",
-                                  cooccurrence == FALSE ~ "diff_site")) %>%
-  pivot_wider(names_from = c(peltigera_sharing, cooccurrence),
-              values_from = n) %>%
-  mutate(same_site = same_pelt_same_site + diff_pelt_same_site,
-         diff_site = same_pelt_diff_site + diff_pelt_diff_site,
-         prop_sharing_same_site = same_pelt_same_site/same_site,
-         prop_sharing_diff_site = same_pelt_diff_site/diff_site)
-
-
-proto <- beta_df %>%
-  left_join(strain_pairs, by = "otu_pair")
-write_csv(proto, "document/tables/interactions_proto.csv")
-
-
-## Recycling
-
-# Function to get bray-curtis dissimilarities 
-get_bray_df <- function(int_mat) {
-  vegdist(int_mat, method = "bray") %>%
-    as.matrix() %>%
-    as.data.frame() %>%
-    dematrify () %>% # Careful because this operation removes pairs with 0s in the matrix
-    rename(otu_1 = sample,
-           otu_2 = species,
-           bray_curtis_dissimilarity = abundance) %>%
-    mutate(otu_pair = paste(otu_1, otu_2, sep = "_")) %>%
-    select(otu_pair, bray_curtis_dissimilarity)
-}
-# Function to get Sorensen dissimilarities decomposed
-get_sorensen_dfs <- function(int_mat) {
-  binary_int_mat <- decostand(regional_int_mat, method = "pa")
-  sorensen_full <- beta.pair(binary_int_mat, index.family = "sorensen")
-  for (index in names(sorensen_full)) {
-    sorensen_full[[index]] <- sorensen_full[[index]] %>%
-      as.matrix() %>%
-      as.data.frame() %>%
-      dematrify () %>% # Careful because this operation removes pairs with 0s in the matrix
-      rename(otu_1 = sample,
-             otu_2 = species,
-             !!index := abundance) %>%
-      mutate(otu_pair = paste(otu_1, otu_2, sep = "_")) %>%
-      select(-c("otu_1", "otu_2"))
-    colnames(sorensen_full[[index]]) <- str_replace(colnames(sorensen_full[[index]]), "\\.", "_")
-  }
-  sorensen_full
-}
-
-# Get regional interaction matrix for when pairs co-occur
-cooccur_int_mats <- list()
-for (pair in pair_names) {
-  pair_values <- str_split(pair, "_")[[1]]
-  cooccur_int_mats[[pair]] <- data %>%
-    filter(!is.na(peltigera_final_molecular_id_updated) & !!sym(pair) == TRUE & nostoc_otu %in% pair_values) %>%
-    group_by(nostoc_otu, peltigera_final_molecular_id_updated) %>%
+  # Order regional interaction matrix in nested arrangement
+  regional_int_mat <- nestedrank(regional_int_mat, weighted = T, return.matrix = T)$nested.matrix
+  
+  # Plotting the interaction matrix
+  
+  # Reshape the data for ggplot
+  matrix_long <- regional_int_mat %>%
+    rownames_to_column(var = "Rows") %>%
+    pivot_longer(cols = -Rows, names_to = "Columns", values_to = "Values")
+  # Convert Rows and Columns to factors with levels preserving the original order
+  matrix_long$Rows <- factor(matrix_long$Rows, levels = rev(rownames(regional_int_mat)))
+  matrix_long$Columns <- factor(matrix_long$Columns, levels = colnames(regional_int_mat))
+  # Generate custom palette from the Oranges
+  brewer_palette <- colorRampPalette(brewer.pal(9, "Oranges"))
+  custom_palette <- c("#E4E4E4", brewer_palette(max(matrix_long$Values)))
+  # Create a ggplot heatmap
+  int_mat_heatmap <- ggplot(matrix_long, aes(x = Columns, y = Rows, fill = Values)) +
+    geom_tile(color = "white") +
+    scale_fill_gradientn(colors = custom_palette) +
+    labs(x = "Fungal partner", y = "Nostoc OTU", fill = "No. of specimens") +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 12, face = "italic"),
+          axis.title.y = element_text(size = 12),
+          axis.title.x = element_text(size = 12),
+          axis.text.y = element_text(size = 12),
+          legend.text = element_text(size = 12),
+          legend.title = element_text(size = 12),
+          panel.background = element_blank(),
+          panel.border = element_rect(fill = "transparent"))
+  
+  # Check for partner sharing in spatial context
+  
+  # Table with summary of partner sharing in cooccurrence
+  strain_pairs <- check_strain_pairs(data) %>% # CHANGE TO DATA
+    group_by(otu_pair, peltigera_sharing, cooccurrence) %>%
     count() %>%
-    as.data.frame() %>%
-    matrify()
+    mutate(peltigera_sharing = case_when(peltigera_sharing == TRUE ~ "same_pelt",
+                                         peltigera_sharing == FALSE ~ "diff_pelt"),
+           cooccurrence = case_when(cooccurrence == TRUE ~ "same_site",
+                                    cooccurrence == FALSE ~ "diff_site")) %>%
+    pivot_wider(names_from = c(peltigera_sharing, cooccurrence),
+                values_from = n) %>%
+    mutate(same_site = same_pelt_same_site + diff_pelt_same_site,
+           diff_site = same_pelt_diff_site + diff_pelt_diff_site,
+           prop_sharing_same_site = same_pelt_same_site/same_site,
+           prop_sharing_diff_site = same_pelt_diff_site/diff_site)
+  
+  # Output object with plot and table
+  output <- list(heatmap = int_mat_heatmap, sharing_df = strain_pairs)
 }
-# Get regional interaction matrix for when pairs DO NOT co-occur
-notcooccur_int_mats <- list()
-for (pair in pair_names) {
-  pair_values <- str_split(pair, "_")[[1]]
-  notcooccur_int_mats[[pair]] <- data %>%
-    filter(!is.na(peltigera_final_molecular_id_updated) & !!sym(pair) == FALSE & nostoc_otu %in% pair_values) %>%
-    group_by(nostoc_otu, peltigera_final_molecular_id_updated) %>%
-    count() %>%
-    as.data.frame() %>%
-    matrify()
-}
 
-data_3_6 <- site_data_3_6 %>% 
-  check_otu_pair
-
-int_matrix_3_6 <- site_data_3_6 %>%
-  select(species_complex, phylogroup, peltigera_final_molecular_id_updated) %>%
-  mutate(nostoc_otu = ifelse(!is.na(phylogroup),
-                             phylogroup, species_complex)) %>%
-  filter(!is.na(peltigera_final_molecular_id_updated)) %>%
-  group_by(nostoc_otu, peltigera_final_molecular_id_updated) %>%
-  count() %>%
-  as.data.frame() %>%
-  matrify()
-
-
-
-
-data <- data.frame(dna_id = c("s1", "s2", "s3", "s4"),
-                   nostoc_otu = c("otu1", "otu2", "otu1", "otu2"),
-                   peltigera_final_molecular_id_updated = c("a", "b", "b", "a"),
-                   site = c("site1", "site1", "site1", "site2"))
-
-# Your data frame
-matrix <- data.frame(row.names = c("a", "b"), one = c(20, 20), two = c(10, 0))
-matrix <- nestedrank(regional_int_mat, weighted = T, return.matrix = T)$nested.matrix
-# Reshape the data for ggplot
-matrix_long <- matrix %>%
-  rownames_to_column(var = "Rows") %>%
-  pivot_longer(cols = -Rows, names_to = "Columns", values_to = "Values")
-
-# Convert Rows and Columns to factors with levels preserving the original order
-matrix_long$Rows <- factor(matrix_long$Rows, levels = rev(rownames(matrix)))
-matrix_long$Columns <- factor(matrix_long$Columns, levels = colnames(matrix))
-
-heatmap_height <- 2
-
-# Create a ggplot heatmap
-hetmap <- ggplot(matrix_long, aes(x = Columns, y = Rows, fill = Values)) +
-  geom_tile(color = "white") +
-  scale_fill_gradientn(colors = custom_palette) +
-  labs(x = "Fungal partner", y = "Nostoc OTU", fill = "No. of specimens") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 12, face = "italic"),
-        axis.title.y = element_text(size = 12),
-        axis.title.x = element_text(size = 12),
-        axis.text.y = element_text(size = 12),
-        legend.text = element_text(size = 12),
-        legend.title = element_text(size = 12),
-        panel.background = element_blank(),
-        panel.border = element_rect(fill = "transparent"))
-
+#
 ggsave(hetmap, filename = "document/plots/interaction_matrix_3_6.pdf", height = 4.5,
          width = 10)
- # Specify the Brewer palette and the number of colors
-brewer_palette <- colorRampPalette(brewer.pal(9, "Oranges"))
-num_colors <- 
 
-# Generate the palette with 100 colors
-custom_palette <- c("#E4E4E4", brewer_palette(100))
 
 
 #### PLOT TREES WITH ALIGNMENT ####
