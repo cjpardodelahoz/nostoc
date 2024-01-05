@@ -51,7 +51,7 @@ tree <- read.tree("analyses/species_delimitation/rbclx/clade_assignment/trees/pl
 # Make table to indicate where queries come from (ABMI or public)
 ref_taxa <- scan(file = "misc_files/genome_ids_set103", what = "character")
 dh_personal <- c("P6578","P6521","P6534","P6584","P6587","P9229","P6312","P6313","P9769","P6314","P6535","P9135") # I thought these guys were collected by ABMI but they were actually collected by DH, so I will exclude them
-contaminants <- c("P9818","P8737","P8658","P10133","P11197","P6520","P10945","P10138","P8987","P8826","P10091","P10284","P8257","P8913","P9025","P8669","P8670","P9023", "P8988", "P11197", "P10120", "P10142", "P11513", "P8584", "P8930", "P8544") # Contaminant rbcLX sequences identified after a first round of ID chekcs. Removing from assignments.
+contaminants <- c("P9818","P8737","P8658","P10133","P11197","P6520","P10945","P10138","P8987","P8826","P10091","P10284","P8257","P8913","P9025","P8669","P8670","P9023", "P8988", "P11197", "P10120", "P10142", "P11513", "P8584", "P8930", "P8544", "P9049", "P9342", "P11160") # Contaminant rbcLX sequences identified after a first round of ID chekcs. Removing from assignments.
 query_source_df <- tree$tip.label %>%
   as_tibble() %>%
   rename(taxon = value) %>%
@@ -667,19 +667,13 @@ clade_assignments_3_11 <- bind_rows(phylogroup_i_taxa, phylogroup_viiib_taxa, ph
 outgroup_3_12 <- c("P9820_bin_6.fa", "P9820")
 tree_3_12 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_12.treefile") %>%
   root(outgroup = outgroup_3_12, resolve.root = T)
-# Classify phylogroup NEW6 taxa
-phylogroup_new6_taxa <- c("P9820_bin_6.fa", "P9820") %>%
-  as_tibble() %>%
-  mutate(phylogroup = "NEW6") %>%
-  rename(dna_id = value)
 # Classify phylogroup XIV taxa
 phylogroup_xiv_taxa <- c("KX923070", "KX923071", "KX923069") %>%
   as_tibble() %>%
   mutate(phylogroup = "XIV") %>%
   rename(dna_id = value)
-# Classify species complex 3-11a
-complex_3_12_node <- MRCA(tree_3_12, c("AJ632063", "KX923069"))
-complex_3_12_taxa <- tree_subset(tree_3_12, node = complex_3_12_node, levels_back = 0)$tip.label %>%
+# Classify species complex 3-12a
+complex_3_12_taxa <- tree_3_12$tip.label %>%
   as_tibble() %>%
   mutate(species_complex = "3.12a") %>%
   rename(dna_id = value)
@@ -689,7 +683,7 @@ section_3_12_taxa <- tree_3_12$tip.label %>%
   mutate(section = "3.12") %>%
   rename(dna_id = value)
 # Join all assignments
-clade_assignments_3_12 <- bind_rows(phylogroup_new5_taxa, phylogroup_xiv_taxa) %>%
+clade_assignments_3_12 <- phylogroup_xiv_taxa %>%
   right_join(section_3_12_taxa, by = "dna_id") %>%
   left_join(complex_3_12_taxa, by = "dna_id")
 
@@ -1153,10 +1147,10 @@ check_strain_pairs <- function(data) {
            peltigera_sharing = V1,
            cooccurrence = V2)
 }
-# Function to plot interaction matrix and spatial sharing
+# Function to plot interaction matrix and get table summarizing spatial sharing
 sum_partner_sharing <- function(data) {
   # Add OTU column
-  data <- site_data_2_4 %>% # CHANGE TO DATA
+  data <- data %>%
     mutate(nostoc_otu = case_when(!is.na(phylogroup) ~ phylogroup,
                                   is.na(phylogroup) & !is.na(species_complex) ~ species_complex,
                                   is.na(phylogroup) & is.na(species_complex) ~ section)) %>%
@@ -1209,20 +1203,48 @@ sum_partner_sharing <- function(data) {
                                     cooccurrence == FALSE ~ "diff_site")) %>%
     pivot_wider(names_from = c(peltigera_sharing, cooccurrence),
                 values_from = n) %>%
+    mutate_all(~ifelse(is.na(.), 0, .)) %>%
+    arrange(str_detect(otu_pair, "^(.+)_(\\1)$"), desc(otu_pair)) %>%
     mutate(same_site = same_pelt_same_site + diff_pelt_same_site,
            diff_site = same_pelt_diff_site + diff_pelt_diff_site,
-           prop_sharing_same_site = same_pelt_same_site/same_site,
-           prop_sharing_diff_site = same_pelt_diff_site/diff_site)
+           percent_sharing_same_site = (same_pelt_same_site/same_site)*100,
+           percent_sharing_diff_site = (same_pelt_diff_site/diff_site)*100,
+           total_pairs = same_site + diff_site,
+           otu_pair = str_replace(otu_pair, "_", " and ")) %>%
+    select(otu_pair, total_pairs, same_site, diff_site, same_pelt_same_site, same_pelt_diff_site,
+           percent_sharing_same_site, percent_sharing_diff_site) %>%
+    rename("Nostoc OTUs" = otu_pair,
+           "Total specimen pairs" = total_pairs,
+           "Coooccurring specimen pairs" = same_site,
+           "Non-cooccurring specimen pairs" = diff_site,
+           "Cooccurring specimen pairs sharing fungal partner" = same_pelt_same_site,
+           "Non-cooccurring specimen pairs sharing fungal partner" = same_pelt_diff_site,
+           "% of cooccurring specimen pairs sharing fungal partner" = percent_sharing_same_site,
+           "% of non-cooccurring specimen pairs sharing fungal partner" = percent_sharing_diff_site)
   
   # Output object with plot and table
   output <- list(heatmap = int_mat_heatmap, sharing_df = strain_pairs)
 }
 
-#
-ggsave(hetmap, filename = "document/plots/interaction_matrix_3_6.pdf", height = 4.5,
-         width = 10)
-
-
+# Summarize partner sharing in the four most common sections
+sharing_sum_3_1 <- sum_partner_sharing(site_data_3_1)
+sharing_sum_3_5 <- sum_partner_sharing(site_data_3_5)
+sharing_sum_3_6 <- sum_partner_sharing(site_data_3_6)
+sharing_sum_2_4 <- sum_partner_sharing(site_data_2_4)
+# Save sharing summary tables
+write_csv(sharing_sum_3_1$sharing_df, "document/tables/sharing_sum_3_1.csv")
+write_csv(sharing_sum_3_5$sharing_df, "document/tables/sharing_sum_3_5.csv")
+write_csv(sharing_sum_3_6$sharing_df, "document/tables/sharing_sum_3_6.csv")
+write_csv(sharing_sum_2_4$sharing_df, "document/tables/sharing_sum_2_4.csv")
+# Save interaction matrix plots
+ggsave(sharing_sum_3_1$heatmap, filename = "document/plots/interaction_matrix_3_1.pdf", 
+       height = 4.5, width = 10)
+ggsave(sharing_sum_3_5$heatmap, filename = "document/plots/interaction_matrix_3_5.pdf", 
+       height = 4.5, width = 10)
+ggsave(sharing_sum_3_6$heatmap, filename = "document/plots/interaction_matrix_3_6.pdf", 
+       height = 4.5, width = 10)
+ggsave(sharing_sum_2_4$heatmap, filename = "document/plots/interaction_matrix_2_4.pdf", 
+       height = 4.5, width = 10)
 
 #### PLOT TREES WITH ALIGNMENT ####
 
