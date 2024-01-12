@@ -1,10 +1,10 @@
 sample_id	taxon_name	host_family	host_genus	substrate_type	site_id	voucher	accession	reference	substrate_notes		
-3	Peltigera_monticola	peltigeraceae	peltigera	terricolous	NA	"Austria, Tirol, Stubaier Alpen, Mt. Hammerzpitze, 2600 m, on calcareous slates, 12 Sept 1973; Vitikainen 8884, H"		This study			
+3	Peltigera_monticola	peltigeraceae	peltigera	terricolous	NA	"Austria, Tirol, Stubaier Alpen, Mt. Hammerzpitze, 2600 m, on calcareous slates, 12 Sept 1973; Vitikainen 8884, H (holotype)"		This study			
 8274	Peltigera_scabrosa_2	peltigeraceae	peltigera	terricolous	NA	"Greenland, Breutel, Flora Germaniae Exsiccati 203, UPS (Lectotype)"		This study; Mycobiont ITS published in Magain et al. 2023			
 8277	Peltigera_aubertii	peltigeraceae	peltigera	terricolous	NA	"Kerguelen, near Molloy Point, on basalt escarpments, Butte aux Fougöres, muscicola, 3, LH (Lectotype)"		This study			
 Aphanizomenon_flos_aquae_NIES_81	Aphanizomenon_flos_aquae_NIES_81	NA	NA	aquatic	NA	"Japan, Lake Kasumiguara, Aubert de la Riie 55"	NZ_AZYY00000000.1 	Cao et al. 2014	Fresh water		
-Anabaena_cylindrica_PCC_7122	Anabaena_cylindrica_PCC_7122	NA	NA	aquatic	NA	"United Kingdom, Cambridge"	NC_019771.1	Shih et al. 2013			
-Cylindrospermum_stagnale_PCC_7417	Cylindrospermum_stagnale_PCC_7417	NA	NA	terricolous	NA	"Sweden, Stockholm"	NC_019757.1	Shih et al. 2013	Soil in greenhouse		
+Anabaena_cylindrica_PCC_7122	Anabaena_cylindrica_PCC_7122	NA	NA	aquatic	NA	"United Kingdom, Cambridge, 52.202 N 0.131 E, ATCC 27899"	NC_019771.1	Shih et al. 2013			
+Cylindrospermum_stagnale_PCC_7417	Cylindrospermum_stagnale_PCC_7417	NA	NA	terricolous	NA	"Sweden, Stockholm, 59.332 N 18.064 E"	NC_019757.1	Shih et al. 2013	Soil in greenhouse		
 JL23	Peltigera_aphthosa	peltigeraceae	peltigera	terricolous	NA	"Canada, Alberta, Miadlikowska and Lutzoni s.n., DUKE"		Cornet et al. 2021			
 JL31	Peltigera_extenuata	peltigeraceae	peltigera	terricolous	NA	"Canada, Alberta, Miadlikowska and Lutzoni s.n., DUKE"		Cornet et al. 2021			
 JL33	Peltigera_malacea	peltigeraceae	peltigera	terricolous	NA	"Canada, Alberta, Miadlikowska and Lutzoni s.n., DUKE"		Cornet et al. 2021			
@@ -27,16 +27,16 @@ Nostoc_KVJ2	Blasia_pusilla	blasiaceae	blasia	terricolous	NA	"Norway, Kvaløya isl
 Nostoc_KVS11	Blasia_pusilla	blasiaceae	blasia	terricolous	NA	"Norway, Kvaløya island, 69.64 N 18.73 E"	NA	Warshan et al. 2018			
 Nostoc_linckia_NIES_25	Nostoc_linckia_NIES_25	NA	NA	terricolous	NA	"Japan, Kagoshima"	NZ_AP018222	Hirose et al. 2017. Unpublished			
 Nostoc_linckia_z4	Nostoc_linckia_z4	NA	NA	terricolous	NA	Israel	NZ_LAHA01000000	Zhou 2015. Unpublished			
-Nostoc_punctiforme_PCC_73102	Nostoc_punctiforme_PCC_73102	zamiaceae	macrozamia	terricolous	NA	Australia	NC_010628.1	Shih et al. 2013	Root section of Macrozamia sp		
+Nostoc_punctiforme_PCC_73102	Nostoc_punctiforme_PCC_73102	zamiaceae	macrozamia	terricolous	NA	"Australia, ATCC 29133"	NC_010628.1	Shih et al. 2013	Root section of Macrozamia sp		
 Nostoc_sp_ATCC_53789_v2	Nostoc_sp_ATCC_53789_v2	NA	NA	terricolous	NA	"United Kingdom, Scotland, Arron Island"	NZ_LWSY01000000	Tabuxhi Yagui 2016. Unpublished	Lichen		
 Nostoc_sp_B_2019	Nostoc_sp_B_2019	NA	NA	terricolous	NA	"Portugal, Old Cathedral of Coimbra"	NZ_WVID01000000	Tiago et al. 2019 (unpublished)	limestone walls		
 Nostoc_sp_JC1668	Zamia_pseudoparasitica	zamiaceae	zamia	terricolous	NA	"Panama, Omar Torrijos National Park, Provincia de Coclé"	NZ_SZNH01000000	Bell-Doyon et al. 2020	Zamia pseudoparasitica		
 Nostoc_sp_KVJ20	Blasia_pusilla	blasiaceae	blasia	terricolous	NA	"Norway, Troms, Kvaloya island"	NZ_LSSA01000000	Halsør et al. 2019	Blasia pusilla		
 Nostoc_sp_Lobaria_pulmonaria_5183	Lobaria_pulmonaria_5183	lobariaceae	lobaria	epiphytic	NA	"Canada, British Columbia, Cedar Road, Vancouver Island"	NZ_CP026692.1	Gagunashvili and Andresson 2018	Lobaria pulmonaria on _Acer macrophyllum trunk 		
 Nostoc_sp_Peltigera_malacea_cyanobiont_DB3992	Peltigera_malacea_cyanobiont_DB3992	peltigeraceae	peltigera	terricolous	NA	"Canada, British Columbia, Little Fort"	NZ_NSHF01000560.1	Xavier et al. 2012			
-Nostoc_sp_Peltigera_membranacea_cyanobiont_210A	Peltigera_membranacea_cyanobiont_210A	peltigeraceae	peltigera	terricolous	NA	Iceland	NZ_NOLJ00000000.1	Gagunashvili and Andrésson 2018			
-Nostoc_sp_Peltigera_membranacea_cyanobiont_213	Peltigera_membranacea_cyanobiont_213	peltigeraceae	peltigera	terricolous	NA	"Iceland, Keldur, Reykjavik"	NZ_NOLI00000000.1	Gagunashvili and Andrésson 2018			
-Nostoc_sp_Peltigera_membranacea_cyanobiont_232	Peltigera_membranacea_cyanobiont_232	peltigeraceae	peltigera	terricolous	NA	"Iceland, Keldur, Reykjavik"	NZ_NOLK00000000.1	Gagunashvili and Andrésson 2018			
+Nostoc_sp_Peltigera_membranacea_cyanobiont_210A	Peltigera_membranacea_cyanobiont_210A	peltigeraceae	peltigera	terricolous	NA	"Iceland, Thveras 21, Reykjavik, 64.10423 N 21.78067 W"	NZ_NOLJ00000000.1	Gagunashvili and Andrésson 2018			
+Nostoc_sp_Peltigera_membranacea_cyanobiont_213	Peltigera_membranacea_cyanobiont_213	peltigeraceae	peltigera	terricolous	NA	"Iceland, Thveras 21, Reykjavik, 64.10423 N 21.78067 W"	NZ_NOLI00000000.1	Gagunashvili and Andrésson 2018			
+Nostoc_sp_Peltigera_membranacea_cyanobiont_232	Peltigera_membranacea_cyanobiont_232	peltigeraceae	peltigera	terricolous	NA	"Iceland, Eldgja, 63.9600 N 18.6135 W"	NZ_NOLK00000000.1	Gagunashvili and Andrésson 2018			
 Nostoc_sp_Peltigera_membranacea_cyanobiont_N6	Peltigera_membranacea_cyanobiont_N6	peltigeraceae	peltigera	terricolous	NA	"Iceland, Keldur, Reykjavik"	NZ_CP026681.1	Gagunashvili and Andrésson 2018			
 Nostoc_sp_UIC_10630	Nostoc_sp_UIC_10630	NA	NA	terricolous	NA	"United States of America, Downers Grove, Illinois"	NZ_JAAGOG010000000	May et al. 2020	Soil		
 Nostoc_sphaeroides_CCNUC1	Nostoc_sphaeroides_CCNUC1	NA	NA	aquatic	NA	"China, Zouma, Hefeng County in Hubei Province"	NZ_CP045226	Chen et al 2021	Rice paddy field		
@@ -46,41 +46,41 @@ P10160	Peltigera_aphthosa_5	peltigeraceae	peltigera	terricolous	ABMI 963	"Canada
 P10246	Protopannaria_pezizoides	pannariaceae	protopannaria	terricolous	ABMI 1425	"Canada, Alberta, ABMI ID 1269260, PMAE"		This study	log/stump		Canada
 P10247	Scytinium_intermedium	collemataceae	leptogium	terricolous	ABMI 1447	"Canada, Alberta, ABMI 1263667, PMAE"		This study	upland		Canada
 P10264	Leptogium_burnetiae	collemataceae	leptogium	epiphytic	ABMI 930	"Canada, Alberta, ABMI 1521014, PMAE"		This study	Tree/Other		Canada
-P1030	Peltigera_retifoveata	peltigeraceae	peltigera	terricolous	NA	"Norway, Magain s.n. (LG)"		This study			Norway
+P1030	Peltigera_retifoveata	peltigeraceae	peltigera	terricolous	NA	"Norway, Magain s.n., LG"		This study			Norway
 P10324	Peltigera_britannica_2	peltigeraceae	peltigera	terricolous	ABMI 1232	"Canada, Alberta, ABMI ID 295052, PMAE"		This study	log/stump		Canada
 P10894	Peltigera_malacea_2	peltigeraceae	peltigera	terricolous	ABMI 292	"Canada, Alberta, ABMI ID 374039, PMAE"		This study	Wetland		Canada
 P11060	Leptogium_saturninum	collemataceae	leptogium	epiphytic	ABMI 1510	"Canada, Alberta, ABMI 682872, PMAE"		This study	Tree/Other		Canada
 P11388	Peltigera_neckeri	peltigeraceae	peltigera	terricolous	ABMI 746 	"Canada, Alberta, ABMI ID 500616, PMAE"		This study	log/stump		Canada
 P11425	Peltigera_aff_neorufescens	peltigeraceae	peltigera	terricolous	ABMI 1408	"Canada, Alberta, ABMI ID 3611, PMAE"		This study	upland		Canada
 P1229	Peltigera_hymenina	peltigeraceae	peltigera	terricolous	NA	"United States of America, Oregon, B. McCune 30448; McCune Private Coll."		This study; Magain et al. 2017			United States of America
-P12502	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	GoLife Malaysia-Kinabalu-3-C2-P1	"Malaysia, Kinabalu Park, Jolanta Miadlikowska, DUKE"		This study			Malaysia
-P12521	Lobaria_sp	lobariaceae	lobaria	epiphytic	GoLife Malaysia-Kinabalu-3-C1-P1	"Malaysia, Kinabalu Park, Jolanta Miadlikowska, none"		This study			Malaysia
-P12523	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	GoLife Malaysia-Kinabalu-1-C2-P1	"Malaysia, Kinabalu Park, Nicolas Magain, DUKE"		This study			Malaysia
-P12537	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	Golife Malaysia-Kinabalu-3-C2-P1	"Malaysia, Crocker Range Park, DUKE"		This study			Malaysia
-P12545	Pannaria_sp	pannariaceae	pannaria	epiphytic	GoLife Malaysia-Kinabalu-2-C1-P1	"Malaysia, Kinabalu Park, Jolanta Miadlikowska, none"		This study			Malaysia
-P12559	Pseudocyphellaria_guillemini	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Mocho-1-C1-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Lutzoni et al., none"		This study			Chile
-P12560	Pseudocyphellaria_berberina	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Puyehue-1-C2-P1	"Chile, Parque Nacional Puyehue, Lutzoni et al., none"		This study			Chile
-P12564	Pseudocyphellaria_corifolia	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Malalca-1-C2-P1	"Chile, Reserva Nacional Malalcahuello, Lutzoni et al., AZ"		This study	epiphytic/at the base of Araucaria		Chile
-P12567	Sticta_hypochra	lobariaceae	sticta	epiphytic	GoLife Chile-Mocho-1-C1-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Lutzoni et al., Chile"		This study			Chile
-P12569	Sticta_caulescens	lobariaceae	sticta	terricolous	GoLife Chile-Crater-2-C1-P1	"Chile, Parque Nacional Puyehue, Lutzoni et al., Chile"		This study			Chile
-P12570	Sticta_hypochra	lobariaceae	sticta	terricolous	GoLife Chile-Mocho-2-C2-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Lutzoni et al., Chile"		This study			Chile
-P12573	Nephroma_antarcticum	nephromataceae	nephroma	epiphytic	GoLife Chile-Mocho-1-C1-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Lutzoni et al., AZ"		This study			Chile
-P12578	Gabura_fascicularis	arctomiaceae	Gabura	terricolous	GoLife Chile-Angol-1-C1-P1	"Chile, Parque Nacional Nahuelbuta, Lutzoni et al., Chile"		This study	epiphytic/at the base of Araucaria		Chile
-P12584	Pseudocyphellaria_meyenii	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Puyehue-1-C1-P1	"Chile, Parque Nacional Puyehue, Lutzoni et al., AZ, Chile"		This study			Chile
-P12588	Leptogium_sp	collemataceae	leptogium	terricolous	GoLife Chile-Angol-1-C1-P1	"Chile, Parque Nacional Nahuelbuta, Lutzoni et al., AZ, Chile"		This study	terricolous/on moss on a boulder		Chile
-P12591	Collema_sp	collemataceae	collema	epiphytic	GoLife Malaysia-Kinabalu-1-C1-P1	"Malaysia, Kinabalu Park"		This study			Malaysia
-P12639	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Swampo-1-C1-P1	"Panama, Parque Nacional Isla Bastimentos, Nicolas Magain, Panama"		This study			panama
-P12641	Leptogium_sp	collemataceae	leptogium	terricolous	GoLife Panama-Parida-1-C1-P1	"Panama, Parque Nacional Golfo de Chiriqui, Nicolas Magain, Panama"		This study	terricolous/on moss on a boulder		Panama
-P12642	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Gamboa-2-C1-P1	"Panama, Parque Nacional Soberania, Nicolas Magain, Panama"		This study			Panama
-P12646	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Baru-1-C5-P1	"Panama, Parque Nacional Volcan Baru, Nicolas Magain, Panama"		This study			Panama
-P12649	Leptogium_sp	collemataceae	leptogium	terricolous	GoLife Panama-Copete-1-C1-P1	"Panama, Parque Nacional Volcan Baru, Lutzoni et al., Panama"		This study			Panama
-P12650	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Swampo-1-C1-P1	"Panama, Parque Nacional Isla Bastimentos, Nicolas Magain, Panama"		This study			Panama
-P14213	Lobaria_sp	lobariaceae	lobaria	epiphytic	GoLife SouthAfrica-Buffelskloof-1-P1-C2	"South Africa, Buffelskloof, Jolanta Miadlikowska, none"		This study	terricolous/on moss on a log		South Africa
-P14264	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	GoLife SouthAfrica-Salt River-1-P1-C1	"South Africa, Salt River, GoLife, none"		This study			South Africa
-P14269	Sticta_sp	lobariaceae	sticta	terricolous	GoLife SouthAfrica-Buffelskloof-7-P1-C3	"South Africa, Buffelskloof, GoLife, none"		This study	terricolous/on a rock with little mosses		South Africa
-P14318	Sticta_sp	lobariaceae	sticta	terricolous	GoLife SouthAfrica-Table-1-P1-C1	"South Africa, Table, GoLife, none"		This study	terricolous/on a rock with little mosses		South Africa
+P12502	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	GoLife Malaysia-Kinabalu-3-C2-P1	"Malaysia, Kinabalu Park, Miadlikowska and Lutzoni Malaysia-Kinabalu-3-C2-P1-L5, DUKE"		This study			Malaysia
+P12521	Lobaria_sp	lobariaceae	lobaria	epiphytic	GoLife Malaysia-Kinabalu-3-C1-P1	"Malaysia, Kinabalu Park, Miadlikowska Malaysia-Kinabalu-3-C1-P1-L2, DUKE"		This study			Malaysia
+P12523	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	GoLife Malaysia-Kinabalu-1-C2-P1	"Malaysia, Kinabalu Park, Magain Malaysia-Kinabalu-1-C2-P1-L12, DUKE"		This study			Malaysia
+P12537	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	GoLife Malaysia-Kinabalu-3-C2-P1	"Malaysia, Crocker Range Park, Miadlikowska, Lutzoni, Flakus and Magain Malaysia-Kinabalu-3-C2-P1-L11, DUKE"		This study			Malaysia
+P12545	Pannaria_sp	pannariaceae	pannaria	epiphytic	GoLife Malaysia-Kinabalu-2-C1-P1	"Malaysia, Kinabalu Park, Miadlikowska Malaysia-Kinabalu-2-C1-P1-L11, DUKE"		This study			Malaysia
+P12559	Pseudocyphellaria_guillemini	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Mocho-1-C1-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Miadlikowska and Lutzoni Chile-Mocho-1-C1-P1-L14, DUKE 402991"		This study			Chile
+P12560	Pseudocyphellaria_berberina	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Puyehue-1-C2-P1	"Chile, Parque Nacional Puyehue, Miadlikowska and Lutzoni Chile-Puyehue-1-C2-P1-L3., DUKE 403005"		This study			Chile
+P12564	Pseudocyphellaria_corifolia	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Malalca-1-C2-P1	"Chile, Reserva Nacional Malalcahuello, Miadlikowska and Lutzoni Chile-Malalca-1-C2-P1-L2, DUKE 402989"		This study	epiphytic/at the base of Araucaria		Chile
+P12567	Sticta_hypochra	lobariaceae	sticta	epiphytic	GoLife Chile-Mocho-1-C1-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Miadlikowska and Lutzoni Chile-Mocho-1-C1-P1-L3, DUKE 403058"		This study			Chile
+P12569	Sticta_caulescens	lobariaceae	sticta	terricolous	GoLife Chile-Crater-2-C1-P1	"Chile, Parque Nacional Puyehue, Miadlikowska and Lutzoni Chile-Crater-2-C1-P1-L9, DUKE 403053"		This study			Chile
+P12570	Sticta_hypochra	lobariaceae	sticta	terricolous	GoLife Chile-Mocho-2-C2-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Miadlikowska and Lutzoni Chile-Mocho-2-C2-P1-L5, DUKE 403067"		This study			Chile
+P12573	Nephroma_antarcticum	nephromataceae	nephroma	epiphytic	GoLife Chile-Mocho-1-C1-P1	"Chile, Reserva Nacional Mocho-Choshuenco, Miadlikowska and Lutzoni Chile-Mocho-1-C1-P1-L2, DUKE 402845"		This study			Chile
+P12578	Gabura_fascicularis	arctomiaceae	Gabura	terricolous	GoLife Chile-Angol-1-C1-P1	"Chile, Parque Nacional Nahuelbuta, Miadlikowska and Lutzoni Chile-Angol-1-C1-P1-L14, DUKE 402803"		This study	epiphytic/at the base of Araucaria		Chile
+P12584	Pseudocyphellaria_meyenii	lobariaceae	pseudocyphellaria	epiphytic	GoLife Chile-Puyehue-1-C1-P1	"Chile, Parque Nacional Puyehue, Miadlikowska and Lutzoni Chile-Puyehue-1-C1-P1-L3, AZ, DUKE 383140"		This study			Chile
+P12588	Leptogium_sp	collemataceae	leptogium	terricolous	GoLife Chile-Angol-1-C1-P1	"Chile, Parque Nacional Nahuelbuta, Miadlikowska and Lutzoni Chile-Angol-1-C1-P1-L12, DUKE 402826"		This study	terricolous/on moss on a boulder		Chile
+P12591	Collema_sp	collemataceae	collema	epiphytic	GoLife Malaysia-Kinabalu-1-C1-P1	"Malaysia, Kinabalu Park, Magain Malaysia-Kinabalu-2-C1-P1-L19A, DUKE"		This study			Malaysia
+P12639	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Swampo-1-C1-P1	"Panama, Parque Nacional Isla Bastimentos, Magain Panama-Swampo-1-C1-P1-NM126, DUKE 357944"		This study			panama
+P12641	Leptogium_sp	collemataceae	leptogium	terricolous	GoLife Panama-Parida-1-C1-P1	"Panama, Parque Nacional Golfo de Chiriqui, Magain Panama-Parida-1-C1-P1-NM4, DUKE 357879"		This study	terricolous/on moss on a boulder		Panama
+P12642	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Gamboa-2-C1-P1	"Panama, Parque Nacional Soberania,  Magain Panama-Gamboa-2-C1-P1-NM3, DUKE 357875"		This study			Panama
+P12646	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Baru-1-C5-P1	"Panama, Parque Nacional Volcan Baru, Magain Panama-Baru-1-C5-P1-NM35, DUKE 357783"		This study			Panama
+P12649	Leptogium_sp	collemataceae	leptogium	terricolous	GoLife Panama-Copete-1-C1-P1	"Panama, Parque Nacional Volcan Baru, Lutzoni and Miadlikowska Panama-Copete-1-C1-P1-L3, DUKE 357834"		This study			Panama
+P12650	Leptogium_sp	collemataceae	leptogium	epiphytic	GoLife Panama-Swampo-1-C1-P1	"Panama, Parque Nacional Isla Bastimentos, Magain Panama-Swampo-1-C1-P1-NM130, DUKE 357947"		This study			Panama
+P14213	Lobaria_sp	lobariaceae	lobaria	epiphytic	GoLife SouthAfrica-Buffelskloof-1-P1-C2	"South Africa, Buffelskloof, Miadlikowska, Lutzoni and Medeiros Buffelskloof-1-C2-P1-JM5, DUKE"		This study	terricolous/on moss on a log		South Africa
+P14264	Pseudocyphellaria_sp	lobariaceae	pseudocyphellaria	epiphytic	GoLife SouthAfrica-Salt River-1-P1-C1	"South Africa, Salt River, Miadlikowska, Lutzoni and Medeiros Salt River-1-C1-P1-L9, DUKE"		This study			South Africa
+P14269	Sticta_sp	lobariaceae	sticta	terricolous	GoLife SouthAfrica-Buffelskloof-7-P1-C3	"South Africa, Buffelskloof, Miadlikowska, Lutzoni and Medeiros Table-1-C1-P1-JM72, DUKE"		This study	terricolous/on a rock with little mosses		South Africa
+P14318	Sticta_sp	lobariaceae	sticta	terricolous	GoLife SouthAfrica-Table-1-P1-C1	"South Africa, Table, Miadlikowska Lutzoni and Medeiros Table-1-C1-P1-L3, DUKE"		This study	terricolous/on a rock with little mosses		South Africa
 P14321	Leptogium_sp	lobariaceae	pseudocyphellaria	terricolous	GoLife SouthAfrica-Table-1-P1-C1	"South Africa, Table, GoLife, none"		This study	terricolous/on a rock with little mosses		South Africa
-P1574	Peltigera_dolichorhiza	peltigeraceae	peltigera	terricolous	NA	"Brazil, Minas Gerais, Miadlikowska et al. s.n.; CGMS-34450"		This study; Magain et al. 2017			Brazil
+P1574	Peltigera_dolichorhiza	peltigeraceae	peltigera	terricolous	NA	"Brazil, Minas Gerais, Miadlikowska et al. s.n., CGMS-34450"		This study; Magain et al. 2017			Brazil
 P2037	Peltigera_aubertii	peltigeraceae	peltigera	terricolous	NA	"Chile, Region XII, Goffinet 10559, CONN"		This study; Magain et al. 2018			Chile
 P2039	Peltigera_hydrophila	peltigeraceae	peltigera	terricolous	NA	"Chile, Region XII, Shaw 17848, DUKE 0401861"		This study; Magain et al. 2018			Chile
 P2081	Peltigera_canina_2	peltigeraceae	peltigera	terricolous	NA	"United States of America, North Carolina, Hollinger 2731, UBC"		This study; Magain et al. 2018			United States of America
@@ -106,10 +106,10 @@ P6465	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	ABMI 608	"Can
 P6524	Peltigera_praetextata	peltigeraceae	peltigera	epiphytic	ABMI 877	"Canada, Alberta, ABMI ID 250894, PMAE"		This study	Tree/Other		Canada
 P6600	Peltigera_canina_2	peltigeraceae	peltigera	terricolous	NA	"Canada, Québec, Darnajoux 676, DUKE"		This study; Darnajoux et al. 2019			Canada
 P6602	Peltigera_borealis	peltigeraceae	peltigera	terricolous	NA	"Canada, Québec, Darnajoux 628, DUKE"		This study; Darnajoux et al. 2019			Canada
-P6620	Peltigera_neopolydactyla	peltigeraceae	peltigera	terricolous	NA	R. Darnajoux 615 DUKE		This study; Darnajoux et al. 2019			Canada
+P6620	Peltigera_neopolydactyla	peltigeraceae	peltigera	terricolous	NA	"Canada, Québec, Darnajoux 615 DUKE"		This study; Darnajoux et al. 2019			Canada
 P6636	Peltigera_fuscopraetextata 	peltigeraceae	peltigera	terricolous	NA	"Chile, Magain NM50, DUKE"		This study			Canada
-P6963	Peltigera_nana	peltigeraceae	peltigera	terricolous	GoLife Malaysia-KinabaluHQ-1-C1-P1	"Malaysia, Kinabalu Park, Magain, Duke"		This study	on mosses on soil		Malaysia
-P6970	Peltigera_serusiauxii	peltigeraceae	peltigera	terricolous	GoLife Malaysia-Kinabalu-3-C3-P1	"Malaysia, Kinabalu Park, Magain, Duke"		This study	on mossy slope		Malaysia
+P6963	Peltigera_nana	peltigeraceae	peltigera	terricolous	GoLife Malaysia-KinabaluHQ-1-C1-P1	"Malaysia, Kinabalu Park, Magain Malaysia-KinabaluHQ-1-C1-P1-L1, DUKE"		This study	on mosses on soil		Malaysia
+P6970	Peltigera_serusiauxii	peltigeraceae	peltigera	terricolous	GoLife Malaysia-Kinabalu-3-C3-P1	"Malaysia, Kinabalu Park, Magain Malaysia-Kinabalu-3-C3-P1-L6, DUKE"		This study	on mossy slope		Malaysia
 P8202	Peltigera_latiloba	peltigeraceae	peltigera	terricolous	ABMI 499	"Canada, Alberta, ABMI ID 1276480, PMAE"		This study	Tree/Other		Canada
 P8219	Peltigera_islandica	peltigeraceae	peltigera	terricolous	ABMI OG-ABMI-477-21	"Canada, Alberta, ABMI ID 616803, PMAE"		This study	Wetland		Canada
 P8231	Peltigera_ponojensis_monticola_1a	peltigeraceae	peltigera	terricolous	ABMI 1285	"Canada, Alberta, ABMI ID 802891, PMAE"		This study	Rock		Canada
@@ -123,7 +123,7 @@ P8580	Peltigera_canina_1	peltigeraceae	peltigera	terricolous	ABMI 1293	"Canada, 
 P8690	Peltigera_malacea_3	peltigeraceae	peltigera	terricolous	ABMI 1030	"Canada, Alberta, ABMI ID 292089, PMAE"		This study	Upland		Canada
 P8768	Peltigera_aff_didactyla	peltigeraceae	peltigera	terricolous	ABMI OG-ABMI-1368-1	"Canada, Alberta, ABMI ID 159071, PMAE"		This study	Upland		Canada
 P8840	Peltigera_leucophlebia_1	peltigeraceae	peltigera	terricolous	ABMI 1070	"Canada, Alberta, ABMI ID 391119, PMAE"		This study	UH		Canada
-P8857	Peltigera_scabrosa_1	peltigeraceae	peltigera	terricolous	ABMI 576	"Canada, Alberta, ABMI ID 618295, PMAE"		This study	Upland		Canada
+P8857	Peltigera_borealis	peltigeraceae	peltigera	terricolous	ABMI 576	"Canada, Alberta, ABMI ID 618295, PMAE"		This study	Upland		Canada
 P8926	Peltigera_malacea_2	peltigeraceae	peltigera	terricolous	ABMI 83	"Canada, Alberta, ABMI ID 58543, PMAE"		This study	Upland		Canada
 P9119	Peltigera_frippii	peltigeraceae	peltigera	terricolous	ABMI 6	"Canada, Alberta, ABMI ID 90575, PMAE"		This study	Rock		Canada
 P9121	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	ABMI 450	"Canada, Alberta, ABMI ID 44943, PMAE"		This study	Wetland		Canada
@@ -133,18 +133,18 @@ P9728	Peltigera_malacea_2	peltigeraceae	peltigera	terricolous	ABMI 659	"Canada, 
 P9820	Peltigera_canina_2	peltigeraceae	peltigera	terricolous	ABMI 916	"Canada, Alberta, ABMI ID 160887, PMAE"		This study	log/stump		Canada
 P9822	Peltigera_malacea_2	peltigeraceae	peltigera	terricolous	ABMI 941	"Canada, Alberta, ABMI ID 251055, PMAE"		This study	Upland		Canada
 P9895	Nephroma_resupinatum	nephromataceae	nephroma	epiphytic	ABMI 930	"Canada, Alberta, ABMI ID 1388226, PMAE"		This study	log/stump		Canada
-S1	Fuscopannaria_crystallifera	pannariaceae	pannariaceae	epiphytic	NA	Sérusiaux PAN_D LG					
-S10	Fuscopannaria_ahlneri	pannariaceae	fuscopannaria	epiphytic	NA	Sérusiaux DP10 LG					
-S11	Fuscopannaria_leucosticta	pannariaceae	fuscopannaria	epiphytic	NA	Sérusiaux DP13 LG					
-S12	Fuscopannaria_ahlneri	pannariaceae	kroswia	epiphytic	NA	Sérusiaux DP4 LG					
-S13	Fuscopannaria_crystallifera	pannariaceae	kroswia	epiphytic	NA	Sérusiaux DP7 LG					
+S1	Fuscopannaria_crystallifera	pannariaceae	pannariaceae	epiphytic	NA	Reunion IslandSérusiaux PAN_D LG					
+S10	Fuscopannaria_ahlneri	pannariaceae	fuscopannaria	epiphytic	NA	"Taiwan, Sérusiaux DP10 LG"					
+S11	Fuscopannaria_leucosticta	pannariaceae	fuscopannaria	epiphytic	NA	"Taiwan, Sérusiaux DP13 LG"					
+S12	Fuscopannaria_ahlneri	pannariaceae	kroswia	epiphytic	NA	"Taiwan, Sérusiaux DP4 LG"					
+S13	Fuscopannaria_crystallifera	pannariaceae	kroswia	epiphytic	NA	"Taiwan, Sérusiaux DP7 LG"					
 S14	Peltigera_pacifica	peltigeraceae	peltigera	terricolous	NA	"Canada, British Columbia, Goward 06-1522, UBC"					
 S15	Peltigera_pacifica	peltigeraceae	peltigera	terricolous	NA	"United States of America, Oregon, McCune 27796, OSC"					
 S16	Peltigera_pacifica	peltigeraceae	peltigera	terricolous	NA	"Canada, British Columbia, Vitikainen 13080, H"					
 S17	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkaido, Magain 8103, LG"					
 S18	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkaido, Magain 8051, LG"					
 S19	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkaido, Magain 8074, LG"					
-S2	Fuscopannaria_leucosticta	pannariaceae	pannariaceae	epiphytic	NA	"Sérusiaux PAN_E, LG"					
+S2	Fuscopannaria_leucosticta	pannariaceae	pannariaceae	epiphytic	NA	"Reunion Island, Sérusiaux PAN_E, LG"					
 S20	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkaido, Magain 8078, LG"					
 S21	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkaido, Magain 8046, LG"					
 S22	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkaido, Magain 8056, LG"					
@@ -152,17 +152,17 @@ S23	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkai
 S24	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Hokkaido, Magain 8132, LG"					
 S25	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Honshu, Juriado 787, Tartu"					
 S26	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Japan, Honshu, Juriado 769, Tartu"					
-S27	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	" Russia, Khabarovsk Territory, Konoreva 3, GPS 774"					
+S27	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Russia, Khabarovsk Territory, Konoreva 3, GPS 774"					
 S29	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"France, Vosges,Magain 8019, LG"					
-S3	Lepidocollema_stylophorum	pannariaceae	pannariaceae	epiphytic	NA	Sérusiaux PAN_G LG					
+S3	Lepidocollema_stylophorum	pannariaceae	pannariaceae	epiphytic	NA	"Reunion Island, Sérusiaux PAN_G LG"					
 S30	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	Vust 28/9/1998 G					
 S31	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Canada, British Columbia, cf your P12054"					
 S32	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Canada, British Columbia, cf your P12230"					
 S33	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"United States of America, Alaska, K. Spickerman 160, OSC"					
-S34	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	I. Juriado GPS117 Tartu					
-S35	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	Magain P384 O					
-S37	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	Magain P530 LG					
-S38	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	Magain P675 LG					
+S34	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Estonia,  Juriado GPS117 Tartu"					
+S35	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Norway, Magain P384 O"					
+S37	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Norway, Magain P530 LG"					
+S38	Peltigera_vitikainenii	peltigeraceae	peltigera	terricolous	NA	"Norway, Magain P675 LG"					
 S39	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, Vermont, Magain 8211, LG"					
 S40	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, North Carolina, Magain 8172, LG"					
 S41	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, North Carolina, Magain 8178, LG"					
@@ -174,39 +174,39 @@ S46	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United Stat
 S47	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, South Carolina, Magain 8180, LG"					
 S48	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, Arkansas, Magain 8197, LG"					
 S49	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, Magain 8177, LG"					
-S4	Lepidocollema_brisbanense	pannariaceae	lepidocollema	epiphytic	NA	"Magain T6, LG"					
-S5	Physma_radians	pannariaceae	physma	epiphytic	NA	"Magain T5, LG"					
+S4	Lepidocollema_brisbanense	pannariaceae	lepidocollema	epiphytic	NA	"Thialland, Magain T6, LG"					
+S5	Physma_radians	pannariaceae	physma	epiphytic	NA	"Thailand, Magain T5, LG"					
 S51	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Canada, Québec, Miadlikowska and Lutzoni W25 C2, DUKE"					
 S52	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Canada, Québec, Miadlikowska and Lutzoni SN6 E3, DUKE"					
 S53	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Canada, Alberta,cf your P8287"					
 S54	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Canada, Alberta, cf your P8293"					
 S55	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Canada, Alberta, cf your P12234"					
-S56	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Canada, Alberta, Ahti 65064 H"					
-S57	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	Juriado 495 Tartu					
-S58	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	Magain P845 LG					
-S6	Lepidocollema_sp	pannariaceae	lepidocollema	epiphytic	NA	Magain&Sérusiaux R979 LG					
+S56	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Russia, Sakha, Ahti 65064 H"					
+S57	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Russia, Komi, Juriado 495 Tartu"					
+S58	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"Norway, Magain P845, LG"					
+S6	Lepidocollema_sp	pannariaceae	lepidocollema	epiphytic	NA	"Reunion Island, Magain and Sérusiaux R979, LG"					
 S60	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, Alaska, McCune 31327 OSC"					
-S61	Peltigera_asiatica	peltigeraceae	peltigera	terricolous	NA	Magain cf your P8174 DUKE					
+S61	Peltigera_asiatica	peltigeraceae	peltigera	terricolous	NA	"Malaysia, Borneo, Magain cf your P8174 DUKE"					
 S62	Peltigera_asiatica	peltigeraceae	peltigera	terricolous	NA	"China, Yunnan, Miadlikowska s.n. DUKE"					
-S63	Peltigera_asiatica	peltigeraceae	peltigera	terricolous	NA	Sérusiaux T299 LG					
+S63	Peltigera_asiatica	peltigeraceae	peltigera	terricolous	NA	"Taiwan, Sérusiaux T299 LG"					
 S64	Peltigera_mikado	peltigeraceae	peltigera	terricolous	NA	"Russia, Khabarovsk Territory, Miadlikowska s.n. DUKE"					
-S66	Peltigera_mikado	peltigeraceae	peltigera	terricolous	NA	Sérusiaux T47 LG					
-S67	Peltigera_borinquensis	peltigeraceae	peltigera	terricolous	NA	Gaya 07.14.10-19; DUKE					
-S68	Peltigera_borinquensis	peltigeraceae	peltigera	terricolous	NA	J. Mercado-Diaz 3655 F					
-S8	Physma_byrsaeum	pannariaceae	physma	epiphytic	NA	Magain&Sérusiaux R1121 LG					
-S82	Peltigera_sipmanii	peltigeraceae	peltigera	terricolous	NA	R. Lücking 34033; UDBC 					
-S83	Peltigera_sipmanii	peltigeraceae	peltigera	terricolous	NA	Truong 3942 DUKE					
-S85	Peltigera_dolichorhiza	peltigeraceae	peltigera	terricolous	NA	Lutzoni S.A.Table 2.5-C1-P1-L1 DUKE					
-S86	Peltigera_pulverulenta	peltigeraceae	peltigera	terricolous	NA	Lucking 33383 UDBC					
-S88	Peltigera_willdenowii	peltigeraceae	peltigera	terricolous	NA	R. Lücking 34028  UDBC					
-S9	Physma_byrsaeum	pannariaceae	physma	epiphytic	NA	Diederich 18436 LG					
-S90	Peltigera_esslingeri	peltigeraceae	peltigera	terricolous	NA	R. Lücking 33659; UDBC 					
-S91	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, Magain 8179, LG"					
-S92	Peltigera_kukwae	peltigeraceae	peltigera	terricolous	NA	M. Kukwa 9276; LPB 					
+S66	Peltigera_mikado	peltigeraceae	peltigera	terricolous	NA	"Taiwan, Sérusiaux T47 LG"					
+S67	Peltigera_borinquensis	peltigeraceae	peltigera	terricolous	NA	"Peru, Gaya 07.14.10-19, DUKE"					
+S68	Peltigera_borinquensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, Puerto Rico, Mercado-Diaz 3655 F"					
+S8	Physma_byrsaeum	pannariaceae	physma	epiphytic	NA	"Reunion Island, Magain and Sérusiaux R1121 LG"					
+S82	Peltigera_sipmanii	peltigeraceae	peltigera	terricolous	NA	"Colombia, Lücking 34033; UDBC "					
+S83	Peltigera_sipmanii	peltigeraceae	peltigera	terricolous	NA	"Ecuador, Truong 3942 DUKE"					
+S85	Peltigera_dolichorhiza	peltigeraceae	peltigera	terricolous	NA	"South Africa, Lutzoni, Table 2.5-C1-P1-L1 DUKE"					
+S86	Peltigera_pulverulenta	peltigeraceae	peltigera	terricolous	NA	"Colombia, Lucking 33383 UDBC"					
+S88	Peltigera_willdenowii	peltigeraceae	peltigera	terricolous	NA	"Colombia, Lücking 34028  UDBC"					
+S9	Physma_byrsaeum	pannariaceae	physma	epiphytic	NA	"Mauritius, Diederich 18436 LG"					
+S90	Peltigera_esslingeri	peltigeraceae	peltigera	terricolous	NA	"Colombia, Lücking 33659; UDBC "					
+S91	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, South Carolina, Magain 8179, LG"					
+S92	Peltigera_kukwae	peltigeraceae	peltigera	terricolous	NA	"Bolivia, Kukwa 9276; LPB "					
 S93	Peltigera_appalachiensis	peltigeraceae	peltigera	terricolous	NA	"United States of America, West Virginia, Magain 8185, LG"					
 S94	Peltigera_kukwae	peltigeraceae	peltigera	terricolous	NA	"Brazil, Minas Gerais, Miadlikowska s.n., CGMS 34530"					
 S95	Peltigera_itatiaiae	peltigeraceae	peltigera	terricolous	NA	"Brazil, Minas Gerais, Miadlikowska s.n., CGMS 34562"					
-X2	Peltigera_ponojensis	peltigeraceae	peltigera	terricolous	NA	"Russia, Murmansk Region, near Ponoj, Kihlman 258, H (Holotype)"		This study			Russia
+X2	Peltigera_ponojensis	peltigeraceae	peltigera	terricolous	NA	"Russia, Murmansk Region, near Ponoj, Kihlman 258, H (holotype)"		This study			Russia
 SRR15568737	Peltigera_canina	peltigeraceae	peltigera	terricolous	NA			vecherskii_et_al			
 SRR15568764	Solorina_crocea	peltigeraceae	solorina	NA	NA			vecherskii_et_al			
 P10617	Peltigera_aphthosa_5	peltigeraceae	peltigera	terricolous	NA						

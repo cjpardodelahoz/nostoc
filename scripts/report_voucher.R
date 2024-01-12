@@ -58,11 +58,11 @@ voucher_df <- read_delim("misc_files/voucher_primer_5.txt", delim = "\t") %>%
     str_detect(genome_id, taxon_name) | str_detect(taxon_name, genome_id) ~ taxon_name,
     .default = paste(genome_id, taxon_name, sep = "_")),
     percent_complete = round(percent_complete, digits = 1)) %>%
-  select(genome_id, taxon_name, voucher, site_id, lifestyle, lichen_substrate,
+  select(taxon_name, voucher, site_id, lifestyle, lichen_substrate,
          N50, "Total length", "GC (%)", chromosome_median_depth, percent_complete, combined_plasmids_length, accession, 
          reference) %>%
   rename("Taxon name" = taxon_name,
-         "Voucher" = voucher,
+         "Region/Voucher" = voucher,
          "Site ID" = site_id,
          "Lifestyle"= lifestyle,
          "Lichen substrate" = lichen_substrate,
@@ -75,5 +75,7 @@ voucher_df <- read_delim("misc_files/voucher_primer_5.txt", delim = "\t") %>%
          "Reference" = reference)
 # The genome labeled P6636 was mislabeled from the sequencing source and the actual code is P6236
 # This is to correct in the final table but all previous files will retain P6636
-voucher_df[107, 2] <- "P6236_bin_11_Peltigera_fuscopraetextata"
-write_csv(voucher_df, file = "document/tables/voucher_v2.csv")
+voucher_df[107, 1] <- "P6236_bin_11_Peltigera_fuscopraetextata"
+# This is to update the DNA ID of the ponojensis type per Jola's request
+voucher_df[151, 1] <- "PL483_bin_4_Peltigera_ponojensis"
+write_csv(voucher_df, file = "document/tables/voucher_v3.csv")
