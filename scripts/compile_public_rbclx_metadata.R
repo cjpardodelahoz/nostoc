@@ -114,7 +114,9 @@ magain_2018 <- read_csv(file = "misc_files/voucher_magain2018.csv",
   mutate(region = str_remove(region, "; Truong 3991")) %>%
   select(dna_id, dna_source, rbclx_accession, nostoc_phylogroup, region, reference) %>%
   filter(rbclx_accession != "---")
-# Join all rbclx metadata tables
+# Bring table with key to updated fungal names
+updated_fungal_names <- read_csv("document/sharing/unique_public_rbclx_updated.csv")
+# Join all rbclx metadata tables and update fungal names
 public_rbclx_metadata <- bind_rows(obrien_2013, magain_2017, miadlikowska_2018, 
                                    chagnon_2018, pardodelahoz_2018, magain_2018) %>%
   distinct(rbclx_accession, .keep_all = T) %>%
@@ -130,10 +132,16 @@ public_rbclx_metadata <- bind_rows(obrien_2013, magain_2017, miadlikowska_2018,
   mutate(dna_source = str_remove(dna_source, " \\(.*")) %>%
   mutate(dna_source = str_remove(dna_source, " M\u009f.*")) %>%
   mutate(dna_source = str_remove(dna_source, " Vain.*")) %>%
-  mutate(dna_source = str_remove(dna_source, " R. Sa.*"))
+  mutate(dna_source = str_remove(dna_source, " R. Sa.*")) %>%
+  left_join(updated_fungal_names, by = "dna_source") %>%
+  select(dna_id, correct_name, rbclx_accession, nostoc_phylogroup, region, reference) %>%
+  rename(dna_source = correct_name)
+# Update these names manually because they have weird characters
+public_rbclx_metadata[public_rbclx_metadata$rbclx_accession == "MH770618", "dna_source"] <- "Peltigera neorufescens 6"
+public_rbclx_metadata[public_rbclx_metadata$rbclx_accession == "MH770619", "dna_source"] <- "Peltigera neorufescens 5"
 # Save the list of unique accessions and the metadata
 dir.create(path = "analyses/species_delimitation/rbclx/public", recursive = T)
 public_rbclx_metadata %>%
   pull(rbclx_accession) %>%
   write(file = "analyses/species_delimitation/rbclx/public/public_rbclx_accessions.txt")
-write_csv(public_rbclx_metadata, file = "analyses/species_delimitation/rbclx/public/public_rbclx_metadata.csv")
+write_csv(public_rbclx_metadata, file = "analyses/species_delimitation/rbclx/public/public_rbclx_metadata.csv") 

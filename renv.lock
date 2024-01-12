@@ -245,6 +245,21 @@
       "Hash": "543776ae6848fde2f48ff3816d0628bc",
       "Requirements": []
     },
+    "bipartite": {
+      "Package": "bipartite",
+      "Version": "2.19",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c3d8c606d1fd247c52b19689a5fb9df2",
+      "Requirements": [
+        "MASS",
+        "fields",
+        "igraph",
+        "permute",
+        "sna",
+        "vegan"
+      ]
+    },
     "bit": {
       "Package": "bit",
       "Version": "4.0.5",
@@ -605,6 +620,14 @@
         "iterators"
       ]
     },
+    "dotCall64": {
+      "Package": "dotCall64",
+      "Version": "1.1-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "80f374ef8500fcdc5d84a0345b837227",
+      "Requirements": []
+    },
     "dplyr": {
       "Package": "dplyr",
       "Version": "1.1.0",
@@ -755,6 +778,18 @@
       "Repository": "CRAN",
       "Hash": "dabc225759a2c2b241e60e42bf0e8e54",
       "Requirements": []
+    },
+    "fields": {
+      "Package": "fields",
+      "Version": "15.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "66fa5a16464666772f4929f8f5b2fc71",
+      "Requirements": [
+        "maps",
+        "spam",
+        "viridisLite"
+      ]
     },
     "forcats": {
       "Package": "forcats",
@@ -1504,6 +1539,18 @@
         "colorspace"
       ]
     },
+    "network": {
+      "Package": "network",
+      "Version": "1.18.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "5e4fda9d3ed359d1b155d46a36681191",
+      "Requirements": [
+        "magrittr",
+        "statnet.common",
+        "tibble"
+      ]
+    },
     "nlme": {
       "Package": "nlme",
       "Version": "3.1-162",
@@ -1593,6 +1640,14 @@
         "lme4",
         "numDeriv"
       ]
+    },
+    "permute": {
+      "Package": "permute",
+      "Version": "0.9-7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "abf0ca85c1c752e0d04f46334e635046",
+      "Requirements": []
     },
     "phangorn": {
       "Package": "phangorn",
@@ -2066,6 +2121,38 @@
         "stringr"
       ]
     },
+    "sna": {
+      "Package": "sna",
+      "Version": "2.7-2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "050b4098cef7fa1827c5c199559fde1f",
+      "Requirements": [
+        "network",
+        "statnet.common"
+      ]
+    },
+    "spam": {
+      "Package": "spam",
+      "Version": "2.10-0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ffe1f9e95a4375530747b268f82b5086",
+      "Requirements": [
+        "Rcpp",
+        "dotCall64"
+      ]
+    },
+    "statnet.common": {
+      "Package": "statnet.common",
+      "Version": "4.9.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "be35aebf512f7b31de12200d5c3d1d67",
+      "Requirements": [
+        "coda"
+      ]
+    },
     "stringi": {
       "Package": "stringi",
       "Version": "1.7.12",
@@ -2350,6 +2437,20 @@
         "rlang"
       ]
     },
+    "vegan": {
+      "Package": "vegan",
+      "Version": "2.6-4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "659fe7589b8e0b16baa49043a61a0ce0",
+      "Requirements": [
+        "MASS",
+        "cluster",
+        "lattice",
+        "mgcv",
+        "permute"
+      ]
+    },
     "viridisLite": {
       "Package": "viridisLite",
       "Version": "0.4.1",
@@ -2407,10 +2508,10 @@
     },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.37",
+      "Version": "0.41",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "a6860e1400a8fd1ddb6d9b4230cc34ab",
+      "Hash": "460a5e0fe46a80ef87424ad216028014",
       "Requirements": []
     },
     "xml2": {

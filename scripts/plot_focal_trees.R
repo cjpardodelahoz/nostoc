@@ -128,8 +128,8 @@ clade_3_2_public_plot <- prep_public_focal_trees(
   outgroup_taxa = outgroup_3_2, font_size = 3, col_offset = 0.1) +
   geom_treescale(width = 0.005, y = 20, x = 0.003, offset = 0.5)
 ggsave(clade_3_2_public_plot, file = "document/plots/clade_3_2_public.pdf",
-       units = "cm", height = 20, width = 30)
- # Clade 3-4
+       units = "cm", height = 20, width = 40)
+# Clade 3-4
 outgroup_3_4 <- c("KX923097")
 clade_3_4_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_4.treefile",
@@ -144,7 +144,8 @@ clade_3_5_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_5_with_spacer.treefile",
   outgroup_taxa = outgroup_3_5, font_size = 3, col_offset = 0.08) +
   geom_treescale(width = 0.005, y = 30, x = 0.003, offset = 1.5)
-ggsave(clade_3_5_public_plot, file = "document/plots/clade_3_5_public.pdf")
+ggsave(clade_3_5_public_plot, file = "document/plots/clade_3_5_public.pdf",
+       units = "cm", height = 20, width = 30)
 # Clade 3-6
 tmp_tree <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_6.treefile")
 #root_node_3_6 <- MRCA(tmp_tree, c("P8202_bin_9.fa", "P8569_bin_1.fa")) 
@@ -195,21 +196,24 @@ clade_3_11_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_11.treefile",
   outgroup_taxa = outgroup_3_11, font_size = 3, col_offset = 0.09) +
   geom_treescale(width = 0.005, y = 10, x = 0.003, offset = .2)
-ggsave(clade_3_11_public_plot, file = "document/plots/clade_3_11_public.pdf")
+ggsave(clade_3_11_public_plot, file = "document/plots/clade_3_11_public.pdf",
+       units = "cm", height = 20, width = 25)
 # Clade 3-12
 outgroup_3_12 <- c("P9820_bin_6.fa")
 clade_3_12_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_3_12.treefile",
   outgroup_taxa = outgroup_3_12, font_size = 3, col_offset = 0.09) +
   geom_treescale(width = 0.005, y = 25, x = 0.003, offset = .2)
-ggsave(clade_3_12_public_plot, file = "document/plots/clade_3_12_public.pdf")
+ggsave(clade_3_12_public_plot, file = "document/plots/clade_3_12_public.pdf",
+       units = "cm", height = 20, width = 25)
 # Clade 2-1
 outgroup_2_1 <- c("EF102347")
 clade_2_1_public_plot <- prep_public_focal_trees(
   treefile = "analyses/species_delimitation/rbclx/clade_assignment/trees/focal/rbclx_2_1.treefile",
   outgroup_taxa = outgroup_2_1, font_size = 3, col_offset = 0.09) +
   geom_treescale(width = 0.005, y = 30, x = 0.003, offset = .5)
-ggsave(clade_2_1_public_plot, file = "document/plots/clade_2_1_public.pdf")
+ggsave(clade_2_1_public_plot, file = "document/plots/clade_2_1_public.pdf",
+       units = "cm", height = 23, width = 25)
 # Clade 2-2
 outgroup_2_2 <- c("S8_bin_2.fa", "S9_bin_6.fa", "KX923058", "EU877488", "P12591_bin_6.fa")
 clade_2_2_public_plot <- prep_public_focal_trees(
@@ -226,7 +230,7 @@ clade_2_4_public_plot <- prep_public_focal_trees(
   outgroup_taxa = outgroup_2_4, font_size = 3, col_offset = 0.09) +
   geom_treescale(width = 0.005, y = 50, x = 0.003, offset = 1)
 ggsave(clade_2_4_public_plot, file = "document/plots/clade_2_4_public.pdf",
-       units = "cm", height = 30, width = 30)
+       units = "cm", height = 31, width = 30)
 
 
 #### GENERATE TABLES WITH REVISED RBCLX CLASSIFICATION ####
@@ -307,13 +311,13 @@ tree_3_2 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignme
 phylogroup_new1_node <- MRCA(tree_3_2, c("P11060_bin_1.fa", "EU877528"))
 phylogroup_new1_taxa <- tree_subset(tree_3_2, node = phylogroup_new1_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(phylogroup = "NEW1") %>%
+  mutate(phylogroup = "XLVI") %>%
   rename(dna_id = value)
 # Classify phylogroup NEW2 taxa
 phylogroup_new2_node <- MRCA(tree_3_2, c("S44_bin_8.fa", "KX923109"))
 phylogroup_new2_taxa <- tree_subset(tree_3_2, node = phylogroup_new2_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(phylogroup = "NEW2") %>%
+  mutate(phylogroup = "XLVII") %>%
   rename(dna_id = value)
 # Classify section 3-2
 section_3_2_taxa <- tree_3_2$tip.label %>%
@@ -505,12 +509,12 @@ tree_3_8 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignme
 phylogroup_new3_node <- MRCA(tree_3_8,  c("Nostoc_KVJ2.fa", "Nostoc_KVS11.fa"))
 phylogroup_new3_taxa <- tree_subset(tree_3_8, node = phylogroup_new3_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(phylogroup = "NEW3") %>%
+  mutate(phylogroup = "XLVIII") %>%
   rename(dna_id = value)
 # Classify phylogroup NEW4 taxa
 phylogroup_new4_taxa <- drop.tip(tree_3_8, outgroup_3_8)$tip.label %>%
   as_tibble() %>%
-  mutate(phylogroup = "NEW4") %>%
+  mutate(phylogroup = "XLIX") %>%
   rename(dna_id = value)
 # Join all assignments
 clade_assignments_3_8 <- bind_rows(phylogroup_new3_taxa, phylogroup_new4_taxa) %>%
@@ -631,7 +635,7 @@ tree_3_11 <- read.tree(file = "analyses/species_delimitation/rbclx/clade_assignm
 phylogroup_i_node <- MRCA(tree_3_11,  c("NMS1_bin_5.fa", "NMS2_bin_6.fa"))
 phylogroup_i_taxa <- tree_subset(tree_3_11, node = phylogroup_i_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(phylogroup = "I") %>%
+  mutate(phylogroup = "XLIV") %>%
   rename(dna_id = value)
 # Classify phylogroup VIIIb taxa
 phylogroup_viiib_node <- MRCA(tree_3_11,  c("KX922897", "KX923088"))
@@ -643,7 +647,7 @@ phylogroup_viiib_taxa <- tree_subset(tree_3_11, node = phylogroup_viiib_node, le
 phylogroup_new5_node <- MRCA(tree_3_11,  c("P8256_bin_3.fa", "MH770580"))
 phylogroup_new5_taxa <- tree_subset(tree_3_11, node = phylogroup_new5_node, levels_back = 0)$tip.label %>%
   as_tibble() %>%
-  mutate(phylogroup = "VIIIb") %>%
+  mutate(phylogroup = "XLV") %>%
   rename(dna_id = value)
 # Classify species complex 3-11a
 complex_3_11_node <- MRCA(tree_3_11, c("KX922897", "P6963_bin_9.fa"))
@@ -1215,7 +1219,7 @@ sum_partner_sharing <- function(data) {
            percent_sharing_same_site, percent_sharing_diff_site) %>%
     rename("Nostoc OTUs" = otu_pair,
            "Total specimen pairs" = total_pairs,
-           "Coooccurring specimen pairs" = same_site,
+           "Cooccurring specimen pairs" = same_site,
            "Non-cooccurring specimen pairs" = diff_site,
            "Cooccurring specimen pairs sharing fungal partner" = same_pelt_same_site,
            "Non-cooccurring specimen pairs sharing fungal partner" = same_pelt_diff_site,
