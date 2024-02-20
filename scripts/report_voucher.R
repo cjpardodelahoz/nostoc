@@ -65,6 +65,24 @@ mag_biosample_info <- mag_biosample_info %>%
          env_broad_scale, "derived-from")
 write_csv(mag_biosample_info, "document/ncbi/mag_biosample_info.csv")
 
+# Table with information for SRA submission
+sra_attributes <- lichen_biosample_accessions %>%
+  mutate(title = paste("Metagenome of lichen ", sample_name, " ", isolation_source),
+         filename = paste(sample_name, "_R1_all.fastq"),
+         filename2 = paste(sample_name, "_R2_all.fastq")) %>%
+  rename(biosample_accession = accession, 
+         library_ID = sample_name) %>%
+  select(biosample_accession, library_ID, title, filename, filename2)
+# Update file names
+sra_attributes[40, 4] <- "P14321_R1_all.fastq"
+sra_attributes[40, 5] <- "P14320_R2_all.fastq"
+sra_attributes[68, 4] <- "P6636_R1_all.fastq"
+sra_attributes[68, 5] <- "P6636_R2_all.fastq"
+sra_attributes[112, 4] <- "X2_R1_all.fastq"
+sra_attributes[112, 5] <- "X2_R2_all.fastq"
+write_csv(sra_attributes, "document/ncbi/sra_attributes.csv")
+  
+
 # Load table with plasmid classification info and get plasmid lengths and chromosome depths
 depths_and_lenghts <- read.csv(file = "document/tables/contig_class_consensus.csv") %>%
   mutate(genome_id = str_remove(genome_id, ".fa")) %>%
