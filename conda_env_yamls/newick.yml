@@ -1,0 +1,16 @@
+name: newick
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - icu=58.2=he6710b0_3
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - libxml2=2.9.14=h74e7548_0
+  - newick_utils=1.6=hec16e2b_5
+  - xz=5.2.8=h5eee18b_0
+  - zlib=1.2.13=h5eee18b_0
+prefix: /hpc/home/cjp47/miniconda3/envs/newick
