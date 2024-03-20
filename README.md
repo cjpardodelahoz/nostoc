@@ -117,6 +117,20 @@ I exported all conda environments as YAML so you can use the exact same version 
      $(conda info --base)/envs/anvio-7.1/lib/python3.6/_sysconfigdata_x86_64_conda_linux_gnu.py
     ```
     I always ran anvio from our cluster, but I set up a port to get the interactive sessions on Chrome in my local computer. [Check out this post that explains how to do it](https://merenlab.org/2018/03/07/working-with-remote-interative/).
+- **R 4.2.2** For increased reproducibility, I have R as conda environment and used [renv](https://rstudio.github.io/renv/articles/renv.html#collaboration) to manage R packages. To reproduce my R environment, make sure that you have cloned the repository or downloaded the files `renv.lock`, `.Rprofile`, `renv/settings.dcf`, and `renv/activate.R`. You will first install the conda environment with R 4.2.2.
+
+    ```sh
+    # Create conda environment with R 4.2.2 and renv
+    conda env create -f conda_env_yamls/r_422.yml
+    # Activate R conda environment and start R
+    conda activate r-4.2.2
+    R
+    ```
+    Then, within R, you can restore the packages from the lock file:
+    ```R
+    renv::restore()
+    ```
+    You will be asked to ocnfirm that you want to install all the packages. Type "y" and proceed. The installation may take a while. After this, you can use this conda environment to run any of the R scripts.
 
 ### 2.2 Software with pre-compiled binaries
 
@@ -258,6 +272,121 @@ install.packages("MSCquartets")
 
 
 ## 4. Phylogenetic analyses (Figure 1 and related supplements)
+
+### 4.1 Inference of phylogenetic trees
+
+#### 4.1.1 Extraction of phylogenetic markers
+
+The majority of the markers that we used in the study are from the [OrthoDB](https://www.orthodb.org/) (**nostocales_odb10**) which is used by BUSCO. Therefore, we first run BUSCO on the genomes to extract those markers with the script [busco_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/busco_set103.sh):
+
+```sh
+sbatch scripts/busco_set103.sh
+```
+Next, we sort the sequences to generate one file for each one of the markers with the sequences from all taxa (in nucleotide and amino acid). The output files will be written to `analyses/phylogenetics/set103/seqs`. The script is [sort_busco_seqs_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/sort_busco_seqs_set103.sh):
+
+```sh
+sbatch scripts/sort_busco_seqs_set103.sh
+```
+We also included the **16S** and ***trnL*** markers. To extract those, we first annotate the *Nostoc* genomes with Prokka and then use the annotation to extract and compile the 16S and *trnL* sequences. The scripts are [prokka_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/prokka_set103.sh), [get_16s_from_ffn_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/get_16s_from_ffn_set103.sh), [get_trnl_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/), and [compile_trnl_16s_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/compile_trnl_16s_set103.sh):
+
+```sh
+# Annotate set 103 genomes with Prokka
+sbatch scripts/prokka_set103.sh
+# Get 16s from annotated genomes set8 FIX THIS TO ACCOUNT FOR MULTIPLE AND PARTIAL HITS
+sbatch scripts/get_16s_from_ffn_set103.sh
+# Get trnl from annotated assemblies for set103
+sbatch scripts/get_trnl_set103.sh
+# Compile 16s and trnl seqs. I removed 16S from Nostoc_KVJ2.fa because it wasn't nostoc
+sbatch scripts/compile_trnl_16s_set103.sh
+```
+Now, all the sequences in ### are ready to be aligned.
+
+
+#### 4.1.2 Alignments
+
+For the BUSCO loci, we first align the amino acid sequences using mafft-dash. The script is [mafft_set103_aa.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/mafft_set103_aa.sh):
+
+```sh
+mkdir -p analyses/phylogenetics/set103/alignments/single
+sbatch scripts/mafft_set103_aa.sh 
+```
+
+Then, we use pal2nal to backtranslate the amino acid alignment to nucleotide. The script is [pal2nal_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/pal2nal_set103.sh):
+
+```sh
+sbatch scripts/pal2nal_set103.sh
+```
+
+Now, we trim the sites with gaps from the alignment using trimAl and then remove some of the characters that trimAl adds to the sequence headers. The scripts are [trimal_ng_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/trimal_ng_set103.sh) and [fix_headers_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/fix_headers_set103.sh):
+
+```sh
+# Trim gaps from alignments
+sbatch scripts/trimal_ng_set103.sh
+# Remove trimal crap from headers
+sbatch scripts/fix_headers_set103.sh
+```
+
+Next, we summarize nucleotide alignment features to filter out loci with < 200 variable sites and < 136 (90%) taxa. After filtering, we kept 1517 genes. The scripts are [summarize_na_alignments_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/summarize_na_alignments_set103.sh) and [filter_busco_ids_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/filter_busco_ids_set103.sh):
+
+```sh
+# Summarize single gene alignments after trimming
+mkdir -p analyses/phylogenetics/set103/alignments/sumaries
+sbatch scripts/summarize_na_alignments_set103.sh
+# Filter busco ids to remove loci with < 200 variable sites and < 136 (90%) taxa
+sbatch scripts/filter_busco_ids_set103.sh
+```
+
+Finally, we get codon partitions for all 1517 protein coding genes. The script is [get_codon_partition_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/get_codon_partition_set103.sh):
+
+```sh
+sbatch scripts/get_codon_partition_set103.sh
+```
+
+I aligned the **16S** and ***trnL*** manually and the alignment files are under `analyses/phylogenetics/set103/alignments/single/`. All alignments are now ready for single-locus ML tree inference.
+
+#### 4.1.3 Gene trees
+
+We now infer ML gene trees using IQ-Tree. The scripts are [ml_gene_trees_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/ml_gene_trees_set103.sh) and [ml_16s_trnl_trees_set103](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/ml_16s_trnl_trees_set103):
+
+```sh
+mkdir -p analyses/phylogenetics/set103/trees/single
+sbatch scripts/ml_gene_trees_set103.sh
+sbatch scripts/ml_16s_trnl_trees_set103.sh
+```
+The trees will be under `analyses/phylogenetics/set103/trees/single/*.treefile`.
+
+When there are identical sequences, IQ-Tree removes duplicates from the analyses and adds them aafter the search and bootstrap and they are attached to their identical match with a branch length of 0. The new internodes from this attachments have empty bootstrap values. We need to replace those empty values with 100 for the conflict analyses. The script is [replace_empty_ufboot_single_set103.R](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/replace_empty_ufboot_single_set103.R):
+
+```sh
+Rscript scripts/replace_empty_ufboot_single_set103.R
+```
+
+The cleaned gene trees are now under `analyses/phylogenetics/set103/trees/single/*noempty.treefile`.
+
+#### 4.1.4 Species trees – wASTRAL and concatenated ML (Figure S1A and S1B)
+
+We use the 1519 gene trees to infer a coalescent species tree with weighted-ASTRAL. **This is the tree that we used for Figure S1A**. The script is [wastral_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/wastral_set103.sh):
+
+```sh
+sbatch scripts/wastral_set103.sh
+```
+Next, we concatenate all 1519 aligments and infer a ML tree. **This is the tree that we used for Figure S1B**. The scripts are [concatenate_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/concatenate_set103.sh), [get_codon_partition_concat_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/get_codon_partition_concat_set103.sh), [concat_pf_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/concat_pf_set103.sh), and [concat_tree_set103.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/concat_tree_set103.sh): 
+
+```sh
+# Concatenate sequences
+sbatch scripts/concatenate_set103.sh
+# Get codon partition file for the concatenated alignment
+# Remember to remove the codon lines for 16s and trnl
+sbatch scripts/get_codon_partition_concat_set103.sh
+# Find best partition scheme and models
+sbatch scripts/concat_pf_set103.sh
+# ML searach and bootstrapping
+sbatch scripts/concat_tree_set103.sh
+```
+
+### 4.2 Divergence time estimation
+
+### 4.3 Analyses of phylogenetic conflict
 
 ## 5. Evaluation of genomic species boundaries (Figure 2 and related supplements)
 
