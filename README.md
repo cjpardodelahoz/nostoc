@@ -117,7 +117,7 @@ I exported all conda environments as YAML so you can use the exact same version 
      $(conda info --base)/envs/anvio-7.1/lib/python3.6/_sysconfigdata_x86_64_conda_linux_gnu.py
     ```
     I always ran anvio from our cluster, but I set up a port to get the interactive sessions on Chrome in my local computer. [Check out this post that explains how to do it](https://merenlab.org/2018/03/07/working-with-remote-interative/).
-- **R 4.2.2** For increased reproducibility, I have R as conda environment and used [renv](https://rstudio.github.io/renv/articles/renv.html#collaboration) to manage R packages. To reproduce my R environment, make sure that you have cloned the repository or downloaded the files `renv.lock`, `.Rprofile`, `renv/settings.dcf`, and `renv/activate.R`. You will first install the conda environment with R 4.2.2.
+- **R 4.2.2** For increased reproducibility, I have R as conda environment and used [renv](https://rstudio.github.io/renv/articles/renv.html#collaboration) to manage R packages. To reproduce my R environment, make sure that you have cloned the repository or downloaded the files `renv.lock`, `.Rprofile`, `renv/settings.dcf`, and `renv/activate.R`. If you are using a version of R other than 4.2.2, you can install the conda environment with R 4.2.2:
 
     ```sh
     # Create conda environment with R 4.2.2 and renv
@@ -126,11 +126,11 @@ I exported all conda environments as YAML so you can use the exact same version 
     conda activate r-4.2.2
     R
     ```
-    Then, within R, you can restore the packages from the lock file:
+    If you are already running R 4.2.2, you can skip the step above and launch R from the directory where you cloned the repository and renv should automatically bootstrap itself, downloading and installing the appropriate version of renv. Then, within R, you can restore all packages in the project library from the lock file:
     ```R
     renv::restore()
     ```
-    You will be asked to ocnfirm that you want to install all the packages. Type "y" and proceed. The installation may take a while. After this, you can use this conda environment to run any of the R scripts.
+    You will be asked to confirm that you want to install all the packages. Type "y" and proceed. The installation may take a while. After this, you can use this conda environment to run any of the R scripts. 
 
 ### 2.2 Software with pre-compiled binaries
 
