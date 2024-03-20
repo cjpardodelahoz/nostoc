@@ -10,7 +10,7 @@ The purpose of this tutorial is to give guidelines for some specific use cases w
 
 When you go the the T-BAS trees page, you will see a guide tree with a summary of all the datasets available in the dataset organized by taxonomic ranks:
 
-![guide_tree](https://github.com/cjpardodelahoz/nostoc/tree/main/tbas_tutorial/screen/guide_tree.png)
+![guide_tree](./screen/guide_tree.png)
 
 
 
