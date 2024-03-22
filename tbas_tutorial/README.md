@@ -6,7 +6,21 @@ I recommend that you [register to T-BAS](https://tbas.cifr.ncsu.edu/tbas2_3/page
 
 T-BAS has its own tutorials for [phylogenetic placement and de-novo inference](https://tbas.cifr.ncsu.edu/tbas2_3/pages/tbas-tutorial_3.php) as well as for [viewing trees, alignments, and specimen metadata](https://tbas.cifr.ncsu.edu/tbas2_3/pages/tbas-tutorial_2.php). You can refer to those for general instructions on how to use the platform.
 
-The purpose of this tutorial is to give guidelines for some specific use cases with unknown *Nostoc* sequences.
+The purpose of this tutorial is to give guidelines for some specific use cases with unknown *Nostoc* sequences and to highlight the virtues and limitations of placements performed with different datasets.
+
+Please raise issues in this repo if you encounter problems.
+## Table of contents
+
+- [Overview of available datasets](#overview-of-available-datasets)
+  - [Phylogenomic wASTRAL tree](#phylogenomic-wastral-tree)
+  - [*rbcLX* section trees](#rbclx-section-trees)
+- [Placing queries with single-locus data](#placing-queries-with-single-locus-data)
+  - [*rbcLX* unknowns](#rbclx-unknowns)
+  - [16S unknowns](#16s-unknowns)
+  - [*trnl* unknowns](#trnl-unknowns)
+- [Placing queries with genomic data](#placing-queries-with-genomic-data)
+
+
 
 ## Overview of available datasets
 

@@ -4,11 +4,20 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This is the documentation for the data and scripts used in my paper on *Nostoc* phylogenetics, evolution and species boundaries. The manuscript is currently in prep.
+This is the documentation for the scripts used in my paper on *Nostoc* phylogenetics, evolution and species boundaries. The manuscript is currently in prep.
 
-You can access the tutorial for placing unknown *Nostoc* sequences within our phylogenomic framework [here](this is being built...).
+You can access the [tutorial for placing unknown *Nostoc* sequences within our phylogenomic framework here](./tbas_tutorial/README.md).
 
 ## Table of Contents
+
+- [1. How to use this guide](#1-how-to-use-this-guide)
+- [2. Computational and software setup](#2-computational-and-software-setup)
+  - [2.1 Conda environments (including R)](#21-conda-environments-including-r)
+- [3. Data](#3-data)
+- [4. Analyses of *Nostoc* genomes](#4-analyses-of-nostoc-genomes)
+- [5. Analyses of *Nostoc* 16S rRNA sequences (Figure 2 and related supplements)](#5-analyses-of-nostoc-16s-rrna-sequences-figure-2-and-related-supplements)
+- [6. Analyses of *Nostoc rbcLX* sequences (Figure 3, Table 1 and related supplements)](#6-analyses-of-nostoc-rbclx-sequences-figure-3-table-1-and-related-supplements)
+
 
 ## 1. How to use this guide
 
