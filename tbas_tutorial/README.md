@@ -152,7 +152,7 @@ The query from a cyanobiont of *Peltigera aphthosa* falls in section 2.4, which 
 
 ![phylogroup](./screen/phylogroup.png)
 
-Overall, these three examples show how we can derive useful information from 16S data in this framework despite having different levels of phylogenetic resolution. As more genomes are sequenced, we will add them to the T-BAS tree and that will increase the power of this approach.
+These three examples show how we can derive useful information from 16S data in this framework despite having different levels of phylogenetic resolution. As more genomes are sequenced, we will add them to the T-BAS tree and that will increase the power of this approach.
 
 ### *trnL* unknowns
 
