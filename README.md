@@ -13,9 +13,14 @@ You can access the [tutorial for placing unknown *Nostoc* sequences within our p
 - [1. How to use this guide](#1-how-to-use-this-guide)
 - [2. Computational and software setup](#2-computational-and-software-setup)
   - [2.1 Conda environments (including R)](#21-conda-environments-including-r)
-- [3. Data](#3-data)
-- [4. Analyses of *Nostoc* genomes](#4-analyses-of-nostoc-genomes)
-- [5. Analyses of *Nostoc* 16S rRNA sequences (Figure 2 and related supplements)](#5-analyses-of-nostoc-16s-rrna-sequences-figure-2-and-related-supplements)
+  - [2.2 Software with pre-compiled binaries](#22-software-with-pre-compiled-binaries)
+  - [2.3 Software to build from source](#23-software-to-build-from-source)
+  - [2.4 Docker containers](#24-docker-containers)
+- [3. From raw sequence data to curated *Nostoc* genomes](#3-from-raw-sequence-data-to-curated-nostoc-genomes)
+    - [3.1 Download, QC, trim, and assemble metagenomic reads](#31-download-qc-trim-and-assemble-metagenomic-reads)
+
+- [4. Phylogenetic analyses (Figure 1 and related supplements)](#4-phylogenetic-analyses-figure-1-and-related-supplements)
+- [5. Evaluation of genomic species boundaries (Figure 2 and related supplements)](#5-evaluation-of-genomic-species-boundaries-figure-2-and-related-supplements)
 - [6. Analyses of *Nostoc rbcLX* sequences (Figure 3, Table 1 and related supplements)](#6-analyses-of-nostoc-rbclx-sequences-figure-3-table-1-and-related-supplements)
 
 
@@ -77,7 +82,7 @@ I exported all conda environments as YAML so you can use the exact same version 
     ```sh
     conda env create -f conda_env_yamls/newick.yml
     ```
-- [PlasX]()
+- [PlasX](https://github.com/michaelkyu/PlasX)
     ```sh
     # Create conda environment with dependencies
     conda env create -f conda_env_yamls/plasx.yml
@@ -240,6 +245,40 @@ install.packages("MSCquartets")
 
 ## 3. From raw sequence data to curated *Nostoc* genomes
 
+### 3.1 Download, trim, and assemble metagenomic reads
+
+We'll start by downloading the data from the NCBI SRA. This will take a while.
+
+```sh
+# Set path for SRA toolkits
+export PATH=/YOUR/PATH/TO/SRATOOLKITS:$PATH
+# Make directory for raw reads
+mkdir -p analyses/reads
+# Download raw reads from SRA
+prefetch -O analyses/reads $(cat misc_files/read_accessions.txt | cut -f 1) 
+fasterq-dump -O analyses/reads $(cat misc_files/read_accessions.txt | cut -f 1)
+```
+
+Now we are going to rename and sort the reads by sample with the script [rename_and_sort_reads.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/rename_and_sort_reads.sh)
+
+```sh
+sbatch scripts/rename_and_sort_reads.sh
+# Remove SRA temp folders
+rm -r analyses/reads/SRR*
+```
+Then, we will trim the reads to remove adapters, overrepresented sequences, and low quality ends, keeping reads > 75 bp. The script is [trim_reads.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/trim_reads.sh):
+
+```sh
+sbatch scripts/trim_reads.sh
+```
+
+Finally, we will use metaSPAdes to assemble the metagenomes with the script [assemble_metagenomes.sh](https://github.com/cjpardodelahoz/nostoc/blob/main/scripts/assemble_metagenomes.sh):
+
+```sh
+sbatch scripts/assemble_metagenomes.sh
+```
+
+### 3.2 
 
 
 #### Taxa sets
